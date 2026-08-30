@@ -2,7 +2,7 @@
 
 核对：2026-08-29 PT。star 是 GitHub API 快照。这是分类种子，不是穷尽榜。
 
-收：能买板、能打件、能跟原理图走的项目。收集来源另见 [tools-by-platform.md](file:///workspace/tools-by-platform.md) 的 talks / X / 外语站。
+收：能买板、能打件、能跟原理图走的项目。收集来源另见 [tools-by-platform.md](/tools-by-platform) 的 talks / X / 外语站。
 
 ---
 
