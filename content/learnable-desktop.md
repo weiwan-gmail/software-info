@@ -8,7 +8,7 @@ Something you can peel off and study, or a usable subset you can build. Big-comp
 
 ---
 
-## 1. Windows, launchers, switching
+## 1. Window managers, launchers, switching
 
 On Windows, Microsoft’s [PowerToys](https://github.com/microsoft/PowerToys) (138,209 star, MIT) is the official bundle of this class: FancyZones stands in for Rectangle, PowerToys Run for Raycast/Alfred. Mac has no official equivalent. Individual authors split the same problems apart.
 
