@@ -6,13 +6,13 @@ Markdown-sourced software catalog. Edit files under `content/`; the site renders
 
 | What | Where |
 |---|---|
-| Domain tree (总表 + 10 domains) | `content/catalog/` |
+| Domain tree (catalog index + 10 domains) | `content/catalog/` |
 | Older detail tables | `content/*.md` (siblings of `catalog/`, not a `detail/` folder) |
 | Star snapshots (2026-08-29 PT) | `data/*.json` |
 
 Do not move those files. Relative links (`../tools-by-platform.md`, `../../learnable-desktop.md`) depend on this layout. Star counts in the markdown already come from the snapshots — do not invent numbers or call the live GitHub API.
 
-Chinese catalog text stays Chinese. 术数 pages list software and texts; they do not claim readings are accurate.
+Catalog prose is English. Divination / occult-text pages list software and texts; they do not claim readings are accurate.
 
 ## Local site
 
@@ -34,7 +34,7 @@ CI sets `GITHUB_PAGES=true` so VitePress `base` is `/software-info/`. Site URL:
 
 https://weiwan-gmail.github.io/software-info/
 
-`/` still sends you to the 总表 (`/software-info/catalog/` on Pages).
+`/` still sends you to the catalog index (`/software-info/catalog/` on Pages).
 
 In the repo **Settings → Pages**, set **Source** to **GitHub Actions** (not “Deploy from a branch”).
 
@@ -45,4 +45,4 @@ Local preview and Vercel leave `GITHUB_PAGES` unset, so `base` stays `/`. Import
 - Build command: `npm run docs:build`
 - Output directory: `content/.vitepress/dist`
 
-`vercel.json` already sets those, including a `/` → `/catalog` redirect so the 总表 is the home page. Do not set `GITHUB_PAGES` on Vercel. Push to the connected branch to publish.
+`vercel.json` already sets those, including a `/` → `/catalog` redirect so the catalog index is the home page. Do not set `GITHUB_PAGES` on Vercel. Push to the connected branch to publish.

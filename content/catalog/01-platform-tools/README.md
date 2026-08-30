@@ -1,24 +1,24 @@
-# 1. 平台与日常工具
+# 1. Platform & everyday tools
 
-细表：[learnable-desktop.md](../../learnable-desktop.md) · [learnable-mobile.md](../../learnable-mobile.md) · [learnable-web-tools.md](../../learnable-web-tools.md) · [tools-by-platform.md](../../tools-by-platform.md)
+Detail tables: [learnable-desktop.md](../../learnable-desktop.md) · [learnable-mobile.md](../../learnable-mobile.md) · [learnable-web-tools.md](../../learnable-web-tools.md) · [tools-by-platform.md](../../tools-by-platform.md)
 
-## 1.1 Windows 经典
+## 1.1 Windows classics
 
-| 名字 | 地址 | 形态 | 开源对标 |
+| Name | URL | Form | Open-source counterpart |
 |---|---|---|---|
-| Total Commander | [ghisler.com](https://www.ghisler.com/) | 共享软件 | [doublecmd/doublecmd](https://github.com/doublecmd/doublecmd) 4,454 |
-| Sysinternals Suite | [Microsoft Learn](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) | **免费闭源**。不查新版本 | 部分工具后来进了微软文档，Suite 本身不是 GitHub 开源仓 |
-| DiskGenius | [diskgenius.com](https://www.diskgenius.com/) | 免费 + 专业版 | 无官方仓 |
-| Rufus | [pbatard/rufus](https://github.com/pbatard/rufus) 37,469 | **开源** GPL-3.0 | 本身 |
-| Snipaste | [snipaste.com](https://www.snipaste.com/) | 免费 + 专业版 | 反馈仓 Snipaste/feedback 3,679 |
-| Quicker | [getquicker.net](https://getquicker.net/) | 免费 + 专业版 | 反馈仓 cuiliang/Quicker 617 |
-| Everything | [voidtools.com](https://www.voidtools.com/) | **免费闭源**（有捐赠/商业许可） | 文件名即时搜索 |
+| Total Commander | [ghisler.com](https://www.ghisler.com/) | shareware | [doublecmd/doublecmd](https://github.com/doublecmd/doublecmd) 4,454 |
+| Sysinternals Suite | [Microsoft Learn](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) | **Free closed-source**. Do not check for new versions | Some tools later landed in Microsoft docs. The Suite itself is not an open-source GitHub repo |
+| DiskGenius | [diskgenius.com](https://www.diskgenius.com/) | free + Pro | No official repo |
+| Rufus | [pbatard/rufus](https://github.com/pbatard/rufus) 37,469 | **Open source** GPL-3.0 | Itself |
+| Snipaste | [snipaste.com](https://www.snipaste.com/) | free + Pro | Feedback repo Snipaste/feedback 3,679 |
+| Quicker | [getquicker.net](https://getquicker.net/) | free + Pro | Feedback repo cuiliang/Quicker 617 |
+| Everything | [voidtools.com](https://www.voidtools.com/) | **Free closed-source** (donation / commercial license exists) | Instant filename search |
 
-## 1.2 窗口、启动器、菜单栏
+## 1.2 Windows, launchers, menu bar
 
-**开源**
+**Open source**
 
-| 仓库 | star | 许可 |
+| Repo | star | License |
 |---|---:|---|
 | [microsoft/PowerToys](https://github.com/microsoft/PowerToys) | 138,209 | MIT |
 | [rxhanson/Rectangle](https://github.com/rxhanson/Rectangle) | 29,773 | |
@@ -28,20 +28,20 @@
 | [exelban/stats](https://github.com/exelban/stats) | 41,509 | MIT |
 | [jordanbaird/Ice](https://github.com/jordanbaird/Ice) | 29,442 | GPL-3.0 |
 
-**免费闭源 / 收费**
+**Free closed-source / paid**
 
-| 名字 | 官网 | 形态 | 开源对标 |
+| Name | Site | Form | Open-source counterpart |
 |---|---|---|---|
-| Raycast | [raycast.com](https://www.raycast.com/) | 个人免费闭源 + Pro 订阅 | PowerToys Run |
-| Alfred | [alfredapp.com](https://www.alfredapp.com/) | 免费壳 + Powerpack 买断 | 同上 |
-| Magnet | [magnet.crowdcafe.com](https://magnet.crowdcafe.com/) | 买断 | Rectangle / FancyZones |
-| Bartender | [macbartender.com](https://www.macbartender.com/) | 买断 | Hidden / Ice |
+| Raycast | [raycast.com](https://www.raycast.com/) | personal free closed-source + Pro subscription | PowerToys Run |
+| Alfred | [alfredapp.com](https://www.alfredapp.com/) | free shell + Powerpack buyout | Same |
+| Magnet | [magnet.crowdcafe.com](https://magnet.crowdcafe.com/) | buyout | Rectangle / FancyZones |
+| Bartender | [macbartender.com](https://www.macbartender.com/) | buyout | Hidden / Ice |
 
-## 1.3 截图、同步、发送
+## 1.3 Screenshots, sync, sending
 
-**开源**
+**Open source**
 
-| 仓库 | star | 许可 |
+| Repo | star | License |
 |---|---:|---|
 | [ShareX/ShareX](https://github.com/ShareX/ShareX) | 39,374 | GPL-3.0 |
 | [p0deje/Maccy](https://github.com/p0deje/Maccy) | 21,378 | MIT |
@@ -50,44 +50,44 @@
 | [syncthing/syncthing](https://github.com/syncthing/syncthing) | 88,114 | MPL-2.0 |
 | [immich-app/immich](https://github.com/immich-app/immich) | 112,940 | AGPL-3.0 |
 
-**免费闭源 / 收费**
+**Free closed-source / paid**
 
-| 名字 | 官网 | 形态 | 开源对标 |
+| Name | Site | Form | Open-source counterpart |
 |---|---|---|---|
-| CleanShot X | [cleanshot.com](https://cleanshot.com/) | 买断 | ShareX |
-| Dropbox | [dropbox.com](https://www.dropbox.com/) | 免费额度 + 订阅 | Syncthing |
-| iCloud Drive / AirDrop | Apple | 系统自带，闭源 | LocalSend / Syncthing |
+| CleanShot X | [cleanshot.com](https://cleanshot.com/) | buyout | ShareX |
+| Dropbox | [dropbox.com](https://www.dropbox.com/) | free quota + subscription | Syncthing |
+| iCloud Drive / AirDrop | Apple | bundled with the OS, closed-source | LocalSend / Syncthing |
 
-## 1.4 编辑器、终端、保险库、闪卡、笔记
+## 1.4 Editors, terminals, vaults, flashcards, notes
 
-**开源：** [microsoft/vscode](https://github.com/microsoft/vscode) 190,040 · [microsoft/terminal](https://github.com/microsoft/terminal) 104,735 · [iina/iina](https://github.com/iina/iina) 46,135 · [keepassxreboot/keepassxc](https://github.com/keepassxreboot/keepassxc) 28,601 · [ankitects/anki](https://github.com/ankitects/anki) 30,124 · [laurent22/joplin](https://github.com/laurent22/joplin) 56,156
+**Open source:** [microsoft/vscode](https://github.com/microsoft/vscode) 190,040 · [microsoft/terminal](https://github.com/microsoft/terminal) 104,735 · [iina/iina](https://github.com/iina/iina) 46,135 · [keepassxreboot/keepassxc](https://github.com/keepassxreboot/keepassxc) 28,601 · [ankitects/anki](https://github.com/ankitects/anki) 30,124 · [laurent22/joplin](https://github.com/laurent22/joplin) 56,156
 
-**免费闭源 / 收费**
+**Free closed-source / paid**
 
-| 名字 | 官网 | 形态 | 开源对标 |
+| Name | Site | Form | Open-source counterpart |
 |---|---|---|---|
-| Obsidian | [obsidian.md](https://obsidian.md/) | 个人使用免费闭源；Sync / Publish 收费 | Joplin / Logseq |
-| 1Password | [1password.com](https://1password.com/) | 订阅 | KeePassXC / Bitwarden |
-| Notion | [notion.com](https://www.notion.com/) | 免费额度 + 订阅 | Joplin |
-| AnkiMobile | App Store | 买断（桌面 Anki 开源） | Anki 桌面 / AnkiDroid |
+| Obsidian | [obsidian.md](https://obsidian.md/) | personal use free closed-source; Sync / Publish paid | Joplin / Logseq |
+| 1Password | [1password.com](https://1password.com/) | subscription | KeePassXC / Bitwarden |
+| Notion | [notion.com](https://www.notion.com/) | free quota + subscription | Joplin |
+| AnkiMobile | App Store | buyout (desktop Anki is open source) | Anki desktop / AnkiDroid |
 
-## 1.5 移动
+## 1.5 Mobile
 
-**收费（商店付费榜里能当作业的）：** AnkiMobile、Paprika（[paprikaapp.com](https://www.paprikaapp.com/)）、Streaks（[streaks.app](https://streaks.app/)）、Things（[culturedcode.com/things](https://culturedcode.com/things/)）、PhotoPills、SkyView、Procreate Pocket。
+**Paid (store paid charts that can be homework):** AnkiMobile, Paprika ([paprikaapp.com](https://www.paprikaapp.com/)), Streaks ([streaks.app](https://streaks.app/)), Things ([culturedcode.com/things](https://culturedcode.com/things/)), PhotoPills, SkyView, Procreate Pocket.
 
-**免费闭源大厂（只收可拆的一块）：** Google/Microsoft Authenticator → TOTP；CapCut → 时间线；Duolingo → SRS 节奏。ChatGPT / TikTok 免费榜头部不进作业。
+**Free closed-source from big companies (only the piece you can peel off):** Google/Microsoft Authenticator → TOTP; CapCut → timeline; Duolingo → SRS pacing. ChatGPT / TikTok free-chart headliners are not homework.
 
-**开源配套：** Anki、LocalSend、Syncthing、[offa/android-foss](https://github.com/offa/android-foss) 11,052。
+**Open-source companions:** Anki, LocalSend, Syncthing, [offa/android-foss](https://github.com/offa/android-foss) 11,052.
 
-## 1.6 Web 工具
+## 1.6 Web tools
 
-**开源：** it-tools 40,406 · Stirling-PDF 90,918 · Squoosh 25,759 · pdf.js 53,802 · Excalidraw 130,774 · Penpot 59,377 · CyberChef 35,694
+**Open source:** it-tools 40,406 · Stirling-PDF 90,918 · Squoosh 25,759 · pdf.js 53,802 · Excalidraw 130,774 · Penpot 59,377 · CyberChef 35,694
 
-**免费闭源 / 收费**
+**Free closed-source / paid**
 
-| 名字 | 官网 | 形态 | 开源对标 |
+| Name | Site | Form | Open-source counterpart |
 |---|---|---|---|
-| Photopea | [photopea.com](https://www.photopea.com/) | 免费闭源 + 去广告订阅 | 画布/图层；完整复刻不现实 |
-| iLovePDF | [ilovepdf.com](https://www.ilovepdf.com/) | 免费 + Premium | Stirling-PDF |
-| Figma | [figma.com](https://www.figma.com/) | 免费额度 + 订阅 | Penpot / tldraw |
-| Canva | [canva.com](https://www.canva.com/) | 免费额度 + Pro | Excalidraw 只对白板这一块 |
+| Photopea | [photopea.com](https://www.photopea.com/) | free closed-source + ad-removal subscription | canvas / layers; a full clone is not realistic |
+| iLovePDF | [ilovepdf.com](https://www.ilovepdf.com/) | free + Premium | Stirling-PDF |
+| Figma | [figma.com](https://www.figma.com/) | free quota + subscription | Penpot / tldraw |
+| Canva | [canva.com](https://www.canva.com/) | free quota + Pro | Excalidraw only for the whiteboard slice |

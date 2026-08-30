@@ -2419,7 +2419,7 @@
       "login": "521xueweihan",
       "html_url": "https://github.com/521xueweihan",
       "name": "削微寒",
-      "bio": "时间会让「平凡的事」变得「与众不同」\r\nTime will make ordinary things become extraordinary.",
+      "bio": "Time will make ordinary things become extraordinary.",
       "public_repos": 165,
       "type": "User",
       "named_repos": [
@@ -2427,7 +2427,7 @@
           "full_name": "521xueweihan/HelloGitHub",
           "exists": true,
           "html_url": "https://github.com/521xueweihan/HelloGitHub",
-          "description": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
+          "description": ":octocat: Share interesting, entry-level open source projects on GitHub.",
           "stars": 173632,
           "language": "Python",
           "archived": false
@@ -2437,7 +2437,7 @@
         {
           "full_name": "521xueweihan/HelloGitHub",
           "html_url": "https://github.com/521xueweihan/HelloGitHub",
-          "description": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
+          "description": ":octocat: Share interesting, entry-level open source projects on GitHub.",
           "stars": 173632,
           "language": "Python",
           "archived": false
@@ -2445,7 +2445,7 @@
         {
           "full_name": "521xueweihan/GitHub520",
           "html_url": "https://github.com/521xueweihan/GitHub520",
-          "description": ":kissing_heart: 让你“爱”上 GitHub，解决访问时图裂、加载慢的问题。（无需安装）",
+          "description": ":kissing_heart: Make GitHub usable: fix broken images and slow loads. (No install.)",
           "stars": 29511,
           "language": "Python",
           "archived": false
@@ -2453,7 +2453,7 @@
         {
           "full_name": "521xueweihan/git-tips",
           "html_url": "https://github.com/521xueweihan/git-tips",
-          "description": ":trollface:Git的奇技淫巧",
+          "description": ":trollface: Git tricks",
           "stars": 15856,
           "language": null,
           "archived": false
@@ -2461,7 +2461,7 @@
         {
           "full_name": "521xueweihan/python",
           "html_url": "https://github.com/521xueweihan/python",
-          "description": "《笨方法学 Python》（Learn Python the Hard Way）学习笔记",
+          "description": "Notes on Learn Python the Hard Way",
           "stars": 1427,
           "language": "Python",
           "archived": false
@@ -2469,7 +2469,7 @@
         {
           "full_name": "521xueweihan/OneFile",
           "html_url": "https://github.com/521xueweihan/OneFile",
-          "description": "只有一个文件！",
+          "description": "Only one file!",
           "stars": 1382,
           "language": "Shell",
           "archived": false
@@ -2477,7 +2477,7 @@
         {
           "full_name": "521xueweihan/hellogithub.com",
           "html_url": "https://github.com/521xueweihan/hellogithub.com",
-          "description": "旧 HelloGitHub.com 网站源码",
+          "description": "Old HelloGitHub.com site source"
           "stars": 828,
           "language": "CSS",
           "archived": false

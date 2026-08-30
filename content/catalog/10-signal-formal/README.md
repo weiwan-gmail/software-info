@@ -1,40 +1,40 @@
-# 10. 信号、仪器、形式化
+# 10. Signal / instruments / formal methods
 
 ## 10.1 DSP
 
-**开源（awesome-cpp 进行中）：** kissfft 1,974 · iir1 780 · fCWT 402（加速倍数是作者主张）。pocketfft 是队列下一个，star 以再核为准。
+**Open source (awesome-cpp in progress):** kissfft 1,974 · iir1 780 · fCWT 402 (speedup multiples are the author’s claim). pocketfft is next in the queue. Recheck stars then.
 
-**免费闭源 / 收费**
+**Free closed-source / paid**
 
-| 名字 | 官网 | 形态 | 开源对标 |
+| Name | Site | Form | Open-source counterpart |
 |---|---|---|---|
-| MATLAB | [mathworks.com](https://www.mathworks.com/products/matlab.html) | 订阅 / 授权 | SciPy / Octave（Octave 开源，本批未核 star） |
-| 手机调音器 TonalEnergy | App Store | 买断 | 你的 osc-sim / kissfft 一条线 |
+| MATLAB | [mathworks.com](https://www.mathworks.com/products/matlab.html) | subscription / license | SciPy / Octave (Octave is open source; stars not checked in this batch) |
+| Phone tuner TonalEnergy | App Store | buyout | your osc-sim / kissfft line |
 
-## 10.2 仪器仿真与厂商软件
+## 10.2 Instrument simulation and vendor software
 
-**开源：** [weiwan-gmail/osc-sim](https://github.com/weiwan-gmail/osc-sim) · Verilator（仿真 RTL，3,887）
+**Open source:** [weiwan-gmail/osc-sim](https://github.com/weiwan-gmail/osc-sim) · Verilator (RTL simulation, 3,887)
 
-**免费闭源**
+**Free closed-source**
 
-| 名字 | 官网 | 说明 |
+| Name | Site | Notes |
 |---|---|---|
-| LTspice | Analog Devices | 见电子目录。电路不是示波器，但同属「仪器替代」 |
-| 各家厂商免费 Scope 软件 | Keysight / Tek / Rigol / Siglent 站点 | 买了硬件才有意义；软件常免费闭源 |
+| LTspice | Analog Devices | See the electronics catalog. A circuit is not an oscilloscope, but it is the same “instrument substitute” class |
+| Vendor free scope software | Keysight / Tek / Rigol / Siglent sites | Only useful after you buy the hardware. Software is often free closed-source |
 
-**收费（硬件）**
+**Paid (hardware)**
 
-| 名字 | 官网 | 形态 |
+| Name | Site | Form |
 |---|---|---|
-| Keysight | [keysight.com](https://www.keysight.com/) | 示波器 / 信号源，硬件 |
-| Tektronix | [tek.com](https://www.tek.com/) | 同上 |
-| Saleae | [saleae.com](https://www.saleae.com/) | 逻辑分析 / MSO，硬件 |
-| NI LabVIEW | [ni.com](https://www.ni.com/labview/) | 图形化仪器软件，订阅/授权 |
+| Keysight | [keysight.com](https://www.keysight.com/) | oscilloscopes / signal generators, hardware |
+| Tektronix | [tek.com](https://www.tek.com/) | Same |
+| Saleae | [saleae.com](https://www.saleae.com/) | logic analysis / MSO, hardware |
+| NI LabVIEW | [ni.com](https://www.ni.com/labview/) | graphical instrument software, subscription/license |
 
-## 10.3 形式化证明
+## 10.3 Formal proof
 
-**开源：** Lean 4 8,929。旁路 papers-we-love 109,186。
+**Open source:** Lean 4 8,929. Sidecar: papers-we-love 109,186.
 
-**收费：** 没有直接的「付费 Lean」。Wolfram / Mathematica（[wolfram.com/mathematica](https://www.wolfram.com/mathematica/)）是符号计算订阅，和证明助手不是同一类，只挂在旁边。
+**Paid:** There is no direct “paid Lean.” Wolfram / Mathematica ([wolfram.com/mathematica](https://www.wolfram.com/mathematica/)) is a computer-algebra subscription, not the same class as a proof assistant. Parked beside it only.
 
-家谱 Gramps 3,079 偏档案，未单独立领域。
+Genealogy: Gramps 3,079 leans archival. No separate domain.

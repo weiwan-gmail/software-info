@@ -139,7 +139,7 @@
     {
       "full_name": "PlexPt/awesome-chatgpt-prompts-zh",
       "html_url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh",
-      "description": "ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。",
+      "description": "ChatGPT Chinese prompting guide. Scene-by-scene how-tos. How to make it do what you ask.",
       "stars": 61895,
       "language": null,
       "license": "MIT",
@@ -166,7 +166,7 @@
     {
       "full_name": "521xueweihan/HelloGitHub",
       "html_url": "https://github.com/521xueweihan/HelloGitHub",
-      "description": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
+      "description": ":octocat: Share interesting, entry-level open source projects on GitHub.",
       "stars": 173631,
       "language": "Python",
       "license": null,
