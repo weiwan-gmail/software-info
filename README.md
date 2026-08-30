@@ -23,11 +23,26 @@ npm run docs:build    # output: content/.vitepress/dist
 npm run docs:preview
 ```
 
+## GitHub Actions → GitHub Pages
+
+`.github/workflows/deploy.yml`:
+
+- Pull request to `main`: `npm ci` and `npm run docs:build`. The PR fails if the build fails.
+- Push to `main`: the same build, then `actions/upload-pages-artifact` + `actions/deploy-pages`.
+
+CI sets `GITHUB_PAGES=true` so VitePress `base` is `/software-info/`. Site URL:
+
+https://weiwan-gmail.github.io/software-info/
+
+`/` still sends you to the 总表 (`/software-info/catalog/` on Pages).
+
+In the repo **Settings → Pages**, set **Source** to **GitHub Actions** (not “Deploy from a branch”).
+
 ## Deploy to Vercel
 
-Import this repo. Framework preset: VitePress.
+Local preview and Vercel leave `GITHUB_PAGES` unset, so `base` stays `/`. Import this repo. Framework preset: VitePress.
 
 - Build command: `npm run docs:build`
 - Output directory: `content/.vitepress/dist`
 
-`vercel.json` already sets those, including a `/` → `/catalog` redirect so the 总表 is the home page. Push to the connected branch to publish.
+`vercel.json` already sets those, including a `/` → `/catalog` redirect so the 总表 is the home page. Do not set `GITHUB_PAGES` on Vercel. Push to the connected branch to publish.

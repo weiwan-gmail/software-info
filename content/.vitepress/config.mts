@@ -1,9 +1,13 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type HeadConfig } from 'vitepress'
+
+const isGitHubPages = process.env.GITHUB_PAGES === 'true'
+const base = isGitHubPages ? '/software-info/' : '/'
 
 export default defineConfig({
   lang: 'zh-CN',
   title: 'software-info',
   description: 'Markdown 源的软件目录。star 是 2026-08-29 PT 的 GitHub API 快照。',
+  base,
   cleanUrls: true,
   lastUpdated: true,
   ignoreDeadLinks: [/^sand-workflow:/],
@@ -11,6 +15,12 @@ export default defineConfig({
   // existing 01-foo/README.md and ../07-observation/README.md links resolve.
   rewrites: {
     'catalog/README.md': 'catalog/index.md',
+  },
+  transformHead({ page }): HeadConfig[] {
+    if (page !== 'index.md') return []
+    return [
+      ['meta', { 'http-equiv': 'refresh', content: `0;url=${base}catalog/` }],
+    ]
   },
   themeConfig: {
     nav: [{ text: '总表', link: '/catalog/' }],
