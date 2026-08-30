@@ -1,5 +1,5 @@
 ---
-title: 总表
+title: Catalog
 ---
 
-[总表](/catalog/)
+[Catalog](/catalog/)

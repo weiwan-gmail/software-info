@@ -1,38 +1,38 @@
-# 2. 开源清单与 GitHub 账号
+# 2. Awesome lists & GitHub accounts
 
-细表：[awesome-and-orgs.md](../../awesome-and-orgs.md)。这类几乎没有「收费产品」：清单本身是开源文档。公司 org 里的收费在对应产品领域（网络、托管），不重复堆在这里。
+Detail table: [awesome-and-orgs.md](../../awesome-and-orgs.md). Almost no “paid products” here: the lists themselves are open-source documents. Paid plans from company orgs belong in the matching product domain (network, hosting). Do not pile them here again.
 
-## 2.1 讨论队列
+## 2.1 Discussion queue
 
-| # | 清单 | star | 状态 |
+| # | List | star | Status |
 |---|---|---:|---|
-| 1 | [fffaraz/awesome-cpp](https://github.com/fffaraz/awesome-cpp) | 73,009 | 进行中。已谈 kissfft / iir1 / fCWT |
-| 2 | [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust) | 59,049 | 未开始 |
-| 3 | [PatrickJS/awesome-angular](https://github.com/PatrickJS/awesome-angular) | 10,067 | 未开始 |
-| 4 | Awesome-LLM + awesome-llm-apps | 27,303 / 135,169 | 未开始，算一项 |
-| 5 | awesome-mcp-servers | 93,063 | 未开始 |
-| 6 | awesome-claude-skills | 73,952 | 未开始 |
-| 7 | awesome-python | 317,034 | 未开始 |
-| 8 | awesome-go | 182,645 | 未开始 |
-| 9 | awesome-selfhosted | 316,022 | 未开始 |
-| 10 | the-book-of-secret-knowledge | 241,100 | 未开始 |
+| 1 | [fffaraz/awesome-cpp](https://github.com/fffaraz/awesome-cpp) | 73,009 | In progress. Already covered kissfft / iir1 / fCWT |
+| 2 | [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust) | 59,049 | Not started |
+| 3 | [PatrickJS/awesome-angular](https://github.com/PatrickJS/awesome-angular) | 10,067 | Not started |
+| 4 | Awesome-LLM + awesome-llm-apps | 27,303 / 135,169 | Not started, counts as one item |
+| 5 | awesome-mcp-servers | 93,063 | Not started |
+| 6 | awesome-claude-skills | 73,952 | Not started |
+| 7 | awesome-python | 317,034 | Not started |
+| 8 | awesome-go | 182,645 | Not started |
+| 9 | awesome-selfhosted | 316,022 | Not started |
+| 10 | the-book-of-secret-knowledge | 241,100 | Not started |
 
-总索引 [sindresorhus/awesome](https://github.com/sindresorhus/awesome) 501,191，不当单独一项。
+The master index [sindresorhus/awesome](https://github.com/sindresorhus/awesome) 501,191 is not a separate item.
 
-## 2.2 旁路清单
+## 2.2 Sidecar lists
 
-HelloGitHub 173,631 · papers-we-love 109,186 · awesome-courses 70,755 · awesome-scalability 73,605 · awesome-react 74,441 · awesome-vue 73,549 · awesome-nodejs 66,653。
+HelloGitHub 173,631 · papers-we-love 109,186 · awesome-courses 70,755 · awesome-scalability 73,605 · awesome-react 74,441 · awesome-vue 73,549 · awesome-nodejs 66,653.
 
-## 2.3 公司 org
+## 2.3 Company orgs
 
-A 组（主业旁边有玩具）：tailscale · vercel · cloudflare · superfly · supabase · caddyserver。
+Group A (toys next to the main product): tailscale · vercel · cloudflare · superfly · supabase · caddyserver.
 
-B 组：hashicorp · netlify · planetscale · neondatabase。
+Group B: hashicorp · netlify · planetscale · neondatabase.
 
-`superfly/sprites` 不存在，只有 sprites-docs 50。
+`superfly/sprites` does not exist. Only sprites-docs 50.
 
-这些公司的**收费套餐**写在 [09-network](../09-network/README.md) 和各自产品站，不在本页重复。
+Paid plans from these companies live in [09-network](../09-network/README.md) and on each product site. Not repeated here.
 
-## 2.4 个人账号
+## 2.4 Personal accounts
 
-CLI：sharkdp / BurntSushi / junegunn。TUI：jesseduffield / sxyazi。网络：FiloSottile。教学：karpathy / ggerganov（llama.cpp 已迁 ggml-org）。
+CLI: sharkdp / BurntSushi / junegunn. TUI: jesseduffield / sxyazi. Network: FiloSottile. Teaching: karpathy / ggerganov (llama.cpp has moved to ggml-org).

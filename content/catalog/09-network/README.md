@@ -1,12 +1,12 @@
-# 9. 网络与自建
+# 9. Network & self-hosting
 
-公司玩具细表在 [awesome-and-orgs.md](../../awesome-and-orgs.md) 第 4 节。
+Company-toy detail is in [awesome-and-orgs.md](../../awesome-and-orgs.md) section 4.
 
-## 9.1 组网 / 隧道
+## 9.1 Overlay networks / tunnels
 
-**开源**
+**Open source**
 
-| 仓库 | star |
+| Repo | star |
 |---|---:|
 | [tailscale/tailscale](https://github.com/tailscale/tailscale) | 35,778 |
 | [tailscale/tailcat](https://github.com/tailscale/tailcat) | 3,572 |
@@ -15,25 +15,25 @@
 | [cloudflare/cloudflared](https://github.com/cloudflare/cloudflared) | 15,428 |
 | [caddyserver/caddy](https://github.com/caddyserver/caddy) | 75,328 |
 
-**免费闭源档（客户端/个人）**
+**Free closed-source tiers (client / personal)**
 
-| 名字 | 官网 | 形态 |
+| Name | Site | Form |
 |---|---|---|
-| Tailscale 个人档 | [tailscale.com](https://tailscale.com/) | 个人免费闭源控制面 + 客户端开源 |
-| Cloudflare Tunnel 免费档 | [cloudflare.com](https://www.cloudflare.com/) | 免费额度；cloudflared 开源 |
-| ZeroTier 免费档 | [zerotier.com](https://www.zerotier.com/) | 免费设备数 + 付费 |
-| ngrok 免费档 | [ngrok.com](https://ngrok.com/) | 免费隧道 + 付费 |
+| Tailscale personal tier | [tailscale.com](https://tailscale.com/) | personal free closed-source control plane + open-source client |
+| Cloudflare Tunnel free tier | [cloudflare.com](https://www.cloudflare.com/) | free quota; cloudflared is open source |
+| ZeroTier free tier | [zerotier.com](https://www.zerotier.com/) | free device count + paid |
+| ngrok free tier | [ngrok.com](https://ngrok.com/) | free tunnels + paid |
 
-**收费：** 上面四家的团队 / 企业档。Caddy 本身开源，商业是托管和咨询，不是必须买许可才能用。
+**Paid:** team / enterprise tiers from the four above. Caddy itself is open source. The commercial side is hosting and consulting, not a license you must buy to use it.
 
-## 9.2 远程桌面
+## 9.2 Remote desktop
 
-**开源：** RustDesk（你另有仓 weiwan-gmail/rustdesk，star 以该仓为准）
+**Open source:** RustDesk (you also have weiwan-gmail/rustdesk; use that repo’s stars)
 
-**免费闭源 / 收费：** TeamViewer 个人免费 + 商业许可 · AnyDesk 同样 · Chrome Remote Desktop 免费闭源。
+**Free closed-source / paid:** TeamViewer personal free + commercial license · AnyDesk the same · Chrome Remote Desktop free closed-source.
 
-## 9.3 自托管
+## 9.3 Self-hosting
 
-清单 awesome-selfhosted 316,022，队列未挖。已经出现过的开源自托管：Immich 112,940 · Stirling-PDF 90,918 · Syncthing 88,114。
+List: awesome-selfhosted 316,022, queue not mined yet. Open-source self-hosting already seen: Immich 112,940 · Stirling-PDF 90,918 · Syncthing 88,114.
 
-**开源 + 可选订阅：** [home-assistant/core](https://github.com/home-assistant/core) 90,178。云和订阅走 [Nabu Casa](https://www.nabucasa.com/)，那是收费；核心仍开源。
+**Open source + optional subscription:** [home-assistant/core](https://github.com/home-assistant/core) 90,178. Cloud and subscriptions go through [Nabu Casa](https://www.nabucasa.com/). That is paid. The core stays open source.
