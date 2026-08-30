@@ -1,0 +1,3447 @@
+{
+  "fetched_at_utc": "2026-08-30T03:08:05.503380+00:00",
+  "accounts": [
+    {
+      "login": "sharkdp",
+      "html_url": "https://github.com/sharkdp",
+      "name": "David Peter",
+      "bio": null,
+      "public_repos": 120,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "sharkdp/bat",
+          "exists": true,
+          "html_url": "https://github.com/sharkdp/bat",
+          "description": "A cat(1) clone with wings.",
+          "stars": 60298,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "sharkdp/fd",
+          "exists": true,
+          "html_url": "https://github.com/sharkdp/fd",
+          "description": "A simple, fast and user-friendly alternative to 'find'",
+          "stars": 44241,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "sharkdp/hexyl",
+          "exists": true,
+          "html_url": "https://github.com/sharkdp/hexyl",
+          "description": "A command-line hex viewer",
+          "stars": 10263,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "sharkdp/hyperfine",
+          "exists": true,
+          "html_url": "https://github.com/sharkdp/hyperfine",
+          "description": "A command-line benchmarking tool",
+          "stars": 28759,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "sharkdp/diskus",
+          "exists": true,
+          "html_url": "https://github.com/sharkdp/diskus",
+          "description": "A minimal, fast alternative to 'du -sh'",
+          "stars": 1237,
+          "language": "Rust",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "sharkdp/bat",
+          "html_url": "https://github.com/sharkdp/bat",
+          "description": "A cat(1) clone with wings.",
+          "stars": 60298,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "sharkdp/fd",
+          "html_url": "https://github.com/sharkdp/fd",
+          "description": "A simple, fast and user-friendly alternative to 'find'",
+          "stars": 44241,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "sharkdp/hyperfine",
+          "html_url": "https://github.com/sharkdp/hyperfine",
+          "description": "A command-line benchmarking tool",
+          "stars": 28759,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "sharkdp/hexyl",
+          "html_url": "https://github.com/sharkdp/hexyl",
+          "description": "A command-line hex viewer",
+          "stars": 10263,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "sharkdp/pastel",
+          "html_url": "https://github.com/sharkdp/pastel",
+          "description": "A command-line tool to generate, analyze, convert and manipulate colors",
+          "stars": 6474,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "sharkdp/dbg-macro",
+          "html_url": "https://github.com/sharkdp/dbg-macro",
+          "description": "A dbg(…) macro for C++",
+          "stars": 3233,
+          "language": "C++",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "BurntSushi",
+      "html_url": "https://github.com/BurntSushi",
+      "name": "Andrew Gallant",
+      "bio": "I love to code.",
+      "public_repos": 182,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "BurntSushi/ripgrep",
+          "exists": true,
+          "html_url": "https://github.com/BurntSushi/ripgrep",
+          "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore",
+          "stars": 67702,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "BurntSushi/xsv",
+          "exists": true,
+          "html_url": "https://github.com/BurntSushi/xsv",
+          "description": "A fast CSV command line toolkit written in Rust.",
+          "stars": 10762,
+          "language": "Rust",
+          "archived": true
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "BurntSushi/ripgrep",
+          "html_url": "https://github.com/BurntSushi/ripgrep",
+          "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore",
+          "stars": 67702,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "BurntSushi/xsv",
+          "html_url": "https://github.com/BurntSushi/xsv",
+          "description": "A fast CSV command line toolkit written in Rust.",
+          "stars": 10762,
+          "language": "Rust",
+          "archived": true
+        },
+        {
+          "full_name": "BurntSushi/toml",
+          "html_url": "https://github.com/BurntSushi/toml",
+          "description": "TOML parser for Golang with reflection.",
+          "stars": 5002,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "BurntSushi/jiff",
+          "html_url": "https://github.com/BurntSushi/jiff",
+          "description": "A datetime library for Rust that encourages you to jump into the pit of success.",
+          "stars": 2903,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "BurntSushi/quickcheck",
+          "html_url": "https://github.com/BurntSushi/quickcheck",
+          "description": "Automated property based testing for Rust (with shrinking).",
+          "stars": 2787,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "BurntSushi/fst",
+          "html_url": "https://github.com/BurntSushi/fst",
+          "description": "Represent large sets and maps compactly with finite state transducers.",
+          "stars": 2115,
+          "language": "Rust",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "junegunn",
+      "html_url": "https://github.com/junegunn",
+      "name": "Junegunn Choi",
+      "bio": null,
+      "public_repos": 156,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "junegunn/fzf",
+          "exists": true,
+          "html_url": "https://github.com/junegunn/fzf",
+          "description": ":cherry_blossom: A command-line fuzzy finder",
+          "stars": 82720,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "junegunn/vim-plug",
+          "exists": true,
+          "html_url": "https://github.com/junegunn/vim-plug",
+          "description": ":hibiscus: Minimalist Vim Plugin Manager",
+          "stars": 35753,
+          "language": "Vim Script",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "junegunn/fzf",
+          "html_url": "https://github.com/junegunn/fzf",
+          "description": ":cherry_blossom: A command-line fuzzy finder",
+          "stars": 82720,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "junegunn/vim-plug",
+          "html_url": "https://github.com/junegunn/vim-plug",
+          "description": ":hibiscus: Minimalist Vim Plugin Manager",
+          "stars": 35753,
+          "language": "Vim Script",
+          "archived": false
+        },
+        {
+          "full_name": "junegunn/fzf.vim",
+          "html_url": "https://github.com/junegunn/fzf.vim",
+          "description": "fzf :heart: vim",
+          "stars": 10248,
+          "language": "Vim Script",
+          "archived": false
+        },
+        {
+          "full_name": "junegunn/goyo.vim",
+          "html_url": "https://github.com/junegunn/goyo.vim",
+          "description": ":tulip: Distraction-free writing in Vim",
+          "stars": 4689,
+          "language": "Vim Script",
+          "archived": false
+        },
+        {
+          "full_name": "junegunn/vim-easy-align",
+          "html_url": "https://github.com/junegunn/vim-easy-align",
+          "description": ":sunflower: A Vim alignment plugin",
+          "stars": 4241,
+          "language": "Vim Script",
+          "archived": false
+        },
+        {
+          "full_name": "junegunn/limelight.vim",
+          "html_url": "https://github.com/junegunn/limelight.vim",
+          "description": ":flashlight: All the world's indeed a stage and we are merely players",
+          "stars": 2453,
+          "language": "Vim Script",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "ajeetdsouza",
+      "html_url": "https://github.com/ajeetdsouza",
+      "name": "Ajeet D'Souza",
+      "bio": null,
+      "public_repos": 36,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "ajeetdsouza/zoxide",
+          "exists": true,
+          "html_url": "https://github.com/ajeetdsouza/zoxide",
+          "description": "A smarter cd command. Supports all major shells.",
+          "stars": 39027,
+          "language": "Rust",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "ajeetdsouza/zoxide",
+          "html_url": "https://github.com/ajeetdsouza/zoxide",
+          "description": "A smarter cd command. Supports all major shells.",
+          "stars": 39027,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "ajeetdsouza/clidle",
+          "html_url": "https://github.com/ajeetdsouza/clidle",
+          "description": "Play Wordle over SSH.",
+          "stars": 633,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "ajeetdsouza/loxcraft",
+          "html_url": "https://github.com/ajeetdsouza/loxcraft",
+          "description": "Language tooling for the Lox programming language.",
+          "stars": 365,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "ajeetdsouza/pifs",
+          "html_url": "https://github.com/ajeetdsouza/pifs",
+          "description": "The compile-time, data-free filesystem.",
+          "stars": 174,
+          "language": "C++",
+          "archived": false
+        },
+        {
+          "full_name": "ajeetdsouza/blog-wc-go",
+          "html_url": "https://github.com/ajeetdsouza/blog-wc-go",
+          "description": "Code from my blog post , Beating C with 70 Lines of Go.",
+          "stars": 25,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "ajeetdsouza/image-to-video",
+          "html_url": "https://github.com/ajeetdsouza/image-to-video",
+          "description": "A Python script to make a still image appear like a video recording",
+          "stars": 24,
+          "language": "Python",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "casey",
+      "html_url": "https://github.com/casey",
+      "name": "Casey Rodarmor",
+      "bio": "😻A N A R C H O ー ネ コ バ ス 😻",
+      "public_repos": 312,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "casey/just",
+          "exists": true,
+          "html_url": "https://github.com/casey/just",
+          "description": "🤖 Just a command runner",
+          "stars": 35541,
+          "language": "Rust",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "casey/just",
+          "html_url": "https://github.com/casey/just",
+          "description": "🤖 Just a command runner",
+          "stars": 35541,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "casey/intermodal",
+          "html_url": "https://github.com/casey/intermodal",
+          "description": "command-line utility for BitTorrent torrent file creation, verification, and more",
+          "stars": 659,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "casey/runestone",
+          "html_url": "https://github.com/casey/runestone",
+          "description": "Runes: terrible idea or idée terrible?",
+          "stars": 199,
+          "language": null,
+          "archived": true
+        },
+        {
+          "full_name": "casey/tree-sitter-just",
+          "html_url": "https://github.com/casey/tree-sitter-just",
+          "description": "Treesitter grammar for Justfiles (casey/just)",
+          "stars": 195,
+          "language": "Just",
+          "archived": false
+        },
+        {
+          "full_name": "casey/degenerate",
+          "html_url": "https://github.com/casey/degenerate",
+          "description": "A generative art computer",
+          "stars": 120,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "casey/dotfiles",
+          "html_url": "https://github.com/casey/dotfiles",
+          "description": "📜 Dotfiles & Scripts",
+          "stars": 97,
+          "language": "Rust",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "dandavison",
+      "html_url": "https://github.com/dandavison",
+      "name": "Dan Davison",
+      "bio": null,
+      "public_repos": 268,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "dandavison/delta",
+          "exists": true,
+          "html_url": "https://github.com/dandavison/delta",
+          "description": "A syntax-highlighting pager for git, diff, grep, rg --json, and blame output",
+          "stars": 31981,
+          "language": "Rust",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "dandavison/delta",
+          "html_url": "https://github.com/dandavison/delta",
+          "description": "A syntax-highlighting pager for git, diff, grep, rg --json, and blame output",
+          "stars": 31981,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "dandavison/magit-delta",
+          "html_url": "https://github.com/dandavison/magit-delta",
+          "description": "Use delta (https://github.com/dandavison/delta) when viewing diffs in Magit",
+          "stars": 350,
+          "language": "Emacs Lisp",
+          "archived": false
+        },
+        {
+          "full_name": "dandavison/xenops",
+          "html_url": "https://github.com/dandavison/xenops",
+          "description": "An editing environment for LaTeX mathematical documents",
+          "stars": 344,
+          "language": "Emacs Lisp",
+          "archived": false
+        },
+        {
+          "full_name": "dandavison/chronologer",
+          "html_url": "https://github.com/dandavison/chronologer",
+          "description": "Visualize performance benchmarks over git commit history",
+          "stars": 270,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "dandavison/trogon",
+          "html_url": "https://github.com/dandavison/trogon",
+          "description": "A bird vocalization ID quiz for the species present at any location in the world",
+          "stars": 86,
+          "language": "Vue",
+          "archived": false
+        },
+        {
+          "full_name": "dandavison/open-in-editor",
+          "html_url": "https://github.com/dandavison/open-in-editor",
+          "description": "Open a local file from a URL at a line number in an editor/IDE",
+          "stars": 76,
+          "language": "Python",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "Wilfred",
+      "html_url": "https://github.com/Wilfred",
+      "name": "Wilfred Hughes",
+      "bio": "PL enthusiast, Emacs addict, and an advocate for human factors.",
+      "public_repos": 487,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "Wilfred/difftastic",
+          "exists": true,
+          "html_url": "https://github.com/Wilfred/difftastic",
+          "description": "a structural diff that understands syntax 🟥🟩",
+          "stars": 25839,
+          "language": "Rust",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "Wilfred/difftastic",
+          "html_url": "https://github.com/Wilfred/difftastic",
+          "description": "a structural diff that understands syntax 🟥🟩",
+          "stars": 25839,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "Wilfred/helpful",
+          "html_url": "https://github.com/Wilfred/helpful",
+          "description": "A better Emacs *help* buffer",
+          "stars": 1300,
+          "language": "Emacs Lisp",
+          "archived": false
+        },
+        {
+          "full_name": "Wilfred/deadgrep",
+          "html_url": "https://github.com/Wilfred/deadgrep",
+          "description": "fast, friendly searching with ripgrep and Emacs",
+          "stars": 781,
+          "language": "Emacs Lisp",
+          "archived": false
+        },
+        {
+          "full_name": "Wilfred/bfc",
+          "html_url": "https://github.com/Wilfred/bfc",
+          "description": "An industrial-grade brainfuck compiler",
+          "stars": 540,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "Wilfred/ag.el",
+          "html_url": "https://github.com/Wilfred/ag.el",
+          "description": "An Emacs frontend to The Silver Searcher",
+          "stars": 529,
+          "language": "Emacs Lisp",
+          "archived": true
+        },
+        {
+          "full_name": "Wilfred/babyc",
+          "html_url": "https://github.com/Wilfred/babyc",
+          "description": "A toy C compiler",
+          "stars": 522,
+          "language": "C",
+          "archived": true
+        }
+      ]
+    },
+    {
+      "login": "koalaman",
+      "html_url": "https://github.com/koalaman",
+      "name": "Vidar Holen",
+      "bio": null,
+      "public_repos": 15,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "koalaman/shellcheck",
+          "exists": true,
+          "html_url": "https://github.com/koalaman/shellcheck",
+          "description": "ShellCheck, a static analysis tool for shell scripts",
+          "stars": 39960,
+          "language": "Haskell",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "koalaman/shellcheck",
+          "html_url": "https://github.com/koalaman/shellcheck",
+          "description": "ShellCheck, a static analysis tool for shell scripts",
+          "stars": 39960,
+          "language": "Haskell",
+          "archived": false
+        },
+        {
+          "full_name": "koalaman/linuxatemyram.com",
+          "html_url": "https://github.com/koalaman/linuxatemyram.com",
+          "description": "The contents on linuxatemyram.com",
+          "stars": 400,
+          "language": "CSS",
+          "archived": false
+        },
+        {
+          "full_name": "koalaman/shellcheck-precommit",
+          "html_url": "https://github.com/koalaman/shellcheck-precommit",
+          "description": "Pre-commit hook for ShellCheck",
+          "stars": 126,
+          "language": "Shell",
+          "archived": false
+        },
+        {
+          "full_name": "koalaman/shellcheck.net",
+          "html_url": "https://github.com/koalaman/shellcheck.net",
+          "description": "ShellCheck.net, shellcheck's website and online demo",
+          "stars": 84,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "koalaman/finitecurve.com",
+          "html_url": "https://github.com/koalaman/finitecurve.com",
+          "description": "The source code for FiniteCurve.com",
+          "stars": 56,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "koalaman/pack",
+          "html_url": "https://github.com/koalaman/pack",
+          "description": "Haskell implementation of gzip-compatible `pack` compression from the early 1980s",
+          "stars": 37,
+          "language": "Haskell",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "jesseduffield",
+      "html_url": "https://github.com/jesseduffield",
+      "name": "Jesse Duffield",
+      "bio": "Creator of lazygit, lazydocker, horcrux, and the OK? language",
+      "public_repos": 63,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "jesseduffield/lazygit",
+          "exists": true,
+          "html_url": "https://github.com/jesseduffield/lazygit",
+          "description": "simple terminal UI for git commands",
+          "stars": 81764,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "jesseduffield/lazydocker",
+          "exists": true,
+          "html_url": "https://github.com/jesseduffield/lazydocker",
+          "description": "The lazier way to manage everything docker",
+          "stars": 52655,
+          "language": "Go",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "jesseduffield/lazygit",
+          "html_url": "https://github.com/jesseduffield/lazygit",
+          "description": "simple terminal UI for git commands",
+          "stars": 81764,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "jesseduffield/lazydocker",
+          "html_url": "https://github.com/jesseduffield/lazydocker",
+          "description": "The lazier way to manage everything docker",
+          "stars": 52655,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "jesseduffield/horcrux",
+          "html_url": "https://github.com/jesseduffield/horcrux",
+          "description": "Split your file into encrypted fragments so that you don't need to remember a passcode",
+          "stars": 5097,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "jesseduffield/lazynpm",
+          "html_url": "https://github.com/jesseduffield/lazynpm",
+          "description": "terminal UI for npm",
+          "stars": 859,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "jesseduffield/OK",
+          "html_url": "https://github.com/jesseduffield/OK",
+          "description": "Welcome to the future of programming languages: OK?",
+          "stars": 624,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "jesseduffield/horcrux-ui",
+          "html_url": "https://github.com/jesseduffield/horcrux-ui",
+          "description": "GUI for horcrux",
+          "stars": 498,
+          "language": "Go",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "sxyazi",
+      "html_url": "https://github.com/sxyazi",
+      "name": "三咲雅 misaki masa",
+      "bio": "A goal is a dream with a deadline.",
+      "public_repos": 19,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "sxyazi/yazi",
+          "exists": true,
+          "html_url": "https://github.com/sxyazi/yazi",
+          "description": "💥 Blazing fast terminal file manager written in Rust, based on async I/O.",
+          "stars": 41791,
+          "language": "Rust",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "sxyazi/yazi",
+          "html_url": "https://github.com/sxyazi/yazi",
+          "description": "💥 Blazing fast terminal file manager written in Rust, based on async I/O.",
+          "stars": 41791,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "sxyazi/free-hls",
+          "html_url": "https://github.com/sxyazi/free-hls",
+          "description": "Upload video clips to a free image hosting service",
+          "stars": 612,
+          "language": "HTML",
+          "archived": false
+        },
+        {
+          "full_name": "sxyazi/dotfiles",
+          "html_url": "https://github.com/sxyazi/dotfiles",
+          "description": "Some of the dotfiles I can't do without.",
+          "stars": 213,
+          "language": "GLSL",
+          "archived": false
+        },
+        {
+          "full_name": "sxyazi/go-collection",
+          "html_url": "https://github.com/sxyazi/go-collection",
+          "description": "Useful collection functions for golang, based on generic types.",
+          "stars": 48,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "sxyazi/bendan",
+          "html_url": "https://github.com/sxyazi/bendan",
+          "description": "Bendan Bot",
+          "stars": 18,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "sxyazi/hugo-theme-lavias",
+          "html_url": "https://github.com/sxyazi/hugo-theme-lavias",
+          "description": "A clean and friendly Hugo theme.",
+          "stars": 16,
+          "language": "TypeScript",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "jarun",
+      "html_url": "https://github.com/jarun",
+      "name": "Arun Prakash Jana",
+      "bio": "Writing terminal utilities (often GUI-integrated) for efficient workflows.",
+      "public_repos": 25,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "jarun/nnn",
+          "exists": true,
+          "html_url": "https://github.com/jarun/nnn",
+          "description": "n³ The unorthodox terminal file manager",
+          "stars": 21847,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "jarun/buku",
+          "exists": true,
+          "html_url": "https://github.com/jarun/buku",
+          "description": ":bookmark: Personal mini-web in text",
+          "stars": 7186,
+          "language": "Python",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "jarun/nnn",
+          "html_url": "https://github.com/jarun/nnn",
+          "description": "n³ The unorthodox terminal file manager",
+          "stars": 21847,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "jarun/buku",
+          "html_url": "https://github.com/jarun/buku",
+          "description": ":bookmark: Personal mini-web in text",
+          "stars": 7186,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "jarun/googler",
+          "html_url": "https://github.com/jarun/googler",
+          "description": ":mag: Google from the terminal",
+          "stars": 6204,
+          "language": "Python",
+          "archived": true
+        },
+        {
+          "full_name": "jarun/ddgr",
+          "html_url": "https://github.com/jarun/ddgr",
+          "description": ":duck: DuckDuckGo from the terminal",
+          "stars": 3537,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "jarun/advcpmv",
+          "html_url": "https://github.com/jarun/advcpmv",
+          "description": "A patch for GNU Core Utilities cp, mv to add progress bars",
+          "stars": 1428,
+          "language": "Shell",
+          "archived": false
+        },
+        {
+          "full_name": "jarun/imgp",
+          "html_url": "https://github.com/jarun/imgp",
+          "description": ":camera_flash: Fast batch image resizer and rotator",
+          "stars": 1091,
+          "language": "Python",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "gokcehan",
+      "html_url": "https://github.com/gokcehan",
+      "name": "Gökçehan Kara",
+      "bio": null,
+      "public_repos": 15,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "gokcehan/lf",
+          "exists": true,
+          "html_url": "https://github.com/gokcehan/lf",
+          "description": "Terminal file manager",
+          "stars": 9486,
+          "language": "Go",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "gokcehan/lf",
+          "html_url": "https://github.com/gokcehan/lf",
+          "description": "Terminal file manager",
+          "stars": 9486,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "gokcehan/picon",
+          "html_url": "https://github.com/gokcehan/picon",
+          "description": "Run your code in python interactive console from the command line",
+          "stars": 84,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "gokcehan/cheat-mugs",
+          "html_url": "https://github.com/gokcehan/cheat-mugs",
+          "description": null,
+          "stars": 53,
+          "language": "TeX",
+          "archived": false
+        },
+        {
+          "full_name": "gokcehan/vim-opex",
+          "html_url": "https://github.com/gokcehan/vim-opex",
+          "description": "Vim operators to execute text objects",
+          "stars": 26,
+          "language": "Vim script",
+          "archived": false
+        },
+        {
+          "full_name": "gokcehan/mopen",
+          "html_url": "https://github.com/gokcehan/mopen",
+          "description": "File opener using mimetypes and mailcap",
+          "stars": 10,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "gokcehan/pns",
+          "html_url": "https://github.com/gokcehan/pns",
+          "description": "Parallel network simplex algorithm for the minimum cost flow problem",
+          "stars": 8,
+          "language": "C",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "antonmedv",
+      "html_url": "https://github.com/antonmedv",
+      "name": "Anton Medvedev",
+      "bio": "Ex-Google, Ex-Aviasales, creator of google/zx, @expr-lang, @deployphp, @maml-dev",
+      "public_repos": 65,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "antonmedv/fx",
+          "exists": true,
+          "html_url": "https://github.com/antonmedv/fx",
+          "description": "Terminal JSON viewer & processor",
+          "stars": 20610,
+          "language": "Go",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "antonmedv/fx",
+          "html_url": "https://github.com/antonmedv/fx",
+          "description": "Terminal JSON viewer & processor",
+          "stars": 20610,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "antonmedv/walk",
+          "html_url": "https://github.com/antonmedv/walk",
+          "description": "Terminal file manager",
+          "stars": 3638,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "antonmedv/textarea",
+          "html_url": "https://github.com/antonmedv/textarea",
+          "description": "A minimalist text editor that lives in URL",
+          "stars": 2523,
+          "language": "HTML",
+          "archived": false
+        },
+        {
+          "full_name": "antonmedv/codejar",
+          "html_url": "https://github.com/antonmedv/codejar",
+          "description": "An embeddable code editor for the browser 🍯",
+          "stars": 1973,
+          "language": "TypeScript",
+          "archived": false
+        },
+        {
+          "full_name": "antonmedv/monkberry",
+          "html_url": "https://github.com/antonmedv/monkberry",
+          "description": "Monkberry is a JavaScript library for building web user interfaces",
+          "stars": 1489,
+          "language": "JavaScript",
+          "archived": true
+        },
+        {
+          "full_name": "antonmedv/finder",
+          "html_url": "https://github.com/antonmedv/finder",
+          "description": "CSS Selector Generator 🗺",
+          "stars": 1486,
+          "language": "HTML",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "nvbn",
+      "html_url": "https://github.com/nvbn",
+      "name": "Vladimir Iakovlev",
+      "bio": "Software Developer",
+      "public_repos": 101,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "nvbn/thefuck",
+          "exists": true,
+          "html_url": "https://github.com/nvbn/thefuck",
+          "description": "Magnificent app which corrects your previous console command.",
+          "stars": 97749,
+          "language": "Python",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "nvbn/thefuck",
+          "html_url": "https://github.com/nvbn/thefuck",
+          "description": "Magnificent app which corrects your previous console command.",
+          "stars": 97749,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "nvbn/everpad",
+          "html_url": "https://github.com/nvbn/everpad",
+          "description": "Evernote client well integrated with linux desktop",
+          "stars": 1156,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "nvbn/django-bower",
+          "html_url": "https://github.com/nvbn/django-bower",
+          "description": "Easy way to use bower with your django project",
+          "stars": 515,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "nvbn/py-backwards",
+          "html_url": "https://github.com/nvbn/py-backwards",
+          "description": "Python to python compiler that allows you to use Python 3.6 features in older versions.",
+          "stars": 311,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "nvbn/import_from_github_com",
+          "html_url": "https://github.com/nvbn/import_from_github_com",
+          "description": "Python module finder/loader from github, like in golang",
+          "stars": 162,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "nvbn/python-yamusic",
+          "html_url": "https://github.com/nvbn/python-yamusic",
+          "description": "Python yandex music Library",
+          "stars": 142,
+          "language": "Python",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "FiloSottile",
+      "html_url": "https://github.com/FiloSottile",
+      "name": "Filippo Valsorda",
+      "bio": "Cryptogopher. @geomys founder. @recursecenter alum.\r\nRC F'13, F2'17.",
+      "public_repos": 130,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "FiloSottile/mkcert",
+          "exists": true,
+          "html_url": "https://github.com/FiloSottile/mkcert",
+          "description": "A simple zero-config tool to make locally trusted development certificates with any names you'd like.",
+          "stars": 59522,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "FiloSottile/age",
+          "exists": true,
+          "html_url": "https://github.com/FiloSottile/age",
+          "description": "A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.",
+          "stars": 23354,
+          "language": "Go",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "FiloSottile/mkcert",
+          "html_url": "https://github.com/FiloSottile/mkcert",
+          "description": "A simple zero-config tool to make locally trusted development certificates with any names you'd like.",
+          "stars": 59522,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "FiloSottile/age",
+          "html_url": "https://github.com/FiloSottile/age",
+          "description": "A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.",
+          "stars": 23354,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "FiloSottile/yubikey-agent",
+          "html_url": "https://github.com/FiloSottile/yubikey-agent",
+          "description": "yubikey-agent is a seamless ssh-agent for YubiKeys.",
+          "stars": 2904,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "FiloSottile/Heartbleed",
+          "html_url": "https://github.com/FiloSottile/Heartbleed",
+          "description": "A checker (site and tool) for CVE-2014-0160",
+          "stars": 2380,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "FiloSottile/whoami.filippo.io",
+          "html_url": "https://github.com/FiloSottile/whoami.filippo.io",
+          "description": "A ssh server that knows who you are. $ ssh whoami.filippo.io",
+          "stars": 2361,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "FiloSottile/passage",
+          "html_url": "https://github.com/FiloSottile/passage",
+          "description": "A fork of password-store (https://www.passwordstore.org) that uses age (https://age-encryption.org) as backend.",
+          "stars": 1187,
+          "language": "Shell",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "fatedier",
+      "html_url": "https://github.com/fatedier",
+      "name": null,
+      "bio": "To be yourself.",
+      "public_repos": 69,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "fatedier/frp",
+          "exists": true,
+          "html_url": "https://github.com/fatedier/frp",
+          "description": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.",
+          "stars": 109091,
+          "language": "Go",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "fatedier/frp",
+          "html_url": "https://github.com/fatedier/frp",
+          "description": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.",
+          "stars": 109091,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "fatedier/fft",
+          "html_url": "https://github.com/fatedier/fft",
+          "description": "A fast distributed file transfer.",
+          "stars": 227,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "fatedier/golib",
+          "html_url": "https://github.com/fatedier/golib",
+          "description": "Golang packages used in frp and fft.",
+          "stars": 69,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "fatedier/freebot",
+          "html_url": "https://github.com/fatedier/freebot",
+          "description": "A simple github workflow bot.",
+          "stars": 58,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "fatedier/studies",
+          "html_url": "https://github.com/fatedier/studies",
+          "description": "Studies of some open source projects.",
+          "stars": 49,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "fatedier/dot_file",
+          "html_url": "https://github.com/fatedier/dot_file",
+          "description": "The dot files for Linux.",
+          "stars": 6,
+          "language": "Shell",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "ginuerzh",
+      "html_url": "https://github.com/ginuerzh",
+      "name": "ginuerzh",
+      "bio": "To be conscious that you are ignorant is a great step to knowledge.",
+      "public_repos": 83,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "ginuerzh/gost",
+          "exists": true,
+          "html_url": "https://github.com/ginuerzh/gost",
+          "description": "GO Simple Tunnel - a simple tunnel written in golang",
+          "stars": 18195,
+          "language": "Go",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "ginuerzh/gost",
+          "html_url": "https://github.com/ginuerzh/gost",
+          "description": "GO Simple Tunnel - a simple tunnel written in golang",
+          "stars": 18195,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "ginuerzh/poker",
+          "html_url": "https://github.com/ginuerzh/poker",
+          "description": "Texas Hold’em poker game h5+golang",
+          "stars": 66,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "ginuerzh/weedo",
+          "html_url": "https://github.com/ginuerzh/weedo",
+          "description": "a SeaWeedFS client written in golang",
+          "stars": 50,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "ginuerzh/gosocks5",
+          "html_url": "https://github.com/ginuerzh/gosocks5",
+          "description": "golang and SOCKS5",
+          "stars": 37,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "ginuerzh/gofm",
+          "html_url": "https://github.com/ginuerzh/gofm",
+          "description": "A douban.fm client written in Go",
+          "stars": 36,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "ginuerzh/uqq",
+          "html_url": "https://github.com/ginuerzh/uqq",
+          "description": "QQ for ubuntu phone, using webqq 3.0 protocol",
+          "stars": 28,
+          "language": "C++",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "chubin",
+      "html_url": "https://github.com/chubin",
+      "name": "Igor Chubin",
+      "bio": null,
+      "public_repos": 26,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "chubin/wttr.in",
+          "exists": true,
+          "html_url": "https://github.com/chubin/wttr.in",
+          "description": ":partly_sunny: The right way to check the weather",
+          "stars": 30445,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "chubin/cheat.sh",
+          "exists": true,
+          "html_url": "https://github.com/chubin/cheat.sh",
+          "description": "the only cheat sheet you need",
+          "stars": 41706,
+          "language": "Python",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "chubin/cheat.sh",
+          "html_url": "https://github.com/chubin/cheat.sh",
+          "description": "the only cheat sheet you need",
+          "stars": 41706,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "chubin/wttr.in",
+          "html_url": "https://github.com/chubin/wttr.in",
+          "description": ":partly_sunny: The right way to check the weather",
+          "stars": 30445,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "chubin/awesome-console-services",
+          "html_url": "https://github.com/chubin/awesome-console-services",
+          "description": "A curated list of awesome console services (reachable via HTTP, HTTPS and other network protocols)",
+          "stars": 6515,
+          "language": null,
+          "archived": false
+        },
+        {
+          "full_name": "chubin/pyphoon",
+          "html_url": "https://github.com/chubin/pyphoon",
+          "description": ":waning_gibbous_moon:  ASCII Art Phase of the Moon (Python version)",
+          "stars": 1511,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "chubin/rate.sx",
+          "html_url": "https://github.com/chubin/rate.sx",
+          "description": ":moneybag: curl cryptocurrencies exchange rates",
+          "stars": 1092,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "chubin/cheat.sheets",
+          "html_url": "https://github.com/chubin/cheat.sheets",
+          "description": "cheat.sh cheat sheets repository ",
+          "stars": 671,
+          "language": "Shell",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "sindresorhus",
+      "html_url": "https://github.com/sindresorhus",
+      "name": "Sindre Sorhus",
+      "bio": "Full-Time Open-Sourcerer. Focused on Swift & JavaScript. Makes macOS apps, CLI tools, npm packages.",
+      "public_repos": 1140,
+      "type": "User",
+      "named_repos": [],
+      "top_repos": [
+        {
+          "full_name": "sindresorhus/awesome",
+          "html_url": "https://github.com/sindresorhus/awesome",
+          "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
+          "stars": 501184,
+          "language": null,
+          "archived": false
+        },
+        {
+          "full_name": "sindresorhus/awesome-nodejs",
+          "html_url": "https://github.com/sindresorhus/awesome-nodejs",
+          "description": ":zap: Delightful Node.js packages and resources [BECAUSE OF TOO MUCH SPAM AND LOW-QUALITY SUBMISSIONS, SUBMISSIONS ARE PAUSED UNTIL JULY]",
+          "stars": 66653,
+          "language": null,
+          "archived": false
+        },
+        {
+          "full_name": "sindresorhus/awesome-electron",
+          "html_url": "https://github.com/sindresorhus/awesome-electron",
+          "description": "Useful resources for creating apps with Electron [SUBMISSIONS ARE TEMPORARILY PAUSED BECAUSE I'M TIRED OF REVIEWING LOW-QUALITY STUFF]",
+          "stars": 27269,
+          "language": null,
+          "archived": false
+        },
+        {
+          "full_name": "sindresorhus/quick-look-plugins",
+          "html_url": "https://github.com/sindresorhus/quick-look-plugins",
+          "description": "List of useful Quick Look plugins for developers",
+          "stars": 18751,
+          "language": null,
+          "archived": false
+        },
+        {
+          "full_name": "sindresorhus/type-fest",
+          "html_url": "https://github.com/sindresorhus/type-fest",
+          "description": "A collection of essential TypeScript types",
+          "stars": 17387,
+          "language": "TypeScript",
+          "archived": false
+        },
+        {
+          "full_name": "sindresorhus/ky",
+          "html_url": "https://github.com/sindresorhus/ky",
+          "description": "🌳 Tiny & elegant JavaScript HTTP client based on the Fetch API",
+          "stars": 17050,
+          "language": "TypeScript",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "jessfraz",
+      "html_url": "https://github.com/jessfraz",
+      "name": "Jess Frazelle",
+      "bio": "A superhero with supervillain tendencies.",
+      "public_repos": 153,
+      "type": "User",
+      "named_repos": [],
+      "top_repos": [
+        {
+          "full_name": "jessfraz/dockerfiles",
+          "html_url": "https://github.com/jessfraz/dockerfiles",
+          "description": "Various Dockerfiles I use on the desktop and on servers.",
+          "stars": 13937,
+          "language": "Dockerfile",
+          "archived": false
+        },
+        {
+          "full_name": "jessfraz/dotfiles",
+          "html_url": "https://github.com/jessfraz/dotfiles",
+          "description": "My dotfiles. Buyer beware ;)",
+          "stars": 3562,
+          "language": "Shell",
+          "archived": false
+        },
+        {
+          "full_name": "jessfraz/.vim",
+          "html_url": "https://github.com/jessfraz/.vim",
+          "description": "My .vim dotfiles and configurations.",
+          "stars": 645,
+          "language": "Lua",
+          "archived": false
+        },
+        {
+          "full_name": "jessfraz/gmailfilters",
+          "html_url": "https://github.com/jessfraz/gmailfilters",
+          "description": " A tool to sync Gmail filters from a config file to your account.",
+          "stars": 559,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "jessfraz/dockfmt",
+          "html_url": "https://github.com/jessfraz/dockfmt",
+          "description": "Dockerfile format and parser. Like `gofmt` but for Dockerfiles.",
+          "stars": 441,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "jessfraz/branch-cleanup-action",
+          "html_url": "https://github.com/jessfraz/branch-cleanup-action",
+          "description": "A GitHub action to automatically delete the branch after a pull request has been merged. ",
+          "stars": 422,
+          "language": "Shell",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "kelseyhightower",
+      "html_url": "https://github.com/kelseyhightower",
+      "name": "Kelsey Hightower",
+      "bio": null,
+      "public_repos": 196,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "kelseyhightower/nocode",
+          "exists": true,
+          "html_url": "https://github.com/kelseyhightower/nocode",
+          "description": "The best way to write secure and reliable applications. Write nothing; deploy nowhere.",
+          "stars": 65676,
+          "language": "Dockerfile",
+          "archived": false
+        },
+        {
+          "full_name": "kelseyhightower/kubernetes-the-hard-way",
+          "exists": true,
+          "html_url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
+          "description": "Bootstrap Kubernetes the hard way. No scripts.",
+          "stars": 49583,
+          "language": null,
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "kelseyhightower/nocode",
+          "html_url": "https://github.com/kelseyhightower/nocode",
+          "description": "The best way to write secure and reliable applications. Write nothing; deploy nowhere.",
+          "stars": 65676,
+          "language": "Dockerfile",
+          "archived": false
+        },
+        {
+          "full_name": "kelseyhightower/kubernetes-the-hard-way",
+          "html_url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
+          "description": "Bootstrap Kubernetes the hard way. No scripts.",
+          "stars": 49583,
+          "language": null,
+          "archived": false
+        },
+        {
+          "full_name": "kelseyhightower/confd",
+          "html_url": "https://github.com/kelseyhightower/confd",
+          "description": "Manage local application configuration files using templates and data from etcd or consul",
+          "stars": 8429,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "kelseyhightower/envconfig",
+          "html_url": "https://github.com/kelseyhightower/envconfig",
+          "description": "Golang library for managing configuration data from environment variables",
+          "stars": 5468,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "kelseyhightower/kube-cert-manager",
+          "html_url": "https://github.com/kelseyhightower/kube-cert-manager",
+          "description": "Manage Lets Encrypt certificates for a Kubernetes cluster.",
+          "stars": 1111,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "kelseyhightower/intro-to-kubernetes-workshop",
+          "html_url": "https://github.com/kelseyhightower/intro-to-kubernetes-workshop",
+          "description": "Intro to Kubernetes Workshop",
+          "stars": 1105,
+          "language": null,
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "simonw",
+      "html_url": "https://github.com/simonw",
+      "name": "Simon Willison",
+      "bio": null,
+      "public_repos": 984,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "simonw/datasette",
+          "exists": true,
+          "html_url": "https://github.com/simonw/datasette",
+          "description": "An open source multi-tool for exploring and publishing data",
+          "stars": 11414,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "simonw/llm",
+          "exists": true,
+          "html_url": "https://github.com/simonw/llm",
+          "description": "Access large language models from the command-line",
+          "stars": 12423,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "simonw/sqlite-utils",
+          "exists": true,
+          "html_url": "https://github.com/simonw/sqlite-utils",
+          "description": "Python CLI utility and library for manipulating SQLite databases",
+          "stars": 2162,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "simonw/shot-scraper",
+          "exists": true,
+          "html_url": "https://github.com/simonw/shot-scraper",
+          "description": "A CLI utility for taking screenshots of websites, recording video demos and scraping sites using JavaScript",
+          "stars": 2556,
+          "language": "Python",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "simonw/llm",
+          "html_url": "https://github.com/simonw/llm",
+          "description": "Access large language models from the command-line",
+          "stars": 12423,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "simonw/datasette",
+          "html_url": "https://github.com/simonw/datasette",
+          "description": "An open source multi-tool for exploring and publishing data",
+          "stars": 11414,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "simonw/files-to-prompt",
+          "html_url": "https://github.com/simonw/files-to-prompt",
+          "description": "Concatenate a directory full of files into a single prompt for use with LLMs",
+          "stars": 2779,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "simonw/shot-scraper",
+          "html_url": "https://github.com/simonw/shot-scraper",
+          "description": "A CLI utility for taking screenshots of websites, recording video demos and scraping sites using JavaScript",
+          "stars": 2556,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "simonw/sqlite-utils",
+          "html_url": "https://github.com/simonw/sqlite-utils",
+          "description": "Python CLI utility and library for manipulating SQLite databases",
+          "stars": 2162,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "simonw/tools",
+          "html_url": "https://github.com/simonw/tools",
+          "description": "Assorted useful tools, almost entirely generated using LLMs",
+          "stars": 1869,
+          "language": "HTML",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "karpathy",
+      "html_url": "https://github.com/karpathy",
+      "name": "Andrej",
+      "bio": "I like to train Deep Neural Nets on large datasets.",
+      "public_repos": 63,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "karpathy/nanoGPT",
+          "exists": true,
+          "html_url": "https://github.com/karpathy/nanoGPT",
+          "description": "The simplest, fastest repository for training/finetuning medium-sized GPTs.",
+          "stars": 62629,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "karpathy/llm.c",
+          "exists": true,
+          "html_url": "https://github.com/karpathy/llm.c",
+          "description": "LLM training in simple, raw C/CUDA",
+          "stars": 30890,
+          "language": "Cuda",
+          "archived": false
+        },
+        {
+          "full_name": "karpathy/micrograd",
+          "exists": true,
+          "html_url": "https://github.com/karpathy/micrograd",
+          "description": "A tiny scalar-valued autograd engine and a neural net library on top of it with PyTorch-like API",
+          "stars": 17316,
+          "language": "Jupyter Notebook",
+          "archived": false
+        },
+        {
+          "full_name": "karpathy/llama2.c",
+          "exists": true,
+          "html_url": "https://github.com/karpathy/llama2.c",
+          "description": "Inference Llama 2 in one file of pure C",
+          "stars": 20035,
+          "language": "C",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "karpathy/autoresearch",
+          "html_url": "https://github.com/karpathy/autoresearch",
+          "description": "AI agents running research on single-GPU nanochat training automatically",
+          "stars": 94918,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "karpathy/nanoGPT",
+          "html_url": "https://github.com/karpathy/nanoGPT",
+          "description": "The simplest, fastest repository for training/finetuning medium-sized GPTs.",
+          "stars": 62629,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "karpathy/nanochat",
+          "html_url": "https://github.com/karpathy/nanochat",
+          "description": "The best ChatGPT that $100 can buy.",
+          "stars": 57642,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "karpathy/LLM101n",
+          "html_url": "https://github.com/karpathy/LLM101n",
+          "description": "LLM101n: Let's build a Storyteller",
+          "stars": 37500,
+          "language": null,
+          "archived": true
+        },
+        {
+          "full_name": "karpathy/llm.c",
+          "html_url": "https://github.com/karpathy/llm.c",
+          "description": "LLM training in simple, raw C/CUDA",
+          "stars": 30890,
+          "language": "Cuda",
+          "archived": false
+        },
+        {
+          "full_name": "karpathy/minGPT",
+          "html_url": "https://github.com/karpathy/minGPT",
+          "description": "A minimal PyTorch re-implementation of the OpenAI GPT (Generative Pretrained Transformer) training",
+          "stars": 24842,
+          "language": "Python",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "ggerganov",
+      "html_url": "https://github.com/ggerganov",
+      "name": "Georgi Gerganov",
+      "bio": "I like big .vimrc and I cannot lie",
+      "public_repos": 71,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "ggml-org/llama.cpp",
+          "exists": true,
+          "html_url": "https://github.com/ggml-org/llama.cpp",
+          "description": "LLM inference in C/C++",
+          "stars": 126273,
+          "language": "C++",
+          "archived": false
+        },
+        {
+          "full_name": "ggml-org/whisper.cpp",
+          "exists": true,
+          "html_url": "https://github.com/ggml-org/whisper.cpp",
+          "description": "Port of OpenAI's Whisper model in C/C++",
+          "stars": 53290,
+          "language": "C++",
+          "archived": false
+        },
+        {
+          "full_name": "ggml-org/ggml",
+          "exists": true,
+          "html_url": "https://github.com/ggml-org/ggml",
+          "description": "Tensor library for machine learning",
+          "stars": 15258,
+          "language": "C++",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "ggerganov/kbd-audio",
+          "html_url": "https://github.com/ggerganov/kbd-audio",
+          "description": "🎤⌨️ Acoustic keyboard eavesdropping",
+          "stars": 9025,
+          "language": "C++",
+          "archived": false
+        },
+        {
+          "full_name": "ggerganov/ggwave",
+          "html_url": "https://github.com/ggerganov/ggwave",
+          "description": "Tiny data-over-sound library",
+          "stars": 7845,
+          "language": "C++",
+          "archived": false
+        },
+        {
+          "full_name": "ggerganov/imtui",
+          "html_url": "https://github.com/ggerganov/imtui",
+          "description": "ImTui: Immediate Mode Text-based User Interface C++ Library",
+          "stars": 3616,
+          "language": "C++",
+          "archived": false
+        },
+        {
+          "full_name": "ggerganov/wave-share",
+          "html_url": "https://github.com/ggerganov/wave-share",
+          "description": "Serverless, peer-to-peer, local file sharing through sound",
+          "stars": 2312,
+          "language": "C++",
+          "archived": false
+        },
+        {
+          "full_name": "ggerganov/dot-to-ascii",
+          "html_url": "https://github.com/ggerganov/dot-to-ascii",
+          "description": "Graphviz to ASCII converter using Graph::Easy",
+          "stars": 509,
+          "language": "HTML",
+          "archived": false
+        },
+        {
+          "full_name": "ggerganov/imgui-ws",
+          "html_url": "https://github.com/ggerganov/imgui-ws",
+          "description": "Dear ImGui over WebSockets",
+          "stars": 498,
+          "language": "C++",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "lllyasviel",
+      "html_url": "https://github.com/lllyasviel",
+      "name": null,
+      "bio": "Lvmin Zhang (Lyumin Zhang)\r\n\r\n",
+      "public_repos": 38,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "lllyasviel/ControlNet",
+          "exists": true,
+          "html_url": "https://github.com/lllyasviel/ControlNet",
+          "description": "Let us control diffusion models!",
+          "stars": 34102,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "lllyasviel/Fooocus",
+          "exists": true,
+          "html_url": "https://github.com/lllyasviel/Fooocus",
+          "description": "Focus on prompting and generating",
+          "stars": 52611,
+          "language": "Python",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "lllyasviel/Fooocus",
+          "html_url": "https://github.com/lllyasviel/Fooocus",
+          "description": "Focus on prompting and generating",
+          "stars": 52611,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "lllyasviel/ControlNet",
+          "html_url": "https://github.com/lllyasviel/ControlNet",
+          "description": "Let us control diffusion models!",
+          "stars": 34102,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "lllyasviel/style2paints",
+          "html_url": "https://github.com/lllyasviel/style2paints",
+          "description": "sketch + style = paints :art: (TOG2018/SIGGRAPH2018ASIA)",
+          "stars": 18178,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "lllyasviel/FramePack",
+          "html_url": "https://github.com/lllyasviel/FramePack",
+          "description": "Lets make video diffusion practical!",
+          "stars": 17232,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "lllyasviel/stable-diffusion-webui-forge",
+          "html_url": "https://github.com/lllyasviel/stable-diffusion-webui-forge",
+          "description": null,
+          "stars": 12981,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "lllyasviel/IC-Light",
+          "html_url": "https://github.com/lllyasviel/IC-Light",
+          "description": "More relighting!",
+          "stars": 8513,
+          "language": "Python",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "nikitabobko",
+      "html_url": "https://github.com/nikitabobko",
+      "name": "Nikita Bobko",
+      "bio": "Amateur yak shaver. Creator of AeroSpace - tiling window manager for macOS. ex-Kotlin, ex-JetBrains",
+      "public_repos": 64,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "nikitabobko/AeroSpace",
+          "exists": true,
+          "html_url": "https://github.com/nikitabobko/AeroSpace",
+          "description": "AeroSpace is an i3-like tiling window manager for macOS",
+          "stars": 22742,
+          "language": "Swift",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "nikitabobko/AeroSpace",
+          "html_url": "https://github.com/nikitabobko/AeroSpace",
+          "description": "AeroSpace is an i3-like tiling window manager for macOS",
+          "stars": 22742,
+          "language": "Swift",
+          "archived": false
+        },
+        {
+          "full_name": "nikitabobko/dotfiles",
+          "html_url": "https://github.com/nikitabobko/dotfiles",
+          "description": "My Linux & macOS .dotfiles",
+          "stars": 50,
+          "language": "Shell",
+          "archived": false
+        },
+        {
+          "full_name": "nikitabobko/gcal-notifier-kotlin-gtk",
+          "html_url": "https://github.com/nikitabobko/gcal-notifier-kotlin-gtk",
+          "description": "Simple Google Calendar notifier for Linux written in Kotlin using GTK lib",
+          "stars": 18,
+          "language": "Kotlin",
+          "archived": true
+        },
+        {
+          "full_name": "nikitabobko/brew-install-path",
+          "html_url": "https://github.com/nikitabobko/brew-install-path",
+          "description": "Simple script that allows installing homebrew formulas/casks from paths",
+          "stars": 13,
+          "language": "Ruby",
+          "archived": false
+        },
+        {
+          "full_name": "nikitabobko/homebrew-tap",
+          "html_url": "https://github.com/nikitabobko/homebrew-tap",
+          "description": "Homebrew tap repo for my software",
+          "stars": 10,
+          "language": "Ruby",
+          "archived": false
+        },
+        {
+          "full_name": "nikitabobko/bobko-intellij-keymap",
+          "html_url": "https://github.com/nikitabobko/bobko-intellij-keymap",
+          "description": "My IntelliJ keymaps extracted into the plugin",
+          "stars": 3,
+          "language": "Shell",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "koekeishiya",
+      "html_url": "https://github.com/koekeishiya",
+      "name": null,
+      "bio": null,
+      "public_repos": 0,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "asmvik/yabai",
+          "exists": true,
+          "html_url": "https://github.com/asmvik/yabai",
+          "description": "A tiling window manager for macOS based on binary space partitioning",
+          "stars": 29520,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "asmvik/skhd",
+          "exists": true,
+          "html_url": "https://github.com/asmvik/skhd",
+          "description": " Simple hotkey daemon for macOS",
+          "stars": 8083,
+          "language": "C",
+          "archived": false
+        }
+      ],
+      "top_repos": []
+    },
+    {
+      "login": "FelixKratz",
+      "html_url": "https://github.com/FelixKratz",
+      "name": "Felix Kratz",
+      "bio": null,
+      "public_repos": 18,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "FelixKratz/SketchyBar",
+          "exists": true,
+          "html_url": "https://github.com/FelixKratz/SketchyBar",
+          "description": "A highly customizable macOS status bar replacement",
+          "stars": 12293,
+          "language": "C",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "FelixKratz/SketchyBar",
+          "html_url": "https://github.com/FelixKratz/SketchyBar",
+          "description": "A highly customizable macOS status bar replacement",
+          "stars": 12293,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "FelixKratz/JankyBorders",
+          "html_url": "https://github.com/FelixKratz/JankyBorders",
+          "description": "A lightweight window border system for macOS",
+          "stars": 3766,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "FelixKratz/dotfiles",
+          "html_url": "https://github.com/FelixKratz/dotfiles",
+          "description": "My personal macOS configuration",
+          "stars": 2026,
+          "language": "Lua",
+          "archived": false
+        },
+        {
+          "full_name": "FelixKratz/SketchyVim",
+          "html_url": "https://github.com/FelixKratz/SketchyVim",
+          "description": "Adds all vim moves and modes to macOS text fields",
+          "stars": 1021,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "FelixKratz/SbarLua",
+          "html_url": "https://github.com/FelixKratz/SbarLua",
+          "description": "A Lua API for SketchyBar",
+          "stars": 338,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "FelixKratz/JupyterApp-mac",
+          "html_url": "https://github.com/FelixKratz/JupyterApp-mac",
+          "description": "Standalone macOS Jupyter App",
+          "stars": 39,
+          "language": "Swift",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "romkatv",
+      "html_url": "https://github.com/romkatv",
+      "name": "Roman Perepelitsa",
+      "bio": null,
+      "public_repos": 42,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "romkatv/powerlevel10k",
+          "exists": true,
+          "html_url": "https://github.com/romkatv/powerlevel10k",
+          "description": "A Zsh theme",
+          "stars": 54991,
+          "language": "Shell",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "romkatv/powerlevel10k",
+          "html_url": "https://github.com/romkatv/powerlevel10k",
+          "description": "A Zsh theme",
+          "stars": 54991,
+          "language": "Shell",
+          "archived": false
+        },
+        {
+          "full_name": "romkatv/zsh4humans",
+          "html_url": "https://github.com/romkatv/zsh4humans",
+          "description": "A turnkey configuration for Zsh",
+          "stars": 2283,
+          "language": null,
+          "archived": false
+        },
+        {
+          "full_name": "romkatv/gitstatus",
+          "html_url": "https://github.com/romkatv/gitstatus",
+          "description": "Git status for Bash and Zsh prompt",
+          "stars": 1831,
+          "language": "C++",
+          "archived": false
+        },
+        {
+          "full_name": "romkatv/zsh-bench",
+          "html_url": "https://github.com/romkatv/zsh-bench",
+          "description": "Benchmark for interactive Zsh",
+          "stars": 1031,
+          "language": "Shell",
+          "archived": false
+        },
+        {
+          "full_name": "romkatv/zsh-defer",
+          "html_url": "https://github.com/romkatv/zsh-defer",
+          "description": "Deferred execution of Zsh commands",
+          "stars": 511,
+          "language": "Shell",
+          "archived": false
+        },
+        {
+          "full_name": "romkatv/zsh-bin",
+          "html_url": "https://github.com/romkatv/zsh-bin",
+          "description": "Statically-linked, hermetic, relocatable Zsh",
+          "stars": 401,
+          "language": "Shell",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "zyedidia",
+      "html_url": "https://github.com/zyedidia",
+      "name": "Zachary Yedidia",
+      "bio": null,
+      "public_repos": 256,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "micro-editor/micro",
+          "exists": true,
+          "html_url": "https://github.com/micro-editor/micro",
+          "description": "A modern and intuitive terminal-based text editor",
+          "stars": 29470,
+          "language": "Go",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "zyedidia/eget",
+          "html_url": "https://github.com/zyedidia/eget",
+          "description": "Easily install prebuilt binaries from GitHub.",
+          "stars": 2063,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "zyedidia/generic",
+          "html_url": "https://github.com/zyedidia/generic",
+          "description": "A collection of generic data structures written in Go.",
+          "stars": 1348,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "zyedidia/Literate",
+          "html_url": "https://github.com/zyedidia/Literate",
+          "description": "A literate programming tool for any language",
+          "stars": 916,
+          "language": "D",
+          "archived": false
+        },
+        {
+          "full_name": "zyedidia/knit",
+          "html_url": "https://github.com/zyedidia/knit",
+          "description": "A simple and flexible build tool using Lua, similar to make/mk.",
+          "stars": 194,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "zyedidia/multiplix",
+          "html_url": "https://github.com/zyedidia/multiplix",
+          "description": "An operating system kernel for RISC-V and AArch64 SBCs",
+          "stars": 145,
+          "language": "D",
+          "archived": false
+        },
+        {
+          "full_name": "zyedidia/gpeg",
+          "html_url": "https://github.com/zyedidia/gpeg",
+          "description": "A PEG parsing machine with support for incremental parsing.",
+          "stars": 98,
+          "language": "Go",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "dylanaraps",
+      "html_url": "https://github.com/dylanaraps",
+      "name": "dylan",
+      "bio": "natural farmer,\r\nnatural winemaker,\r\ncreator of @kisslinux  and more",
+      "public_repos": 75,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "dylanaraps/neofetch",
+          "exists": true,
+          "html_url": "https://github.com/dylanaraps/neofetch",
+          "description": "🖼️  A command-line system information tool written in bash 3.2+",
+          "stars": 23698,
+          "language": "Shell",
+          "archived": true
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "dylanaraps/pure-bash-bible",
+          "html_url": "https://github.com/dylanaraps/pure-bash-bible",
+          "description": "📖 A collection of pure bash alternatives to external processes.",
+          "stars": 41723,
+          "language": "Shell",
+          "archived": true
+        },
+        {
+          "full_name": "dylanaraps/neofetch",
+          "html_url": "https://github.com/dylanaraps/neofetch",
+          "description": "🖼️  A command-line system information tool written in bash 3.2+",
+          "stars": 23698,
+          "language": "Shell",
+          "archived": true
+        },
+        {
+          "full_name": "dylanaraps/pywal",
+          "html_url": "https://github.com/dylanaraps/pywal",
+          "description": "🎨 Generate and change color-schemes on the fly.",
+          "stars": 9074,
+          "language": "Python",
+          "archived": true
+        },
+        {
+          "full_name": "dylanaraps/pure-sh-bible",
+          "html_url": "https://github.com/dylanaraps/pure-sh-bible",
+          "description": "📖 A collection of pure POSIX sh alternatives to external processes.",
+          "stars": 7734,
+          "language": "Shell",
+          "archived": true
+        },
+        {
+          "full_name": "dylanaraps/fff",
+          "html_url": "https://github.com/dylanaraps/fff",
+          "description": "📁 A simple file manager written in bash.",
+          "stars": 4188,
+          "language": "Shell",
+          "archived": true
+        },
+        {
+          "full_name": "dylanaraps/pfetch",
+          "html_url": "https://github.com/dylanaraps/pfetch",
+          "description": "🐧 A pretty system information tool written in POSIX sh.",
+          "stars": 2159,
+          "language": "Shell",
+          "archived": true
+        }
+      ]
+    },
+    {
+      "login": "tomnomnom",
+      "html_url": "https://github.com/tomnomnom",
+      "name": "TomNomNom",
+      "bio": "Open-source tool maker, trainer, talker, fixer, eater, not really a sheep. He/him.",
+      "public_repos": 105,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "tomnomnom/gron",
+          "exists": true,
+          "html_url": "https://github.com/tomnomnom/gron",
+          "description": "Make JSON greppable!",
+          "stars": 14499,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "tomnomnom/httprobe",
+          "exists": true,
+          "html_url": "https://github.com/tomnomnom/httprobe",
+          "description": "Take a list of domains and probe for working HTTP and HTTPS servers",
+          "stars": 3119,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "tomnomnom/waybackurls",
+          "exists": true,
+          "html_url": "https://github.com/tomnomnom/waybackurls",
+          "description": "Fetch all the URLs that the Wayback Machine knows about for a domain",
+          "stars": 4547,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "tomnomnom/gf",
+          "exists": true,
+          "html_url": "https://github.com/tomnomnom/gf",
+          "description": "A wrapper around grep, to help you grep for things",
+          "stars": 2138,
+          "language": "Go",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "tomnomnom/gron",
+          "html_url": "https://github.com/tomnomnom/gron",
+          "description": "Make JSON greppable!",
+          "stars": 14499,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "tomnomnom/waybackurls",
+          "html_url": "https://github.com/tomnomnom/waybackurls",
+          "description": "Fetch all the URLs that the Wayback Machine knows about for a domain",
+          "stars": 4547,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "tomnomnom/assetfinder",
+          "html_url": "https://github.com/tomnomnom/assetfinder",
+          "description": "Find domains and subdomains related to a given domain",
+          "stars": 3667,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "tomnomnom/httprobe",
+          "html_url": "https://github.com/tomnomnom/httprobe",
+          "description": "Take a list of domains and probe for working HTTP and HTTPS servers",
+          "stars": 3119,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "tomnomnom/hacks",
+          "html_url": "https://github.com/tomnomnom/hacks",
+          "description": "A collection of hacks and one-off scripts",
+          "stars": 2514,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "tomnomnom/gf",
+          "html_url": "https://github.com/tomnomnom/gf",
+          "description": "A wrapper around grep, to help you grep for things",
+          "stars": 2138,
+          "language": "Go",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "antfu",
+      "html_url": "https://github.com/antfu",
+      "name": "Anthony Fu",
+      "bio": "A ship in harbor is safe, but that is not what ships are built for.",
+      "public_repos": 399,
+      "type": "User",
+      "named_repos": [],
+      "top_repos": [
+        {
+          "full_name": "antfu/eslint-config",
+          "html_url": "https://github.com/antfu/eslint-config",
+          "description": "Anthony's ESLint config preset",
+          "stars": 6253,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "antfu/skills",
+          "html_url": "https://github.com/antfu/skills",
+          "description": "Anthony Fu's curated collection of agent skills.",
+          "stars": 5816,
+          "language": "TypeScript",
+          "archived": false
+        },
+        {
+          "full_name": "antfu/vscode-file-nesting-config",
+          "html_url": "https://github.com/antfu/vscode-file-nesting-config",
+          "description": "Config of File Nesting for VS Code",
+          "stars": 3662,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "antfu/node-modules-inspector",
+          "html_url": "https://github.com/antfu/node-modules-inspector",
+          "description": "Interactive UI for local node modules inspection",
+          "stars": 2933,
+          "language": "TypeScript",
+          "archived": false
+        },
+        {
+          "full_name": "antfu/vscode-settings",
+          "html_url": "https://github.com/antfu/vscode-settings",
+          "description": "My VS Code settings and extensions ",
+          "stars": 2264,
+          "language": null,
+          "archived": false
+        },
+        {
+          "full_name": "antfu/vue-starport",
+          "html_url": "https://github.com/antfu/vue-starport",
+          "description": "🛰 Shared component across routes with animations",
+          "stars": 1955,
+          "language": "TypeScript",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "521xueweihan",
+      "html_url": "https://github.com/521xueweihan",
+      "name": "削微寒",
+      "bio": "时间会让「平凡的事」变得「与众不同」\r\nTime will make ordinary things become extraordinary.",
+      "public_repos": 165,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "521xueweihan/HelloGitHub",
+          "exists": true,
+          "html_url": "https://github.com/521xueweihan/HelloGitHub",
+          "description": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
+          "stars": 173632,
+          "language": "Python",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "521xueweihan/HelloGitHub",
+          "html_url": "https://github.com/521xueweihan/HelloGitHub",
+          "description": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
+          "stars": 173632,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "521xueweihan/GitHub520",
+          "html_url": "https://github.com/521xueweihan/GitHub520",
+          "description": ":kissing_heart: 让你“爱”上 GitHub，解决访问时图裂、加载慢的问题。（无需安装）",
+          "stars": 29511,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "521xueweihan/git-tips",
+          "html_url": "https://github.com/521xueweihan/git-tips",
+          "description": ":trollface:Git的奇技淫巧",
+          "stars": 15856,
+          "language": null,
+          "archived": false
+        },
+        {
+          "full_name": "521xueweihan/python",
+          "html_url": "https://github.com/521xueweihan/python",
+          "description": "《笨方法学 Python》（Learn Python the Hard Way）学习笔记",
+          "stars": 1427,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "521xueweihan/OneFile",
+          "html_url": "https://github.com/521xueweihan/OneFile",
+          "description": "只有一个文件！",
+          "stars": 1382,
+          "language": "Shell",
+          "archived": false
+        },
+        {
+          "full_name": "521xueweihan/hellogithub.com",
+          "html_url": "https://github.com/521xueweihan/hellogithub.com",
+          "description": "旧 HelloGitHub.com 网站源码",
+          "stars": 828,
+          "language": "CSS",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "tpope",
+      "html_url": "https://github.com/tpope",
+      "name": "Tim Pope",
+      "bio": "Vim plugin artist",
+      "public_repos": 85,
+      "type": "User",
+      "named_repos": [],
+      "top_repos": [
+        {
+          "full_name": "tpope/vim-fugitive",
+          "html_url": "https://github.com/tpope/vim-fugitive",
+          "description": "fugitive.vim: A Git wrapper so awesome, it should be illegal",
+          "stars": 21775,
+          "language": "Vim Script",
+          "archived": false
+        },
+        {
+          "full_name": "tpope/vim-surround",
+          "html_url": "https://github.com/tpope/vim-surround",
+          "description": "surround.vim: Delete/change/add parentheses/quotes/XML-tags/much more with ease",
+          "stars": 14102,
+          "language": "Vim Script",
+          "archived": false
+        },
+        {
+          "full_name": "tpope/vim-pathogen",
+          "html_url": "https://github.com/tpope/vim-pathogen",
+          "description": "pathogen.vim: manage your runtimepath",
+          "stars": 12127,
+          "language": "Vim Script",
+          "archived": false
+        },
+        {
+          "full_name": "tpope/vim-commentary",
+          "html_url": "https://github.com/tpope/vim-commentary",
+          "description": "commentary.vim: comment stuff out",
+          "stars": 6157,
+          "language": "Vim Script",
+          "archived": false
+        },
+        {
+          "full_name": "tpope/vim-sensible",
+          "html_url": "https://github.com/tpope/vim-sensible",
+          "description": "sensible.vim: Defaults everyone can agree on",
+          "stars": 5299,
+          "language": "Vim Script",
+          "archived": false
+        },
+        {
+          "full_name": "tpope/vim-dadbod",
+          "html_url": "https://github.com/tpope/vim-dadbod",
+          "description": "dadbod.vim: Modern database interface for Vim",
+          "stars": 4437,
+          "language": "Vim Script",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "mholt",
+      "html_url": "https://github.com/mholt",
+      "name": "Matt Holt",
+      "bio": "M.S. Computer Science. Author of the Caddy Web Server, CertMagic, Papa Parse, JSON/curl-to-Go, Timelinize, and other random stuff...",
+      "public_repos": 63,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "caddyserver/caddy",
+          "exists": true,
+          "html_url": "https://github.com/caddyserver/caddy",
+          "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+          "stars": 75328,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "caddyserver/certmagic",
+          "exists": true,
+          "html_url": "https://github.com/caddyserver/certmagic",
+          "description": "Automatic HTTPS for any Go program: fully-managed TLS certificate issuance and renewal",
+          "stars": 5589,
+          "language": "Go",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "mholt/PapaParse",
+          "html_url": "https://github.com/mholt/PapaParse",
+          "description": "Fast and powerful CSV (delimited text) parser that gracefully handles large files and malformed input",
+          "stars": 13553,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "mholt/json-to-go",
+          "html_url": "https://github.com/mholt/json-to-go",
+          "description": "Translates JSON into a Go type in your browser instantly (original)",
+          "stars": 4629,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "mholt/archiver",
+          "html_url": "https://github.com/mholt/archiver",
+          "description": "DEPRECATED. Please use mholt/archives instead.",
+          "stars": 4378,
+          "language": "Go",
+          "archived": true
+        },
+        {
+          "full_name": "mholt/timeliner",
+          "html_url": "https://github.com/mholt/timeliner",
+          "description": "All your digital life on a single timeline, stored locally -- DEPRECATED, SEE TIMELINIZE (link below)",
+          "stars": 3558,
+          "language": "Go",
+          "archived": true
+        },
+        {
+          "full_name": "mholt/curl-to-go",
+          "html_url": "https://github.com/mholt/curl-to-go",
+          "description": "Convert curl commands to Go code in your browser",
+          "stars": 1822,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "mholt/caddy-l4",
+          "html_url": "https://github.com/mholt/caddy-l4",
+          "description": "Layer 4 (TCP/UDP) app for Caddy",
+          "stars": 1761,
+          "language": "Go",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "ClementTsang",
+      "html_url": "https://github.com/ClementTsang",
+      "name": "Clement Tsang",
+      "bio": "Just a dev.",
+      "public_repos": 74,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "ClementTsang/bottom",
+          "exists": true,
+          "html_url": "https://github.com/ClementTsang/bottom",
+          "description": "Yet another cross-platform graphical process/system monitor.",
+          "stars": 13949,
+          "language": "Rust",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "ClementTsang/bottom",
+          "html_url": "https://github.com/ClementTsang/bottom",
+          "description": "Yet another cross-platform graphical process/system monitor.",
+          "stars": 13949,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "ClementTsang/rustcc",
+          "html_url": "https://github.com/ClementTsang/rustcc",
+          "description": "A (toy) C compiler written in Rust with no dependencies.",
+          "stars": 89,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "ClementTsang/polify",
+          "html_url": "https://github.com/ClementTsang/polify",
+          "description": "A low-poly image generation library, with WASM support.",
+          "stars": 27,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "ClementTsang/Barista",
+          "html_url": "https://github.com/ClementTsang/Barista",
+          "description": "A simple tray frontend for macOS's caffeinate.",
+          "stars": 12,
+          "language": "Swift",
+          "archived": false
+        },
+        {
+          "full_name": "ClementTsang/RustNAO",
+          "html_url": "https://github.com/ClementTsang/RustNAO",
+          "description": "A wrapper of the SauceNAO API in Rust.",
+          "stars": 11,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "ClementTsang/cargo-action",
+          "html_url": "https://github.com/ClementTsang/cargo-action",
+          "description": "A simple GitHub Action to invoke cargo/cross.",
+          "stars": 11,
+          "language": "Rust",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "bootandy",
+      "html_url": "https://github.com/bootandy",
+      "name": "andy.boot",
+      "bio": null,
+      "public_repos": 56,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "bootandy/dust",
+          "exists": true,
+          "html_url": "https://github.com/bootandy/dust",
+          "description": "A more intuitive version of du in rust",
+          "stars": 12195,
+          "language": "Rust",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "bootandy/dust",
+          "html_url": "https://github.com/bootandy/dust",
+          "description": "A more intuitive version of du in rust",
+          "stars": 12195,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "bootandy/window_funcs",
+          "html_url": "https://github.com/bootandy/window_funcs",
+          "description": "A Rust web app to teach SQL window functions",
+          "stars": 149,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "bootandy/tornado_sample",
+          "html_url": "https://github.com/bootandy/tornado_sample",
+          "description": "Tornado, Mongodb. Simple shell project - users can login and leave messages",
+          "stars": 77,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "bootandy/imps",
+          "html_url": "https://github.com/bootandy/imps",
+          "description": "Sort your imports",
+          "stars": 15,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "bootandy/cat-and-mouse",
+          "html_url": "https://github.com/bootandy/cat-and-mouse",
+          "description": "Game - cat and mouse",
+          "stars": 4,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "bootandy/ray",
+          "html_url": "https://github.com/bootandy/ray",
+          "description": "Learning RayTracing in Rust",
+          "stars": 3,
+          "language": "Rust",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "dalance",
+      "html_url": "https://github.com/dalance",
+      "name": "Naoya Hatta",
+      "bio": null,
+      "public_repos": 166,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "dalance/procs",
+          "exists": true,
+          "html_url": "https://github.com/dalance/procs",
+          "description": "A modern replacement for ps written in Rust",
+          "stars": 6150,
+          "language": "Rust",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "dalance/procs",
+          "html_url": "https://github.com/dalance/procs",
+          "description": "A modern replacement for ps written in Rust",
+          "stars": 6150,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "dalance/amber",
+          "html_url": "https://github.com/dalance/amber",
+          "description": "A code search / replace tool",
+          "stars": 953,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "dalance/svls",
+          "html_url": "https://github.com/dalance/svls",
+          "description": "SystemVerilog language server",
+          "stars": 584,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "dalance/sv-parser",
+          "html_url": "https://github.com/dalance/sv-parser",
+          "description": "SystemVerilog parser library fully compliant with IEEE 1800-2017",
+          "stars": 482,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "dalance/svlint",
+          "html_url": "https://github.com/dalance/svlint",
+          "description": "SystemVerilog linter",
+          "stars": 391,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "dalance/ptags",
+          "html_url": "https://github.com/dalance/ptags",
+          "description": "A parallel universal-ctags wrapper for git repository",
+          "stars": 142,
+          "language": "Rust",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "ogham",
+      "html_url": "https://github.com/ogham",
+      "name": "Benjamin Sago",
+      "bio": null,
+      "public_repos": 24,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "ogham/exa",
+          "exists": true,
+          "html_url": "https://github.com/ogham/exa",
+          "description": "A modern replacement for ‘ls’.",
+          "stars": 24443,
+          "language": "Rust",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "ogham/exa",
+          "html_url": "https://github.com/ogham/exa",
+          "description": "A modern replacement for ‘ls’.",
+          "stars": 24443,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "ogham/dog",
+          "html_url": "https://github.com/ogham/dog",
+          "description": "A command-line DNS client.",
+          "stars": 6690,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "ogham/rust-ansi-term",
+          "html_url": "https://github.com/ogham/rust-ansi-term",
+          "description": "Rust library for ANSI terminal colours and styles (bold, underline)",
+          "stars": 483,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "ogham/rust-users",
+          "html_url": "https://github.com/ogham/rust-users",
+          "description": "Library for Unix users and groups in Rust.",
+          "stars": 103,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "ogham/rust-term-grid",
+          "html_url": "https://github.com/ogham/rust-term-grid",
+          "description": "Rust library for putting things in a grid",
+          "stars": 70,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "ogham/specsheet",
+          "html_url": "https://github.com/ogham/specsheet",
+          "description": "The testing toolkit.",
+          "stars": 60,
+          "language": "Rust",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "asmvik",
+      "html_url": "https://github.com/asmvik",
+      "name": "Åsmund Vikane",
+      "bio": null,
+      "public_repos": 18,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "asmvik/yabai",
+          "exists": true,
+          "html_url": "https://github.com/asmvik/yabai",
+          "description": "A tiling window manager for macOS based on binary space partitioning",
+          "stars": 29520,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "asmvik/skhd",
+          "exists": true,
+          "html_url": "https://github.com/asmvik/skhd",
+          "description": " Simple hotkey daemon for macOS",
+          "stars": 8083,
+          "language": "C",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "asmvik/yabai",
+          "html_url": "https://github.com/asmvik/yabai",
+          "description": "A tiling window manager for macOS based on binary space partitioning",
+          "stars": 29520,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "asmvik/skhd",
+          "html_url": "https://github.com/asmvik/skhd",
+          "description": " Simple hotkey daemon for macOS",
+          "stars": 8083,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "asmvik/dotfiles",
+          "html_url": "https://github.com/asmvik/dotfiles",
+          "description": "Configuration files",
+          "stars": 376,
+          "language": "Vim Script",
+          "archived": false
+        },
+        {
+          "full_name": "asmvik/krp",
+          "html_url": "https://github.com/asmvik/krp",
+          "description": "Utility to adjust keyrepeat settings for macOS",
+          "stars": 41,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "asmvik/homebrew-formulae",
+          "html_url": "https://github.com/asmvik/homebrew-formulae",
+          "description": "Homebrew formulae",
+          "stars": 19,
+          "language": "Ruby",
+          "archived": false
+        },
+        {
+          "full_name": "asmvik/spaced",
+          "html_url": "https://github.com/asmvik/spaced",
+          "description": "Grid-based space manager for macOS",
+          "stars": 15,
+          "language": null,
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "tj",
+      "html_url": "https://github.com/tj",
+      "name": "TJ",
+      "bio": null,
+      "public_repos": 296,
+      "type": "User",
+      "named_repos": [],
+      "top_repos": [
+        {
+          "full_name": "tj/commander.js",
+          "html_url": "https://github.com/tj/commander.js",
+          "description": "node.js command-line interfaces made easy",
+          "stars": 28381,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "tj/n",
+          "html_url": "https://github.com/tj/n",
+          "description": "Node version management",
+          "stars": 19511,
+          "language": "Shell",
+          "archived": false
+        },
+        {
+          "full_name": "tj/git-extras",
+          "html_url": "https://github.com/tj/git-extras",
+          "description": "GIT utilities -- repo summary, repl, changelog population, author commit percentages and more",
+          "stars": 18099,
+          "language": "Shell",
+          "archived": false
+        },
+        {
+          "full_name": "tj/co",
+          "html_url": "https://github.com/tj/co",
+          "description": "The ultimate generator based flow-control goodness for nodejs (supports thunks, promises, etc)",
+          "stars": 11841,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "tj/ejs",
+          "html_url": "https://github.com/tj/ejs",
+          "description": "Embedded JavaScript templates for node",
+          "stars": 4451,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "tj/node-prune",
+          "html_url": "https://github.com/tj/node-prune",
+          "description": "Remove unnecessary files from node_modules (.md, .ts, ...)",
+          "stars": 4425,
+          "language": "Go",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "johnkerl",
+      "html_url": "https://github.com/johnkerl",
+      "name": "John Kerl",
+      "bio": "Who: Nerd/dad. What: () => {this}\r\n",
+      "public_repos": 66,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "johnkerl/miller",
+          "exists": true,
+          "html_url": "https://github.com/johnkerl/miller",
+          "description": "Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON",
+          "stars": 10006,
+          "language": "Go",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "johnkerl/miller",
+          "html_url": "https://github.com/johnkerl/miller",
+          "description": "Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON",
+          "stars": 10006,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "johnkerl/scripts",
+          "html_url": "https://github.com/johnkerl/scripts",
+          "description": "Productivity tools for Linux/Unix.",
+          "stars": 28,
+          "language": "Perl",
+          "archived": false
+        },
+        {
+          "full_name": "johnkerl/lumin",
+          "html_url": "https://github.com/johnkerl/lumin",
+          "description": "Simple command-line tool to highlight matches in files -- like grep with --color, but shows all lines while highlighting matches",
+          "stars": 17,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "johnkerl/sack",
+          "html_url": "https://github.com/johnkerl/sack",
+          "description": "Simple command-line calculator for small finite groups.  Unix bc for abstract algebra.",
+          "stars": 11,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "johnkerl/percolation",
+          "html_url": "https://github.com/johnkerl/percolation",
+          "description": "C code for 2D/3D lattice percolation",
+          "stars": 9,
+          "language": "C",
+          "archived": false
+        },
+        {
+          "full_name": "johnkerl/dotfiles",
+          "html_url": "https://github.com/johnkerl/dotfiles",
+          "description": "A place to put my Linux/Unix dotfiles",
+          "stars": 6,
+          "language": "Shell",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "saulpw",
+      "html_url": "https://github.com/saulpw",
+      "name": "Saul Pwanson",
+      "bio": "Data, optimization, tools",
+      "public_repos": 35,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "saulpw/visidata",
+          "exists": true,
+          "html_url": "https://github.com/saulpw/visidata",
+          "description": "A terminal spreadsheet multitool for discovering and arranging data",
+          "stars": 9257,
+          "language": "Python",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "saulpw/visidata",
+          "html_url": "https://github.com/saulpw/visidata",
+          "description": "A terminal spreadsheet multitool for discovering and arranging data",
+          "stars": 9257,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "saulpw/unzip-http",
+          "html_url": "https://github.com/saulpw/unzip-http",
+          "description": "Extract individual files from .zip files over http without downloading the entire archive.",
+          "stars": 299,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "saulpw/aipl",
+          "html_url": "https://github.com/saulpw/aipl",
+          "description": "Array-Inspired Pipeline Language",
+          "stars": 120,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "saulpw/vdsql",
+          "html_url": "https://github.com/saulpw/vdsql",
+          "description": "VisiData interface for databases",
+          "stars": 69,
+          "language": "Python",
+          "archived": true
+        },
+        {
+          "full_name": "saulpw/readysetdata",
+          "html_url": "https://github.com/saulpw/readysetdata",
+          "description": "Scripts to make specific datasets cleaner and more convenient",
+          "stars": 45,
+          "language": "Python",
+          "archived": false
+        },
+        {
+          "full_name": "saulpw/jdot",
+          "html_url": "https://github.com/saulpw/jdot",
+          "description": "JSON minus Notation plus Macros",
+          "stars": 23,
+          "language": "Python",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "wader",
+      "html_url": "https://github.com/wader",
+      "name": "Mattias Wadman",
+      "bio": null,
+      "public_repos": 151,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "wader/fq",
+          "exists": true,
+          "html_url": "https://github.com/wader/fq",
+          "description": "fq - jq for binary formats. Tool, language and decoders for working with binary formats.",
+          "stars": 10585,
+          "language": "Go",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "wader/fq",
+          "html_url": "https://github.com/wader/fq",
+          "description": "fq - jq for binary formats. Tool, language and decoders for working with binary formats.",
+          "stars": 10585,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "wader/jqjq",
+          "html_url": "https://github.com/wader/jqjq",
+          "description": "jq implementation of jq",
+          "stars": 771,
+          "language": "jq",
+          "archived": false
+        },
+        {
+          "full_name": "wader/static-ffmpeg",
+          "html_url": "https://github.com/wader/static-ffmpeg",
+          "description": "Multi-arch docker image with ffmpeg/ffprobe binaries built as hardened static PIE binaries with no external dependencies",
+          "stars": 397,
+          "language": "Dockerfile",
+          "archived": false
+        },
+        {
+          "full_name": "wader/ydls",
+          "html_url": "https://github.com/wader/ydls",
+          "description": "youtube-dl HTTP download and transcode service",
+          "stars": 193,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "wader/goutubedl",
+          "html_url": "https://github.com/wader/goutubedl",
+          "description": "Go wrapper for youtube-dl and yt-dlp",
+          "stars": 174,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "wader/postfix-relay",
+          "html_url": "https://github.com/wader/postfix-relay",
+          "description": "Postfix SMTP relay docker image",
+          "stars": 165,
+          "language": "Python",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "mvdan",
+      "html_url": "https://github.com/mvdan",
+      "name": "Daniel Martí",
+      "bio": "Maintainer at @cue-lang, nerd sniper with @golang.",
+      "public_repos": 68,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "mvdan/sh",
+          "exists": true,
+          "html_url": "https://github.com/mvdan/sh",
+          "description": "A shell parser, formatter, and interpreter with bash and zsh support; includes shfmt",
+          "stars": 9026,
+          "language": "Go",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "mvdan/sh",
+          "html_url": "https://github.com/mvdan/sh",
+          "description": "A shell parser, formatter, and interpreter with bash and zsh support; includes shfmt",
+          "stars": 9026,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "mvdan/gofumpt",
+          "html_url": "https://github.com/mvdan/gofumpt",
+          "description": "A stricter gofmt",
+          "stars": 4069,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "mvdan/xurls",
+          "html_url": "https://github.com/mvdan/xurls",
+          "description": "Extract urls from text",
+          "stars": 1266,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "mvdan/github-actions-golang",
+          "html_url": "https://github.com/mvdan/github-actions-golang",
+          "description": "GitHub Actions as CI for Go",
+          "stars": 1048,
+          "language": "Go",
+          "archived": false
+        },
+        {
+          "full_name": "mvdan/interfacer",
+          "html_url": "https://github.com/mvdan/interfacer",
+          "description": "A linter that suggests interface types",
+          "stars": 690,
+          "language": "Go",
+          "archived": true
+        },
+        {
+          "full_name": "mvdan/unparam",
+          "html_url": "https://github.com/mvdan/unparam",
+          "description": "Find unused parameters in Go",
+          "stars": 572,
+          "language": "Go",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "login": "stedolan",
+      "html_url": "https://github.com/stedolan",
+      "name": "Stephen Dolan",
+      "bio": null,
+      "public_repos": 56,
+      "type": "User",
+      "named_repos": [
+        {
+          "full_name": "jqlang/jq",
+          "exists": true,
+          "html_url": "https://github.com/jqlang/jq",
+          "description": "Command-line JSON processor",
+          "stars": 35512,
+          "language": "C",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "stedolan/counterexamples",
+          "html_url": "https://github.com/stedolan/counterexamples",
+          "description": "Counterexamples in Type Systems",
+          "stars": 426,
+          "language": "JavaScript",
+          "archived": false
+        },
+        {
+          "full_name": "stedolan/malfunction",
+          "html_url": "https://github.com/stedolan/malfunction",
+          "description": "Malfunctional Programming",
+          "stars": 355,
+          "language": "OCaml",
+          "archived": false
+        },
+        {
+          "full_name": "stedolan/mlsub",
+          "html_url": "https://github.com/stedolan/mlsub",
+          "description": "Prototype type inference engine",
+          "stars": 204,
+          "language": "OCaml",
+          "archived": false
+        },
+        {
+          "full_name": "stedolan/crowbar",
+          "html_url": "https://github.com/stedolan/crowbar",
+          "description": "Property fuzzing for OCaml",
+          "stars": 202,
+          "language": "OCaml",
+          "archived": false
+        },
+        {
+          "full_name": "stedolan/bf.sed",
+          "html_url": "https://github.com/stedolan/bf.sed",
+          "description": "A brainfuck compiler, written in sed",
+          "stars": 161,
+          "language": null,
+          "archived": false
+        },
+        {
+          "full_name": "stedolan/ppx_stage",
+          "html_url": "https://github.com/stedolan/ppx_stage",
+          "description": "Staged metaprogramming in stock OCaml",
+          "stars": 154,
+          "language": "OCaml",
+          "archived": false
+        }
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "login": "eza-community",
+      "html_url": "https://github.com/eza-community",
+      "name": "eza",
+      "bio": "The community organization for eza, a modern, maintained replacement for ls",
+      "public_repos": 6,
+      "type": "Organization",
+      "named_repos": [
+        {
+          "full_name": "eza-community/eza",
+          "exists": true,
+          "html_url": "https://github.com/eza-community/eza",
+          "description": "A modern alternative to ls",
+          "stars": 23081,
+          "language": "Rust",
+          "archived": false
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "eza-community/eza",
+          "html_url": "https://github.com/eza-community/eza",
+          "description": "A modern alternative to ls",
+          "stars": 23081,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "eza-community/eza-themes",
+          "html_url": "https://github.com/eza-community/eza-themes",
+          "description": "Themes for eza",
+          "stars": 260,
+          "language": null,
+          "archived": false
+        },
+        {
+          "full_name": "eza-community/eza.rocks",
+          "html_url": "https://github.com/eza-community/eza.rocks",
+          "description": "EZA Rocks, on the Wolrld Wide Interwebs",
+          "stars": 13,
+          "language": "HTML",
+          "archived": false
+        },
+        {
+          "full_name": "eza-community/powertest",
+          "html_url": "https://github.com/eza-community/powertest",
+          "description": "Declarative Trycmd Test Generator",
+          "stars": 12,
+          "language": "Rust",
+          "archived": false
+        },
+        {
+          "full_name": "eza-community/.github",
+          "html_url": "https://github.com/eza-community/.github",
+          "description": "eza-community Organization Description",
+          "stars": 3,
+          "language": null,
+          "archived": false
+        }
+      ],
+      "note": "not User"
+    }
+  ]
+}

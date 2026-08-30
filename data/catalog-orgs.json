@@ -1,0 +1,1074 @@
+{
+  "fetched_at_utc": "2026-08-30T03:01:52.859775+00:00",
+  "orgs": [
+    {
+      "login": "tailscale",
+      "html_url": "https://github.com/tailscale",
+      "name": "Tailscale",
+      "description": "Tailscale is a WireGuard-based app that makes secure, private networks easy for teams of any scale.",
+      "public_repos": 132,
+      "blog": "https://tailscale.com",
+      "named_repos": [
+        {
+          "full_name": "tailscale/tailscale",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/tailscale",
+          "description": "The easiest, most secure way to use WireGuard and 2FA.",
+          "stars": 35778,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/ts-plug",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/ts-plug",
+          "description": "one line to plug any server into your tailnet!",
+          "stars": 56,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/caddy-tailscale",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/caddy-tailscale",
+          "description": "A highly experimental exploration of integrating Tailscale and Caddy.",
+          "stars": 962,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/github-action",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/github-action",
+          "description": "A GitHub Action to connect your workflow to your Tailscale network.",
+          "stars": 929,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "tailscale/tsidp",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/tsidp",
+          "description": "A simple OIDC / OAuth Identity Provider (IdP) server for your tailnet.",
+          "stars": 659,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/setec",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/setec",
+          "description": "A secrets management service that uses Tailscale for access control",
+          "stars": 456,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/pam",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/pam",
+          "description": "An experimental, work-in-progress PAM module for Tailscale",
+          "stars": 145,
+          "language": "Rust"
+        },
+        {
+          "full_name": "tailscale/tailscale-skill",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/tailscale-skill",
+          "description": "Skills for teaching agents how to use and build on the Tailscale platform.",
+          "stars": 21,
+          "language": null
+        },
+        {
+          "full_name": "tailscale/golink",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/golink",
+          "description": "A private shortlink service for tailnets",
+          "stars": 1931,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/tmemes",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/tmemes",
+          "description": "A meme generator for your tailnet!",
+          "stars": 46,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/tailsql",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/tailsql",
+          "description": "A SQL playground service over Tailscale.",
+          "stars": 113,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/tailcatchat",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/tailcatchat",
+          "description": "Instant encrypted ephemeral web chats and transfers",
+          "stars": 11,
+          "language": "JavaScript"
+        },
+        {
+          "full_name": "tailscale/tailcat",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/tailcat",
+          "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
+          "stars": 3572,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/hyscale",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/hyscale",
+          "description": "Hytale on Tailscale Server Manager",
+          "stars": 66,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/tailcat-for-minecraft",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/tailcat-for-minecraft",
+          "description": null,
+          "stars": 35,
+          "language": "Java"
+        },
+        {
+          "full_name": "tailscale/thundersnap",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/thundersnap",
+          "description": "Experimental: A Linux container environment where everything is mutable, undo is instant, and cross-machine replication is trivial.",
+          "stars": 176,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/aperture-plus",
+          "exists": true,
+          "html_url": "https://github.com/tailscale/aperture-plus",
+          "description": "Experimental: pure userspace Tailscale web browser for iOS/macOS with Aperture Chat and Thundersnap VM",
+          "stars": 7,
+          "language": "Swift"
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "tailscale/tailscale",
+          "html_url": "https://github.com/tailscale/tailscale",
+          "description": "The easiest, most secure way to use WireGuard and 2FA.",
+          "stars": 35778,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/tailcat",
+          "html_url": "https://github.com/tailscale/tailcat",
+          "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
+          "stars": 3572,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/tailscale-android",
+          "html_url": "https://github.com/tailscale/tailscale-android",
+          "description": "Tailscale Android Client",
+          "stars": 2483,
+          "language": "Kotlin"
+        },
+        {
+          "full_name": "tailscale/golink",
+          "html_url": "https://github.com/tailscale/golink",
+          "description": "A private shortlink service for tailnets",
+          "stars": 1931,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/tailscale-rs",
+          "html_url": "https://github.com/tailscale/tailscale-rs",
+          "description": "Rust implementation of Tailscale (preview, experimental)",
+          "stars": 1103,
+          "language": "Rust"
+        },
+        {
+          "full_name": "tailscale/tailscale-synology",
+          "html_url": "https://github.com/tailscale/tailscale-synology",
+          "description": "Synology packages for tailscale.com",
+          "stars": 987,
+          "language": null
+        },
+        {
+          "full_name": "tailscale/caddy-tailscale",
+          "html_url": "https://github.com/tailscale/caddy-tailscale",
+          "description": "A highly experimental exploration of integrating Tailscale and Caddy.",
+          "stars": 962,
+          "language": "Go"
+        },
+        {
+          "full_name": "tailscale/github-action",
+          "html_url": "https://github.com/tailscale/github-action",
+          "description": "A GitHub Action to connect your workflow to your Tailscale network.",
+          "stars": 929,
+          "language": "TypeScript"
+        }
+      ]
+    },
+    {
+      "login": "vercel",
+      "html_url": "https://github.com/vercel",
+      "name": "Vercel",
+      "description": "Agentic infrastructure for every app and agent.",
+      "public_repos": 239,
+      "blog": "https://vercel.com",
+      "named_repos": [
+        {
+          "full_name": "vercel/next.js",
+          "exists": true,
+          "html_url": "https://github.com/vercel/next.js",
+          "description": "The React Framework",
+          "stars": 142014,
+          "language": "JavaScript"
+        },
+        {
+          "full_name": "vercel/hyper",
+          "exists": true,
+          "html_url": "https://github.com/vercel/hyper",
+          "description": "A terminal built on web technologies",
+          "stars": 44709,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "vercel/swr",
+          "exists": true,
+          "html_url": "https://github.com/vercel/swr",
+          "description": "React Hooks for Data Fetching",
+          "stars": 32476,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "vercel/turborepo",
+          "exists": true,
+          "html_url": "https://github.com/vercel/turborepo",
+          "description": "Build system optimized for JavaScript and TypeScript, written in Rust",
+          "stars": 31033,
+          "language": "Rust"
+        },
+        {
+          "full_name": "vercel/ai",
+          "exists": true,
+          "html_url": "https://github.com/vercel/ai",
+          "description": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents ",
+          "stars": 26490,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "vercel/satori",
+          "exists": true,
+          "html_url": "https://github.com/vercel/satori",
+          "description": "Enlightened library to convert HTML and CSS to SVG",
+          "stars": 13871,
+          "language": "TypeScript"
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "vercel/next.js",
+          "html_url": "https://github.com/vercel/next.js",
+          "description": "The React Framework",
+          "stars": 142014,
+          "language": "JavaScript"
+        },
+        {
+          "full_name": "vercel/hyper",
+          "html_url": "https://github.com/vercel/hyper",
+          "description": "A terminal built on web technologies",
+          "stars": 44709,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "vercel/swr",
+          "html_url": "https://github.com/vercel/swr",
+          "description": "React Hooks for Data Fetching",
+          "stars": 32476,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "vercel/turborepo",
+          "html_url": "https://github.com/vercel/turborepo",
+          "description": "Build system optimized for JavaScript and TypeScript, written in Rust",
+          "stars": 31033,
+          "language": "Rust"
+        },
+        {
+          "full_name": "vercel/ai",
+          "html_url": "https://github.com/vercel/ai",
+          "description": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents ",
+          "stars": 26490,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "vercel/pkg",
+          "html_url": "https://github.com/vercel/pkg",
+          "description": "Package your Node.js project into an executable",
+          "stars": 24352,
+          "language": "JavaScript"
+        },
+        {
+          "full_name": "vercel/chatbot",
+          "html_url": "https://github.com/vercel/chatbot",
+          "description": "A full-featured, hackable Next.js AI chatbot built by Vercel",
+          "stars": 20887,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "vercel/vercel",
+          "html_url": "https://github.com/vercel/vercel",
+          "description": "Develop. Preview. Ship.",
+          "stars": 16168,
+          "language": "TypeScript"
+        }
+      ]
+    },
+    {
+      "login": "cloudflare",
+      "html_url": "https://github.com/cloudflare",
+      "name": "Cloudflare",
+      "description": "",
+      "public_repos": 576,
+      "blog": "https://www.cloudflare.com",
+      "named_repos": [
+        {
+          "full_name": "cloudflare/cloudflared",
+          "exists": true,
+          "html_url": "https://github.com/cloudflare/cloudflared",
+          "description": "Cloudflare Tunnel client",
+          "stars": 15428,
+          "language": "Go"
+        },
+        {
+          "full_name": "cloudflare/cfssl",
+          "exists": true,
+          "html_url": "https://github.com/cloudflare/cfssl",
+          "description": "CFSSL: Cloudflare's PKI and TLS toolkit",
+          "stars": 9462,
+          "language": "Go"
+        },
+        {
+          "full_name": "cloudflare/workers-sdk",
+          "exists": true,
+          "html_url": "https://github.com/cloudflare/workers-sdk",
+          "description": "⛅️ Home to Wrangler, the CLI for Cloudflare Workers®",
+          "stars": 4492,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "cloudflare/workerd",
+          "exists": true,
+          "html_url": "https://github.com/cloudflare/workerd",
+          "description": "The JavaScript / Wasm runtime that powers Cloudflare Workers",
+          "stars": 8652,
+          "language": "C++"
+        },
+        {
+          "full_name": "cloudflare/computer",
+          "exists": true,
+          "html_url": "https://github.com/cloudflare/computer",
+          "description": "Give your agent a computer 👾",
+          "stars": 8826,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "cloudflare/sandbox-sdk",
+          "exists": true,
+          "html_url": "https://github.com/cloudflare/sandbox-sdk",
+          "description": "Run sandboxed code environments on Cloudflare's edge network",
+          "stars": 1121,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "cloudflare/agentic-inbox",
+          "exists": true,
+          "html_url": "https://github.com/cloudflare/agentic-inbox",
+          "description": "A self-hosted email client with an AI agent, running entirely on Cloudflare Workers",
+          "stars": 7029,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "cloudflare/artifact-fs",
+          "exists": true,
+          "html_url": "https://github.com/cloudflare/artifact-fs",
+          "description": "ArtifactFS is a filesystem driver designed to mount large git repos as quickly as possible, hydrating file contents on-the-fly instead of blocking on the initial clone. It's ideal for agents, sandboxes, containers and other use-cases where startup time is critical.",
+          "stars": 1127,
+          "language": "Go"
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "cloudflare/pingora",
+          "html_url": "https://github.com/cloudflare/pingora",
+          "description": "A library for building fast, reliable and evolvable network services.",
+          "stars": 27294,
+          "language": "Rust"
+        },
+        {
+          "full_name": "cloudflare/cloudflared",
+          "html_url": "https://github.com/cloudflare/cloudflared",
+          "description": "Cloudflare Tunnel client",
+          "stars": 15428,
+          "language": "Go"
+        },
+        {
+          "full_name": "cloudflare/quiche",
+          "html_url": "https://github.com/cloudflare/quiche",
+          "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3",
+          "stars": 11796,
+          "language": "Rust"
+        },
+        {
+          "full_name": "cloudflare/moltworker",
+          "html_url": "https://github.com/cloudflare/moltworker",
+          "description": "Run OpenClaw, (formerly Moltbot, formerly Clawdbot) on Cloudflare Workers",
+          "stars": 9959,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "cloudflare/cfssl",
+          "html_url": "https://github.com/cloudflare/cfssl",
+          "description": "CFSSL: Cloudflare's PKI and TLS toolkit",
+          "stars": 9462,
+          "language": "Go"
+        },
+        {
+          "full_name": "cloudflare/cloudflare-os",
+          "html_url": "https://github.com/cloudflare/cloudflare-os",
+          "description": "Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems.",
+          "stars": 9372,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "cloudflare/computer",
+          "html_url": "https://github.com/cloudflare/computer",
+          "description": "Give your agent a computer 👾",
+          "stars": 8826,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "cloudflare/vinext",
+          "html_url": "https://github.com/cloudflare/vinext",
+          "description": "Vite plugin that reimplements the Next.js API surface — deploy anywhere",
+          "stars": 8695,
+          "language": "TypeScript"
+        }
+      ]
+    },
+    {
+      "login": "superfly",
+      "html_url": "https://github.com/superfly",
+      "name": "fly.io",
+      "description": "",
+      "public_repos": 285,
+      "blog": "https://fly.io",
+      "named_repos": [
+        {
+          "full_name": "superfly/flyctl",
+          "exists": true,
+          "html_url": "https://github.com/superfly/flyctl",
+          "description": "Command line tools for fly.io services",
+          "stars": 1699,
+          "language": "Go"
+        },
+        {
+          "full_name": "superfly/sprites",
+          "exists": false,
+          "error": "gh: Not Found (HTTP 404)"
+        },
+        {
+          "full_name": "superfly/sprites-docs",
+          "exists": true,
+          "html_url": "https://github.com/superfly/sprites-docs",
+          "description": "👾 Documentation for Fly.io Sprites",
+          "stars": 50,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "superfly/flymcp",
+          "exists": true,
+          "html_url": "https://github.com/superfly/flymcp",
+          "description": "MCP server for Fly.io CLI integration with Claude Desktop",
+          "stars": 33,
+          "language": "Go"
+        },
+        {
+          "full_name": "superfly/contextwindow",
+          "exists": true,
+          "html_url": "https://github.com/superfly/contextwindow",
+          "description": "A low-level library for writing Go LLM agents",
+          "stars": 97,
+          "language": "Go"
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "superfly/litefs",
+          "html_url": "https://github.com/superfly/litefs",
+          "description": "FUSE-based file system for replicating SQLite databases across a cluster of machines",
+          "stars": 4868,
+          "language": "Go"
+        },
+        {
+          "full_name": "superfly/corrosion",
+          "html_url": "https://github.com/superfly/corrosion",
+          "description": "Gossip-based service discovery (and more) for large distributed systems.",
+          "stars": 1832,
+          "language": "Rust"
+        },
+        {
+          "full_name": "superfly/flyctl",
+          "html_url": "https://github.com/superfly/flyctl",
+          "description": "Command line tools for fly.io services",
+          "stars": 1699,
+          "language": "Go"
+        },
+        {
+          "full_name": "superfly/fly",
+          "html_url": "https://github.com/superfly/fly",
+          "description": "Deploy app servers close to your users. Package your app as a Docker image, and launch it in 17 cities with one simple CLI.",
+          "stars": 991,
+          "language": null
+        },
+        {
+          "full_name": "superfly/tokenizer",
+          "html_url": "https://github.com/superfly/tokenizer",
+          "description": "HTTP proxy that injects 3rd party credentials into requests",
+          "stars": 491,
+          "language": "Go"
+        },
+        {
+          "full_name": "superfly/fly-log-shipper",
+          "html_url": "https://github.com/superfly/fly-log-shipper",
+          "description": "Ship logs from fly to other providers",
+          "stars": 315,
+          "language": "Shell"
+        },
+        {
+          "full_name": "superfly/ltx",
+          "html_url": "https://github.com/superfly/ltx",
+          "description": "Go library for the LTX file format",
+          "stars": 313,
+          "language": "Go"
+        },
+        {
+          "full_name": "superfly/flyctl-actions",
+          "html_url": "https://github.com/superfly/flyctl-actions",
+          "description": ":octocat: GitHub Action that wraps the flyctl",
+          "stars": 309,
+          "language": "TypeScript"
+        }
+      ]
+    },
+    {
+      "login": "supabase",
+      "html_url": "https://github.com/supabase",
+      "name": "Supabase",
+      "description": "The Postgres Development Platform.",
+      "public_repos": 166,
+      "blog": "https://supabase.com",
+      "named_repos": [
+        {
+          "full_name": "supabase/supabase",
+          "exists": true,
+          "html_url": "https://github.com/supabase/supabase",
+          "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+          "stars": 108587,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "supabase/realtime",
+          "exists": true,
+          "html_url": "https://github.com/supabase/realtime",
+          "description": "Broadcast, Presence, and Postgres Changes via WebSockets",
+          "stars": 7626,
+          "language": "Elixir"
+        },
+        {
+          "full_name": "supabase/pg_graphql",
+          "exists": true,
+          "html_url": "https://github.com/supabase/pg_graphql",
+          "description": "GraphQL support for PostgreSQL ",
+          "stars": 3346,
+          "language": "Rust"
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "supabase/supabase",
+          "html_url": "https://github.com/supabase/supabase",
+          "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+          "stars": 108587,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "supabase/realtime",
+          "html_url": "https://github.com/supabase/realtime",
+          "description": "Broadcast, Presence, and Postgres Changes via WebSockets",
+          "stars": 7626,
+          "language": "Elixir"
+        },
+        {
+          "full_name": "supabase/supabase-js",
+          "html_url": "https://github.com/supabase/supabase-js",
+          "description": "An isomorphic Javascript client for Supabase. Query your Supabase database, subscribe to realtime events, upload and download files, browse typescript examples, invoke postgres functions via rpc, invoke supabase edge functions, query pgvector.",
+          "stars": 4546,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "supabase/pg_graphql",
+          "html_url": "https://github.com/supabase/pg_graphql",
+          "description": "GraphQL support for PostgreSQL ",
+          "stars": 3346,
+          "language": "Rust"
+        },
+        {
+          "full_name": "supabase/mcp",
+          "html_url": "https://github.com/supabase/mcp",
+          "description": "Connect Supabase to your AI assistants",
+          "stars": 2880,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "supabase/supabase-py",
+          "html_url": "https://github.com/supabase/supabase-py",
+          "description": "Python Client for Supabase. Query Postgres from Flask, Django, FastAPI. Python user authentication, security policies, edge functions, file storage, and realtime data streaming. Good first issue.",
+          "stars": 2570,
+          "language": "Python"
+        },
+        {
+          "full_name": "supabase/agent-skills",
+          "html_url": "https://github.com/supabase/agent-skills",
+          "description": "Agent Skills to help developers using AI agents with Supabase",
+          "stars": 2562,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "supabase/auth",
+          "html_url": "https://github.com/supabase/auth",
+          "description": "A JWT based API for managing users and issuing JWT tokens",
+          "stars": 2548,
+          "language": "Go"
+        }
+      ]
+    },
+    {
+      "login": "caddyserver",
+      "html_url": "https://github.com/caddyserver",
+      "name": "Caddy",
+      "description": "The ultimate server: enterprise-ready, extensible, open source, and automatic HTTPS with a configuration API",
+      "public_repos": 32,
+      "blog": "https://caddyserver.com",
+      "named_repos": [
+        {
+          "full_name": "caddyserver/caddy",
+          "exists": true,
+          "html_url": "https://github.com/caddyserver/caddy",
+          "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+          "stars": 75328,
+          "language": "Go"
+        },
+        {
+          "full_name": "caddyserver/certmagic",
+          "exists": true,
+          "html_url": "https://github.com/caddyserver/certmagic",
+          "description": "Automatic HTTPS for any Go program: fully-managed TLS certificate issuance and renewal",
+          "stars": 5589,
+          "language": "Go"
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "caddyserver/caddy",
+          "html_url": "https://github.com/caddyserver/caddy",
+          "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+          "stars": 75328,
+          "language": "Go"
+        },
+        {
+          "full_name": "caddyserver/certmagic",
+          "html_url": "https://github.com/caddyserver/certmagic",
+          "description": "Automatic HTTPS for any Go program: fully-managed TLS certificate issuance and renewal",
+          "stars": 5589,
+          "language": "Go"
+        },
+        {
+          "full_name": "caddyserver/xcaddy",
+          "html_url": "https://github.com/caddyserver/xcaddy",
+          "description": "Build Caddy with plugins",
+          "stars": 1519,
+          "language": "Go"
+        },
+        {
+          "full_name": "caddyserver/examples",
+          "html_url": "https://github.com/caddyserver/examples",
+          "description": "OBSOLETE. This repo was for Caddy v1. For v2 and newer, see our forum's wiki category.",
+          "stars": 971,
+          "language": "CSS"
+        },
+        {
+          "full_name": "caddyserver/ingress",
+          "html_url": "https://github.com/caddyserver/ingress",
+          "description": "WIP Caddy 2 ingress controller for Kubernetes",
+          "stars": 823,
+          "language": "Go"
+        },
+        {
+          "full_name": "caddyserver/forwardproxy",
+          "html_url": "https://github.com/caddyserver/forwardproxy",
+          "description": "Forward proxy plugin for the Caddy web server",
+          "stars": 728,
+          "language": "Go"
+        },
+        {
+          "full_name": "caddyserver/caddy-docker",
+          "html_url": "https://github.com/caddyserver/caddy-docker",
+          "description": "Source for the official Caddy v2 Docker Image",
+          "stars": 571,
+          "language": "Dockerfile"
+        },
+        {
+          "full_name": "caddyserver/cache-handler",
+          "html_url": "https://github.com/caddyserver/cache-handler",
+          "description": "Distributed HTTP caching module for Caddy",
+          "stars": 389,
+          "language": "Go"
+        }
+      ]
+    },
+    {
+      "login": "hashicorp",
+      "html_url": "https://github.com/hashicorp",
+      "name": "HashiCorp",
+      "description": "Consistent workflows to provision, secure, connect, and run any infrastructure for any application.",
+      "public_repos": 943,
+      "blog": "https://hashicorp.com",
+      "named_repos": [
+        {
+          "full_name": "hashicorp/terraform",
+          "exists": true,
+          "html_url": "https://github.com/hashicorp/terraform",
+          "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.",
+          "stars": 49571,
+          "language": "Go"
+        },
+        {
+          "full_name": "hashicorp/vault",
+          "exists": true,
+          "html_url": "https://github.com/hashicorp/vault",
+          "description": "A tool for secrets management, encryption as a service, and privileged access management",
+          "stars": 36188,
+          "language": "Go"
+        },
+        {
+          "full_name": "hashicorp/consul",
+          "exists": true,
+          "html_url": "https://github.com/hashicorp/consul",
+          "description": "Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.",
+          "stars": 30051,
+          "language": "Go"
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "hashicorp/terraform",
+          "html_url": "https://github.com/hashicorp/terraform",
+          "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.",
+          "stars": 49571,
+          "language": "Go"
+        },
+        {
+          "full_name": "hashicorp/vault",
+          "html_url": "https://github.com/hashicorp/vault",
+          "description": "A tool for secrets management, encryption as a service, and privileged access management",
+          "stars": 36188,
+          "language": "Go"
+        },
+        {
+          "full_name": "hashicorp/consul",
+          "html_url": "https://github.com/hashicorp/consul",
+          "description": "Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.",
+          "stars": 30051,
+          "language": "Go"
+        },
+        {
+          "full_name": "hashicorp/vagrant",
+          "html_url": "https://github.com/hashicorp/vagrant",
+          "description": "Vagrant is a tool for building and distributing development environments.",
+          "stars": 27205,
+          "language": "Ruby"
+        },
+        {
+          "full_name": "hashicorp/nomad",
+          "html_url": "https://github.com/hashicorp/nomad",
+          "description": "Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.",
+          "stars": 16845,
+          "language": "Go"
+        },
+        {
+          "full_name": "hashicorp/packer",
+          "html_url": "https://github.com/hashicorp/packer",
+          "description": "Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.",
+          "stars": 15771,
+          "language": "Go"
+        },
+        {
+          "full_name": "hashicorp/terraform-provider-aws",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws",
+          "description": "The AWS Provider enables Terraform to manage AWS resources.",
+          "stars": 11045,
+          "language": "Go"
+        },
+        {
+          "full_name": "hashicorp/raft",
+          "html_url": "https://github.com/hashicorp/raft",
+          "description": "Golang implementation of the Raft consensus protocol",
+          "stars": 9111,
+          "language": "Go"
+        }
+      ]
+    },
+    {
+      "login": "netlify",
+      "html_url": "https://github.com/netlify",
+      "name": "Netlify",
+      "description": "Build with AI or code, deploy instantly. One platform with everything you need to make real apps live.",
+      "public_repos": 380,
+      "blog": "https://www.netlify.com",
+      "named_repos": [
+        {
+          "full_name": "netlify/gotrue",
+          "exists": true,
+          "html_url": "https://github.com/netlify/gotrue",
+          "description": "An JWT based API for managing users and issuing JWT tokens.",
+          "stars": 4468,
+          "language": "Go"
+        },
+        {
+          "full_name": "netlify/cli",
+          "exists": true,
+          "html_url": "https://github.com/netlify/cli",
+          "description": "Netlify Command Line Interface",
+          "stars": 1910,
+          "language": "TypeScript"
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "netlify/gotrue",
+          "html_url": "https://github.com/netlify/gotrue",
+          "description": "An JWT based API for managing users and issuing JWT tokens.",
+          "stars": 4468,
+          "language": "Go"
+        },
+        {
+          "full_name": "netlify/staticgen",
+          "html_url": "https://github.com/netlify/staticgen",
+          "description": "StaticGen.com, A leaderboard of top open-source static site generators",
+          "stars": 2433,
+          "language": "JavaScript"
+        },
+        {
+          "full_name": "netlify/cli",
+          "html_url": "https://github.com/netlify/cli",
+          "description": "Netlify Command Line Interface",
+          "stars": 1910,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "netlify/gocommerce",
+          "html_url": "https://github.com/netlify/gocommerce",
+          "description": "A headless e-commerce for JAMstack sites.",
+          "stars": 1616,
+          "language": "Go"
+        },
+        {
+          "full_name": "netlify/netlify-identity-widget",
+          "html_url": "https://github.com/netlify/netlify-identity-widget",
+          "description": "A zero config, framework free Netlify Identity widget",
+          "stars": 804,
+          "language": "HTML"
+        },
+        {
+          "full_name": "netlify/next-on-netlify",
+          "html_url": "https://github.com/netlify/next-on-netlify",
+          "description": "Build and deploy Next.js applications with Server-Side Rendering on Netlify!",
+          "stars": 727,
+          "language": "JavaScript"
+        },
+        {
+          "full_name": "netlify/headlesscms.org",
+          "html_url": "https://github.com/netlify/headlesscms.org",
+          "description": "Source for headlesscms.org",
+          "stars": 625,
+          "language": "JavaScript"
+        },
+        {
+          "full_name": "netlify/netlify-lambda",
+          "html_url": "https://github.com/netlify/netlify-lambda",
+          "description": "Helps building and serving lambda functions locally and in CI environments",
+          "stars": 590,
+          "language": "JavaScript"
+        }
+      ]
+    },
+    {
+      "login": "planetscale",
+      "html_url": "https://github.com/planetscale",
+      "name": "PlanetScale",
+      "description": "The fastest and most reliable MySQL and Postgres database platform.",
+      "public_repos": 155,
+      "blog": "https://planetscale.com",
+      "named_repos": [
+        {
+          "full_name": "planetscale/database-js",
+          "exists": true,
+          "html_url": "https://github.com/planetscale/database-js",
+          "description": "A Fetch API-compatible PlanetScale database driver",
+          "stars": 1198,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "planetscale/cli",
+          "exists": true,
+          "html_url": "https://github.com/planetscale/cli",
+          "description": "The CLI for PlanetScale Database",
+          "stars": 664,
+          "language": "Go"
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "planetscale/database-js",
+          "html_url": "https://github.com/planetscale/database-js",
+          "description": "A Fetch API-compatible PlanetScale database driver",
+          "stars": 1198,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "planetscale/vtprotobuf",
+          "html_url": "https://github.com/planetscale/vtprotobuf",
+          "description": "A Protocol Buffers compiler that generates optimized marshaling & unmarshaling Go code for ProtoBuf APIv2",
+          "stars": 1115,
+          "language": "Go"
+        },
+        {
+          "full_name": "planetscale/cli",
+          "html_url": "https://github.com/planetscale/cli",
+          "description": "The CLI for PlanetScale Database",
+          "stars": 664,
+          "language": "Go"
+        },
+        {
+          "full_name": "planetscale/database-skills",
+          "html_url": "https://github.com/planetscale/database-skills",
+          "description": "Skills for AI agents working with databases",
+          "stars": 641,
+          "language": "HTML"
+        },
+        {
+          "full_name": "planetscale/vitess-operator",
+          "html_url": "https://github.com/planetscale/vitess-operator",
+          "description": "Kubernetes Operator for Vitess",
+          "stars": 367,
+          "language": "Go"
+        },
+        {
+          "full_name": "planetscale/fast_page",
+          "html_url": "https://github.com/planetscale/fast_page",
+          "description": "Blazing fast pagination for ActiveRecord with deferred joins ⚡️",
+          "stars": 332,
+          "language": "Ruby"
+        },
+        {
+          "full_name": "planetscale/nextjs-planetscale-starter",
+          "html_url": "https://github.com/planetscale/nextjs-planetscale-starter",
+          "description": "A Next.js starter app with NextAuth.js (Auth), Prisma (ORM), and PlanetScale (database), ready to be deployed on Netlify",
+          "stars": 254,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "planetscale/schemadiff",
+          "html_url": "https://github.com/planetscale/schemadiff",
+          "description": "Declarative schema diffing, normalization, validation and manipulation via command line",
+          "stars": 138,
+          "language": "Go"
+        }
+      ]
+    },
+    {
+      "login": "neondatabase",
+      "html_url": "https://github.com/neondatabase",
+      "name": "neondatabase",
+      "description": "",
+      "public_repos": 241,
+      "blog": "https://neon.tech",
+      "named_repos": [
+        {
+          "full_name": "neondatabase/neon",
+          "exists": true,
+          "html_url": "https://github.com/neondatabase/neon",
+          "description": "Neon: Serverless Postgres. We separated storage and compute to offer autoscaling, code-like database branching, and scale to zero.",
+          "stars": 22991,
+          "language": "Rust"
+        }
+      ],
+      "top_repos": [
+        {
+          "full_name": "neondatabase/neon",
+          "html_url": "https://github.com/neondatabase/neon",
+          "description": "Neon: Serverless Postgres. We separated storage and compute to offer autoscaling, code-like database branching, and scale to zero.",
+          "stars": 22991,
+          "language": "Rust"
+        },
+        {
+          "full_name": "neondatabase/appdotbuild-agent",
+          "html_url": "https://github.com/neondatabase/appdotbuild-agent",
+          "description": "The agent that generates working apps (and maybe some other things)",
+          "stars": 765,
+          "language": "Python"
+        },
+        {
+          "full_name": "neondatabase/mcp-server-neon",
+          "html_url": "https://github.com/neondatabase/mcp-server-neon",
+          "description": "MCP server for interacting with Neon Management API and databases",
+          "stars": 624,
+          "language": "TypeScript"
+        },
+        {
+          "full_name": "neondatabase/pg_embedding",
+          "html_url": "https://github.com/neondatabase/pg_embedding",
+          "description": "Hierarchical Navigable Small World (HNSW) algorithm for vector similarity search in PostgreSQL",
+          "stars": 579,
+          "language": "C"
+        },
+        {
+          "full_name": "neondatabase/serverless",
+          "html_url": "https://github.com/neondatabase/serverless",
+          "description": "Connect to Neon PostgreSQL from serverless/worker/edge functions",
+          "stars": 545,
+          "language": "JavaScript"
+        },
+        {
+          "full_name": "neondatabase/website",
+          "html_url": "https://github.com/neondatabase/website",
+          "description": "Official docs and website for Neon.",
+          "stars": 327,
+          "language": "JavaScript"
+        },
+        {
+          "full_name": "neondatabase/autoscaling",
+          "html_url": "https://github.com/neondatabase/autoscaling",
+          "description": "Postgres vertical autoscaling in k8s",
+          "stars": 251,
+          "language": "Go"
+        },
+        {
+          "full_name": "neondatabase/postgres-sample-dbs",
+          "html_url": "https://github.com/neondatabase/postgres-sample-dbs",
+          "description": "A collection of sample Postgres databases for learning, testing, and development.",
+          "stars": 248,
+          "language": "PLpgSQL"
+        }
+      ]
+    }
+  ]
+}

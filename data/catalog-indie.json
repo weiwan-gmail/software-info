@@ -1,0 +1,913 @@
+{
+  "repos": [
+    {
+      "full_name": "rxhanson/Rectangle",
+      "html_url": "https://github.com/rxhanson/Rectangle",
+      "description": "Move and resize windows on macOS with keyboard shortcuts and snap areas",
+      "stars": 29773,
+      "language": "Swift",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "nikitabobko/AeroSpace",
+      "html_url": "https://github.com/nikitabobko/AeroSpace",
+      "description": "AeroSpace is an i3-like tiling window manager for macOS",
+      "stars": 22742,
+      "language": "Swift",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "asmvik/yabai",
+      "html_url": "https://github.com/asmvik/yabai",
+      "description": "A tiling window manager for macOS based on binary space partitioning",
+      "stars": 29520,
+      "language": "C",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "p0deje/Maccy",
+      "html_url": "https://github.com/p0deje/Maccy",
+      "description": "Lightweight clipboard manager for macOS",
+      "stars": 21378,
+      "language": "Swift",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "lwouis/alt-tab-macos",
+      "html_url": "https://github.com/lwouis/alt-tab-macos",
+      "description": "Windows alt-tab on macOS ",
+      "stars": 16224,
+      "language": "Swift",
+      "license": "GPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "dwarvesf/hidden",
+      "html_url": "https://github.com/dwarvesf/hidden",
+      "description": "An ultra-light MacOS utility that helps hide menu bar icons",
+      "stars": 14640,
+      "language": "Swift",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "exelban/stats",
+      "html_url": "https://github.com/exelban/stats",
+      "description": "macOS system monitor in your menu bar",
+      "stars": 41509,
+      "language": "Swift",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "MonitorControl/MonitorControl",
+      "html_url": "https://github.com/MonitorControl/MonitorControl",
+      "description": "🖥 Control your display's brightness & volume on your Mac as if it was a native Apple Display. Use Apple Keyboard keys or custom shortcuts. Shows the native macOS OSDs.",
+      "stars": 34062,
+      "language": "Swift",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "iina/iina",
+      "html_url": "https://github.com/iina/iina",
+      "description": "The modern video player for macOS.",
+      "stars": 46135,
+      "language": "Swift",
+      "license": "GPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "localsend/localsend",
+      "html_url": "https://github.com/localsend/localsend",
+      "description": "An open-source cross-platform alternative to AirDrop",
+      "stars": 89691,
+      "language": "Dart",
+      "license": "Apache-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "syncthing/syncthing",
+      "html_url": "https://github.com/syncthing/syncthing",
+      "description": "Open Source Continuous File Synchronization",
+      "stars": 88114,
+      "language": "Go",
+      "license": "MPL-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "immich-app/immich",
+      "html_url": "https://github.com/immich-app/immich",
+      "description": "High performance self-hosted photo and video management solution.",
+      "stars": 112940,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "ShareX/ShareX",
+      "html_url": "https://github.com/ShareX/ShareX",
+      "description": "ShareX is a free and open-source application that enables users to capture or record any area of their screen with a single keystroke. It also supports uploading images, text, and various file types to a wide range of destinations.",
+      "stars": 39374,
+      "language": "C#",
+      "license": "GPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "obsproject/obs-studio",
+      "html_url": "https://github.com/obsproject/obs-studio",
+      "description": "OBS Studio - Free and open source software for live streaming and screen recording",
+      "stars": 75601,
+      "language": "C",
+      "license": "GPL-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "keepassxreboot/keepassxc",
+      "html_url": "https://github.com/keepassxreboot/keepassxc",
+      "description": "KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”.",
+      "stars": 28601,
+      "language": "C++",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "bitwarden/clients",
+      "html_url": "https://github.com/bitwarden/clients",
+      "description": "Bitwarden client apps (web, browser extension, desktop, and cli).",
+      "stars": 13700,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "ankitects/anki",
+      "html_url": "https://github.com/ankitects/anki",
+      "description": "Anki is a smart spaced repetition flashcard program",
+      "stars": 30124,
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "obsidianmd/obsidian-releases",
+      "html_url": "https://github.com/obsidianmd/obsidian-releases",
+      "description": "Community plugins list, theme list, and releases of Obsidian.",
+      "stars": 21164,
+      "language": null,
+      "license": null,
+      "archived": false
+    },
+    {
+      "full_name": "raycast/extensions",
+      "html_url": "https://github.com/raycast/extensions",
+      "description": "Everything you need to extend Raycast.",
+      "stars": 7715,
+      "language": "TypeScript",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "jdx/mise",
+      "html_url": "https://github.com/jdx/mise",
+      "description": "dev tools, env vars, task runner",
+      "stars": 33219,
+      "language": "Rust",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "casey/just",
+      "html_url": "https://github.com/casey/just",
+      "description": "🤖 Just a command runner",
+      "stars": 35541,
+      "language": "Rust",
+      "license": "CC0-1.0",
+      "archived": false
+    },
+    {
+      "full_name": "ghostty-org/ghostty",
+      "html_url": "https://github.com/ghostty-org/ghostty",
+      "description": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
+      "stars": 60440,
+      "language": "Zig",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "wezterm/wezterm",
+      "html_url": "https://github.com/wezterm/wezterm",
+      "description": "A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+      "stars": 28628,
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "alacritty/alacritty",
+      "html_url": "https://github.com/alacritty/alacritty",
+      "description": "A cross-platform, OpenGL terminal emulator.",
+      "stars": 65555,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "zed-industries/zed",
+      "html_url": "https://github.com/zed-industries/zed",
+      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "stars": 89438,
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "helix-editor/helix",
+      "html_url": "https://github.com/helix-editor/helix",
+      "description": "A post-modern modal text editor.",
+      "stars": 46002,
+      "language": "Rust",
+      "license": "MPL-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "coteditor/CotEditor",
+      "html_url": "https://github.com/coteditor/CotEditor",
+      "description": "Lightweight Plain Text Editor for macOS",
+      "stars": 8428,
+      "language": "Swift",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "lihaoyun6/QuickRecorder",
+      "html_url": "https://github.com/lihaoyun6/QuickRecorder",
+      "description": "A lightweight screen recorder based on ScreenCapture Kit for macOS / 基于 ScreenCapture Kit 的轻量化多功能 macOS 录屏工具",
+      "stars": 8622,
+      "language": "Swift",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "Caldis/Mos",
+      "html_url": "https://github.com/Caldis/Mos",
+      "description": "一个用于在 macOS 上平滑你的鼠标滚动效果或单独设置滚动方向的小工具, 让你的滚轮爽如触控板  |  A lightweight tool used to smooth scrolling and set scroll direction independently for your mouse on macOS",
+      "stars": 21284,
+      "language": "Swift",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "linearmouse/linearmouse",
+      "html_url": "https://github.com/linearmouse/linearmouse",
+      "description": "The mouse and trackpad utility for Mac.",
+      "stars": 6754,
+      "language": "Swift",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "jordanbaird/Ice",
+      "html_url": "https://github.com/jordanbaird/Ice",
+      "description": "Powerful menu bar manager for macOS",
+      "stars": 29442,
+      "language": "Swift",
+      "license": "GPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "FelixKratz/SketchyBar",
+      "html_url": "https://github.com/FelixKratz/SketchyBar",
+      "description": "A highly customizable macOS status bar replacement",
+      "stars": 12293,
+      "language": "C",
+      "license": "GPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "excalidraw/excalidraw",
+      "html_url": "https://github.com/excalidraw/excalidraw",
+      "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+      "stars": 130774,
+      "language": "TypeScript",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "tldraw/tldraw",
+      "html_url": "https://github.com/tldraw/tldraw",
+      "description": "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK.",
+      "stars": 50030,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "CorentinTh/it-tools",
+      "html_url": "https://github.com/CorentinTh/it-tools",
+      "description": "Collection of handy online tools for developers, with great UX. ",
+      "stars": 40406,
+      "language": "Vue",
+      "license": "GPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "GoogleChromeLabs/squoosh",
+      "html_url": "https://github.com/GoogleChromeLabs/squoosh",
+      "description": "Make images smaller using best-in-class codecs, right in the browser.",
+      "stars": 25759,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "carbon-app/carbon",
+      "html_url": "https://github.com/carbon-app/carbon",
+      "description": ":black_heart: Create and share beautiful images of your source code",
+      "stars": 36090,
+      "language": "JavaScript",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "fiatjaf/noscl",
+      "html_url": "https://github.com/fiatjaf/noscl",
+      "description": "Command line client for Nostr.",
+      "stars": 277,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "archived": true
+    },
+    {
+      "full_name": "sindresorhus/Gifski",
+      "html_url": "https://github.com/sindresorhus/Gifski",
+      "description": "🌈 Convert videos to high-quality GIFs on your Mac",
+      "stars": 8541,
+      "language": "Swift",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "Hopding/pdf-lib",
+      "html_url": "https://github.com/Hopding/pdf-lib",
+      "description": "Create and modify PDF documents in any JavaScript environment",
+      "stars": 8608,
+      "language": "TypeScript",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "mozilla/pdf.js",
+      "html_url": "https://github.com/mozilla/pdf.js",
+      "description": "PDF Reader in JavaScript",
+      "stars": 53802,
+      "language": "JavaScript",
+      "license": "Apache-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "jgraph/drawio",
+      "html_url": "https://github.com/jgraph/drawio",
+      "description": "draw.io is a JavaScript, client-side editor for general diagramming.",
+      "stars": 7793,
+      "language": "JavaScript",
+      "license": "Apache-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "jgraph/drawio-desktop",
+      "html_url": "https://github.com/jgraph/drawio-desktop",
+      "description": "Official electron build of draw.io",
+      "stars": 62846,
+      "language": "JavaScript",
+      "license": "Apache-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "firasdib/Regex101",
+      "html_url": "https://github.com/firasdib/Regex101",
+      "description": "This repository is currently only used for issue tracking for www.regex101.com",
+      "stars": 3513,
+      "language": null,
+      "license": null,
+      "archived": false
+    },
+    {
+      "full_name": "json-editor/json-editor",
+      "html_url": "https://github.com/json-editor/json-editor",
+      "description": "JSON Schema Based Editor",
+      "stars": 4905,
+      "language": "JavaScript",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "beautifier/js-beautify",
+      "html_url": "https://github.com/beautifier/js-beautify",
+      "description": "Beautifier for javascript ",
+      "stars": 8994,
+      "language": "JavaScript",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "jqlang/jq",
+      "html_url": "https://github.com/jqlang/jq",
+      "description": "Command-line JSON processor",
+      "stars": 35512,
+      "language": "C",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "jqlang/jq",
+      "html_url": "https://github.com/jqlang/jq",
+      "description": "Command-line JSON processor",
+      "stars": 35512,
+      "language": "C",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "httpie/cli",
+      "html_url": "https://github.com/httpie/cli",
+      "description": "🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.",
+      "stars": 38468,
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "archived": false
+    },
+    {
+      "full_name": "lutzroeder/netron",
+      "html_url": "https://github.com/lutzroeder/netron",
+      "description": "Visualizer for neural network, deep learning and machine learning models",
+      "stars": 33426,
+      "language": "JavaScript",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "gchq/CyberChef",
+      "html_url": "https://github.com/gchq/CyberChef",
+      "description": "The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis",
+      "stars": 35694,
+      "language": "JavaScript",
+      "license": "Apache-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "nicolargo/glances",
+      "html_url": "https://github.com/nicolargo/glances",
+      "description": "Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, macOS and Windows operating systems.",
+      "stars": 33476,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "filebrowser/filebrowser",
+      "html_url": "https://github.com/filebrowser/filebrowser",
+      "description": "File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview and edit your files.",
+      "stars": 35968,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "miniflux/v2",
+      "html_url": "https://github.com/miniflux/v2",
+      "description": "Minimalist and opinionated feed reader",
+      "stars": 9624,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "BookStackApp/BookStack",
+      "html_url": "https://github.com/BookStackApp/BookStack",
+      "description": "NOW MANAGED ON CODEBERG",
+      "stars": 19006,
+      "language": "PHP",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "outline/outline",
+      "html_url": "https://github.com/outline/outline",
+      "description": "The fastest knowledge base for growing teams. Beautiful, realtime collaborative, feature packed, and markdown compatible.",
+      "stars": 40373,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "appwrite/appwrite",
+      "html_url": "https://github.com/appwrite/appwrite",
+      "description": "Appwrite® - complete cloud infrastructure for your web, mobile and AI apps. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime and more",
+      "stars": 57160,
+      "language": "TypeScript",
+      "license": "BSD-3-Clause",
+      "archived": false
+    },
+    {
+      "full_name": "nocodb/nocodb",
+      "html_url": "https://github.com/nocodb/nocodb",
+      "description": "🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative",
+      "stars": 64779,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "nocodb/noco-docs",
+      "html_url": "https://github.com/nocodb/noco-docs",
+      "description": "Production version : docs.nocodb.com ",
+      "stars": 5,
+      "language": null,
+      "license": null,
+      "archived": false
+    },
+    {
+      "full_name": "pocketbase/pocketbase",
+      "html_url": "https://github.com/pocketbase/pocketbase",
+      "description": "Open Source realtime backend in 1 file",
+      "stars": 60881,
+      "language": "Go",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "umami-software/umami",
+      "html_url": "https://github.com/umami-software/umami",
+      "description": "Umami is a privacy-first analytics platform. Traffic, campaigns, behavior, conversions, and revenue in one place — no cookies, no surveillance, self-hosted or in the cloud.",
+      "stars": 38438,
+      "language": "TypeScript",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "plausible/analytics",
+      "html_url": "https://github.com/plausible/analytics",
+      "description": "Open source, privacy-first web analytics. Lightweight, cookie-free Google Analytics alternative. Self-hosted or cloud.",
+      "stars": 28797,
+      "language": "Elixir",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "go-gitea/gitea",
+      "html_url": "https://github.com/go-gitea/gitea",
+      "description": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD",
+      "stars": 57676,
+      "language": "Go",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "gethomepage/homepage",
+      "html_url": "https://github.com/gethomepage/homepage",
+      "description": "A highly customizable homepage (or startpage / application dashboard) with Docker and service API integrations.",
+      "stars": 32294,
+      "language": "JavaScript",
+      "license": "GPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "actualbudget/actual",
+      "html_url": "https://github.com/actualbudget/actual",
+      "description": "A local-first personal finance app",
+      "stars": 28451,
+      "language": "TypeScript",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "maybe-finance/maybe",
+      "html_url": "https://github.com/maybe-finance/maybe",
+      "description": "The personal finance app for everyone",
+      "stars": 54316,
+      "language": "Ruby",
+      "license": "AGPL-3.0",
+      "archived": true
+    },
+    {
+      "full_name": "firefly-iii/firefly-iii",
+      "html_url": "https://github.com/firefly-iii/firefly-iii",
+      "description": "Firefly III: a personal finances manager",
+      "stars": 24454,
+      "language": "PHP",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "paperless-ngx/paperless-ngx",
+      "html_url": "https://github.com/paperless-ngx/paperless-ngx",
+      "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
+      "stars": 44701,
+      "language": "Python",
+      "license": "GPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "nextcloud/server",
+      "html_url": "https://github.com/nextcloud/server",
+      "description": "☁️ Nextcloud server, a safe home for all your data",
+      "stars": 36628,
+      "language": "PHP",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "photoprism/photoprism",
+      "html_url": "https://github.com/photoprism/photoprism",
+      "description": "AI-Powered Photos App 🌈💎✨",
+      "stars": 40122,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "lycheeverse/lychee",
+      "html_url": "https://github.com/lycheeverse/lychee",
+      "description": "⚡ Fast, async, stream-based link checker written in Rust. Finds broken URLs and mail addresses inside Markdown, HTML, reStructuredText, websites and more!",
+      "stars": 3873,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "schlagmichdoch/PairDrop",
+      "html_url": "https://github.com/schlagmichdoch/PairDrop",
+      "description": "PairDrop: Transfer Files Cross-Platform. No Setup, No Signup.",
+      "stars": 11282,
+      "language": "JavaScript",
+      "license": "GPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "binwiederhier/ntfy",
+      "html_url": "https://github.com/binwiederhier/ntfy",
+      "description": "Send push notifications to your phone or desktop using PUT/POST",
+      "stars": 33842,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "gotify/server",
+      "html_url": "https://github.com/gotify/server",
+      "description": "A simple server for sending and receiving messages in real-time per WebSocket. (Includes a sleek web-ui)",
+      "stars": 15815,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "open-webui/open-webui",
+      "html_url": "https://github.com/open-webui/open-webui",
+      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "stars": 150361,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "ollama/ollama",
+      "html_url": "https://github.com/ollama/ollama",
+      "description": "Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "stars": 179749,
+      "language": "Go",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "yt-dlp/yt-dlp",
+      "html_url": "https://github.com/yt-dlp/yt-dlp",
+      "description": "A feature-rich command-line audio/video downloader",
+      "stars": 187775,
+      "language": "Python",
+      "license": "Unlicense",
+      "archived": false
+    },
+    {
+      "full_name": "imputnet/cobalt",
+      "html_url": "https://github.com/imputnet/cobalt",
+      "description": "best way to save what you love",
+      "stars": 42462,
+      "language": "Svelte",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "mikf/gallery-dl",
+      "html_url": "https://github.com/mikf/gallery-dl",
+      "description": "Command-line program to download image galleries and collections from several image hosting sites",
+      "stars": 19352,
+      "language": "Python",
+      "license": "GPL-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "just-containers/s6-overlay",
+      "html_url": "https://github.com/just-containers/s6-overlay",
+      "description": "s6 overlay for containers (includes execline, s6-linux-utils & a custom init)",
+      "stars": 4573,
+      "language": "Shell",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "AdguardTeam/AdGuardHome",
+      "html_url": "https://github.com/AdguardTeam/AdGuardHome",
+      "description": "Network-wide ads & trackers blocking DNS server",
+      "stars": 36542,
+      "language": "TypeScript",
+      "license": "GPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "pi-hole/pi-hole",
+      "html_url": "https://github.com/pi-hole/pi-hole",
+      "description": "A black hole for Internet advertisements",
+      "stars": 60674,
+      "language": "Shell",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "traefik/traefik",
+      "html_url": "https://github.com/traefik/traefik",
+      "description": "The Cloud Native Application Proxy",
+      "stars": 64657,
+      "language": "Go",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "caddyserver/caddy",
+      "html_url": "https://github.com/caddyserver/caddy",
+      "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+      "stars": 75328,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "archived": false
+    },
+    {
+      "full_name": "mickael-kerjean/filestash",
+      "html_url": "https://github.com/mickael-kerjean/filestash",
+      "description": ":file_folder: Universal File Storage Client",
+      "stars": 14560,
+      "language": "Go",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "sissbruecker/linkding",
+      "html_url": "https://github.com/sissbruecker/linkding",
+      "description": "Self-hosted bookmark manager that is designed be to be minimal, fast, and easy to set up using Docker.",
+      "stars": 11118,
+      "language": "Python",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "linkwarden/linkwarden",
+      "html_url": "https://github.com/linkwarden/linkwarden",
+      "description": "⚡️⚡️⚡️ Self-hosted collaborative bookmark manager to collect, read, annotate, and fully preserve what matters, all in one place.",
+      "stars": 19629,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "karakeep-app/karakeep",
+      "html_url": "https://github.com/karakeep-app/karakeep",
+      "description": "A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search",
+      "stars": 28667,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "getomni-ai/zerox",
+      "html_url": "https://github.com/getomni-ai/zerox",
+      "description": "OCR & Document Extraction using vision models",
+      "stars": 12266,
+      "language": "TypeScript",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "Stirling-Tools/Stirling-PDF",
+      "html_url": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "description": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
+      "stars": 90918,
+      "language": "Java",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "mermaid-js/mermaid",
+      "html_url": "https://github.com/mermaid-js/mermaid",
+      "description": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown",
+      "stars": 89983,
+      "language": "TypeScript",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "markmap/markmap",
+      "html_url": "https://github.com/markmap/markmap",
+      "description": "Build mindmaps with plain text",
+      "stars": 13084,
+      "language": "TypeScript",
+      "license": "MIT",
+      "archived": false
+    },
+    {
+      "full_name": "toeverything/AFFiNE",
+      "html_url": "https://github.com/toeverything/AFFiNE",
+      "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
+      "stars": 72000,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "logseq/logseq",
+      "html_url": "https://github.com/logseq/logseq",
+      "description": "A privacy-first, open-source platform for knowledge management and collaboration. Download link:  http://github.com/logseq/logseq/releases. roadmap: https://logseq.io/p/NX4mc_ggEV",
+      "stars": 44681,
+      "language": "Clojure",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "AppFlowy-IO/AppFlowy",
+      "html_url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "description": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.",
+      "stars": 76064,
+      "language": "Dart",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "laurent22/joplin",
+      "html_url": "https://github.com/laurent22/joplin",
+      "description": "Joplin - the privacy-focused note taking app with sync capabilities for Windows, macOS, Linux, Android and iOS.",
+      "stars": 56156,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "archived": false
+    },
+    {
+      "full_name": "standardnotes/app",
+      "html_url": "https://github.com/standardnotes/app",
+      "description": "Think fearlessly with end-to-end encrypted notes and files. For issues, visit https://standardnotes.com/forum or https://standardnotes.com/help.",
+      "stars": 6611,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "siyuan-note/siyuan",
+      "html_url": "https://github.com/siyuan-note/siyuan",
+      "description": "An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作",
+      "stars": 46039,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "TriliumNext/Trilium",
+      "html_url": "https://github.com/TriliumNext/Trilium",
+      "description": "Build your personal knowledge base with Trilium Notes",
+      "stars": 37632,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "TriliumNext/Trilium",
+      "html_url": "https://github.com/TriliumNext/Trilium",
+      "description": "Build your personal knowledge base with Trilium Notes",
+      "stars": 37632,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "archived": false
+    },
+    {
+      "full_name": "org-roam/org-roam",
+      "html_url": "https://github.com/org-roam/org-roam",
+      "description": "Rudimentary Roam replica with Org-mode",
+      "stars": 6016,
+      "language": "Emacs Lisp",
+      "license": "GPL-3.0",
+      "archived": false
+    }
+  ]
+}

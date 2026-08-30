@@ -1,0 +1,261 @@
+[
+  {
+    "full_name": "kitspace/awesome-electronics",
+    "stars": 8075,
+    "url": "https://github.com/kitspace/awesome-electronics",
+    "desc": "A curated list of awesome resources for Electronic Engineers and hobbyists",
+    "lic": "CC0-1.0"
+  },
+  {
+    "full_name": "awesome-selfhosted/awesome-selfhosted",
+    "stars": 316026,
+    "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+    "desc": "A list of Free Software network services and web applications which can be hosted on your own servers",
+    "lic": "NOASSERTION"
+  },
+  {
+    "full_name": "ad-si/awesome-3d-printing",
+    "stars": 1940,
+    "url": "https://github.com/ad-si/awesome-3d-printing",
+    "desc": "A curated list of awesome 3D printing resources",
+    "lic": "CC0-1.0"
+  },
+  {
+    "full_name": "openscad/openscad",
+    "stars": 10048,
+    "url": "https://github.com/openscad/openscad",
+    "desc": "OpenSCAD - The Programmers Solid 3D CAD Modeller  ",
+    "lic": "NOASSERTION"
+  },
+  {
+    "full_name": "FreeCAD/FreeCAD",
+    "stars": 33136,
+    "url": "https://github.com/FreeCAD/FreeCAD",
+    "desc": "Official source code of FreeCAD, a free and opensource multiplatform 3D parametric modeler.",
+    "lic": "LGPL-2.1"
+  },
+  {
+    "full_name": "openscad/openscad",
+    "stars": 10048,
+    "url": "https://github.com/openscad/openscad",
+    "desc": "OpenSCAD - The Programmers Solid 3D CAD Modeller  ",
+    "lic": "NOASSERTION"
+  },
+  {
+    "full_name": "KiCad/kicad-source-mirror",
+    "stars": 2900,
+    "url": "https://github.com/KiCad/kicad-source-mirror",
+    "desc": "This is an active mirror of the KiCad development branch, which is hosted at GitLab (updated every time something is pushed). Pull requests on GitHub are not accepted or watched.",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "logseq/logseq",
+    "stars": 44681,
+    "url": "https://github.com/logseq/logseq",
+    "desc": "A privacy-first, open-source platform for knowledge management and collaboration. Download link:  http://github.com/logseq/logseq/releases. roadmap: https://logseq.io/p/NX4mc_ggEV",
+    "lic": "AGPL-3.0"
+  },
+  {
+    "full_name": "VoronDesign/Voron-2",
+    "stars": 4514,
+    "url": "https://github.com/VoronDesign/Voron-2",
+    "desc": "Voron 2 CoreXY 3D Printer design",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "VoronDesign/Voron-Trident",
+    "stars": 1082,
+    "url": "https://github.com/VoronDesign/Voron-Trident",
+    "desc": "Voron Trident CoreXY 3D Printer design",
+    "lic": null
+  },
+  {
+    "full_name": "Klipper3d/klipper",
+    "stars": 11850,
+    "url": "https://github.com/Klipper3d/klipper",
+    "desc": "Klipper is a 3d-printer firmware",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "mainsail-crew/mainsail",
+    "stars": 2203,
+    "url": "https://github.com/mainsail-crew/mainsail",
+    "desc": "Mainsail is the popular web interface for managing and controlling 3D printers with Klipper.",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "OctoPrint/OctoPrint",
+    "stars": 9084,
+    "url": "https://github.com/OctoPrint/OctoPrint",
+    "desc": "OctoPrint is the snappy web interface for your 3D printer!",
+    "lic": "AGPL-3.0"
+  },
+  {
+    "full_name": "godotengine/godot",
+    "stars": 116365,
+    "url": "https://github.com/godotengine/godot",
+    "desc": "Godot Engine – Multi-platform 2D and 3D game engine",
+    "lic": "MIT"
+  },
+  {
+    "full_name": "godotengine/awesome-godot",
+    "stars": 10665,
+    "url": "https://github.com/godotengine/awesome-godot",
+    "desc": "A curated list of free/libre plugins, scripts and add-ons for Godot",
+    "lic": "CC-BY-4.0"
+  },
+  {
+    "full_name": "Calinou/awesome-godot",
+    "stars": 324,
+    "url": "https://github.com/Calinou/awesome-godot",
+    "desc": "A curated list of free/libre plugins, scripts and add-ons for Godot",
+    "lic": "CC-BY-4.0"
+  },
+  {
+    "full_name": "luanti-org/luanti",
+    "stars": 13522,
+    "url": "https://github.com/luanti-org/luanti",
+    "desc": "Luanti (formerly Minetest) is an open source voxel game-creation platform with easy modding and game creation",
+    "lic": "NOASSERTION"
+  },
+  {
+    "full_name": "luanti-org/luanti",
+    "stars": 13522,
+    "url": "https://github.com/luanti-org/luanti",
+    "desc": "Luanti (formerly Minetest) is an open source voxel game-creation platform with easy modding and game creation",
+    "lic": "NOASSERTION"
+  },
+  {
+    "full_name": "veloren/veloren",
+    "stars": 7512,
+    "url": "https://github.com/veloren/veloren",
+    "desc": "[mirror of https://gitlab.com/veloren/veloren] An open world, open source voxel RPG inspired by Dwarf Fortress and Cube World. This repository is a mirror. Please submit all PRs and issues on our GitLab page.",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "0ad/0ad",
+    "stars": 2823,
+    "url": "https://github.com/0ad/0ad",
+    "desc": "[DEPRECATED] Git mirror of the 0 A.D. SVN source code (migrated to https://gitea.wildfiregames.com on August 20th 2024)",
+    "lic": "NOASSERTION"
+  },
+  {
+    "full_name": "OpenRA/OpenRA",
+    "stars": 17299,
+    "url": "https://github.com/OpenRA/OpenRA",
+    "desc": "Open Source real-time strategy game engine for early Westwood games such as Command & Conquer: Red Alert written in C# using SDL and OpenGL. Runs on Windows, Linux, *BSD and Mac OS X.",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "endless-sky/endless-sky",
+    "stars": 7526,
+    "url": "https://github.com/endless-sky/endless-sky",
+    "desc": "Space exploration, trading, and combat game.",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "lutris/lutris",
+    "stars": 10202,
+    "url": "https://github.com/lutris/lutris",
+    "desc": "Lutris desktop client",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "Heroic-Games-Launcher/HeroicGamesLauncher",
+    "stars": 12094,
+    "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
+    "desc": "A games launcher for GOG, Amazon and Epic Games for Linux, Windows and macOS.",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "bottlesdevs/Bottles",
+    "stars": 8752,
+    "url": "https://github.com/bottlesdevs/Bottles",
+    "desc": "Run Windows software and games on Linux",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "libretro/RetroArch",
+    "stars": 13714,
+    "url": "https://github.com/libretro/RetroArch",
+    "desc": "Cross-platform, sophisticated frontend for the libretro API. Licensed GPLv3.",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "RPCS3/rpcs3",
+    "stars": 19599,
+    "url": "https://github.com/RPCS3/rpcs3",
+    "desc": "PlayStation 3 emulator and debugger",
+    "lic": "GPL-2.0"
+  },
+  {
+    "full_name": "dolphin-emu/dolphin",
+    "stars": 15458,
+    "url": "https://github.com/dolphin-emu/dolphin",
+    "desc": "Dolphin is a GameCube / Wii emulator, allowing you to play games for these two platforms on PC with improvements.",
+    "lic": "NOASSERTION"
+  },
+  {
+    "full_name": "PCSX2/pcsx2",
+    "stars": 15414,
+    "url": "https://github.com/PCSX2/pcsx2",
+    "desc": "PCSX2 - The Playstation 2 Emulator",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "greatscottgadgets/hackrf",
+    "stars": 8063,
+    "url": "https://github.com/greatscottgadgets/hackrf",
+    "desc": "low cost software radio platform",
+    "lic": "GPL-2.0"
+  },
+  {
+    "full_name": "analogdevicesinc/plutosdr-fw",
+    "stars": 467,
+    "url": "https://github.com/analogdevicesinc/plutosdr-fw",
+    "desc": "PlutoSDR Firmware",
+    "lic": "NOASSERTION"
+  },
+  {
+    "full_name": "greatscottgadgets/greatfet",
+    "stars": 353,
+    "url": "https://github.com/greatscottgadgets/greatfet",
+    "desc": "GreatFET firmware and host software",
+    "lic": "BSD-3-Clause"
+  },
+  {
+    "full_name": "flipperdevices/flipperzero-firmware",
+    "stars": 16528,
+    "url": "https://github.com/flipperdevices/flipperzero-firmware",
+    "desc": "Flipper Zero firmware source code",
+    "lic": "GPL-3.0"
+  },
+  {
+    "full_name": "raspberrypi/pico-sdk",
+    "stars": 4945,
+    "url": "https://github.com/raspberrypi/pico-sdk",
+    "desc": null,
+    "lic": "BSD-3-Clause"
+  },
+  {
+    "full_name": "espressif/arduino-esp32",
+    "stars": 17302,
+    "url": "https://github.com/espressif/arduino-esp32",
+    "desc": "Arduino core for the ESP32 family of SoCs",
+    "lic": "LGPL-2.1"
+  },
+  {
+    "full_name": "FrameworkComputer/framework-system",
+    "stars": 115,
+    "url": "https://github.com/FrameworkComputer/framework-system",
+    "desc": "Rust libraries and tools to interact with the Framework Computer systems",
+    "lic": "BSD-3-Clause"
+  },
+  {
+    "full_name": "FrameworkComputer/InputModules",
+    "stars": 242,
+    "url": "https://github.com/FrameworkComputer/InputModules",
+    "desc": "Reference designs and documentation for the Input Module system in the Framework Laptop 16",
+    "lic": null
+  }
+]
