@@ -124,7 +124,7 @@ PowerToys 本身就是微软把「一堆可复刻小工具」捆在一起的例�
 
 ## 8. Windows 经典（你点名的）
 
-详细出处和持续收集办法见 [tools-by-platform.md](file:///workspace/tools-by-platform.md)。
+详细出处和持续收集办法见 [tools-by-platform.md](/tools-by-platform)。
 
 | 名字 | 地址 | 收费 |
 |---|---|---|

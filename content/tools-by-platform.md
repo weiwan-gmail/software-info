@@ -1,6 +1,6 @@
 # 按平台收集：经典工具 + 新名单
 
-领域总表在 [catalog/README.md](file:///workspace/catalog/README.md)。
+领域总表在 [catalog/README.md](/catalog/)。
 
 核对：2026-08-29 PT。你点名的六个都写进 Windows。持续收集的办法在第 1 节，X 是其中一条线。
 
@@ -111,7 +111,7 @@ Black Hat Arsenal、FOSDEM 展台、闪电讲（5 分钟一个工具）比大会
 
 ## 3. macOS
 
-种子仍以开源小工具为主，细节在 [learnable-desktop.md](file:///workspace/learnable-desktop.md)。
+种子仍以开源小工具为主，细节在 [learnable-desktop.md](/learnable-desktop)。
 
 常盯：Rectangle、AeroSpace、Maccy、AltTab、IINA、LocalSend、Raycast（闭源）、Snipaste（有 Mac）、Stats、Hidden / Ice。
 
@@ -129,7 +129,7 @@ Black Hat Arsenal、FOSDEM 展台、闪电讲（5 分钟一个工具）比大会
 
 清单偏库：[awesome-android](https://github.com/JStumpp/awesome-android)。可装 App：[android-foss](https://github.com/offa/android-foss)、F-Droid。
 
-和桌面能对上的：LocalSend、AnkiDroid、Syncthing、KeePass 兼容客户端、Quicker 安卓端。付费榜能当作业的在 [learnable-mobile.md](file:///workspace/learnable-mobile.md)（AnkiMobile、Paprika、Streaks）。
+和桌面能对上的：LocalSend、AnkiDroid、Syncthing、KeePass 兼容客户端、Quicker 安卓端。付费榜能当作业的在 [learnable-mobile.md](/learnable-mobile)（AnkiMobile、Paprika、Streaks）。
 
 ---
 
@@ -141,7 +141,7 @@ Black Hat Arsenal、FOSDEM 展台、闪电讲（5 分钟一个工具）比大会
 
 ## 7. 跨平台网站工具
 
-见 [learnable-web-tools.md](file:///workspace/learnable-web-tools.md)。it-tools、Stirling-PDF、Squoosh、Excalidraw。
+见 [learnable-web-tools.md](/learnable-web-tools)。it-tools、Stirling-PDF、Squoosh、Excalidraw。
 
 ---
 
@@ -164,6 +164,6 @@ Black Hat Arsenal、FOSDEM 展台、闪电讲（5 分钟一个工具）比大会
 
 | 类 | 文档 |
 |---|---|
-| 开源硬件 / 3D 打印 | [oshw-and-print.md](file:///workspace/oshw-and-print.md) |
-| 游戏 / 在线小游戏 | [games.md](file:///workspace/games.md) |
-| 术数 / 易经 / 塔罗 | [divination.md](file:///workspace/divination.md) |
+| 开源硬件 / 3D 打印 | [oshw-and-print.md](/oshw-and-print) |
+| 游戏 / 在线小游戏 | [games.md](/games) |
+| 术数 / 易经 / 塔罗 | [divination.md](/divination) |

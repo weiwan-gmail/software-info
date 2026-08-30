@@ -1,0 +1,16 @@
+{
+  "name": "software-info",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev content",
+    "docs:build": "vitepress build content",
+    "docs:preview": "vitepress preview content"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
