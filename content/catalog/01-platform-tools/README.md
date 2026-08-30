@@ -14,7 +14,7 @@ Detail tables: [learnable-desktop.md](../../learnable-desktop.md) · [learnable-
 | Quicker | [getquicker.net](https://getquicker.net/) | free + Pro | Feedback repo cuiliang/Quicker 617 |
 | Everything | [voidtools.com](https://www.voidtools.com/) | **Free closed-source** (donation / commercial license exists) | Instant filename search |
 
-## 1.2 Windows, launchers, menu bar
+## 1.2 Window managers, launchers, menu bar
 
 **Open source**
 
