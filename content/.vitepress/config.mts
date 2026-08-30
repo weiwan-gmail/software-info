@@ -7,26 +7,28 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   ignoreDeadLinks: [/^sand-workflow:/],
+  // Keep 总表 at /catalog/. Domain files stay README.md so
+  // existing 01-foo/README.md and ../07-observation/README.md links resolve.
   rewrites: {
-    'catalog/README.md': 'index.md',
+    'catalog/README.md': 'catalog/index.md',
   },
   themeConfig: {
-    nav: [{ text: '总表', link: '/' }],
+    nav: [{ text: '总表', link: '/catalog/' }],
     sidebar: [
       {
         text: '领域',
         items: [
-          { text: '总表', link: '/' },
-          { text: '1. 平台与日常工具', link: '/catalog/01-platform-tools/' },
-          { text: '2. 开源清单与 GitHub 账号', link: '/catalog/02-awesome-github/' },
-          { text: '3. 电子、嵌入式、无线电', link: '/catalog/03-electronics-radio/' },
-          { text: '4. 制造', link: '/catalog/04-fabrication/' },
-          { text: '5. 游戏', link: '/catalog/05-games/' },
-          { text: '6. 声音、影像、文字', link: '/catalog/06-media/' },
-          { text: '7. 观测与空间', link: '/catalog/07-observation/' },
-          { text: '8. 术数与文本', link: '/catalog/08-divination/' },
-          { text: '9. 网络与自建', link: '/catalog/09-network/' },
-          { text: '10. 信号、仪器、形式化', link: '/catalog/10-signal-formal/' },
+          { text: '总表', link: '/catalog/' },
+          { text: '1. 平台与日常工具', link: '/catalog/01-platform-tools/README' },
+          { text: '2. 开源清单与 GitHub 账号', link: '/catalog/02-awesome-github/README' },
+          { text: '3. 电子、嵌入式、无线电', link: '/catalog/03-electronics-radio/README' },
+          { text: '4. 制造', link: '/catalog/04-fabrication/README' },
+          { text: '5. 游戏', link: '/catalog/05-games/README' },
+          { text: '6. 声音、影像、文字', link: '/catalog/06-media/README' },
+          { text: '7. 观测与空间', link: '/catalog/07-observation/README' },
+          { text: '8. 术数与文本', link: '/catalog/08-divination/README' },
+          { text: '9. 网络与自建', link: '/catalog/09-network/README' },
+          { text: '10. 信号、仪器、形式化', link: '/catalog/10-signal-formal/README' },
         ],
       },
       {
@@ -47,11 +49,8 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/weiwan-gmail/software-info' },
     ],
     editLink: {
-      pattern: ({ filePath }) => {
-        const path =
-          filePath === 'index.md' ? 'catalog/README.md' : filePath
-        return `https://github.com/weiwan-gmail/software-info/edit/main/content/${path}`
-      },
+      pattern:
+        'https://github.com/weiwan-gmail/software-info/edit/main/content/:path',
       text: '在 GitHub 上编辑',
     },
     outline: { label: '本页' },

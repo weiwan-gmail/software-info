@@ -30,4 +30,4 @@ Import this repo. Framework preset: VitePress.
 - Build command: `npm run docs:build`
 - Output directory: `content/.vitepress/dist`
 
-`vercel.json` already sets those. Push to the connected branch to publish.
+`vercel.json` already sets those, including a `/` → `/catalog` redirect so the 总表 is the home page. Push to the connected branch to publish.

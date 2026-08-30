@@ -1,6 +1,6 @@
 # 按平台收集：经典工具 + 新名单
 
-领域总表在 [catalog/README.md](/)。
+领域总表在 [catalog/README.md](/catalog/)。
 
 核对：2026-08-29 PT。你点名的六个都写进 Windows。持续收集的办法在第 1 节，X 是其中一条线。
 

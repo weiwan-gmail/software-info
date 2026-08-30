@@ -3,6 +3,8 @@
   "framework": "vitepress",
   "buildCommand": "npm run docs:build",
   "outputDirectory": "content/.vitepress/dist",
+  "cleanUrls": true,
+  "redirects": [{ "source": "/", "destination": "/catalog", "permanent": false }],
   "headers": [
     {
       "source": "/assets/(.*)",
