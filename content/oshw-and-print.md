@@ -37,6 +37,8 @@ Board drops and crowdfunding: Crowd Supply, the OSHWA certified directory, Hacka
 | [KiCad/kicad-source-mirror](https://github.com/KiCad/kicad-source-mirror) | 2,900 | PCB. Official mirror |
 | [LibrePCB/LibrePCB](https://github.com/LibrePCB/LibrePCB) | 2,973 | lighter PCB |
 | [logisim-evolution/logisim-evolution](https://github.com/logisim-evolution/logisim-evolution) | 7,496 | digital-logic teaching |
+| [OLIMEX/RVPC](https://github.com/OLIMEX/RVPC) | — | €1 RISC-V retro kit; CH32V003 bit-bang VGA + Woz-style hex monitor; FOSDEM 2026 soldering workshop |
+| [SucréLA](https://gitlab.com/yannsionneau/SucreLA/) | — | open-source USB 3 logic analyzer (ECP5 + CH569); Yosys/nextpnr + PulseView; Saleae counterpart |
 
 Closed-source counterparts: Altium / Vivado / ModelSim. Homework is KiCad + Yosys + Verilator, not cloning Vivado.
 
@@ -58,3 +60,25 @@ Closed-source counterparts: Altium / Vivado / ModelSim. Homework is KiCad + Yosy
 | [cncjs/cncjs](https://github.com/cncjs/cncjs) | 2,640 | web-controlled CNC |
 
 Printables / Thingiverse / MakerWorld are model sites, not repos. When collecting, record the model and the license, not stars.
+
+---
+
+## 4. Weekly harvest records
+
+### 2026-08-31 · source 1 (tech talks / FOSDEM)
+
+- Name: SucréLA
+- Platform: OSHW / FPGA lab (Lattice ECP5 + WCH CH569; host side sigrok / PulseView)
+- Site or repo: https://gitlab.com/yannsionneau/SucreLA/
+- Paid: open source (LGPL v2.1 + CERN-OHL-W v2). Board price not published yet (README: “Not that expensive (To be defined)”)
+- Source: FOSDEM 2026 — “SucréLA: open source usb 3.0 logic analyzer based on FPGA” (Yann Sionneau)
+- Date: 2026-08-31
+- Learnable slice: LiteX/Migen capture pipeline on ECP5, HSPI into CH569 SuperSpeed USB 3, using only Yosys/nextpnr (no vendor FPGA toolchain)
+
+- Name: RVPC (Olimex)
+- Platform: OSHW / embedded RISC-V teaching board (CH32V003, VGA + PS/2)
+- Site or repo: https://github.com/OLIMEX/RVPC · product page https://www.olimex.com/Products/Retro-Computers/RVPC/open-source-hardware
+- Paid: open-source hardware (CERN-OHL-S v2) + GPL-3 software. Official kit listed at EUR 1.00
+- Source: FOSDEM 2026 — “RVPC RISC-V retro computer Soldering workshop” (Tsvetan Usunov)
+- Date: 2026-08-31
+- Learnable slice: hand-written bit-bang VGA on a 48 MHz RV32EC with 2 KB SRAM, plus a Woz-style hex monitor for hand-entered RISC-V machine code

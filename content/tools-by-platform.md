@@ -104,6 +104,7 @@ Black Hat Arsenal, FOSDEM booths, and lightning talks (one tool in five minutes)
 | **Rufus** | [pbatard/rufus](https://github.com/pbatard/rufus) (37,469 star, GPL-3.0) | free | Bootable USB. Rare high-star open source among Windows classics |
 | **Snipaste** | [snipaste.com](https://www.snipaste.com/) · feedback [Snipaste/feedback](https://github.com/Snipaste/feedback) (3,679) | free + Pro | Screenshot and pin to the desktop. Author levie ([liulex](https://github.com/liulex)). Win / Mac. Linux has clones |
 | **Quicker** | [getquicker.net](https://getquicker.net/) · feedback [cuiliang/Quicker](https://github.com/cuiliang/Quicker) (617) | free + Pro | Windows fingertip toolbox: middle-click panel, action library (the site has claimed 8000+ actions). Android client [cuiliang/QuickerAndroid](https://github.com/cuiliang/QuickerAndroid) |
+| **Lazy Nezumi Pro** | [lazynezumi.com](https://lazynezumi.com/) | buyout $39 | Overlay that injects stroke stabilizers / geometric rulers / scripts into an existing painting host (Attach To Window). Site price; includes one year of updates from purchase, renewal optional; personal license up to 3 machines |
 
 Same class, already in the learnable-desktop table: PowerToys, ShareX, Everything (search awesome-windows), KeePassXC.
 
@@ -113,7 +114,7 @@ Same class, already in the learnable-desktop table: PowerToys, ShareX, Everythin
 
 The seed is still open-source small tools. Detail is in [learnable-desktop.md](/learnable-desktop).
 
-Watch often: Rectangle, AeroSpace, Maccy, AltTab, IINA, LocalSend, Raycast (closed-source), Snipaste (has Mac), Stats, Hidden / Ice.
+Watch often: Rectangle, AeroSpace, Maccy, AltTab, IINA, LocalSend, Raycast (closed-source), Snipaste (has Mac), Stats, Hidden / Ice. Also watch RansomWhere? (Objective-See).
 
 List: [awesome-mac](https://github.com/jaywcjlove/awesome-mac). Install: Homebrew cask.
 
@@ -157,6 +158,46 @@ See [learnable-web-tools.md](/learnable-web-tools). it-tools, Stirling-PDF, Squo
 - Learnable slice:
 ```
 
+
+---
+
+## 8.1 Weekly harvest records
+
+### 2026-08-31 · source 1 (tech talks / Black Hat Arsenal)
+
+- Name: RansomWhere?
+- Platform: macOS
+- Site or repo: https://github.com/objective-see/RansomWhere · https://objective-see.org/products/ransomwhere.html
+- Paid: free open source (GPL-3.0)
+- Source: Black Hat Arsenal USA 2026 — “Practical Ransomware Detection on macOS (via Math, not AI)” (Patrick Wardle)
+- Date: 2026-08-31
+- Learnable slice: watch Shannon entropy of newly written files via Apple Endpoint Security, plus simple heuristics to separate high-entropy ciphertext from compression (no signatures, no ML)
+
+### 2026-09-06 · source 2 (usesthis / Ask HN / Lobsters)
+
+- Name: Lazy Nezumi Pro
+- Platform: Windows
+- Site or repo: https://lazynezumi.com/
+- Paid: buyout $39 (site price; includes one year of updates from purchase, renewal optional; personal license up to 3 machines)
+- Source: https://usesthis.com/interviews/torben.bokemeyer/ — Uses This / Torben Bökemeyer (Illustrator, game artist · 2026-09-05)
+- Date: 2026-09-06
+- Learnable slice: as an overlay, inject stroke stabilizers / geometric rulers / scripts into an existing painting host (Attach To Window) instead of rewriting a full canvas
+
+- Name: lnav
+- Platform: Linux / macOS / Windows (terminal)
+- Site or repo: https://lnav.org/ · https://github.com/tstack/lnav
+- Paid: free open source (BSD-2-Clause)
+- Source: https://news.ycombinator.com/item?id=49314700 — Ask HN: What is your favorite lightweight tool or CLI utility in 2026?
+- Date: 2026-09-06
+- Learnable slice: merge multiple logs by time + auto-detect formats + query logs with SQLite inside a TUI (no server, no pre-ingest)
+
+- Name: Mergiraf
+- Platform: Linux / macOS / Windows (Git / jj merge driver)
+- Site or repo: https://mergiraf.org/ · https://codeberg.org/mergiraf/mergiraf
+- Paid: free open source (GPL-3.0)
+- Source: https://lobste.rs/s/ttxwdz/what_software_do_you_use_daily_2026 — What software do you use daily in 2026? (2026-08-18)
+- Date: 2026-09-06
+- Learnable slice: syntax-tree-aware Git merge driver (not pure line diff); falls back to conflict markers when unsafe; `mergiraf review` to re-check auto-resolutions
 
 ---
 

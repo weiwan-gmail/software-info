@@ -52,7 +52,7 @@ Board-drop directories (not repos): Crowd Supply, OSHWA, Hackaday.io.
 | Altium Designer | [altium.com/altium-designer](https://www.altium.com/altium-designer) | subscription (now via Altium Develop / Agile) | KiCad / LibrePCB |
 | Vivado upper tiers | same AMD page | tiered licensing | Yosys + open-source PnR; capability is not one-to-one |
 | Siemens Questa / ModelSim | [eda.sw.siemens.com](https://eda.sw.siemens.com/) | commercial simulator | Verilator / GHDL |
-| Saleae Logic | [saleae.com](https://www.saleae.com/) | hardware + software | PulseView / sigrok (open-source logic analysis; stars not checked in this table) |
+| Saleae Logic | [saleae.com](https://www.saleae.com/) | hardware + software | PulseView / sigrok (open-source logic analysis; stars not checked in this table); [SucréLA](https://gitlab.com/yannsionneau/SucreLA/) (open USB 3 logic analyzer) |
 
 ## 3.4 Keyboard firmware
 
