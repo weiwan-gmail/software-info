@@ -145,3 +145,18 @@ Relevant mainly if the **same settings core** also ships a Linux companion (seri
 **Established fact:** almost no toolkit gives “WPF Binding + arbitrary custom settings DB” for free on mobile — you always insert a small façade.
 
 **Opinion:** For Wei’s harvest-built utilities, prefer **settings repository interface** first; pick UI kit second. Binding tech matters less than clean platform API seams (VpnService, location, USB).
+
+
+---
+
+## Architecture intent (Wei, 2026-09-16)
+
+Not one all-in-one product. Separate **personal utility apps**, each as needed, **any language / any platform**.
+
+| Layer | What stays similar | What deliberately differs |
+|-------|--------------------|---------------------------|
+| Core | Settings schema, coupling, tracking, event / update patterns | Implementation language OK to change per tool |
+| GUI | Thin **adapters** that map core state ↔ native widgets | Toolkit, platform, and control library — **no** requirement that phone UIs look or behave the same across Flutter / Compose / SwiftUI / Fyne / etc. |
+| Mobile | Prefer the stack that fits *this* tool’s APIs (VPN, Wi‑Fi, GNSS, USB) | Do **not** optimize for cross-platform or cross-framework GUI consistency |
+
+Practical shape: define a small core façade (settings + events + tracked values); write one adapter per GUI you actually use. Cross-platform UI frameworks are optional conveniences, not a goal.
