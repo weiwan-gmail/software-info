@@ -160,3 +160,9 @@ Not one all-in-one product. Separate **personal utility apps**, each as needed, 
 | Mobile | Prefer the stack that fits *this* tool’s APIs (VPN, Wi‑Fi, GNSS, USB) | Do **not** optimize for cross-platform or cross-framework GUI consistency |
 
 Practical shape: define a small core façade (settings + events + tracked values); write one adapter per GUI you actually use. Cross-platform UI frameworks are optional conveniences, not a goal.
+
+---
+
+## Android-first when learning from paid apps *(pointer, 2026-09-16)*
+
+When harvesting UX from paid / free-closed tools ([`mobile-utility-research/mobile-utility-paid-closed.md`](mobile-utility-research/mobile-utility-paid-closed.md)), lean **Kotlin + Jetpack Compose** (DataStore settings façade, `VpnService` / Wi‑Fi / GNSS / USB as first-class Android APIs). Use **Flutter only as an optional shell** when a tool is mostly cross-platform UI over a thin platform channel (HTTP client, SSH chrome, file browser) — not for RF scan, raw GNSS, or local VPN filter apps where Android-native wins. Keep one settings-repository interface per utility; do not unify GUIs across apps.
