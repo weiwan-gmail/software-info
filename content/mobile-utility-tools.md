@@ -1,7 +1,7 @@
 # Mobile utility tool taxonomy + seed list
 
 Catalog draft for continuous harvest of phone utility apps in the network / hardware / remote-control family.  
-**Sources:** F-Droid metadata, GitHub/`gh` API, official project sites (verified 2026-09-16). Do not treat this as exhaustive.
+**Sources:** F-Droid metadata, GitHub/`gh` API, official project sites (verified 2026-09-16; Droidspaces OSS added 2026-09-16). Do not treat this as exhaustive.
 
 **Legend — openness**
 | Tag | Meaning |
@@ -43,6 +43,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | 25 | Torrent / seedbox clients | Android | OSS-heavy (LibreTorrent) |
 | 26 | Termux companions / CLI utility hosts | Android | OSS-heavy |
 | 27 | Peer local file send (AirDrop-like) | Cross | OSS-heavy (LocalSend) |
+| 28 | Android Linux containers / namespaces | Android (+ Linux desktop) | OSS-heavy (root / KernelSU often required) |
 
 ---
 
@@ -269,6 +270,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | Termux | Android | GPL-3.0 | https://github.com/termux/termux-app | Package ecosystem as utility host |
 | Termux:API | Android | GPL-3.0 | https://github.com/termux/termux-api | Sensors/SMS/location CLI bridges |
 | Termux:Boot / Widget (addons) | Android | See Termux org | https://github.com/termux | Background & launcher integration |
+| Droidspaces OSS | Android, Linux desktop | GPL-3.0 | https://github.com/ravindu644/Droidspaces-OSS · https://t.me/Droidspaces | LXC-like namespaces; run full Linux distros natively (static musl binary &lt;400KB); Kotlin Android GUI for container/network/boot settings — **not** Termux; typically needs root/KernelSU |
 
 ### 2.27 Peer local send — **OSS-heavy**
 
@@ -277,6 +279,15 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | LocalSend | Cross incl. mobile | Apache-2.0 | https://github.com/localsend/localsend | REST+mDNS AirDrop alternative |
 
 ---
+
+### 2.28 Android Linux containers / namespaces — **OSS-heavy (privileged)**
+
+| App | Platform | License | URL | Learnable slice |
+|-----|----------|---------|-----|-----------------|
+| Droidspaces OSS | Android, Linux | GPL-3.0 | https://github.com/ravindu644/Droidspaces-OSS | Namespace containers with systemd/OpenRC; Android settings UI for hostname, networking, hardware integration, security/boot; zero-dependency static runtime |
+| Termux (contrast) | Android | GPL-3.0 | https://github.com/termux/termux-app | Userspace packages without full distro init — different layer than Droidspaces |
+
+**Note:** Droidspaces targets native Linux namespaces on Android (often root/KernelSU). Learnable for Wei: container config screens + networking modes, not “cross-platform GUI”.
 
 ## 3. Adjacent categories to keep watching (weekly harvest)
 
