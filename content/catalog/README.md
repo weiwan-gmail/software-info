@@ -15,6 +15,7 @@ Older tables:
 [Learnable desktop](../learnable-desktop.md) ·
 [Learnable mobile](../learnable-mobile.md) ·
 [Mobile utilities](../mobile-utility-tools.md) ·
+[Mobile utilities — paid/closed](../mobile-utility-paid-closed.md) ·
 [UI settings & binding](../ui-settings-binding-stacks.md) ·
 [Harvest: mobile utilities](../harvest-mobile-utilities.md) ·
 [Learnable web](../learnable-web-tools.md) ·
