@@ -307,7 +307,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 
 ## 5. Paid / free-closed competitive bar (Android-first)
 
-> **Implementation focus = Android.** iOS and paid / free-closed apps below are for **inspiration and competitive bar**. Full write-up with learnable slices and API asymmetry notes: [`mobile-utility-research/mobile-utility-paid-closed.md`](mobile-utility-research/mobile-utility-paid-closed.md).  
+> **Implementation focus = Android.** iOS and paid / free-closed apps below are for **inspiration and competitive bar**. Full write-up with learnable slices and API asymmetry notes: [`mobile-utility-paid-closed.md`](mobile-utility-paid-closed.md).  
 > **Fact:** URLs verified 2026-09-16 from vendor/store pages. **Opinion:** “Steal this” column. Pricing = form only (no invented dollar amounts).
 
 ### 5.1 Remote desktop
@@ -404,4 +404,4 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 
 Watch for UX even when shipping Android first *(opinion)*: **Surge / Quantumult X / Shadowrocket**, **Prompt 3**, **HTTPBot**, **FileBrowser Professional**, **Documents (Readdle)**, **AirPort Utility Wi‑Fi Scan**, **Jump Desktop**. For same-vendor apps (Fing, Termius, Ookla, HE.NET, Network Analyzer), compare Android vs iOS builds.
 
-**Counts:** 13 families in the full paid-closed doc; ~51 table rows (some cross-listed). Path: `mobile-utility-research/mobile-utility-paid-closed.md`.
+**Counts:** 13 families in the full paid-closed doc; ~51 table rows (some cross-listed). Path: `mobile-utility-paid-closed.md`.
