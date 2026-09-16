@@ -2,6 +2,8 @@
 
 Company-toy detail is in [awesome-and-orgs.md](../../awesome-and-orgs.md) section 4.
 
+
+Also see the phone-side utility taxonomy: [mobile-utility-tools.md](../../mobile-utility-tools.md) (remote desktop, Wi‑Fi, FTP, VPN, HTTP, iperf, GPS, and adjacent). Stack notes for settings/binding: [ui-settings-binding-stacks.md](../../ui-settings-binding-stacks.md).
 ## 9.1 Overlay networks / tunnels
 
 **Open source**

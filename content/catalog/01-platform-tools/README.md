@@ -1,6 +1,6 @@
 # 1. Platform & everyday tools
 
-Detail tables: [learnable-desktop.md](../../learnable-desktop.md) · [learnable-mobile.md](../../learnable-mobile.md) · [learnable-web-tools.md](../../learnable-web-tools.md) · [tools-by-platform.md](../../tools-by-platform.md)
+Detail tables: [learnable-desktop.md](../../learnable-desktop.md) · [learnable-mobile.md](../../learnable-mobile.md) · [mobile-utility-tools.md](../../mobile-utility-tools.md) · [ui-settings-binding-stacks.md](../../ui-settings-binding-stacks.md) · [harvest-mobile-utilities.md](../../harvest-mobile-utilities.md) · [learnable-web-tools.md](../../learnable-web-tools.md) · [tools-by-platform.md](../../tools-by-platform.md)
 
 ## 1.1 Windows classics
 

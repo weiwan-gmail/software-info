@@ -14,6 +14,9 @@ Older tables:
 [Collect by platform](../tools-by-platform.md) ·
 [Learnable desktop](../learnable-desktop.md) ·
 [Learnable mobile](../learnable-mobile.md) ·
+[Mobile utilities](../mobile-utility-tools.md) ·
+[UI settings & binding](../ui-settings-binding-stacks.md) ·
+[Harvest: mobile utilities](../harvest-mobile-utilities.md) ·
 [Learnable web](../learnable-web-tools.md) ·
 [Awesome & accounts](../awesome-and-orgs.md) ·
 [Hardware & print](../oshw-and-print.md) ·
@@ -26,7 +29,7 @@ Older tables:
 
 | # | Domain | Subdirectory | Classes under it |
 |---|---|---|---|
-| 1 | Platform & everyday tools | [01-platform-tools](01-platform-tools/README.md) | Windows classics · window management / launchers · screenshot & sync · editors & terminals · mobile · web tools |
+| 1 | Platform & everyday tools | [01-platform-tools](01-platform-tools/README.md) | Windows classics · window management / launchers · screenshot & sync · editors & terminals · mobile · **mobile utilities (network/field)** · web tools |
 | 2 | Awesome lists & GitHub accounts | [02-awesome-github](02-awesome-github/README.md) | Discussion queue · sidecar lists · company orgs · personal accounts (almost no “paid products” here) |
 | 3 | Electronics / embedded / radio | [03-electronics-radio](03-electronics-radio/README.md) | Boards · EDA/FPGA · keyboard firmware · SDR software · over-the-air signals |
 | 4 | Fabrication | [04-fabrication](04-fabrication/README.md) | Slicers · printer firmware · CAD · CNC · plotters |
