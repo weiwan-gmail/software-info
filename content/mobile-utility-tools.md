@@ -302,3 +302,106 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 - **License strings** sometimes differ between GitHub SPDX and F-Droid metadata (e.g. RustDesk AGPL on GitHub vs GPL flavor on F-Droid) — always re-check before redistribution.  
 - **nRF Connect**, **Termius**, **Fing**, **Ookla**, **Surge-class** are listed as category landmarks, not OSS templates.  
 - Package IDs above were cross-checked against F-Droid where noted; Play-only apps may rename — verify before linking in harvest automation.
+
+---
+
+## 5. Paid / free-closed competitive bar (Android-first)
+
+> **Implementation focus = Android.** iOS and paid / free-closed apps below are for **inspiration and competitive bar**. Full write-up with learnable slices and API asymmetry notes: [`mobile-utility-research/mobile-utility-paid-closed.md`](mobile-utility-research/mobile-utility-paid-closed.md).  
+> **Fact:** URLs verified 2026-09-16 from vendor/store pages. **Opinion:** “Steal this” column. Pricing = form only (no invented dollar amounts).
+
+### 5.1 Remote desktop
+
+| App | Platforms | Pricing form | URL | Steal this *(opinion)* |
+|-----|-----------|--------------|-----|------------------------|
+| TeamViewer | Both | Freemium → subscription | https://www.teamviewer.com | Session permission / unattended UX |
+| AnyDesk | Both | Freemium → subscription | https://anydesk.com | Low-latency session chrome + ID model |
+| Splashtop | Both | Subscription | https://www.splashtop.com/products/remote-access | Owned-machines home list |
+| Jump Desktop | iOS (+ desktop) | Buyout / Teams sub | https://jumpdesktop.com | Protocol picker (RDP/VNC/Fluid) |
+| Chrome Remote Desktop | Both | Free-closed | https://remotedesktop.google.com | Account-linked PIN simplicity |
+| Windows App (ex–MS RD) | Both | Free-closed | Play `com.microsoft.rdc.androidx` | Workspace / gateway cards |
+
+### 5.2 Wi‑Fi analyzers
+
+| App | Platforms | Pricing form | URL | Steal this *(opinion)* |
+|-----|-----------|--------------|-----|------------------------|
+| Network Analyzer Pro | Both | Buyout | https://techet.net/netanalyzer | Clear tool tabs; **channel graphs Android-only** |
+| NetSpot | Android (+ limited iOS) | Freemium → IAP | https://www.netspotapp.com/netspot-wifi-analyzer-for-android.html | Survey/heatmap → desktop report |
+| Wifi Analyzer Pro | Android | Buyout | Play `info.wifianalyzer.pro` | Channel history + CSV |
+| AirPort Utility scan | iOS | Free-closed | App Store | Honest sparse RF UI under API limits |
+
+**Fact:** Neighbor AP scan is Android-first; iOS third parties lack equivalent APIs.
+
+### 5.3 Network / LAN
+
+| App | Platforms | Pricing form | URL | Steal this *(opinion)* |
+|-----|-----------|--------------|-----|------------------------|
+| Fing | Both | Freemium → subscription | https://www.fing.com/app/ | Device identity cards + optional agent sync |
+| Network Analyzer Pro | Both | Buyout | https://techet.net/netanalyzer | mDNS/NetBIOS names in scan results |
+| HE.NET Network Tools | Both | Free-closed | https://networktools.he.net/ | Dense engineer toolbox, no ads |
+
+### 5.4 FTP / SFTP / SMB / WebDAV
+
+| App | Platforms | Pricing form | URL | Steal this *(opinion)* |
+|-----|-----------|--------------|-----|------------------------|
+| Solid Explorer | Android | Freemium → buyout | Play `pl.solidexplorer2` | Dual-pane + web share server |
+| FX File Explorer Plus | Android | Freemium → buyout | Play `nextapp.fx.rk` | Network module as paid unlock |
+| X-plore | Android | Freemium | Play `com.lonelycatgames.Xplore` | Tree + dual-pane; paid Wi‑Fi share |
+| Cx File Explorer | Android | Free-closed | Play `com.cxinventor.file.explorer` | Clean free-closed NAS bar |
+| FileBrowser Professional | iOS | Buyout | https://www.stratospherix.com/products/filebrowserprofessional/ | Connector depth + sync tasks *(iOS ref)* |
+| Documents (Readdle) | iOS | Freemium → sub | App Store `id364901807` | Consumer file-hub polish *(iOS ref)* |
+
+### 5.5 VPN / tunnel / share
+
+| App | Platforms | Pricing form | URL | Steal this *(opinion)* |
+|-----|-----------|--------------|-----|------------------------|
+| Surge | iOS | Buyout / IAP | https://www.nssurge.com/ | Rule/profile-first proxy UX *(iOS ref)* |
+| Shadowrocket | iOS | Buyout | App Store `id932747118` | Minimal subscribe→connect flow *(iOS ref)* |
+| Quantumult X | iOS | Buyout | https://quantumult.app/x | Power-user rewrite/filter surface *(iOS ref)* |
+| NetShare | Android | Freemium | https://netshare.app/ | Share VPN via hotspot + client proxy |
+| Every Proxy | Android | Freemium | Play `com.gorillasoftware.everyproxy` | Honest “set proxy on client” UX |
+| AdGuard | Both | Freemium → paid | https://adguard.com/en/adguard-android/overview.html | Local VPN as filter engine |
+
+### 5.6 HTTP / API clients
+
+| App | Platforms | Pricing form | URL | Steal this *(opinion)* |
+|-----|-----------|--------------|-----|------------------------|
+| ReqPad | Both | Freemium → Pro | https://reqpad.app/ | REST free; GraphQL/gRPC/MQTT Pro; local-first |
+| HTTPBot | iOS | Freemium → sub/lifetime | https://httpbot.io/ | Native editor + Shortcuts *(iOS ref)* |
+| Reqable | Android | Freemium | https://reqable.com/en-US/android/ | Capture + REST combined |
+| APIOrbit | Apple | Paid/IAP | https://apiorbit.pro/ | iCloud/Handoff collections *(iOS ref)* |
+| Reqeast | Apple | Free-closed | https://reqeast.app/ | Dense native multi-protocol UI *(watch)* |
+
+### 5.7 iperf / speedtest
+
+| App | Platforms | Pricing form | URL | Steal this *(opinion)* |
+|-----|-----------|--------------|-----|------------------------|
+| Speedtest by Ookla | Both | Freemium | Play `org.zwanoo.android.speedtest` | One-tap gauge + history |
+| iPerf3 Pro | Both | Buyout | https://iperf3app.com/android/ | Phone as client **and** server; CSV export |
+| HE.NET Network Tools | Both | Free-closed | https://networktools.he.net/ | iperf inside toolkit |
+
+### 5.8 GPS / GNSS
+
+| App | Platforms | Pricing form | URL | Steal this *(opinion)* |
+|-----|-----------|--------------|-----|------------------------|
+| GPS Status & Toolbox | Android | Freemium → Pro | Play `com.eclipsim.gpsstatus2` | Sky plot + widgets + AGPS tools |
+| GNSS Status | Android | Freemium | Play `at.harnisch.android.gnss` | GPX + status polish |
+| Physics Toolbox Pro | Android | Buyout | Play `net.vieyrasoftware.physicstoolboxsuitepro` | Multi-sensor tiles + CSV |
+
+**Fact:** Raw GNSS measurement APIs are Android-strong; iOS lacks comparable third-party access.
+
+### 5.9 Adjacent paid / free-closed
+
+| Family | Apps (form) | URLs |
+|--------|-------------|------|
+| BLE | nRF Connect (free-closed); LightBlue (free-closed) | Nordic nRF Connect for Mobile; Play `com.punchthrough.lightblueexplorer` |
+| Packet capture | PCAPdroid (freemium); Reqable (freemium) | Play `com.emanuelef.remote_capture`; https://reqable.com/en-US/android/ |
+| DNS | AdGuard (freemium); NextDNS (freemium service) | https://adguard.com/… ; https://nextdns.io/ |
+| SSH / terminal | Termius (freemium→sub); JuiceSSH (freemium); Prompt 3 iOS (sub/buyout) | https://termius.com/ ; Play `com.sonelli.juicessh`; https://panic.com/prompt/ |
+| Sensors | Physics Toolbox Pro (buyout) | Play Pro package above |
+
+### 5.10 iOS-as-reference shortlist
+
+Watch for UX even when shipping Android first *(opinion)*: **Surge / Quantumult X / Shadowrocket**, **Prompt 3**, **HTTPBot**, **FileBrowser Professional**, **Documents (Readdle)**, **AirPort Utility Wi‑Fi Scan**, **Jump Desktop**. For same-vendor apps (Fing, Termius, Ookla, HE.NET, Network Analyzer), compare Android vs iOS builds.
+
+**Counts:** 13 families in the full paid-closed doc; ~51 table rows (some cross-listed). Path: `mobile-utility-research/mobile-utility-paid-closed.md`.
