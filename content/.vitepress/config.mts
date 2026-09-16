@@ -49,6 +49,7 @@ export default defineConfig({
           { text: 'Learnable desktop', link: '/learnable-desktop' },
           { text: 'Learnable mobile', link: '/learnable-mobile' },
           { text: 'Mobile utilities (network / field)', link: '/mobile-utility-tools' },
+          { text: 'Mobile utilities — paid / closed', link: '/mobile-utility-paid-closed' },
           { text: 'UI settings & binding stacks', link: '/ui-settings-binding-stacks' },
           { text: 'Harvest: mobile utilities', link: '/harvest-mobile-utilities' },
           { text: 'Learnable web', link: '/learnable-web-tools' },
