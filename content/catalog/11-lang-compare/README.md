@@ -14,6 +14,7 @@ Related experiment (not this directory; a separate private repo, not part of thi
 2. Open the topic files in order: syntax → packages and tooling → libraries → idiomatic patterns → GUI binding → cross-language.
 3. Each section opens with a **same / different** callout. Code blocks are tagged `Go` / `Rust` / `C++`. Most of them are **illustrative compilable shape**, not a guarantee they were run on this machine.
 4. Named libraries get an official repo or docs entry. Status changes; treat upstream as source of truth.
+5. To drill into mechanisms (templates, macros, reflection, unsafe), go to the **expert-layer index** below. Do not add that material into 01–06.
 
 ---
 
@@ -42,6 +43,21 @@ Related experiment (not this directory; a separate private repo, not part of thi
 | 5 | [05-gui-binding.md](05-gui-binding.md) | Per-language GUI stacks + binding paradigms; Qt / Fyne / Wails / Slint / egui / iced / Tauri; vs Wei’s adapter idea |
 | 6 | [06-advanced-cross.md](06-advanced-cross.md) | FFI, embedding, when to pick which |
 
+01–06 are the comparison baseline; their bodies stay frozen. The expert layer starts at 07 in a separate table. Do not rewrite the baseline into a language-lawyer handbook.
+
+---
+
+## Expert-layer index (07+)
+
+Deep dive: reflection / macros / templates and TMP, type erasure, CRTP, concepts, coroutines, and the same-magnitude topics in Rust and Go. Each section has **same / different**, with side-by-side examples; if a language has no isomorphic construct, it is marked N/A. Sample code is illustrative. This is not a pretend-exhaustive awesome list. Unstable features carry a checked date in the page.
+
+| # | File | Contents |
+|---|---|---|
+| 7 | [07-expert-cpp.md](07-expert-cpp.md) | Value categories, perfect forwarding, `<=>`, fold, SFINAE→concepts, CTAD/NTTP, the `constexpr` trio, CRTP/mixin/deducing this, EBO, ADL, expression templates, type erasure, coroutines, modules overview, P2996 reflection direction |
+| 8 | [08-expert-rust.md](08-expert-rust.md) | `macro_rules` and proc-macros, HRTB, GAT, `Pin`, dyn compatibility, `PhantomData`, interior mutability, `Drop`/`ManuallyDrop`, async Drop, `Send`/`Sync`, niches, `!`, const generics, specialization, unsafe provenance, DST, reborrowing and `?` |
+| 9 | [09-expert-go.md](09-expert-go.md) | `reflect`, `unsafe.Pointer`, escape analysis, interface nil, embedding ≠ inheritance, type sets and generic gaps, `go:generate`, cgo, atomics and race, `context`, `GOMAXPROCS`, plugin, `linkname`, assembly stubs, range-over-func, `clear`, aliases, odd sugar |
+| 10 | [10-expert-patterns-cross.md](10-expert-patterns-cross.md) | Same intent, different shape: visitor/ADT, type erasure, DI/options, actor/channel, RAII↔defer↔Drop, plugin ABI, CRTP↔trait default methods↔generic functions |
+
 ---
 
 ## Deliberately omitted / deferred
@@ -53,4 +69,6 @@ Related experiment (not this directory; a separate private repo, not part of thi
 
 ---
 
-**Content freeze:** 2026-10-03 PT. Entries and structure are not expanded. Corrections go through the English translation / PR flow.
+**Content freeze (baseline 01–06):** 2026-10-03 PT. Entries and structure of these six pages are not expanded. Corrections go through the English translation / PR flow.
+
+**Content freeze (expert layer 07–10):** 2026-10-04 PT. 07–10 are the expert deep-dive layer; Chinese is the source. Do not expand these four. Status claims (reflection, specialization, iterators, never type) follow the dates in the pages; if they go stale, open a separate correction rather than rewriting the baseline.
