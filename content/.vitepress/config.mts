@@ -1,4 +1,5 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
+import { catalogSidebar } from './catalogSidebar.mts'
 
 const isGitHubPages = process.env.GITHUB_PAGES === 'true'
 const base = isGitHubPages ? '/software-info/' : '/'
@@ -25,24 +26,9 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [{ text: 'Catalog', link: '/catalog/' }],
+    // Catalog tree is scanned from content/catalog/ (see catalogSidebar.mts).
     sidebar: [
-      {
-        text: 'Domains',
-        items: [
-          { text: 'Catalog', link: '/catalog/' },
-          { text: '1. Platform & everyday tools', link: '/catalog/01-platform-tools/README' },
-          { text: '2. Awesome lists & GitHub accounts', link: '/catalog/02-awesome-github/README' },
-          { text: '3. Electronics / embedded / radio', link: '/catalog/03-electronics-radio/README' },
-          { text: '4. Fabrication', link: '/catalog/04-fabrication/README' },
-          { text: '5. Games', link: '/catalog/05-games/README' },
-          { text: '6. Audio / image / text', link: '/catalog/06-media/README' },
-          { text: '7. Observation & space', link: '/catalog/07-observation/README' },
-          { text: '8. Divination & texts', link: '/catalog/08-divination/README' },
-          { text: '9. Network & self-hosting', link: '/catalog/09-network/README' },
-          { text: '10. Signal / instruments / formal methods', link: '/catalog/10-signal-formal/README' },
-          { text: '11. Go / Rust / C++ comparison', link: '/catalog/11-lang-compare/README' },
-        ],
-      },
+      catalogSidebar(),
       {
         text: 'Detail tables',
         items: [
