@@ -1,5 +1,8 @@
 # 08. Expert layer: Rust (macros, variance, Pin, object safety, unsafe)
 
+> Teaching layer (2026-10-04 PT): read **Plain** and **Picture** first in each section; terms come after. First-read path: [00-how-to-read.md](00-how-to-read.md). Code blocks are all illustrative.
+
+
 Checked: 2026-10-04 PT. Expert layer; does not change the frozen 01–06 bodies. Sample code is **illustrative**; it was not `cargo check`’d.
 
 Cross-language expansion: [10-expert-patterns-cross.md](10-expert-patterns-cross.md). C++ / Go: [07](07-expert-cpp.md) / [09](09-expert-go.md).
@@ -20,6 +23,11 @@ Cross-language expansion: [10-expert-patterns-cross.md](10-expert-patterns-cross
 ---
 
 ## 1. Declarative macros `macro_rules` and procedural macros
+
+**Plain:** Macros generate code at compile time from patterns you write. Declarative macros fill blanks in a token tree. Procedural macros are a small program that rewrites a syntax tree.
+
+**Picture:** Fill-in-the-blank substitution by brackets, versus asking someone to rewrite a whole essay by a rule, are two different jobs.
+
 
 > **Same:** all three can generate code before compile. C++ has preprocessor macros **and** templates; Go has `go:generate` (another program writes files; see [09](09-expert-go.md)).  
 > **Different:** Rust declarative macros match token trees and have hygiene. Procedural macros eat tokens and are **not** automatically hygienic; spans decide where names land. C++ macros have no hygiene. Go has no isomorphic macros (N/A).
@@ -60,6 +68,11 @@ macro_rules! hash_map {
 
 ## 2. HRTB (higher-ranked trait bounds)
 
+**Plain:** Some functions are not “borrow for one fixed stretch of time,” but “I can take the borrow no matter how short it is.”
+
+**Picture:** The printer promises: however long that sheet stays on the desk, I can print it. It does not only accept paper that stays for a whole term.
+
+
 > **Same:** all need to say “this holds for any short borrow.”  
 > **Different:** Rust writes `for<'a> Trait<'a>`. C++ binds references at instantiation time with templates; there is no same syntax. Go interface-method references are GC pointers; there are no lifetime parameters (N/A).
 
@@ -89,6 +102,11 @@ void apply(F f) { f(std::string_view{"hi"}); }
 
 ## 3. GAT (generic associated types)
 
+**Plain:** When you implement a trait, you can carry an associated type that is tied to one particular borrow.
+
+**Picture:** The “book borrowed this time” on a library card can change with this borrow. It is not always the same book.
+
+
 > **Same:** associated types let a trait impl pick a type.  
 > **Different:** GAT lets that associated type itself take a lifetime or type parameter. C++ member templates / alias templates are freer, and have no orphan rule. Go has **no** associated types (N/A); interfaces can only hold methods.
 
@@ -115,6 +133,11 @@ struct Lending { template <class... > struct Item; };
 ---
 
 ## 4. `Pin` / `Unpin` and pin projection
+
+**Plain:** Some data hides a pointer to itself. Once it is moved, the pointer points wrong. Pin means “do not move it again.”
+
+**Picture:** A card pinned to a corkboard, with a string tied to its own name tag, cannot be peeled up and relocated as a whole.
+
 
 > **Same:** all three have self-referential structs as a **problem**.  
 > **Different:** only Rust makes “must not move again” a type, `Pin<&mut T>`. C++ self-reference is you guaranteeing a stable address (the object inside a `unique_ptr`). Go stacks can grow and the compiler rewrites pointers; user code **cannot** safely do self-reference (N/A; the runtime forbids this dangerous thing).
@@ -145,6 +168,11 @@ struct SelfRef {
 ---
 
 ## 5. `dyn Trait` and dyn compatibility (object safety)
+
+**Plain:** A trait object picks the implementation at runtime. Not every trait can go in that box, because the box has to know how to call the methods.
+
+**Picture:** A universal socket only takes plugs of a standard size. A plug that still carries an unknown length of extra wire will not go in.
+
 
 > **Same:** pick an implementation at runtime. C++ virtual functions, Go interfaces, Rust trait objects.  
 > **Different:** a Rust trait is **not** an object by default. Generic methods, returning `Self` by value, associated constants, and similar make a trait lose dyn compatibility. The official term changed from object-safe to **dyn-compatible**.
@@ -179,6 +207,11 @@ type Draw interface{ Draw() }
 
 ## 6. `PhantomData` and variance
 
+**Plain:** Some type parameters take no runtime slot, but the compiler still needs them to know who you own, and whether a long lifetime may be used as a short one.
+
+**Picture:** An invisible name strip on a seat takes no space, but the teacher reads that strip at roll call.
+
+
 > **Same:** all have “this type parameter only appears at compile time.” C++ can use empty bases or unused template parameters. Go unused type parameters in generics must appear somewhere in the signature; there is no PhantomData (usually N/A).  
 > **Different:** Rust uses `PhantomData` to tell the compiler **ownership, drop check, and variance** at once.
 
@@ -211,6 +244,11 @@ struct Own { T* ptr; };
 ---
 
 ## 7. Interior mutability, Drop, `ManuallyDrop`
+
+**Plain:** The rule is “you cannot mutate while sharing.” Interior mutability is a checked exception. Drop cleans up when you leave the scope; you can also turn automatic cleanup off.
+
+**Picture:** Everyone can read the notice board (share). Changing the writing needs a locked pen. At leaving time the duty student erases the board; you can also say “do not erase this one yet.”
+
 
 > **Same:** mutate while sharing; clean up on leaving scope. Comparison: [10](10-expert-patterns-cross.md).  
 > **Different:** Rust makes “shared XOR mutable” a type rule; interior mutability is an **escape hatch**, rooted in `UnsafeCell`. C++ `mutable` is looser. Go has no aliasing rule; atomics and locks are convention (N/A for UnsafeCell).
@@ -245,6 +283,11 @@ type Cache struct{ n int }
 
 ## 8. `Send` / `Sync`, niches, `!`
 
+**Plain:** Send means this data can be sent to another thread. Sync means a shared reference can also cross threads. A niche uses an impossible bit pattern to save a slot for emptiness. `!` means this code does not return normally.
+
+**Picture:** Some workbooks can be handed to another group; some may only circulate in this group. If a student-number cell is never allowed to be 0, 0 can mean “there is no such cell.”
+
+
 > **Same:** all face “can this value go onto another thread.”  
 > **Different:** Rust uses auto traits. Go goroutines can share almost anything; data races rely on the race detector and convention. C++ has no `Send`; `std::thread` only requires movable; a data race is UB, not a type error.
 
@@ -269,9 +312,34 @@ fn assert_send<T: Send>() {}
 
 **`!`:** the type of a function that never returns. `Infallible` was historically an empty enum, used to simulate `!`. Once stabilization lands with your compiler, fallback changing from `()` to `!` makes `foo()?` error when the type cannot be inferred — it used to infer `()`, now it infers `!`. This is a known break. Read the release notes before upgrading, rather than inferring your machine’s rustc from this page’s dates.
 
+
+One minimal example each for niches and “never returns” (illustrative). Whether `Result<T, !>` can be written on your stable release still follows the date table above and `rustc -V`. This page does not change that table.
+
+```rust
+// Rust — illustrative. None uses the hole a reference cannot be 0, so Option<&u8> is often pointer-width
+fn hole() -> Option<&'static u8> { None }
+
+// A diverging function’s return type is !
+fn boom() -> ! { panic!("bug") }
+```
+
+```cpp
+// C++ — N/A: no niche-optimization type rule, and no ! type. Non-returning uses [[noreturn]].
+[[noreturn]] void boom() { throw 1; }
+```
+
+```go
+// Go — N/A: no !. panic means the program has a bug; it is not a return type.
+func boom() { panic("bug") }
+```
 ---
 
 ## 9. Specialization (unstable) and the bounds of const generics
+
+**Plain:** Specialization writes a faster version for a more specific type. On stable Rust you still cannot treat that as an ordinary tool. Const generics write a number into a type, for example a fixed length.
+
+**Picture:** The school team may write a separate training plan for seniors, but that “write a separate one” permit has not been issued to every club. A fixed table of 8 is already allowed.
+
 
 > **Same:** all want “a faster impl for a more specific type.”  
 > **Different:** C++ partial specialization is everyday. Rust specialization **cannot be written on stable**. Go has no specialization (N/A).
@@ -300,6 +368,11 @@ template <class T> struct Id<T*> { using type = T; };
 
 ## 10. `unsafe`, provenance, DST, `CoerceUnsized`, dropck
 
+**Plain:** unsafe is not “turn off every check.” You promise the compiler that the conditions it cannot check in these lines are your job. A pointer is not only an integer; it also remembers which block of memory it came from.
+
+**Picture:** The lab lets you take the key yourself, but accidents are still yours. The number on the key says which cabinet it opens. You cannot open another cabinet with a number that happens to match.
+
+
 > **Same:** all can touch raw memory.  
 > **Different:** Rust `unsafe` is a **contract boundary**: a safe function must not have UB, even if it contains unsafe inside. C++ is that boundary for the whole language. Go `unsafe` is narrower; what you violate are the `unsafe.Pointer` rules (see [09](09-expert-go.md)).
 
@@ -321,6 +394,22 @@ let _addr = p as usize; // whether this exposes depends on the API path you used
 
 **DST:** `str`, `[T]`, `dyn Trait` have unknown size at compile time and can only sit behind a pointer (`&`, `Box`, last field). Fat pointer = data address + metadata (length or vtable).
 
+```rust
+// illustrative. &str is “address + byte length,” not a value whose size is known at compile time
+fn len_of(s: &str) -> usize { s.len() }
+```
+
+```go
+// Go — the nearest analogue is a slice header (pointer, length, capacity), not Rust’s DST rule
+s := []byte("hi")
+_ = len(s)
+```
+
+```cpp
+// C++ — string_view is also pointer plus length, but a library type, not a language DST
+std::string_view s{"hi"};
+```
+
 **`CoerceUnsized`:** coercions like `&[T; N]` → `&[T]`, `Box<T>` → `Box<dyn Trait>` are a mix of compiler built-ins and an unstable trait. User types that want the same coercion usually need nightly `CoerceUnsized`. Do not depend on impl’ing it yourself on stable unless you are writing the standard library.
 
 **dropck:** a type parameter the destructor might access cannot have a lifetime shorter than the struct. `#[may_dangle]` (dropck eyepatch) says “I do not touch `T` in the destructor”; it is unstable; `Vec` uses it so `Vec<&'a T>` can end in a shorter scope. Application code should change the structure first, not turn this feature on.
@@ -328,6 +417,11 @@ let _addr = p as usize; // whether this exposes depends on the API path you used
 ---
 
 ## 11. Syntactic sugar: reborrow, `?`, `Try`
+
+**Plain:** These shorthands save a few keystrokes for borrowing and error propagation. The type rules do not get looser.
+
+**Picture:** Calling roll with a nickname. It is still the same person.
+
 
 > **Same:** all have “write a little less” syntax.  
 > **Different:** this sugar changes borrowing and type inference; it is not as obvious as macro expansion.
@@ -356,9 +450,34 @@ fn parse(s: &str) -> Result<i32, std::num::ParseIntError> {
 
 **Other sugar that makes people pause:** autoderef / autoref in method resolution; `return` having type `!` so it can nest in expressions; `async` block captures became more precise in the 2024 edition (precise capturing), so lifetimes show up in signatures more often. `.await` has lower precedence than the method-call dot and higher than most operators — parenthesize when you should.
 
+
+Reborrow: briefly read the length, then push under a mutable borrow (illustrative). The `?` example is earlier in this section.
+
+```rust
+// Rust — illustrative
+fn push_len(v: &mut Vec<i32>) {
+    let n = v.len();
+    v.push(n as i32);
+}
+```
+
+```go
+// Go — N/A: no borrow checker, so no reborrow sugar either
+func pushLen(v []int) []int { return append(v, len(v)) }
+```
+
+```cpp
+// C++ — N/A: no reborrow. Just read size then push_back
+void push_len(std::vector<int>& v) { v.push_back(static_cast<int>(v.size())); }
+```
 ---
 
 ## 12. One comparison table with C++ / Go (Rust view)
+
+**Plain:** An index table. Examples are in the earlier sections. No new mechanism is added here.
+
+**Picture:** A review comparison.
+
 
 | Topic | Rust | C++ | Go |
 |---|---|---|---|
@@ -372,6 +491,11 @@ fn parse(s: &str) -> Result<i32, std::num::ParseIntError> {
 ---
 
 ## 13. Not expanded (deferred)
+
+**Plain:** Replacement implementations of the borrow checker, and still-unstable “effect” syntax, are not expanded on this page.
+
+**Picture:** Stop here. Do not open a new topic.
+
 
 - Replacing the borrow checker with Polonius, remaining NLL edges.
 - `async` iterators (`Stream`) and library design for lending iteration.

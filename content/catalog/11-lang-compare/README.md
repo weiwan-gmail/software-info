@@ -10,15 +10,24 @@ Related experiment (not this directory; a separate private repo, not part of thi
 
 ## How to read this
 
+**Plain:** Get the intuition in plain language first, then look at the side-by-side examples. Leave deep-water templates, Pin, and reflection until you actually hit them.
+
+**Picture:** Read the table of contents and the sample problems first. Do not start from the proof problems in the appendix.
+
+If this is your first visit, start with [00-how-to-read.md](00-how-to-read.md). The short path is **Plain and Picture in 01 → the side-by-side examples in 10 → 07 / 08 / 09 only when you are curious about one language’s deep tools**. Treat 02, 03, 05, and 06 as dictionaries.
+
 1. Skim the **same / different** table on this page first.
-2. Open the topic files in order: syntax → packages and tooling → libraries → idiomatic patterns → GUI binding → cross-language.
-3. Each section opens with a **same / different** callout. Code blocks are tagged `Go` / `Rust` / `C++`. Most of them are **illustrative compilable shape**, not a guarantee they were run on this machine.
-4. Named libraries get an official repo or docs entry. Status changes; treat upstream as source of truth.
-5. To drill into mechanisms (templates, macros, reflection, unsafe), go to the **expert-layer index** below. Do not add that material into 01–06.
+2. Each section starts with **Plain** (what this is) and **Picture**, then the terms. When comparing, look at **same / different**. Code blocks are tagged `Go` / `Rust` / `C++`. All of them are illustrative (shape is right; they are not guaranteed to have been run on this machine).
+3. Named libraries get an official repo or docs entry. Status changes; treat upstream as source of truth. Dates and “draft vs present” still sit after the Plain lead. The teaching rewrite does not delete those sentences.
+4. To drill into mechanisms (templates, macros, reflection, unsafe), go to 07–09. Do not open new topics inside 01–10 just to make them easier.
 
 ---
 
 ## Same / different (high level)
+
+**Plain:** One table to keep: all three are compiled and strongly typed. The default spelling of memory, errors, and concurrency differs the most.
+
+**Picture:** Three menus all have a main dish. The soup is served differently.
 
 | Dimension | Roughly the same | Clearly different |
 |---|---|---|
@@ -34,6 +43,10 @@ Related experiment (not this directory; a separate private repo, not part of thi
 
 ## Subfile index
 
+**Plain:** 01 through 10 are the fixed topics. This teaching rewrite does not add topics.
+
+**Picture:** The textbook is still the original ten chapters. Each chapter just got a lead-in.
+
 | # | File | Contents |
 |---|---|---|
 | 1 | [01-syntax.md](01-syntax.md) | Types, ownership/GC, concurrency, generics, errors, macros, interface/trait; small side-by-side examples |
@@ -43,11 +56,15 @@ Related experiment (not this directory; a separate private repo, not part of thi
 | 5 | [05-gui-binding.md](05-gui-binding.md) | Per-language GUI stacks + binding paradigms; Qt / Fyne / Wails / Slint / egui / iced / Tauri; vs Wei’s adapter idea |
 | 6 | [06-advanced-cross.md](06-advanced-cross.md) | FFI, embedding, when to pick which |
 
-01–06 are the comparison baseline; their bodies stay frozen. The expert layer starts at 07 in a separate table. Do not rewrite the baseline into a language-lawyer handbook.
+01–10 are still the original topic structure (no new eleventh technical topic). The reading path [00-how-to-read.md](00-how-to-read.md) only teaches how to read; it does not add a topic. The expert layer starts at 07 in a separate table.
 
 ---
 
 ## Expert-layer index (07+)
+
+**Plain:** 07, 08, and 09 each cover tools in one language that are easy to get hurt by. 10 writes the same sentence in three shapes, side by side.
+
+**Picture:** The programming club’s advanced class. Not required on day one.
 
 Deep dive: reflection / macros / templates and TMP, type erasure, CRTP, concepts, coroutines, and the same-magnitude topics in Rust and Go. Each section has **same / different**, with side-by-side examples; if a language has no isomorphic construct, it is marked N/A. Sample code is illustrative. This is not a pretend-exhaustive awesome list. Unstable features carry a checked date in the page.
 
@@ -62,6 +79,10 @@ Deep dive: reflection / macros / templates and TMP, type erasure, CRTP, concepts
 
 ## Deliberately omitted / deferred
 
+**Plain:** No prices, no copy-paste of internet awesome lists, and no expansion of kernels or shaders here.
+
+**Picture:** The workbook does not come with a price list.
+
 - No salaries, license price lists, or commercial-compiler price lists.
 - No exhaustive walk of awesome-go / awesome-rust / awesome-cpp (see the [02-awesome-github](../02-awesome-github/README.md) queue).
 - Bare-metal embedded, kernel modules, and GPU shader languages are not expanded.
@@ -72,3 +93,5 @@ Deep dive: reflection / macros / templates and TMP, type erasure, CRTP, concepts
 **Content freeze (baseline 01–06):** 2026-10-03 PT. Entries and structure of these six pages are not expanded. Corrections go through the English translation / PR flow.
 
 **Content freeze (expert layer 07–10):** 2026-10-04 PT. 07–10 are the expert deep-dive layer; Chinese is the source. Do not expand these four. Status claims (reflection, specialization, iterators, never type) follow the dates in the pages; if they go stale, open a separate correction rather than rewriting the baseline.
+
+**Teaching rewrite (teach-pass):** 2026-10-04 PT. The baseline structure is still 01–10. Chinese is the source. This pass only adds Plain and Picture leads on existing sections, and illustrative mini-examples where a section previously had a claim and no example. Do not invent prices. Do not open new topics. Status dates and technical conclusions stay, after the Plain lead.

@@ -1,5 +1,7 @@
 # 02. Package management and toolchain: Go · Rust · C++
 
+> Teaching layer (2026-10-04 PT): read **Plain** and **Picture** first in each section; terms come after. First-read path: [00-how-to-read.md](00-how-to-read.md). Code blocks are all illustrative.
+
 > **Same:** all have a “declare deps → resolve → lock → build → test” pipeline; all support local replace and multi-package work.  
 > **Different:** Go / Rust ship an **integrated, language-owned** tool; C++ is a **CMake (or xmake/meson/bazel) + package manager (Conan/vcpkg/…)** mix, and the choice cost is highest.
 
@@ -11,6 +13,10 @@ Do not invent prices. Commercial artifact stores (Artifactory and similar) are r
 
 ## 1. Overview
 
+**Plain:** All three languages write “who I depend on” into a list, then compile from that list.
+
+**Picture:** Before a group assignment, write a materials list: who brings paper, who brings glue. Hand-in is checked against that list.
+
 | | Go | Rust | C++ |
 |---|---|---|---|
 | Manifest | `go.mod` + `go.sum` | `Cargo.toml` + `Cargo.lock` | Depends on the tool: `conanfile` / `vcpkg.json` / `xmake.lua` + `CMakeLists.txt` |
@@ -20,9 +26,39 @@ Do not invent prices. Commercial artifact stores (Artifactory and similar) are r
 | Formatting | `gofmt` / `goimports` | `rustfmt` | `clang-format` (by convention) |
 | Lint | `go vet` / staticcheck | `clippy` | clang-tidy / IDEs |
 
+
+Minimal shape of the three manifests (illustrative, not a complete project you can copy):
+
+```go
+// Go — illustrative
+// module example.com/app
+//
+// go 1.22
+//
+// require example.com/mod v1.2.3
+```
+
+```toml
+# Rust — illustrative
+# [package]
+# name = "app"
+# version = "0.1.0"
+# edition = "2021"
+```
+
+```cmake
+# C++ — illustrative
+cmake_minimum_required(VERSION 3.20)
+project(app)
+add_executable(app src/main.cpp)
+```
 ---
 
 ## 2. Everyday dependency ops (side by side)
+
+**Plain:** Day to day is three steps: add a library, lock the version, then compile.
+
+**Picture:** Borrowing a library book: register the title, note the edition, then you may use it.
 
 ```bash
 # Go
@@ -60,6 +96,10 @@ target("app")
 ---
 
 ## 3. Workspace / multi-package
+
+**Plain:** One repo can hold several small packages at once — “core” and “UI” — edit them together, compile them together.
+
+**Picture:** One workbook with a math column and an English column. Same cover; the homework is handed in separately.
 
 > **Same:** develop several modules in one repo and share resolution.  
 > **Different:** filenames and the habit of “whether you edit each child manifest” differ.
@@ -105,6 +145,10 @@ resolver = "2"
 ---
 
 ## 4. Conditional compilation and “feature flags”
+
+**Plain:** The same source can compile only one piece of itself, by platform or by a switch.
+
+**Picture:** Extra questions on a test: only if you tick them. Unticked pages are not bound into your answer booklet.
 
 > **Same:** all can trim by platform / optional features.  
 > **Different:** first-class-ness: Cargo features ≈ Go build tags ≈ C++ macros/CMake options (the last is the most scattered).
@@ -154,6 +198,10 @@ endif()
 
 ## 5. Build / test / bench / docs
 
+**Plain:** After you write, you want one-command tests and docs for free. The three commands differ; the goal is the same.
+
+**Picture:** Before handing in, check answers, time yourself, then copy the steps onto the instruction sheet.
+
 | Task | Go | Rust | C++ |
 |---|---|---|---|
 | Unit tests | `go test ./...` | `cargo test` | CTest + gtest/Catch2/doctest |
@@ -186,6 +234,10 @@ TEST_CASE("add") { REQUIRE(add(1, 2) == 3); }
 ---
 
 ## 6. FFI and packaging (advanced)
+
+**Plain:** FFI means one language calling another using C’s most plain function calling convention.
+
+**Picture:** Two classes run an event together. The walkie-talkie can only say short sentences both sides understand. You cannot shout your class’s slang across.
 
 > **Same:** all can expose a C ABI to other languages.  
 > **Different:** Go has `cgo`; Rust has `cdylib`/`staticlib` + `bindgen`/`cbindgen`; C++ is born with a C ABI (`extern "C"`) but name mangling needs care.
@@ -242,6 +294,10 @@ extern "C" int core_version(void) { return 1; }
 
 ## 7. Version and compatibility policy (easy to miss)
 
+**Plain:** When you upgrade, say clearly: can old source still compile, and can old compiled libraries still connect to the new program.
+
+**Picture:** A workbook reprint: page numbers moved; last year’s answer sheet may no longer line up.
+
 | | Go | Rust | C++ |
 |---|---|---|---|
 | SemVer | module path includes major (`/v2`) | SemVer; `0.x` may break by default | no unified ABI; you manage SONAME |
@@ -249,9 +305,31 @@ extern "C" int core_version(void) { return 1; }
 | Vendoring | `go mod vendor` | `cargo vendor` | Conan download / source tree |
 | Private sources | `GOPRIVATE` / enterprise proxy | private registry / git | private Conan remote / vcpkg registry |
 
+
+Minimal spelling (illustrative). The numbers only show “where you write it,” not that you must upgrade to this version:
+
+```go
+// Go — illustrative: major version goes in the module path
+// module example.com/app/v2
+```
+
+```toml
+# Rust — illustrative: minimum compiler is written in the manifest
+# [package]
+# rust-version = "1.75"
+```
+
+```cmake
+# C++ — illustrative: the standard is on the target, not in a price or license
+target_compile_features(app PRIVATE cxx_std_20)
+```
 ---
 
 ## 8. Choosing, in brief
+
+**Plain:** If one person wants to finish fast, use the tools the language ships. If you already have a pile of C++ libraries, do not hire two package managers at once.
+
+**Picture:** If the kitchen is already one brand of pots, do not buy a stove that will not fit those pots.
 
 - **One-person project, fastest closed loop:** Go modules or Cargo.  
 - **Already on Qt / lots of C++ deps:** CMake + (Conan **or** vcpkg). Do not let two package managers fight over the same libraries.  

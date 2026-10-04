@@ -1,5 +1,8 @@
 # 09. Expert layer: Go (reflection, unsafe, interfaces, iterators, sugar)
 
+> Teaching layer (2026-10-04 PT): read **Plain** and **Picture** first in each section; terms come after. First-read path: [00-how-to-read.md](00-how-to-read.md). Code blocks are all illustrative.
+
+
 Checked: 2026-10-04 PT. Expert layer; does not change 01–06. Sample code is **illustrative**; it was not `go test`’d.
 
 Go expert topics are often not “more syntax” but rules that are **very short in the spec and expensive to step on**. Cross-language expansion: [10-expert-patterns-cross.md](10-expert-patterns-cross.md).
@@ -19,6 +22,11 @@ Go expert topics are often not “more syntax” but rules that are **very short
 ---
 
 ## 1. `reflect`: Kind, Value, settable
+
+**Plain:** Reflection is a program asking at runtime “what type are you, what are the fields called,” and sometimes changing a field.
+
+**Picture:** Without looking at the cover, open the pencil case and count the slots. You cannot put things into a slot you have not opened.
+
 
 > **Same:** ask types and change values at runtime. The C++ isomorphic construct in the C++26 draft is **compile-time** reflection, not this package (see [07](07-expert-cpp.md)). Rust has no isomorphic runtime reflection (N/A); use interfaces (trait objects) or codegen.  
 > **Different:** Go reflection is limited by “unexported fields” and “addressable,” and an interface’s dynamic type can lose precision round-tripping through `Interface()`.
@@ -74,6 +82,11 @@ func setX(p any) {
 
 ## 2. `unsafe.Pointer` rules
 
+**Plain:** unsafe.Pointer lets you temporarily drop the type and look at the same memory. Only the patterns in the docs are legal, not “it ran, so it is right.”
+
+**Picture:** Taking a name tag off for another reading is allowed. You cannot keep the number on the slip as another desk’s address until tomorrow.
+
+
 > **Same:** all can leave the type system and look at bytes.  
 > **Different:** Go writes the legal conversions as **a limited set of patterns** in the `unsafe` package docs. A conversion not in those patterns is wrong even if “it runs today.” C++ pointer conversions are much wider; getting them wrong is UB. Rust also has provenance; see [08](08-expert-rust.md).
 
@@ -106,6 +119,11 @@ func idx(p *int, i int) *int {
 ---
 
 ## 3. Escape analysis
+
+**Plain:** The compiler decides whether a local variable will still be used outside the function. If yes, it goes on the heap so garbage collection can collect it later.
+
+**Picture:** Scratch paper that must be handed in cannot stay only on a desk that will be cleared.
+
 
 > **Same:** all want short-lived objects on the stack.  
 > **Different:** Go’s choice is **the compiler’s**, not a language guarantee. Rust proves it with lifetimes. C++: you decide storage duration; getting it wrong is dangling (there is no course called escape analysis, N/A for “the compiler moves it to the heap for you” — there are optimizations, but the semantics are what you wrote).
@@ -140,6 +158,11 @@ func stay() int {
 
 ## 4. The interface nil trap
 
+**Plain:** Whether a Go interface is empty depends on both “is there a type inside” and “is the value empty.” Only when both are empty does the interface equal nil.
+
+**Picture:** An envelope: an empty envelope really has no letter. An envelope with a recipient written on it but blank paper inside is not “there is no letter.”
+
+
 > **Same:** all have “empty.”  
 > **Different:** a Go interface is **two words (type, value)**. When the type is non-empty and the value is a nil pointer, the interface itself `!= nil`. Rust `Option` does not fuse “typed empty” and “no value” into one `nil`. C++ empty `unique_ptr` or empty `function` each compare on their own; they do not have this one pit.
 
@@ -172,6 +195,11 @@ int* p = nullptr;
 
 ## 5. Embedding is not inheritance
 
+**Plain:** Putting another struct in as a field “promotes” its methods, but this is not object-oriented inheritance you can override.
+
+**Picture:** Slip a booklet into a bigger notebook. The table of contents can show the booklet’s chapters, but “see this chapter” inside the booklet still points at the booklet itself.
+
+
 > **Same:** all want to reuse a chunk of implementation.  
 > **Different:** Go embedding is **a field + method promotion**. There is no subtype polymorphism: an outer method does not virtually replace a call already bound on the inner type. C++ public inheritance can be polymorphic. Rust has no inheritance (N/A); use composition + traits.
 
@@ -202,6 +230,11 @@ struct Outer : Inner { const char* name() const override { return "outer"; } };
 ---
 
 ## 6. Type sets, `comparable`, generic gaps
+
+**Plain:** A Go constraint is a set of allowed types. It deliberately has no specialization, no associated types, and no extra type parameters on methods.
+
+**Picture:** The club only admits “types that can do integer arithmetic.” It does not let you rewrite the club charter for one particular integer.
+
 
 > **Same:** all have generic constraints.  
 > **Different:** Go constraints are **type sets** (interfaces). There is no C++-concept subsumption overloading, no Rust associated types and specialization.
@@ -248,6 +281,11 @@ If it cannot infer, write the type arguments by hand. A failed constraint is a h
 
 ## 7. `go:generate`, cgo cost
 
+**Plain:** go generate is a separate step you run, so another program can write Go files. cgo can call C, but every call crosses a bridge.
+
+**Picture:** The print shop does not automatically print the extra sheet when you hand in the paper. You have to go there first. Asking another class for help also means a trip down the corridor.
+
+
 > **Same:** all can run external tools at build time; all can call C.  
 > **Different:** `go generate` does **not** run automatically inside `go build`; you run it separately. cgo is not zero-cost FFI.
 
@@ -276,6 +314,11 @@ If it cannot infer, write the type arguments by hand. A failed constraint is a h
 ---
 
 ## 8. Atomics, race detection, `context`, `GOMAXPROCS`
+
+**Plain:** An atomic operation is add-or-subtract that cannot be torn in half. context announces “you may stop.” GOMAXPROCS is the cap on how many Go workers really run on the CPU at once.
+
+**Picture:** A relay baton is in only one person’s hand at a time. The teacher’s whistle stops everyone. The track has a limited number of lanes that can start at once.
+
 
 > **Same:** all have atomics, cancellation, thread counts.  
 > **Different:** Go puts cancellation in an explicit `context.Context` parameter; a data race is **not** a type error.
@@ -318,6 +361,11 @@ func worker(ctx context.Context) error {
 
 ## 9. Plugins, `linkname`, assembly stubs
 
+**Plain:** plugin wants to load another Go compile result at runtime, with many limits. linkname and hand-written assembly reach into language internals. They are not ordinary extension methods.
+
+**Picture:** You wanted a hot-swappable socket. The socket only accepts plugs from the same production line, made on the same day.
+
+
 > **Same:** all can dynamically load or hand-write assembly.  
 > **Different:** Go `plugin` is almost unusable as a product extension ABI. `linkname` is an escape hatch inside the standard library. Assembly follows Go’s calling convention, not a free C ABI.
 
@@ -355,6 +403,11 @@ Go assembly is the Plan 9 set, not GAS. Function frames must follow the current 
 ---
 
 ## 10. Iterators (Go 1.23+), `clear`, aliases
+
+**Plain:** From Go 1.23 you can pair `for range` with a function that keeps handing over the next element. clear zeros a container but does not change a slice’s length. An alias and a defined new type are not the same thing.
+
+**Picture:** At roll call someone keeps saying “next” until you say stop. Erasing the blackboard wipes the writing; the board’s size stays. A nickname and a legal rename are also different.
+
 
 > **Same:** all can walk a user-defined sequence.  
 > **Different:** a Go iterator is a function that pulls a yield callback; it is not Rust’s `Iterator` trait, and not C++ iterator pairs.
@@ -401,9 +454,37 @@ type Temp = float64        // alias; exactly the same type as float64
 
 An alias cannot have methods of its own (methods hang on the underlying named type). A defined type does not inherit the underlying type’s methods. Using an alias as a refactoring transition has been a use since 1.9; generic aliases were only completed in 1.24.
 
+
+`clear` and “an alias is not a new type” get a readable mini-example (illustrative). The iterator example is earlier in this section.
+
+```go
+// Go — illustrative
+s := []int{1, 2}
+clear(s) // elements become 0, 0; len is still 2
+
+type Celsius float64 // new type
+type Temp = float64  // alias; the same type as float64
+```
+
+```rust
+// Rust — illustrative. Clearing a Vec changes length; this is not Go’s clear
+let mut s = vec![1, 2];
+s.clear(); // len becomes 0
+```
+
+```cpp
+// C++ — illustrative. There is no one thing with the same name as Go clear
+std::vector<int> s{1, 2};
+s.clear(); // size becomes 0
+```
 ---
 
 ## 11. Odd sugar
+
+**Plain:** Go has little shorthand, but `:=`, defer, and append are the ones that most often make people think they changed the outer variable.
+
+**Picture:** Two pens with the same name. You changed the one you just took from the pencil case. The one on the desk did not move.
+
 
 > **Same:** all have shorthand that beginners step on.  
 > **Different:** Go has little sugar, but every piece is common.
@@ -451,6 +532,23 @@ From 1.22, `i` in `for i := range s` is a new variable each iteration; capturing
 | `new` vs `make` | `new(T)` returns a zero `*T`; slices/maps/channels use `make` |
 | receivers | value receivers copy; pointer receivers can mutate. A method value binds the receiver |
 
+Two more from the table (illustrative). `append` / `iota` / `new` examples are later in this section.
+
+```go
+// naked return — illustrative. Returns the current values of the named results
+func parse(ok bool) (n int, err error) {
+    if !ok { err = io.ErrUnexpectedEOF; return }
+    n = 1
+    return
+}
+
+// select — illustrative. When both cases are ready, which one runs is not source order
+select {
+case <-a:
+case <-b:
+}
+```
+
 ```rust
 // Rust — shadowing exists too (let err = ...), but there is no := “at least one new.”
 // Drop runs at end of scope, not defer’s “arguments evaluate immediately” set.
@@ -460,9 +558,41 @@ From 1.22, `i` in `for i := range s` is a new variable each iteration; capturing
 // C++ — no defer. RAII destructors run at end of scope; arguments of course evaluate at the call.
 ```
 
+
+Two more common pieces of sugar from the table (illustrative). The `:=` and defer examples are earlier in this section.
+
+```go
+// Go — illustrative
+s := []int{1}
+s2 := s
+s2 = append(s2, 2) // if capacity is enough, s may see the same array; if not, a new one
+
+const (
+    A = iota // 0
+    B        // 1
+)
+p := new(int)      // *int, pointing at 0
+m := make(map[string]int)
+```
+
+```rust
+// Rust — illustrative. let can shadow, but there is no := that requires “at least one new name”
+let err = 1;
+let err = 2; // a new err; the old one is covered
+```
+
+```cpp
+// C++ — N/A: no iota, no :=. Write numeric enum constants yourself
+enum { A = 0, B = 1 };
+```
 ---
 
 ## 12. Comparison (Go view)
+
+**Plain:** An index table. Examples are in the earlier sections.
+
+**Picture:** A review.
+
 
 | Topic | Go | Rust | C++ |
 |---|---|---|---|
@@ -476,6 +606,11 @@ From 1.22, `i` in `for i := range s` is a new variable each iteration; capturing
 ---
 
 ## 13. Not expanded (deferred)
+
+**Plain:** The full memory model, GC tuning, and experimental arenas are not expanded on this page.
+
+**Picture:** Stop here.
+
 
 - Line-by-line happens-before of the memory model (that page of the `sync` package docs is the body; this page does not copy it).
 - GC tuning (`GOGC`, `GOMEMLIMIT`) and latency distributions.

@@ -1,5 +1,8 @@
 # 07. Expert layer: C++ (templates, types, coroutines, reflection direction)
 
+> Teaching layer (2026-10-04 PT): read **Plain** and **Picture** first in each section; terms come after. First-read path: [00-how-to-read.md](00-how-to-read.md). Code blocks are all illustrative.
+
+
 Checked: 2026-10-04 PT. This page is the **07+ expert layer** in [README](README.md). It does not change the frozen baseline in [01-syntax.md](01-syntax.md)–[06-advanced-cross.md](06-advanced-cross.md). The baseline only says “there are templates / concepts / coroutines”; this page is the pits people with ten-plus years still argue about.
 
 Sample code is all **illustrative**. It was not compiled here line by line with any particular compiler version. Standard adoption ≠ all three major compilers have a production switch.
@@ -22,6 +25,11 @@ Expanded cross-language examples: [10-expert-patterns-cross.md](10-expert-patter
 ---
 
 ## 1. Value categories (glvalue / prvalue / xvalue)
+
+**Plain:** C++ asks of an expression: is it a named, living object, or a temporary result used right away to initialize something else.
+
+**Picture:** “My water cup” is a concrete cup. “Pour a cup of water” is the result of an action; it does not need a cup-slot on the table until you set it down.
+
 
 > **Same:** all three languages distinguish “an object with identity” from “a temporary result.”  
 > **Different:** only C++ makes this part of overload resolution. Rust’s move / reborrow and Go’s value copies are different axes; they **do not** have the glvalue vocabulary.
@@ -65,6 +73,11 @@ w := factory() // value copy; slices/maps/interfaces copy the header
 
 ## 2. Perfect forwarding
 
+**Plain:** A wrapper function should hand the parameters it received to the next layer as they were: copy when a copy is wanted, move when a move is wanted. Do not get it wrong in the middle.
+
+**Picture:** The reception desk forwards an envelope. Do not open it, photocopy it, and reseal it, unless the other person asked for a copy.
+
+
 > **Same:** all want to “hand the caller’s value to the next layer as-is.”  
 > **Different:** C++ uses forwarding references + `std::forward`. Rust uses ownership / `impl Trait` / macros. Go has **no** overloading and no forwarding references (N/A).
 
@@ -102,6 +115,11 @@ func sink(x any) { _ = x }
 ---
 
 ## 3. Three-way comparison `<=>` (spaceship)
+
+**Plain:** One comparison can answer less-than, equal, or greater-than, instead of writing only a `<`.
+
+**Picture:** In a line, you can say who is taller in one go. You do not first ask “are you shorter?” and then “are you the same height?”
+
 
 > **Same:** all three can define order.  
 > **Different:** only C++20 has compiler-synthesized `<=>` and “rewritten candidates.” Rust is `Ord`/`PartialOrd` (floats have no total order, so `PartialOrd`). Go’s `<` covers only a few types; structs you write yourself; in generics use `cmp.Ordered`.
@@ -141,6 +159,11 @@ struct Pt { x: i32, y: i32 }
 
 ## 4. Template metaprogramming and fold expressions
 
+**Plain:** A template is a compile-time formula expanded by type. A fold writes “add them all up” once for a pack of the same operation.
+
+**Picture:** Write “add each person’s score into the total” as an ellipsis, instead of copying ten lines of addition.
+
+
 > **Same:** all can branch on types at compile time.  
 > **Different:** C++ templates are a **Turing-complete overloading game** (SFINAE, specialization, pack expansion). Rust uses traits + const generics + macros; coherence forbids arbitrary specialization. Go generics have no specialization and no type packs; compile-time branching is shallow (see [09](09-expert-go.md)).
 
@@ -176,6 +199,11 @@ func sum(xs ...int) int {
 ---
 
 ## 5. SFINAE → concepts / requires
+
+**Plain:** If a type does not fit this function, switch to another one, instead of dumping a pile of unreadable inner errors.
+
+**Picture:** Signing up for basketball: if you are not tall enough, switch to another sport. Do not tear up the form halfway through filling it and refuse to say why.
+
 
 > **Same:** “if this type does not work, take another path.”  
 > **Different:** only C++ treats **substitution failure is not an error** (SFINAE) as the engine of overloading. In Rust, substitution failure is an error (specialization is still unstable and cannot stand in for SFINAE). In Go, a failed constraint is an error; there is no next candidate.
@@ -220,6 +248,11 @@ func f2[T ~int | ~int64](x T) int { return int(x) }
 
 ## 6. CTAD, NTTP, constexpr / consteval / constinit
 
+**Plain:** Some information the compiler can finish at compile time: a type can be guessed from constructor arguments, and some functions may only be called at compile time.
+
+**Picture:** Some arithmetic teachers require the sum finished in mental math. You may not bring a calculator into the exam hall.
+
+
 > **Same:** all have some compile-time computation.  
 > **Different:** C++ `constexpr` is a runtime function that **can also** run at compile time; `consteval` **must** be compile time. Rust `const fn` is closer to a restricted constexpr, and the stable subset is narrower than C++ (see [08](08-expert-rust.md)). Go `const` is only numbers/strings/bools; there are **no** const functions (N/A).
 
@@ -263,6 +296,11 @@ const g = 4
 ---
 
 ## 7. CRTP, mixin, deducing this
+
+**Plain:** When a base class wants to call a function on “the real derived class,” it takes the derived class’s name as a template parameter.
+
+**Picture:** A generic duty roster leaves “class” blank. Each class prints its own name onto it, so the roster can call the right people.
+
 
 > **Same:** compile-time polymorphism, avoiding virtual calls. Expanded comparison: [10](10-expert-patterns-cross.md).  
 > **Different:** C++ uses the curiously recurring template (derived class as the base’s template argument). Rust uses trait default methods and **does not** need to pass `Self` as a template parameter again (that is the hole CRTP fills). Go has no inheritance, N/A; use small interfaces + generic functions.
@@ -313,6 +351,11 @@ func WriteN[T One](t T, n int) {
 
 ## 8. EBO and `[[no_unique_address]]`
 
+**Plain:** An empty tag with no data should not take its own extra seat.
+
+**Picture:** A blank extra page can stick to the back of the main text. Do not bind it as its own page.
+
+
 > **Same:** all want a “data-less tag” to take no space. Rust `PhantomData` / empty structs are often ZSTs. Go’s empty `struct{}` has width 0, but **array/slice elements** still have implementation-defined details, and that is not EBO.  
 > **Different:** C++ empty-base optimization is an ABI layout rule, not a type-system feature.
 
@@ -351,6 +394,11 @@ type Pair struct {
 
 ## 9. ADL (Koenig lookup)
 
+**Plain:** When you write `a + b`, the compiler also looks in the namespaces of `a` and `b` for a suitable `+`.
+
+**Picture:** Looking up class rules: besides school-wide rules, you also open this class’s own folder.
+
+
 > **Same:** operators and “swap” want to use the type’s own implementation.  
 > **Different:** only C++ **additionally** pulls free functions from the associated namespaces of the arguments. Rust trait-method lookup is a different system (method resolution + coherence). Go method sets only see the type’s own methods; there is no ADL (N/A).
 
@@ -378,6 +426,11 @@ trait QtyAdd { fn add(self, other: Self) -> Self; }
 
 ## 10. Expression templates
 
+**Plain:** Record `a + b + c` first as “addition to do later,” and finish it in one loop, instead of building a new array after each `+`.
+
+**Picture:** Write the shopping list first, then add it up at the checkout. Do not pay once for every item you pick up.
+
+
 > **Same:** want `a+b+c` fused into one loop, not a materialization on every `+`.  
 > **Different:** this is a C++ numeric-library technique (Eigen and similar). Rust uses iterator adapters; Go has no isomorphic construct (N/A) — write a loop.
 
@@ -404,6 +457,11 @@ Sum<L, R> operator+(const L& l, const R& r) { return {l, r}; }
 ---
 
 ## 11. Type erasure
+
+**Plain:** The caller only cares that something “can be called” or “can draw.” They do not have to write the concrete type name.
+
+**Picture:** The homework basket only requires a workbook. It does not print a particular student’s name on the basket.
+
 
 > **Same:** collect different concrete types into one copyable/callable value. Three-language comparison: [10](10-expert-patterns-cross.md).  
 > **Different:** the C++ standard library has throwing `any`, possibly-allocating `function`, the C++23 move-only version, and value-semantic polymorphism in the C++26 draft.
@@ -441,6 +499,11 @@ var a any = 3
 ---
 
 ## 12. Coroutines (`co_await` / promise)
+
+**Plain:** Write “wait for the result, then continue” as straight-line code. C++ only cuts the function into a state machine; it does not schedule threads for you.
+
+**Picture:** You write “wait for the water to boil, then add noodles.” If nobody at home watches the kettle, you have to hire that person separately.
+
 
 > **Same:** all can write an “async function” as straight-line code.  
 > **Different:** C++20 coroutines are **stackless**, the compiler turns them into a state machine, and **the language has no scheduler**. Go goroutines are stacked runtime threads. Rust `async` is also a stackless state machine, but it is welded to `Future` + `Pin` (see [08](08-expert-rust.md)).
@@ -487,6 +550,11 @@ struct Task {
 
 ## 13. Modules (overview, not a build handbook)
 
+**Plain:** Modules want to replace “paste the whole header in as text.” The compiler reads the interface at module boundaries.
+
+**Picture:** Hand in a book report as a table of contents plus a summary, instead of photocopying the whole book into your notebook.
+
+
 > **Same:** all want to replace “copy-paste headers / infinite compiles.”  
 > **Different:** a Go package *is* the translation unit. Rust `mod` is an in-language tree; the crate is the boundary. C++20 modules grew up **beside** the header ecosystem; BMIs do not cross compilers.
 
@@ -513,6 +581,11 @@ func Answer() int { return 42 }
 ---
 
 ## 14. Reflection: P2996 direction (C++26 draft)
+
+**Plain:** Reflection lets a program ask at compile time “which members does this type have,” then generate code from that list.
+
+**Picture:** A roll sheet can ask “which columns does this row have,” instead of copying column names by hand again. In C++ this is still a draft, not a daily switch on all three compilers.
+
 
 > **Same:** all want to ask “what members does this type have?” from the program.  
 > **Different:** Go `reflect` is **runtime**. C++26 P2996 is **compile-time** `std::meta::info`. Rust has **no** isomorphic runtime reflection; compile time uses macros (see [08](08-expert-rust.md)). Do not write these three things as one word.
@@ -549,6 +622,11 @@ Shape that keeps showing up in public papers and draft discussion (**syntax foll
 
 ## 15. One comparison table with Rust / Go (C++ view)
 
+**Plain:** This table is only an index. Examples for each cell are in the matching section above. It does not open a new topic here.
+
+**Picture:** A review comparison table.
+
+
 | Topic | C++ | Rust | Go |
 |---|---|---|---|
 | Compile-time branching | overloads + requires + if constexpr | trait solving | constraints; fail and stop |
@@ -561,6 +639,11 @@ Shape that keeps showing up in public papers and draft discussion (**syntax foll
 ---
 
 ## 16. Not expanded here (deferred)
+
+**Plain:** Executor frameworks, contracts, and proofs of memory order are not expanded on this page.
+
+**Picture:** Stop the pen here, so a new lesson is not added.
+
 
 - Algorithms and scheduler customization of `std::execution` / senders-receivers.
 - Semantics of C++26 contracts (observe / enforce / quick-enforce) — also still in draft, and not the same thing as reflection.

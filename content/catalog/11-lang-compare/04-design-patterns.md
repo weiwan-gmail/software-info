@@ -1,5 +1,7 @@
 # 04. Idiomatic design patterns (not a GoF dump)
 
+> Teaching layer (2026-10-04 PT): read **Plain** and **Picture** first in each section; terms come after. First-read path: [00-how-to-read.md](00-how-to-read.md). Code blocks are all illustrative.
+
 > **Same:** resource release, dependency injection, plugins, message-driven work, walking complex structure — all three languages hit these.  
 > **Different:** **same intent, different shape**: C++ leans on RAII/destructors; Go leans on `defer`; Rust leans on `Drop` + ownership. Do not force Java-style GoF into Go.
 
@@ -8,6 +10,10 @@ Sample code is **illustrative**.
 ---
 
 ## 1. Resource lifetime: RAII · defer · Drop
+
+**Plain:** When you are done with a file, a lock, or a network connection, give it back automatically as you leave this piece of code.
+
+**Picture:** Borrowing the lab key: lock the door as you walk out, not when you happen to remember.
 
 > **Same:** “leaving the scope cleans up.”  
 > **Different:** who guarantees it, whether cleanup can fail, and how it interacts with async.
@@ -44,6 +50,10 @@ defer f.Close() // Close’s error is often ignored or wrapped again
 ---
 
 ## 2. Algebraic data + exhaustive match ≈ Visitor
+
+**Plain:** When a thing has only a few mutually exclusive shapes, you want every shape written down so a miss can be caught.
+
+**Picture:** Notices are only “meeting, exam, holiday.” The blackboard needs a box for all three. You cannot quietly skip one.
 
 > **Same:** branch on “a few mutually exclusive shapes.”  
 > **Different:** Rust `match` is exhaustive at compile time; Go type switch; C++ `variant`+`visit` or classic Visitor.
@@ -96,6 +106,10 @@ void handle(const Msg& m) {
 
 ## 3. Dependency injection · Options · functional options
 
+**Plain:** Hand in the helpers an object needs (clock, log, address) at construction. Do not sneak off inside a function to grab the global one.
+
+**Picture:** Before the experiment, the teacher puts the beaker and stopwatch on the desk. Students do not each run to the storeroom.
+
 > **Same:** inject dependencies at construction; avoid a global singleton.  
 > **Different:** Go likes functional options; Rust likes builder + typestate; C++ likes a parameter struct / concept constraints.
 
@@ -136,6 +150,10 @@ struct Server {
 
 ## 4. Actor · Channel · event bus
 
+**Plain:** Do not let several execution flows edit the same table at once. Instead, drop messages into one “owner” mailbox.
+
+**Picture:** Only the class monitor changes the seating chart. Everyone else writes a note and hands it over.
+
 > **Same:** use messages to reduce shared mutable state.  
 > **Different:** Go has language-level channels; Rust picks a crate; C++ is library-level.
 
@@ -150,14 +168,19 @@ close(jobs)
 ```
 
 ```rust
-// Rust: tokio mpsc sketch
-// let (tx, mut rx) = tokio::sync::mpsc::channel(16);
-// tokio::spawn(async move { while let Some(j) = rx.recv().await { do_job(j).await; } });
+// Rust — illustrative. The standard-library channel already shows the shape; tokio’s .await version is in 10
+use std::sync::mpsc;
+let (tx, rx) = mpsc::channel::<i32>();
+std::thread::spawn(move || { let _ = tx.send(1); });
+let _v = rx.recv();
 ```
 
 ```cpp
-// C++: Asio strand or lock-free queue + thread; or CAF actor
-// actor->send(Ping{});
+// C++ — illustrative. No chan keyword; the smallest isomorphic form is a queue plus a lock
+void send_job(std::mutex& mu, std::queue<int>& q, int job) {
+  std::lock_guard lk(mu);
+  q.push(job);
+}
 ```
 
 | Pattern | Fits |
@@ -171,6 +194,10 @@ close(jobs)
 ---
 
 ## 5. Static polymorphism: CRTP · traits · generic constraints
+
+**Plain:** Pick the concrete type at compile time so the call can be inlined like an ordinary function. You do not wait until runtime to look up a table.
+
+**Picture:** The print shop prints from your class template in advance, instead of asking which class you are each time you queue.
 
 > **Same:** compile-time polymorphism, no vtable.  
 > **Different:** names and error-message experience differ a lot.
@@ -209,6 +236,10 @@ func WriteAll[W Writer](w W, b []byte) error {
 
 ## 6. Plugin architecture
 
+**Plain:** Keep the core program stable. New features plug in like appliances on a power strip.
+
+**Picture:** The power strip stays. You can swap a lamp or a fan.
+
 > **Same:** keep the core stable; features are pluggable.  
 > **Different:** dynamic-load difficulty: C/C++ `.so` is the most traditional; Go `plugin` has **large limits** (same build tree); Rust dynamic plugins want a stable ABI (often fall back to C ABI).
 
@@ -246,6 +277,10 @@ struct Reg {
 
 ## 7. Error and result pipelines (pattern layer)
 
+**Plain:** When failure goes up, take “what you were doing then” with it, so the outer layer can later understand the inner reason.
+
+**Picture:** A leave slip says not only “sick,” but also “temperature taken before PE.”
+
 ```go
 // Go: wrap the error chain
 return fmt.Errorf("load cfg: %w", err)
@@ -265,6 +300,10 @@ return load().and_then(parse).transform_error([](Error e){ /* ... */ return e; }
 ---
 
 ## 8. Idiomatic “settings core” shape (aligned with Wei)
+
+**Plain:** The real rules (defaults, validation, save) live in the core. The window only displays and hands clicks back.
+
+**Picture:** The grade book is in the office. The blackboard is a copied layer. Erasing the blackboard does not change the grade book.
 
 Collect GUI-irrelevant rules into a core. The three languages are isomorphic:
 
@@ -286,11 +325,36 @@ Collect GUI-irrelevant rules into a core. The three languages are isomorphic:
 - Rust: trait objects or a generic Store; optional GUI feature compile.  
 - C++: abstract `ISettingsStore` + KDBindings/Aria/`Q_PROPERTY` bridge.
 
+The core only knows storage, not windows (illustrative):
+
+```go
+// Go — illustrative
+type Store interface{ Get(string) (string, error); Set(string, string) error }
+```
+
+```rust
+// Rust — illustrative
+trait Store { fn get(&self, k: &str) -> Option<String>; fn set(&mut self, k: &str, v: &str); }
+```
+
+```cpp
+// C++ — illustrative
+struct ISettingsStore {
+  virtual ~ISettingsStore() = default;
+  virtual std::string get(std::string_view) = 0;
+  virtual void set(std::string_view, std::string) = 0;
+};
+```
+
 See [ui-settings-binding-stacks.md](../../ui-settings-binding-stacks.md) and [qt-reactive-compare](https://github.com/weiwan-gmail/qt-reactive-compare) (separate private repo, not part of this site).
 
 ---
 
 ## 9. Easy-to-misuse “pseudo-patterns”
+
+**Plain:** Some habits borrowed from other languages do not help in these three. They twist the structure.
+
+**Picture:** Taking basketball rules onto a football pitch. Both are balls. Every call is wrong.
 
 | Pseudo-pattern | Problem |
 |---|---|
@@ -300,9 +364,31 @@ See [ui-settings-binding-stacks.md](../../ui-settings-binding-stacks.md) and [qt
 | One giant global EventBus shared by all three languages | hard to test; split channels at boundaries |
 | UI writing disk directly | breaks “core owns dependencies” |
 
+
+Each block below is a **do not write this** sketch (illustrative):
+
+```go
+// Go — illustrative. The language has no class inheritance; do not build a “base-class tree” and pretend to override
+// type Animal struct{}
+// type Dog struct{ Animal } // this only embeds a field; see 09
+```
+
+```rust
+// Rust — illustrative. Sharing first, then locks everywhere, often means ownership was not thought through
+// let state = Arc::new(Mutex::new(State::default())); // it compiles, but it smells
+```
+
+```cpp
+// C++ — illustrative. Bare new has no owner; forget delete and it leaks
+// Widget* w = new Widget; // make it unique_ptr, or put it on the stack / in a container
+```
 ---
 
 ## 10. Same-intent comparison table (wrap-up)
+
+**Plain:** One table to keep: the same sentence, three sets of part names. Full mini-examples are in the sections above.
+
+**Picture:** A glossary, not a new lesson.
 
 | Intent | Go | Rust | C++ |
 |---|---|---|---|
@@ -312,3 +398,20 @@ See [ui-settings-binding-stacks.md](../../ui-settings-binding-stacks.md) and [qt
 | Concurrent decoupling | goroutine+chan | async+mpsc / actor | thread+queue / CAF / Qt signals |
 | Extension point | interface registry | trait + registry | virtual interface / plugin DLL |
 | Static reuse | generics | trait | CRTP / concepts |
+
+The smallest side-by-side for the table’s first row, “clean up on leave” (full examples for the other rows are in sections 1–7, illustrative):
+
+```go
+// Go — illustrative
+// defer f.Close()
+```
+
+```rust
+// Rust — illustrative
+// let _f = File::open(path)?; // leaving the block Drops
+```
+
+```cpp
+// C++ — illustrative
+// std::ifstream f{path}; // leaving the block destructs
+```
