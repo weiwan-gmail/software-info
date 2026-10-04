@@ -1,14 +1,22 @@
 # 10. Expert layer: same intent, three shapes
 
+> Teaching layer (2026-10-04 PT): read **Plain** and **Picture** first in each section; terms come after. First-read path: [00-how-to-read.md](00-how-to-read.md). Code blocks are all illustrative.
+
+
 Checked: 2026-10-04 PT. The **frozen baseline** of idiomatic patterns is still [04-design-patterns.md](04-design-patterns.md) (do not change it). This page writes the same intent as side-by-side expert fragments: more traps, not a third intro.
 
 Sample code is **illustrative**; it was not compiled line by line. Language-mechanism expansion is in [07](07-expert-cpp.md) / [08](08-expert-rust.md) / [09](09-expert-go.md).
 
-How to read: each section starts with **same / different**, then one block each for Go, Rust, C++. If a language has no isomorphic construct, write **N/A**; do not force a translation.
+How to read: each section starts with **Plain** and **Picture**, then **same / different**, then one block each for Go, Rust, C++. Terms sit after Plain. If a language has no isomorphic construct, write **N/A**; do not force a translation.
 
 ---
 
 ## 1. Algebraic data + exhaustive branching ≈ Visitor
+
+**Plain:** When the same message has only a few mutually exclusive shapes, you want omitting one to be caught by the compiler.
+
+**Picture:** Notices have only three stamps. The person stamping must have a handler for all three. They cannot pretend not to see one.
+
 
 > **Same:** a set of mutually exclusive shapes; do one thing per shape; ideally omitting one fails to compile.  
 > **Different:** Rust `enum` + `match` is the native tongue of this intent. C++ uses `std::variant` + `std::visit`, or classic double-dispatch Visitor (still used when things stay open). Go has **no** algebraic types; interface + type switch is **not exhaustive**.
@@ -73,6 +81,11 @@ void handle(const Msg& m) {
 
 ## 2. Type erasure
 
+**Plain:** Fold different concrete types into a box that “only knows these operations.” The caller no longer writes the original type name.
+
+**Picture:** The classroom book-return box only accepts “this is a book.” It does not print each author’s name on the box.
+
+
 > **Same:** the caller depends only on operations, not the concrete type; values need to go in a container.  
 > **Different:** Go interfaces are the default answer. Rust chooses between `dyn` and `enum` (`dyn` has object-safety limits; see [08](08-expert-rust.md)). C++ has virtual pointers, `std::function`, `std::any`, and value-semantic polymorphic values (a pattern; `std::polymorphic` is in the C++26 draft; do not assume implementations have arrived; see [07](07-expert-cpp.md)).
 
@@ -125,6 +138,11 @@ void render(const std::vector<std::unique_ptr<Draw>>& ds) {
 ---
 
 ## 3. Dependency injection, options, builder
+
+**Plain:** Pass dependencies such as address and logging in at creation. Optionals use options or a builder. Required ones should be something the compiler can watch.
+
+**Picture:** Before opening the shop, hand the address and the ledger to the manager. Do not open if the ledger is missing.
+
 
 > **Same:** inject storage, clock, address at construction, rather than reaching for globals inside the function.  
 > **Different:** Go functional options are the idiomatic default. Rust uses a builder; typestate can leave “required field not set yet” in the type. C++ uses an aggregate config or constructor parameters; concepts can constrain template parameters, but there is no language-level builder.
@@ -181,6 +199,11 @@ struct Server {
 
 ## 4. Actor, channel, event pump
 
+**Plain:** One piece of data is changed by one owner, in message order. Others only send letters. They do not reach into someone else’s drawer.
+
+**Picture:** Only the class monitor opens the class monitor’s drawer. You drop a note in the mailbox.
+
+
 > **Same:** messages instead of shared mutable state. Who holds the data serializes the messages.  
 > **Different:** Go channels are part of the language and runtime. Rust has no language-level channel; `std::sync::mpsc` or a runtime’s async channel is a library. C++ has no language-level channel (N/A for syntax); use a queue, the `std::execution` draft, or Qt signals. Actor frameworks (CAF and similar) are libraries, not the same type in a trinity.
 
@@ -228,9 +251,40 @@ func loop(cmds <-chan cmd) {
 
 The UI only eats already-folded state patches — that discipline is in [04](04-design-patterns.md) and [05-gui-binding.md](05-gui-binding.md); this page does not repeat the product structure.
 
+
+Side-by-side you can read in the standard library. The Go example is earlier in this section; here are uncommented Rust / C++ (illustrative). The tokio block stays comments, because the runtime is not the language itself.
+
+```rust
+// Rust — illustrative. Blocking channel; no tokio needed
+use std::sync::mpsc;
+let (tx, rx) = mpsc::channel::<i32>();
+std::thread::spawn(move || { let _ = tx.send(1); });
+let _v = rx.recv();
+```
+
+```cpp
+// C++ — illustrative. No chan keyword
+void post(std::mutex& mu, std::queue<int>& q, int v) {
+  std::lock_guard lk(mu);
+  q.push(v);
+}
+```
+
+```go
+// Go — illustrative. Unbuffered: if nobody is receiving, send waits
+ch := make(chan int)
+go func() { ch <- 1 }()
+v := <-ch
+_ = v
+```
 ---
 
 ## 5. RAII ↔ `defer` ↔ `Drop` (including async cancel)
+
+**Plain:** Leaving a range means giving resources back. The three languages define “leaving” differently: function return, end of a variable’s scope, or an async task being thrown away.
+
+**Picture:** Borrowed keys: Go usually returns them at the end of the whole period. Rust and C++ often return them as you walk out of this classroom.
+
 
 > **Same:** leaving a scope means giving resources back.  
 > **Different:** who calls, what happens on failure, whether cancel is the same cleanup.
@@ -281,6 +335,11 @@ The async cell is the core of the expert disagreement:
 ---
 
 ## 6. Plugins and a stable ABI
+
+**Plain:** The boundary that can really load across compilers is C’s simple functions, not each language’s objects, interfaces, or traits.
+
+**Picture:** Two schools exchange students only under the education bureau’s exam rules, not under each school’s internal nicknames.
+
 
 > **Same:** the core does not want to know every extension at compile time.  
 > **Different:** “in-process function pointers” and “a stable ABI across compilers” differ by an order of magnitude. **None** of the three languages’ object models can be a plugin boundary directly.
@@ -339,6 +398,11 @@ extern "C" int driver_open(void);
 
 ## 7. CRTP ↔ trait default methods ↔ Go generic functions
 
+**Plain:** To reuse an algorithm at compile time: C++ hands the derived class to a base-class template, Rust writes a default method on a trait, Go writes a generic function.
+
+**Picture:** The same duty procedure: some print it on a class template, some write it in the class pact, some make a form anyone can fill a name into.
+
+
 > **Same:** stick a “shared algorithm” onto a “concrete type” at compile time, without a vtable.  
 > **Different:** C++’s hole is “the base does not know the derived class,” so the derived class is a template parameter (curiously recurring). Rust `Self` is already in the trait; a default method calls `self.next()` directly and **does not need** CRTP. Go has no inheritance and no default methods; the shared algorithm is a **generic function**, not a base class.
 
@@ -386,6 +450,11 @@ struct Dot : Repeat<Dot> { void write_one(); };
 
 ## 8. Error pipelines (expert differences; baseline is 04)
 
+**Plain:** Failure must travel up with context. Cleanup itself often cannot report another error.
+
+**Picture:** Returning the key, you find the lock is broken. You still cannot file a new leave slip inside the “leave the room” action.
+
+
 > **Same:** failure has to walk up with context.  
 > **Different:** whether cleanup can fail; whether the type system has “cannot fail.”
 
@@ -417,6 +486,11 @@ return fmt.Errorf("load %s: %w", path, err) // errors.Is / As look at the chain
 
 ## 9. The same intent: “generate code”
 
+**Plain:** Enum-to-string, serialization, and similar boilerplate: all three want it generated, but when and with which tools differ completely.
+
+**Picture:** Everyone wants to copy the list less. Some use a stamp, some a mimeograph, some make a separate trip to the print shop at night.
+
+
 > **Same:** some boilerplate you do not want to write a second time (stringify enums, serialize, register).  
 > **Different:** the three mechanisms do not substitute for each other. Details in 07–09; this section only blocks mistranslation.
 
@@ -445,6 +519,11 @@ struct Kind;
 
 ## 10. Interior mutability / write while sharing
 
+**Plain:** Logically many people look at the same data at once, and you still need to change it. Only Rust forbids this by default, so it needs a dedicated hatch.
+
+**Picture:** Everyone can read the notice board. Go and C++ let you walk up and change it; the risk is yours. Rust requires a locked pen or a single-thread special pen.
+
+
 > **Same:** logically one shared copy, and you still need to mutate.  
 > **Different:** only Rust makes “shared therefore immutable” the default, so it needs a dedicated escape hatch.
 
@@ -456,9 +535,37 @@ struct Kind;
 
 This is not the same API in three spellings. Do not write the Go/C++ cell as a translation of `UnsafeCell`.
 
+
+The same sentence “shared by name, still mutate an integer inside” (illustrative):
+
+```go
+// Go — illustrative. The language does not forbid mutating through a shared pointer; data races are what -race may see in tests
+type Box struct{ N int }
+func bump(b *Box) { b.N++ }
+```
+
+```rust
+// Rust — illustrative. &Box is a shared reference; Cell allows mutating a Copy field (single-threaded)
+use std::cell::Cell;
+struct Box { n: Cell<i32> }
+fn bump(b: &Box) { b.n.set(b.n.get() + 1); }
+```
+
+```cpp
+// C++ — illustrative. Mutate a mutable member in a const method. Do not const_cast away const; that easily becomes undefined behavior
+struct Box {
+  mutable int n = 0;
+  void bump() const { ++n; }
+};
+```
 ---
 
 ## 11. How to pick a shape (wrap-up)
+
+**Plain:** When migrating, first ask whether this cell is N/A. Do not hard-translate one family’s syntax into another’s.
+
+**Picture:** In a glossary, stop when you see “no equivalent.” Do not invent a near-homophone.
+
 
 | Intent you want | Prefer |
 |---|---|
@@ -472,9 +579,31 @@ This is not the same API in three spellings. Do not write the Go/C++ cell as a t
 
 **Opinion:** the comparison is so that when you migrate you know **which cell is N/A**. Translating CRTP into Go embedding, `defer` into “block-scope destructor,” `plugin` into a Rust trait object across a `.so` — those three are the mistranslations this page is here to block.
 
+Do not write these three mistranslations as code (illustrative; only mark “not a counterpart”):
+
+```go
+// Go — illustrative. defer waits until the function returns, not the current braces
+// defer f.Close()
+```
+
+```rust
+// Rust — illustrative. A trait object is not a stable ABI across a .so
+// let _: &dyn Driver;
+```
+
+```cpp
+// C++ — illustrative. CRTP is not Go’s embedded field
+// struct Dot : Repeat<Dot> {};
+```
+
 ---
 
 ## 12. Not expanded (deferred)
+
+**Plain:** Concrete widgets, distributed actors, and a compilable three-language sample repo are not on this page.
+
+**Picture:** Stop here.
+
 
 - Concrete widgets of each language’s UI binding (still only in [05-gui-binding.md](05-gui-binding.md)).
 - Distributed actors (cluster membership, supervision trees). That is framework docs, not a language comparison.

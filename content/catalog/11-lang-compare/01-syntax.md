@@ -1,5 +1,7 @@
 # 01. Syntax and language core: Go · Rust · C++
 
+> Teaching layer (2026-10-04 PT): read **Plain** and **Picture** first in each section; terms come after. First-read path: [00-how-to-read.md](00-how-to-read.md). Code blocks are all illustrative.
+
 > **Same:** all three are statically typed, compiled languages; all have generics (Go 1.18+, Rust from the start, C++ templates); all can express interface-style polymorphism.  
 > **Different:** memory model (GC vs ownership vs manual/RAII), error channel, default concurrency shape, and macro/metaprogramming depth differ by an order of magnitude.
 
@@ -8,6 +10,10 @@ Sample code is **illustrative**. It was not compiled here line by line with `go 
 ---
 
 ## 1. Types and memory
+
+**Plain:** A type is “what this data looks like.” Memory is “where it lives, and who throws it away when you are done.”
+
+**Picture:** Squares on a workbook page: some squares you can copy and lend (copy); some squares only one person may write in (exclusive).
 
 | | Go | Rust | C++ |
 |---|---|---|---|
@@ -62,6 +68,10 @@ struct Node {
 ---
 
 ## 2. Concurrency
+
+**Plain:** Concurrency is letting several jobs move forward at the same time, with an agreement about how they hand results over.
+
+**Picture:** Three cafeteria windows serving at once, versus one window, one person finishing before the next is called.
 
 > **Same:** all can start threads, all can use locks, all can pass messages.  
 > **Different:** Go treats lightweight tasks as first-class; Rust stops data races at compile time; C++’s standard library gives threads and sync primitives, and async is mostly library-level.
@@ -126,6 +136,10 @@ task<int> compute() { co_return 42; }
 
 ## 3. Generics
 
+**Plain:** Generics mean writing one function or container that works for many types, and filling in the concrete type later.
+
+**Picture:** A leave-request form template. The name blank can be anyone; you do not reprint the layout.
+
 > **Same:** parameterized types and functions.  
 > **Different:** Go uses interface constraints; Rust uses trait bounds; C++ uses templates + concepts (C++20).
 
@@ -155,6 +169,10 @@ T max_val(T a, T b) { return a > b ? a : b; }
 ---
 
 ## 4. Error handling
+
+**Plain:** When something fails, do not pretend it succeeded. Hand the failure to the caller, and say which step broke.
+
+**Picture:** Turning in homework: the teacher wants “turned in” or “did not bring it, reason on a slip” — not a silent blank page.
 
 > **Same:** explicit handling is encouraged; do not swallow failures everywhere.  
 > **Different:** the channel shape is completely different.
@@ -190,6 +208,10 @@ std::expected<File, Error> open_file(const std::string&);
 
 ## 5. Interface / trait / virtual functions
 
+**Plain:** Ask for something by “what it can do,” not by which family it belongs to.
+
+**Picture:** The duty student only needs to know how to sweep. They do not have to be on one class’s fixed roster.
+
 > **Same:** you can abstract over “capability,” not a required inheritance tree.  
 > **Different:** Go satisfies interfaces implicitly; Rust uses explicit `impl Trait`; C++ uses vtables or concepts/CRTP.
 
@@ -216,6 +238,10 @@ struct Writer { virtual ~Writer() = default; virtual size_t write(std::span<cons
 ---
 
 ## 6. Macros and metaprogramming
+
+**Plain:** Let the compiler or a tool write the repeated boilerplate, instead of copying it by hand a second time.
+
+**Picture:** Stamp a row of identical squares, instead of redrawing each square.
 
 > **Same:** all can cut boilerplate.  
 > **Different:** capability and risk differ enormously.
@@ -247,6 +273,10 @@ type Kind int
 ---
 
 ## 7. Other easy-to-miss comparisons
+
+**Plain:** These are small differences you hit every day, but the earlier sections did not give them their own heading.
+
+**Picture:** Same trip, three people’s luggage rules differ: what can go in the cabin, what must be checked.
 
 | Topic | Go | Rust | C++ |
 |---|---|---|---|
@@ -285,7 +315,29 @@ std::visit([](auto&& e){ /* if constexpr ... */ }, event);
 
 ## Cheat sheet
 
+**Plain:** If you keep only three sentences: Go is the least fuss; Rust stops danger at compile time; C++ sits closest to existing systems and GUI ecosystems.
+
+**Picture:** Picking a club: do you want a running tool soon, the strictest rules, or the gear the school already has?
+
 - **Want GC, simple deploy, short concurrency syntax** → start with Go.  
 - **Want a no-data-race proof, zero-cost abstraction, strong ADTs** → start with Rust.  
 - **Want the deepest systems/GUI/game-engine ecosystem, seamless with existing C ABI** → start with C++.  
 - All three can write a “settings core”; the difference is **boundary and adapter cost**. See [05-gui-binding.md](05-gui-binding.md).
+
+The same sentence “start another piece of work” (illustrative). Details are in section 2.
+
+```go
+// Go — illustrative
+go work()
+```
+
+```rust
+// Rust — illustrative. Threads are in the standard library; async needs a runtime you pick
+std::thread::spawn(work);
+```
+
+```cpp
+// C++ — illustrative
+std::thread t(work);
+t.join();
+```
