@@ -6,7 +6,7 @@ Markdown-sourced software catalog. Edit files under `content/`; the site renders
 
 | What | Where |
 |---|---|
-| Domain tree (catalog index + 10 domains) | `content/catalog/` |
+| Domain tree (catalog index + 11 domains) | `content/catalog/` |
 | Older detail tables | `content/*.md` (siblings of `catalog/`, not a `detail/` folder) |
 | Star snapshots (2026-08-29 PT) | `data/*.json` |
 

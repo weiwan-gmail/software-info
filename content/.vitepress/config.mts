@@ -40,6 +40,7 @@ export default defineConfig({
           { text: '8. Divination & texts', link: '/catalog/08-divination/README' },
           { text: '9. Network & self-hosting', link: '/catalog/09-network/README' },
           { text: '10. Signal / instruments / formal methods', link: '/catalog/10-signal-formal/README' },
+          { text: '11. Go / Rust / C++ comparison', link: '/catalog/11-lang-compare/README' },
         ],
       },
       {

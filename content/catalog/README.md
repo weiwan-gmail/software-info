@@ -40,8 +40,9 @@ Older tables:
 | 8 | Divination & texts | [08-divination](08-divination/README.md) | Canonical texts · charting & hexagrams · tarot · AI wrappers (flagged, not homework) |
 | 9 | Network & self-hosting | [09-network](09-network/README.md) | Overlay networks · tunnels · remote access · self-hosting |
 | 10 | Signal / instruments / formal methods | [10-signal-formal](10-signal-formal/README.md) | DSP · oscilloscopes · simulators · formal proof |
+| 11 | Go / Rust / C++ comparison | [11-lang-compare](11-lang-compare/README.md) | Syntax · package tooling · libraries · idiomatic patterns · GUI binding · cross-language |
 
-Domains 3, 6, 7, and 10 are newer openings. They are thinner than 1, 2, 4, and 5.
+Domains 3, 6, 7, and 10 are newer openings. They are thinner than 1, 2, 4, and 5. Domain 11 is a language/stack comparison, not a product shopping table.
 
 ---
 
