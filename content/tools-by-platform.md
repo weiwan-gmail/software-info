@@ -370,6 +370,41 @@ Developer: ChengHao Wu (Nanjing; Mac App Store seller name 成浩 吴). An App S
 - Date: 2026-10-12
 - Learnable slice: recover how a feature is implemented when you have no source — native binaries (Hopper / Ghidra / IDA), Go, WASM, EVM, JS/Electron, sites, HAR, .NET, Android APK (JADX) and a device (adb), firmware, Linux crash records, process behavior — and attach evidence. Needs Node.js 22.19+ / 24.11+ / 26+; `npx rea-agents setup`. Authorized reverse-engineering research only.
 
+Stars below as of 2026-10-12 GitHub API. “Similar” means one image or text in, a usable 3D asset out (mesh / Gaussian splat / explorable scene). Do not invent prices. Catalog: [06-media](/catalog/06-media/README) §6.7.
+
+- Name: image-blaster
+- Platform: TypeScript (React viewer); runs through Claude Code in a terminal. Output imports into Unity/Unreal/Godot, Blender/Maya, Three.js/Electron
+- Site or repo: https://github.com/neilsonnn/image-blaster
+- Paid: free open source (MIT). Cloud backends (World Labs, FAL) are paid APIs
+- Source: https://github.com/neilsonnn/image-blaster — 11,174 star, 1,113 fork (2026-10-12)
+- Date: 2026-10-12
+- Learnable slice: a Claude Code skill pack that orchestrates Marble (static environment Gaussian splat `.spz`), Hunyuan3D on FAL (dynamic object meshes `.glb`/`.obj`), and ElevenLabs (environment/object `.mp3`). Repo claims “under 5 minutes.” Study the agent-skill orchestration, not as an Android/Qt library
+
+**Open source (same class)**
+
+| Name | Site or repo | star (2026-10-12) | Paid | Learnable slice |
+|---|---|---:|---|---|
+| HunyuanWorld-1.0 | https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0 | 2,944 | custom license (Other); local GPU | text/image → explorable 3D world; closest local Marble stand-in |
+| Hunyuan3D-2.1 | https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1 | 4,164 | NOASSERTION; local GPU | image → high-fidelity PBR assets; the object-model family image-blaster calls |
+| Modly | https://github.com/lightningpixel/modly | 8,139 | NOASSERTION | local desktop GUI, image or prompt → 3D; Qt-shaped reference |
+| img2threejs | https://github.com/img2threejs/img2threejs | 17,962 | Apache-2.0 | reconstruct objects as procedural Three.js code, not a mesh |
+| Wonder3D | https://github.com/xxlong0/Wonder3D | 5,444 | MIT | single image → 3D (cross-domain diffusion); permissive, offline-capable |
+| Stable-Dreamfusion | https://github.com/ashawkey/stable-dreamfusion | 8,870 | Apache-2.0 | text/image → 3D + mesh export (NeRF + diffusion); classic, slow |
+
+**Free closed-source**
+
+| Name | Site | Form | Notes |
+|---|---|---|---|
+| Tencent Hunyuan 3D (online) | https://3d.hunyuan.tencent.com/sceneTo3D | price not verified | official HunyuanWorld web: image/text → 3D scene; no GPU needed to try it |
+
+**Paid**
+
+| Name | Site | Form | Notes |
+|---|---|---|---|
+| World Labs Marble | https://marble.worldlabs.ai/ · API https://platform.worldlabs.ai/ | price not verified | image → explorable 3D world (Gaussian splat). image-blaster’s core dependency |
+| Meshy | https://www.meshy.ai/pricing | Free 100 credits/month (output CC BY 4.0); Pro 1,000 credits/month (no dollar amount on the page) | text/image → 3D + AI textures; REST API; Blender/Unity plugins |
+| fal.ai | https://fal.ai/ | usage-based; specific prices not verified | hosts Hunyuan3D, ElevenLabs, and others. image-blaster’s other cloud dependency |
+
 ---
 
 ## 9. Other classes (seeds)

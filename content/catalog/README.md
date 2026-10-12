@@ -35,7 +35,7 @@ Older tables:
 | 3 | Electronics / embedded / radio | [03-electronics-radio](03-electronics-radio/README.md) | Boards · EDA/FPGA · keyboard firmware · SDR software · over-the-air signals |
 | 4 | Fabrication | [04-fabrication](04-fabrication/README.md) | Slicers · printer firmware · CAD · CNC · plotters |
 | 5 | Games | [05-games](05-games/README.md) | Engines · open-source games · launchers & emulators · browser-game directories · stores |
-| 6 | Audio / image / text | [06-media](06-media/README.md) | Synthesis · notation · DAW · RAW · typesetting · fonts |
+| 6 | Audio / image / text | [06-media](06-media/README.md) | Synthesis · notation · DAW · RAW · typesetting · fonts · **image/text → 3D** |
 | 7 | Observation & space | [07-observation](07-observation/README.md) | Sky charts · mounts · GIS · maps · chess |
 | 8 | Divination & texts | [08-divination](08-divination/README.md) | Canonical texts · charting & hexagrams · tarot · AI wrappers (flagged, not homework) |
 | 9 | Network & self-hosting | [09-network](09-network/README.md) | Overlay networks · tunnels · remote access · self-hosting |
