@@ -20,6 +20,8 @@ Also see the phone-side utility taxonomy: [mobile-utility-tools.md](../../mobile
 | [tailscale/ts-plug](https://github.com/tailscale/ts-plug) | 56 | |
 | [cloudflare/cloudflared](https://github.com/cloudflare/cloudflared) | 15,428 | |
 | [caddyserver/caddy](https://github.com/caddyserver/caddy) | 75,328 | |
+| [fosrl/pangolin](https://github.com/fosrl/pangolin) · [pangolin.net](https://pangolin.net/) | — | Self-hosted identity-aware reverse proxy + userspace WireGuard (Newt). Community Edition AGPL-3.0. Harvest 2026-09-14 |
+| [MoonProxyHQ/moonproxy-desktop](https://github.com/MoonProxyHQ/moonproxy-desktop) · [moonproxy.app](https://moonproxy.app/) | — | Tauri v2 + frpc sidecar. MIT. Harvest 2026-09-28 |
 
 ### How to pick among the four overlays (2026-10-02)
 
@@ -46,13 +48,15 @@ Also see the phone-side utility taxonomy: [mobile-utility-tools.md](../../mobile
 
 ## 9.2 Remote desktop
 
-**Open source:** RustDesk (you also have weiwan-gmail/rustdesk; use that repo’s stars)
+**Open source:** RustDesk (you also have weiwan-gmail/rustdesk; use that repo’s stars) · [GlassHaven/Haven](https://github.com/GlassHaven/Haven) (AGPL-3.0; Android SSH/VNC/RDP/SPICE thin client; harvest 2026-10-12)
 
 **Free closed-source / paid:** TeamViewer personal free + commercial license · AnyDesk the same · Chrome Remote Desktop free closed-source.
 
+**Free closed-source (OKA Apps mirroring, macOS):** [Oka Mirror for Samsung TV](https://okaapps.com/product/1499584783) · [Chromecast](https://okaapps.com/product/1512564265) · [Roku](https://okaapps.com/product/1519399703) · [any device (browser)](https://okaapps.com/product/1523794932). Site calls them free; IAP not verified. No Android/Windows. Harvest 2026-10-11 in [tools-by-platform.md](../../tools-by-platform.md) §8.1.
+
 ## 9.3 Self-hosting
 
-List: awesome-selfhosted 316,022, queue not mined yet. Open-source self-hosting already seen: Immich 112,940 · Stirling-PDF 90,918 · Syncthing 88,114.
+List: awesome-selfhosted 316,022, queue not mined yet. Open-source self-hosting already seen: Immich 112,940 · Stirling-PDF 90,918 · Syncthing 88,114 · [docling-project/docling](https://github.com/docling-project/docling) (MIT; document understanding → Markdown/JSON) · [C4illin/ConvertX](https://github.com/C4illin/ConvertX) (AGPL-3.0; self-hosted multi-format conversion gateway). Harvest 2026-09-14.
 
 **Open source + optional subscription:** [home-assistant/core](https://github.com/home-assistant/core) 90,178. Cloud and subscriptions go through [Nabu Casa](https://www.nabucasa.com/). That is paid. The core stays open source.
 

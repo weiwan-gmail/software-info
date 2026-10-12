@@ -59,3 +59,26 @@ Yuzu and other Switch emulator repos are gone from the original URLs. Do not wri
 - Do not treat “another io reskin” as a discovery
 
 When collecting, write: playable as a single-player webpage / needs an account / needs a downloaded launcher.
+
+
+---
+
+## 5. Weekly harvest · 2026-10-12 (source 7 · Games)
+
+### Isometry (Dark Mode Games)
+
+- Name: Isometry
+- URL: https://dark-mode-games.itch.io/isometry · docs https://darkmodegames.github.io/guide/ · https://darkmodegames.github.io/manual/ · editor https://dark-mode-games.itch.io/isometry-editor
+- Class: isometric RPG framework / data-driven campaign tool (Godot; downloadable on Win / macOS / Linux)
+- Paid: free (itch open beta is downloadable; donations welcome). Asset license is CC0; the GitHub link on itch currently 404s, so treat the binary + public docs as the source of truth
+- Learnable slice: a whole campaign is written in YAML/JSON, not engine code — units, skills, dice expressions, flying terrain, CLI multiplayer; study “data is the game” instead of wrapping another engine
+- Why new: the catalog already has engines / open-source finished games / launchers, but not this “single executable + data-only campaign” isometric RPG framework
+
+### Flashpoint Web (darkraise/flashpoint-web)
+
+- Name: Flashpoint Web
+- URL: https://github.com/darkraise/flashpoint-web · Demo https://flash.quangtc.dev
+- Class: self-hosted web frontend (talks to a local Flashpoint Archive; Docker / Node)
+- Paid: free open source (GPL-3.0)
+- Learnable slice: Ruffle for Flash, native HTML5; a multi-user / play-stats / playlist browser shell on top of a local Flashpoint library, instead of installing another desktop Launcher
+- Why new: games.md already has Flashpoint Archive itself, but not the self-hosted web UI layer; matches this week’s “filter web games by original site” digging method

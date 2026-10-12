@@ -42,6 +42,8 @@ Separate from kissfft “analysis”: this side is synthesis, notation, developi
 
 TonalEnergy on phones is a paid tuner/metronome, closed-source DSP.
 
+**Free closed-source players / converters (OKA Apps, harvest 2026-10-11):** [VidHub](https://okaapps.com/product/1659622164) · [OmniPlayer](https://okaapps.com/product/1470926410) · [OmniConverter](https://okaapps.com/product/1536071582) · Video Converter X2 / Fig Player (listed on [okaapps.com](https://okaapps.com/); no independent product page) · [Omi Screen Recorder](https://okaapps.com/product/1592987853) · xHub (App Store “More by” only). Pricing not verified. Do not invent prices. Detail: [tools-by-platform.md](../../tools-by-platform.md) §8.1.
+
 ## 6.4 Photography RAW
 
 **Open source:** darktable 13,000

@@ -114,7 +114,7 @@ Same class, already in the learnable-desktop table: PowerToys, ShareX, Everythin
 
 The seed is still open-source small tools. Detail is in [learnable-desktop.md](/learnable-desktop).
 
-Watch often: Rectangle, AeroSpace, Maccy, AltTab, IINA, LocalSend, Raycast (closed-source), Snipaste (has Mac), Stats, Hidden / Ice. Also watch RansomWhere? (Objective-See).
+Watch often: Rectangle, AeroSpace, Maccy, AltTab, IINA, LocalSend, Raycast (closed-source), Snipaste (has Mac), Stats, Hidden / Ice. Also watch RansomWhere? (Objective-See). Also: [OKA Apps](https://okaapps.com/) — free closed-source Mac utilities (some iOS/tvOS); harvest 2026-10-11 in §8.1.
 
 List: [awesome-mac](https://github.com/jaywcjlove/awesome-mac). Install: Homebrew cask.
 
@@ -130,7 +130,7 @@ List: [Awesome-Linux-Software](https://github.com/luong-komorebi/Awesome-Linux-S
 
 List leans libraries: [awesome-android](https://github.com/JStumpp/awesome-android). Installable apps: [android-foss](https://github.com/offa/android-foss), F-Droid.
 
-Desktop counterparts that also exist here: LocalSend, AnkiDroid, Syncthing, KeePass-compatible clients, Quicker Android. Paid-chart homework is in [learnable-mobile.md](/learnable-mobile) (AnkiMobile, Paprika, Streaks).
+Desktop counterparts that also exist here: LocalSend, AnkiDroid, Syncthing, KeePass-compatible clients, Quicker Android. Paid-chart homework is in [learnable-mobile.md](/learnable-mobile) (AnkiMobile, Paprika, Streaks). Recent harvest apps (Gander, Network Scanner, De1984, DroidFRPD, Universal Installer, Haven) are in §8.1.
 
 ---
 
@@ -198,6 +198,169 @@ See [learnable-web-tools.md](/learnable-web-tools). it-tools, Stirling-PDF, Squo
 - Source: https://lobste.rs/s/ttxwdz/what_software_do_you_use_daily_2026 — What software do you use daily in 2026? (2026-08-18)
 - Date: 2026-09-06
 - Learnable slice: syntax-tree-aware Git merge driver (not pure line diff); falls back to conflict markers when unsafe; `mergiraf review` to re-check auto-resolutions
+
+### 2026-09-14 · source 3 (Changelog / Self-Hosted podcast notes)
+
+- Name: Docling
+- Platform: Linux / macOS / Windows (Python CLI / library; self-hostable API)
+- Site or repo: https://github.com/docling-project/docling · https://docling-project.github.io/docling/
+- Paid: free open source (MIT; started at IBM Research, now LF AI & Data)
+- Source: https://changelog.com/friends/125 — Changelog & Friends #125 “The state of homelab tech (2026)” with Techno Tim (show notes wrote Dockling; it is Docling)
+- Date: 2026-09-14
+- Learnable slice: parse PDF/Office into a unified `DoclingDocument` with layout, reading order, and table structure, then export Markdown/JSON (a document-understanding pipeline, not a chat wrapper)
+
+- Name: Pangolin
+- Platform: Linux (self-hosted control plane + WireGuard site connectors; Cloud also exists)
+- Site or repo: https://github.com/fosrl/pangolin · https://docs.pangolin.net/ · https://pangolin.net/
+- Paid: Community Edition free open source (AGPL-3.0); Enterprise source-available (free for personal/hobby and annual revenue <$100K); Pangolin Cloud hosted separately
+- Source: https://selfhosted.show/142 · https://notes.jupiterbroadcasting.com/self-hosted/2025/episode-142/ — Self-Hosted #142 “Cloud Your Judgment” (Alex deploys Pangolin)
+- Date: 2026-09-14
+- Learnable slice: userspace WireGuard tunnel (Newt) + Traefik/Badger identity-aware reverse proxy; expose intranet HTTP/SSH/RDP by resource instead of a whole-network VPN
+
+- Name: ConvertX
+- Platform: Linux (Docker self-hosted web)
+- Site or repo: https://github.com/C4illin/ConvertX
+- Paid: free open source (AGPL-3.0)
+- Source: https://www.jupiterbroadcasting.com/show/self-hosted/149/ — Self-Hosted #149 “Notify Thyself” show notes
+- Date: 2026-09-14
+- Learnable slice: one Web UI that orchestrates Inkscape / libvips / Calibre / LibreOffice / Pandoc and similar CLIs into a multi-format conversion gateway (counterpart to web converter sites; wider format surface than Stirling-PDF)
+
+### 2026-09-21 · source 4 (regional curation: ruanyf weekly / new F-Droid; plus a short mobile-tools sweep)
+
+- Name: Gander
+- Platform: Android 8+
+- Site or repo: https://github.com/mokshablr/gander · https://arjun.maniyani.com/gander/
+- Paid: free open source (MIT)
+- Source: https://github.com/ruanyf/weekly/blob/master/docs/issue-407.md — Ruanyifeng Weekly #407
+- Date: 2026-09-21
+- Learnable slice: zero `INTERNET` permission; sandboxed WebView + local pdf.js / docx-preview / SheetJS / PPTXjs to render documents offline; open zip entries without writing them to disk
+
+- Name: Network Scanner (WiFi & IP)
+- Platform: Android 8+
+- Site or repo: https://github.com/usamaiqb/network-scanner · https://f-droid.org/packages/com.networkscanner.app/
+- Paid: free open source (GPL-3.0); F-Droid / Play same signature
+- Source: this week’s mobile-tools sweep · F-Droid Connectivity (fdroiddata MR !33497, 2026-08/09)
+- Date: 2026-09-21
+- Learnable slice: parallel ping + TCP fallback when ICMP fails; mDNS / SSDP / NetBIOS; honest handling of Android 10+ ARP/MAC limits and Android 16+ `NEARBY_WIFI_DEVICES` local-network permission
+
+- Name: De1984
+- Platform: Android 8+
+- Site or repo: https://github.com/dorumrr/de1984 · https://f-droid.org/packages/io.github.dorumrr.de1984/
+- Paid: free open source (MIT)
+- Source: this week’s mobile-tools sweep · F-Droid (builds active through 2.7.x)
+- Date: 2026-09-21
+- Learnable slice: pick a firewall backend by capability — iptables (root/Shizuku), ConnectivityManager (A13+ Shizuku), VpnService fallback; per-app Wi‑Fi / mobile / roaming; optional Shizuku package management
+
+### 2026-09-28 · source 5 (X toolbox / setup threads + awesome-list diff; plus a short mobile-tools sweep)
+
+- Name: MoonProxy (月神代理)
+- Platform: Windows / macOS (desktop)
+- Site or repo: https://moonproxy.app/ · https://github.com/MoonProxyHQ/moonproxy-desktop
+- Paid: free open source (MIT)
+- Source: https://github.com/0PandaDEV/awesome-windows/pull/208 — awesome-windows Networking (merged 2026-09-02)
+- Date: 2026-09-28
+- Learnable slice: Tauri v2 sidecar wrapping frpc; visual TCP/UDP/HTTP(S) proxy rules + four connection states; endpoint health polling and atomic self-update from upstream frpc Releases (lifecycle/UI, not a protocol fork)
+
+- Name: DroidFRPD
+- Platform: Android
+- Site or repo: https://github.com/donmor/DroidFRPD · IzzyOnDroid `top.donmor.droidfrpd`
+- Paid: free open source (GPL-3.0)
+- Source: this week’s mobile-tools sweep · IzzyOnDroid / fdroid rfp #3306 (Android FRP daemon manager)
+- Date: 2026-09-28
+- Learnable slice: host frpc/frps as Android subprocesses (Go build + optional 16KB page alignment); SAF for configs, boot start, and battery exemptions; compare with desktop MoonProxy for always-on reverse-tunnel UX on a phone
+
+- Name: Universal Installer
+- Platform: Android (Phone / TV / Wear OS)
+- Site or repo: https://github.com/pass-with-high-score/universal-installer · https://f-droid.org/packages/app.pwhs.universalinstaller/
+- Paid: free open source (GPL-3.0)
+- Source: this week’s mobile-tools sweep · https://github.com/offa/android-foss/commit/60de1503cce8c631e2fd291b6cdd2e74bb6bc126 (android-foss #759, 2026-09-26)
+- Date: 2026-09-28
+- Learnable slice: multi-backend silent install/uninstall (system / Shizuku / Root); `.apks`/`.xapk`/`.apkm` splits and OBB; built-in LAN HTTP send/receive + TV QR pairing (sideload toolchain, not an LLM wrapper)
+
+### 2026-10-11 · OKA Apps (okaapps.com vendor sweep)
+
+Developer: ChengHao Wu (Nanjing; Mac App Store seller name 成浩 吴). An App Store account named “OKA” (id1670124785) that only ships OKA Life is probably a different vendor and is not counted. Platform: macOS-first; some titles have iOS/iPadOS/tvOS. **No Android or Windows.** All 26 are closed-source. Column: **Free closed-source**. “Free download + IAP/subscription” is marked only as a form, not a price, unless the App Store page stated an amount. Product URL shape: `https://okaapps.com/product/<App Store ID>`. Keep those URLs exact. Do not invent prices.
+
+#### Network / screen mirroring
+
+| Name | Site | Platform | Form | Notes |
+|---|---|---|---|---|
+| WiFi Speed Test | https://okaapps.com/product/1455463454 | macOS | free closed-source | Wi‑Fi speed test. Site calls it free; IAP not verified |
+| iWifi - SpeedTest & Signal Test | https://okaapps.com/ (listed on the homepage; no independent product page) | macOS / iOS | free closed-source | Speed test + Wi‑Fi signal-strength test. Pricing not verified |
+| Oka Mirror for Samsung TV | https://okaapps.com/product/1499584783 | macOS | free closed-source | Mirror a Mac to Samsung/LG/Sony TVs (DLNA-class). Site calls it free; IAP not verified |
+| Oka Mirror for Chromecast | https://okaapps.com/product/1512564265 | macOS | free closed-source | Mirror a Mac to Chromecast. Site calls it free; IAP not verified |
+| Oka Mirror for Roku | https://okaapps.com/product/1519399703 | macOS | free closed-source | Mirror a Mac to Roku. Site calls it free; IAP not verified |
+| Oka Mirror for any device | https://okaapps.com/product/1523794932 | macOS | free closed-source | Low-latency Mac screen in a web browser on any device. Site calls it free; IAP not verified |
+
+#### System / files
+
+| Name | Site | Platform | Form | Notes |
+|---|---|---|---|---|
+| Oka Unarchiver | https://okaapps.com/product/1441507725 | macOS 10.13+ | free closed-source + IAP | Unpack 7z/RAR/ZIP/ISO and similar; pack ZIP. App Store IAP: lifetime VIP $7.99, monthly $1.99, yearly $4.99 |
+| Omi NTFS Disk Pro | https://okaapps.com/product/1580856488 | macOS | free closed-source | Read/write NTFS disks on a Mac. Site calls it free; IAP not verified |
+| X-Disk | https://okaapps.com/product/1461463493 | macOS | free closed-source | USB / external-disk monitor and eject. Pricing not verified |
+| File Zip and Encryptor | https://okaapps.com/product/1467156679 | macOS | free closed-source | Encrypt/decrypt files and pack archives. Site calls it free |
+| F-Vault | https://okaapps.com/product/1420002626 | macOS | free closed-source | Hide private files / photos / videos. Pricing not verified |
+| Color Folder Master | https://okaapps.com/product/1450345160 | macOS | free closed-source | One-click folder color. Pricing not verified |
+| WindoWizard | https://okaapps.com/product/0000000001 | macOS | free closed-source | Window management / tiling. Product ID on the site is a placeholder; may not be on the App Store. Site calls it free |
+
+#### Productivity / browser helpers
+
+| Name | Site | Platform | Form | Notes |
+|---|---|---|---|---|
+| uPaste | https://okaapps.com/product/1503649026 | macOS | free closed-source | Clipboard history. Site calls it free; IAP not verified |
+| Oka To Do | https://okaapps.com/product/1521634562mac | iOS / iPadOS / macOS / visionOS | free closed-source + IAP | Todos + reminders, iCloud sync. App Store IAP: Pro 1 year $9.99, 1 month $2.99 |
+| goBrowser | https://okaapps.com/product/1556461417 | macOS | free closed-source | Pick which browser opens a link. Pricing not verified |
+| i-Picker - open with browsers | https://okaapps.com/ (listed on the homepage; no independent product page) | macOS | free closed-source | Same class of browser picker. Pricing not verified |
+| Aye — Delegate Browser Work | https://okaapps.com/product/6760281977 | macOS (inferred) | free closed-source | AI-delegated browser tasks (new). Pricing not verified |
+
+#### Media
+
+| Name | Site | Platform | Form | Notes |
+|---|---|---|---|---|
+| VidHub | https://okaapps.com/product/1659622164 | iOS / macOS / tvOS | free closed-source | Video library and player (NAS / cloud-drive-class sources). Pricing not verified |
+| OmniPlayer | https://okaapps.com/product/1470926410 | macOS / iOS | free closed-source | Full-format player including MKV. Site calls it free; IAP not verified |
+| OmniConverter | https://okaapps.com/product/1536071582 | macOS | free closed-source | Audio/video format conversion. Site calls it free |
+| Video Converter X2 | https://okaapps.com/ (listed on the homepage; no independent product page) | macOS | free closed-source | Video conversion. Pricing not verified |
+| Fig Player | https://okaapps.com/ (listed on the homepage; no independent product page) | macOS | free closed-source | Video player. Pricing not verified |
+| Omi Screen Recorder | https://okaapps.com/product/1592987853 | macOS | free closed-source | Screen + camera recording. Site calls it free; IAP not verified |
+| xHub | App Store “More by” this developer (no okaapps.com product page) | macOS | free closed-source | Unarchiver + video player in one. Pricing not verified |
+
+#### AI / social
+
+| Name | Site | Platform | Form | Notes |
+|---|---|---|---|---|
+| Ping AI | https://okaapps.com/product/6445983074 | iOS / macOS | free closed-source | AI chat. Pricing not verified. Flagged as a wrapper, not homework |
+| Ainder | https://okaapps.com/ (listed on the homepage; no independent product page) | iOS | free closed-source | Tinder-style “match” with an AI companion. Pricing not verified. Flagged as a wrapper, not homework |
+| Yuni: Secret between couples | App Store “More by” this developer (no okaapps.com product page) | iOS | free closed-source | Private space for couples. Pricing not verified |
+
+26 titles (OKA Life from the other developer account is omitted). Open source: none in this vendor set. Paid-upfront SKUs: none. Two apps have stated App Store IAP amounts (Oka Unarchiver, Oka To Do).
+
+### 2026-10-12 · source 7 (Games: itch.io / Flashpoint / prototype; plus a short mobile-tools sweep)
+
+- Name: Isometry
+- Platform: Windows / macOS / Linux (isometric RPG framework; campaigns are YAML/JSON)
+- Site or repo: https://dark-mode-games.itch.io/isometry · docs https://darkmodegames.github.io/guide/ · https://darkmodegames.github.io/manual/
+- Paid: free (itch open beta is downloadable; donations welcome)
+- Source: https://dark-mode-games.itch.io/isometry — itch.io indie framework / prototype (not a Steam bestseller)
+- Date: 2026-10-12
+- Learnable slice: one executable loads data-only campaigns; skills / dice / terrain / CLI multiplayer are all configured in YAML/JSON — study a data-driven content pipeline instead of wrapping another engine
+
+- Name: Flashpoint Web
+- Platform: self-hosted Web (Docker; talks to a local Flashpoint Archive)
+- Site or repo: https://github.com/darkraise/flashpoint-web · Demo https://flash.quangtc.dev
+- Paid: free open source (GPL-3.0)
+- Source: https://github.com/darkraise/flashpoint-web — Flashpoint-ecosystem self-hosted browser shell (this week’s Games line)
+- Date: 2026-10-12
+- Learnable slice: Ruffle for Flash + native HTML5; multi-user permissions, play stats, playlists — turn a local Flashpoint library into a remotely browsable web directory
+
+- Name: Haven (Haven SSH Client)
+- Platform: Android 8+
+- Site or repo: https://github.com/GlassHaven/Haven · https://glasshaven.github.io/Haven/ · F-Droid `sh.haven.app`
+- Paid: free open source (AGPL-3.0)
+- Source: this week’s mobile-tools sweep · F-Droid Connectivity / SSH (F-Droid listed a 2026-10-08 build 5.89.20; GitHub Releases through v5.89.25)
+- Date: 2026-10-12
+- Learnable slice: one app chains SSH/Mosh/ET + VNC/RDP/SPICE + on-device labwc Wayland desktop (PRoot) + SFTP/SMB/rclone + USB/BLE serial bridge; WireGuard/Tailscale per connection without taking the device VPN slot — compare with RustDesk / Termius for “phone as a thin client”
 
 ---
 

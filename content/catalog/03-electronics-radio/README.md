@@ -84,3 +84,5 @@ Board-drop directories (not repos): Crowd Supply, OSHWA, Hackaday.io.
 **Open source:** dump1090 (FlightAware 1,137 / antirez 2,929) · Meshtastic firmware 8,223
 
 **Paid:** LoRa handhelds / finished Meshtastic units (hardware buyout). ADS-B receive with an RTL-SDR dongle is also hardware you buy.
+
+**Open source (phone companion):** [tooyipjee/Spark-Analyzer](https://github.com/tooyipjee/Spark-Analyzer) (MIT) — Android dashboard for an ESP32-C3 USB-PD/PPS analyzer over Wi‑Fi/BLE (added 2026-10-05).

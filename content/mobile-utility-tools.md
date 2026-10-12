@@ -1,7 +1,7 @@
 # Mobile utility tool taxonomy + seed list
 
 Catalog draft for continuous harvest of phone utility apps in the network / hardware / remote-control family.  
-**Sources:** F-Droid metadata, GitHub/`gh` API, official project sites (verified 2026-09-16; Droidspaces OSS added 2026-09-16). Do not treat this as exhaustive.
+**Sources:** F-Droid metadata, GitHub/`gh` API, official project sites (verified 2026-09-16; Droidspaces OSS added 2026-09-16; Network Scanner + De1984 added 2026-09-21). Do not treat this as exhaustive.
 
 **Legend — openness**
 | Tag | Meaning |
@@ -57,6 +57,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | scrcpy | Desktop↔Android (ADB) | Apache-2.0 | https://github.com/Genymobile/scrcpy | Mirrored display/control over ADB; not a phone “app” but core pattern |
 | TeamViewer | Android, iOS, desktop | Proprietary | https://www.teamviewer.com | Closed baseline for UX / session model |
 | AnyDesk | Android, iOS, desktop | Proprietary | https://anydesk.com | Closed; compare latency & permission UX |
+| Haven | Android 8+ | AGPL-3.0 | https://github.com/GlassHaven/Haven · https://glasshaven.github.io/Haven/ · F-Droid `sh.haven.app` | VNC/RDP/SPICE + on-device labwc Wayland (PRoot); SSH-tunneled desktops; per-profile WG/Tailscale without taking the device VPN slot (added 2026-10-12) |
 
 ### 2.2 Wi‑Fi analyzers — **OSS-heavy (Android)**
 
@@ -73,6 +74,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | App | Platform | License | URL | Learnable slice |
 |-----|----------|---------|-----|-----------------|
 | Ning | Android | LGPL-3.0 | https://github.com/csicar/Ning · https://f-droid.org/packages/de.csicar.ning/ | Bonjour/Avahi + ARP + ping + ports |
+| Network Scanner (WiFi & IP) | Android | GPL-3.0 | https://github.com/usamaiqb/network-scanner · https://f-droid.org/packages/com.networkscanner.app/ | Ping+TCP fallback; mDNS/SSDP/NetBIOS; Android 10+ ARP honesty + A16 local-net perms |
 | AndroidNetworkTools (lib) | Android library | Apache-2.0 | https://github.com/stealthcopter/AndroidNetworkTools | Ping/portscan/subnet helpers to embed |
 | Fing | Android, iOS | Proprietary | https://www.fing.com · App Store / Play | Closed discovery UX reference |
 | Spectre (local net) | Android | GPL-3.0 | https://github.com/thomasbuilds/Spectre | Host/service discovery under RF scanner |
@@ -82,6 +84,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | App | Platform | License | URL | Learnable slice |
 |-----|----------|---------|-----|-----------------|
 | Material Files | Android | GPL-3.0 | https://github.com/zhanghai/MaterialFiles · https://f-droid.org/packages/me.zhanghai.android.files/ | FTP/SFTP/SMB/WebDAV + Material file UX |
+| Haven | Android 8+ | AGPL-3.0 | https://github.com/GlassHaven/Haven · F-Droid `sh.haven.app` | SFTP/SCP + SMB + rclone (60+ clouds) with cross-filesystem copy; optional SSH tunnel for SMB (added 2026-10-12) |
 | FTPClient | Android | MIT | https://codeberg.org/qwerty287/ftpclient · https://f-droid.org/packages/de.qwerty287.ftpclient/ | Minimal FTP/FTPS/SFTP client |
 | Amaze File Manager | Android | GPL-3.0 | https://github.com/TeamAmaze/AmazeFileManager | Cloud/NAS connectors pattern |
 | LocalSend | Android, iOS, desktop | Apache-2.0 | https://github.com/localsend/localsend | LAN P2P send without account |
@@ -99,6 +102,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | v2rayNG | Android | GPL-3.0 | https://github.com/2dust/v2rayNG | Xray/v2fly client patterns (proxy-tunnel adjacent) |
 | NetGuard | Android | GPL-3.0 | https://github.com/M66B/NetGuard | Per-app block via local VpnService |
 | Surge / Shadowrocket-class | iOS | Proprietary | App Store listings (vendor sites vary) | Closed iOS proxy UX — watch APIs only |
+| DroidFRPD | Android | GPL-3.0 | https://github.com/donmor/DroidFRPD · IzzyOnDroid `top.donmor.droidfrpd` | Host frpc/frps as managed daemons; SAF configs; boot/battery-exempt patterns for persistent reverse tunnels |
 
 ### 2.6 HTTP / API / request tools — **Mixed**
 
@@ -135,12 +139,14 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | nRF Connect for Mobile | Android, iOS | Proprietary app; docs/issues public | https://github.com/nordicsemi/Android-nRF-Connect · https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-mobile | GATT explorer UX (closed binary) |
 | Spectre | Android | GPL-3.0 | https://github.com/thomasbuilds/Spectre | BLE ads + GATT inspector OSS |
 | Network Survey | Android | Apache-2.0 | https://github.com/christianrowlands/android-network-survey | BLE survey logging |
+| Spark Analyzer (companion app) | Android (iOS via RemoteXY) | MIT (repo incl. `flutter/`) | https://github.com/tooyipjee/Spark-Analyzer · Play `com.elektrothing.SparkAnalyzer` | Phone dashboard for an ESP32-C3 USB-PD/PPS power analyzer over Wi‑Fi/BLE: voltage selector, output toggle, live current chart, CSV log (added 2026-10-05; full record in oshw-and-print.md §4) |
 
 ### 2.10 USB / OTG serial — **OSS-heavy Android**
 
 | App | Platform | License | URL | Learnable slice |
 |-----|----------|---------|-----|-----------------|
 | UsbTerminal | Android | Apache-2.0 | https://github.com/liorhass/UsbTerminal | USB-UART terminal + session log |
+| Haven | Android 8+ | AGPL-3.0 | https://github.com/GlassHaven/Haven · F-Droid `sh.haven.app` | USB / Bluetooth / BLE serial consoles + serial↔TCP bridge; USB/IP forward to agent/guest/remote (added 2026-10-12) |
 | Termux (+ usb packages) | Android | GPL-3.0 (app) | https://github.com/termux/termux-app | CLI host for `picocom`/python-serial |
 | Another Term (F-Droid family) | Android | check F-Droid metadata | Search F-Droid “Another Term” | USB/BT serial + SSH combo (verify license per build) |
 
@@ -150,6 +156,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 |-----|----------|---------|-----|-----------------|
 | PCAPdroid | Android | GPL-3.0 | https://github.com/emanuele-f/PCAPdroid · https://emanuele-f.github.io/PCAPdroid | Rootless VpnService capture + TLS decrypt hooks |
 | NetGuard | Android | GPL-3.0 | https://github.com/M66B/NetGuard | Per-app firewall without root |
+| De1984 | Android | MIT | https://github.com/dorumrr/de1984 · https://f-droid.org/packages/io.github.dorumrr.de1984/ | Multi-backend per-app firewall (iptables / ConnectivityManager / VpnService); Wi‑Fi/mobile/roaming; optional Shizuku package control |
 | Rethink | Android | Apache-2.0 | https://github.com/celzero/rethink-app | Connection tracker + DNS + WG |
 | mitmproxy | Desktop (+ Android via proxy/VPN) | MIT | https://github.com/mitmproxy/mitmproxy | Interactive TLS MITM; pair with phone proxy |
 
@@ -185,6 +192,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | iSH | iOS | See repo | https://github.com/ish-app/ish | User-mode x86 Linux shell on iOS |
 | Termius | Android, iOS | Proprietary | https://termius.com | Closed polished SSH/SFTP |
 | JuiceSSH | Android | Proprietary | Play Store `com.sonelli.juicessh` | Closed; plugins/Mosh reference |
+| Haven | Android 8+ | AGPL-3.0 | https://github.com/GlassHaven/Haven · https://glasshaven.github.io/Haven/ · F-Droid `sh.haven.app` | SSH/Mosh/Eternal Terminal + tmux restore + FIDO2; port forward / ProxyJump; compose with in-app VNC/RDP and on-device Linux (added 2026-10-12) |
 
 ### 2.16 MQTT / IoT — **Mixed**
 
