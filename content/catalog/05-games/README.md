@@ -8,9 +8,13 @@ Detail table: [games.md](../../games.md). Do not treat Steam bestsellers as home
 
 **Free portals / preservation:** [itch.io](https://itch.io/) (store; free and paid indie games) · [4399](https://www.4399.com/) · Kongregate · Newgrounds · Poki · [Flashpoint Archive](https://flashpointarchive.org/)
 
+**Open source (self-hosted web UI):** [darkraise/flashpoint-web](https://github.com/darkraise/flashpoint-web) (GPL-3.0) sits on a local Flashpoint Archive. Demo: https://flash.quangtc.dev. Detail: [games.md](../../games.md) §5.
+
 ## 5.2 Engines
 
 **Open source:** [godotengine/godot](https://github.com/godotengine/godot) 116,365
+
+**Free (data-driven framework):** [Isometry](https://dark-mode-games.itch.io/isometry) (Dark Mode Games; itch open beta; donations welcome). Campaigns are YAML/JSON. Asset license is CC0; the GitHub link on itch currently 404s. Detail: [games.md](../../games.md) §5.
 
 **Free closed-source / revenue share**
 

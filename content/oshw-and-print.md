@@ -82,3 +82,13 @@ Printables / Thingiverse / MakerWorld are model sites, not repos. When collectin
 - Source: FOSDEM 2026 — “RVPC RISC-V retro computer Soldering workshop” (Tsvetan Usunov)
 - Date: 2026-08-31
 - Learnable slice: hand-written bit-bang VGA on a 48 MHz RV32EC with 2 KB SRAM, plus a Woz-style hex monitor for hand-entered RISC-V machine code
+
+### 2026-10-05 · Spark Analyzer companion
+
+- Name: Spark Analyzer (companion app)
+- Platform: Android (iOS via RemoteXY); phone UI for an ESP32-C3 USB-PD/PPS power analyzer
+- Site or repo: https://github.com/tooyipjee/Spark-Analyzer · Play `com.elektrothing.SparkAnalyzer`
+- Paid: free open source (MIT; repo includes `flutter/`)
+- Source: [mobile-utility-tools.md](/mobile-utility-tools) §2.9 (added 2026-10-05)
+- Date: 2026-10-05
+- Learnable slice: phone dashboard over Wi‑Fi/BLE — voltage selector, output toggle, live current chart, CSV log

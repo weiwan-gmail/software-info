@@ -36,6 +36,7 @@ Detail tables: [learnable-desktop.md](../../learnable-desktop.md) · [learnable-
 | Alfred | [alfredapp.com](https://www.alfredapp.com/) | free shell + Powerpack buyout | Same |
 | Magnet | [magnet.crowdcafe.com](https://magnet.crowdcafe.com/) | buyout | Rectangle / FancyZones |
 | Bartender | [macbartender.com](https://www.macbartender.com/) | buyout | Hidden / Ice |
+| WindoWizard | [okaapps.com/product/0000000001](https://okaapps.com/product/0000000001) | free closed-source (site). Product ID is a placeholder | Rectangle / FancyZones |
 
 ## 1.3 Screenshots, sync, sending
 
@@ -57,6 +58,8 @@ Detail tables: [learnable-desktop.md](../../learnable-desktop.md) · [learnable-
 | CleanShot X | [cleanshot.com](https://cleanshot.com/) | buyout | ShareX |
 | Dropbox | [dropbox.com](https://www.dropbox.com/) | free quota + subscription | Syncthing |
 | iCloud Drive / AirDrop | Apple | bundled with the OS, closed-source | LocalSend / Syncthing |
+| uPaste | [okaapps.com/product/1503649026](https://okaapps.com/product/1503649026) | free closed-source; IAP not verified | Maccy |
+| Omi Screen Recorder | [okaapps.com/product/1592987853](https://okaapps.com/product/1592987853) | free closed-source; IAP not verified | ShareX / OBS |
 
 ## 1.4 Editors, terminals, vaults, flashcards, notes
 
@@ -70,6 +73,7 @@ Detail tables: [learnable-desktop.md](../../learnable-desktop.md) · [learnable-
 | 1Password | [1password.com](https://1password.com/) | subscription | KeePassXC / Bitwarden |
 | Notion | [notion.com](https://www.notion.com/) | free quota + subscription | Joplin |
 | AnkiMobile | App Store | buyout (desktop Anki is open source) | Anki desktop / AnkiDroid |
+| Oka To Do | [okaapps.com/product/1521634562mac](https://okaapps.com/product/1521634562mac) | free closed-source + IAP (Pro 1 year $9.99, 1 month $2.99) | |
 
 ## 1.5 Mobile
 
@@ -77,11 +81,13 @@ Detail tables: [learnable-desktop.md](../../learnable-desktop.md) · [learnable-
 
 **Free closed-source from big companies (only the piece you can peel off):** Google/Microsoft Authenticator → TOTP; CapCut → timeline; Duolingo → SRS pacing. ChatGPT / TikTok free-chart headliners are not homework.
 
-**Open-source companions:** Anki, LocalSend, Syncthing, [offa/android-foss](https://github.com/offa/android-foss) 11,052.
+**Open-source companions:** Anki, LocalSend, Syncthing, [offa/android-foss](https://github.com/offa/android-foss) 11,052. Later harvest: [Gander](https://github.com/mokshablr/gander) · [Network Scanner](https://github.com/usamaiqb/network-scanner) · [De1984](https://github.com/dorumrr/de1984) · [DroidFRPD](https://github.com/donmor/DroidFRPD) · [Universal Installer](https://github.com/pass-with-high-score/universal-installer) · [Haven](https://github.com/GlassHaven/Haven). Detail: [mobile-utility-tools.md](../../mobile-utility-tools.md) · [tools-by-platform.md](../../tools-by-platform.md) §8.1.
+
+**Free closed-source (OKA Apps, okaapps.com, harvest 2026-10-11):** macOS-first vendor set; some iOS/iPadOS/tvOS; **no Android or Windows**. All closed-source. **Open source:** none. **Paid-upfront SKUs:** none. Stated App Store IAP only for [Oka Unarchiver](https://okaapps.com/product/1441507725) (lifetime VIP $7.99, monthly $1.99, yearly $4.99) and [Oka To Do](https://okaapps.com/product/1521634562mac) (Pro 1 year $9.99, 1 month $2.99). Full 26-row tables: [tools-by-platform.md](../../tools-by-platform.md) §8.1.
 
 ## 1.6 Web tools
 
-**Open source:** it-tools 40,406 · Stirling-PDF 90,918 · Squoosh 25,759 · pdf.js 53,802 · Excalidraw 130,774 · Penpot 59,377 · CyberChef 35,694
+**Open source:** it-tools 40,406 · Stirling-PDF 90,918 · Squoosh 25,759 · pdf.js 53,802 · Excalidraw 130,774 · Penpot 59,377 · CyberChef 35,694 · Docling (MIT) · ConvertX (AGPL-3.0; self-hosted)
 
 **Free closed-source / paid**
 

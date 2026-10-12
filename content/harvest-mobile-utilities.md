@@ -24,6 +24,7 @@ Add these to search automation, awesome-list watchers, F-Droid/Play scrapers, an
 - `nRF Connect OR "BLE scanner" Android open source`
 - `NFC Reader Android F-Droid`
 - `remote desktop Android self-hosted OR RustDesk OR scrcpy`
+- `Haven SSH OR "Haven SSH Client" F-Droid`
 - `Termux API companion utility`
 - `OpenVPN for Android OR Tailscale OR Outline client`
 - `LibreTorrent OR libtorrent Android`
@@ -86,7 +87,7 @@ Also watch: `Hack-with-Github/Awesome-Hacking` only for **defensive/tooling name
 
 ### Package ID / name patterns (regex ideas)
 - `(?i)wifi|wlan|gnss|gps|wireguard|vpn|ssh|ftp|sftp|smb|webdav|mqtt|mdns|bonjour|wol|wake.?on.?lan|iperf|pcap|tcpdump|serial|usb.?terminal|nfc|ble|bluetooth|dns.?|doh|torrent|termux|vnc|rdp|remote`
-- Known seeds: `com.vrem.wifianalyzer`, `com.emanuelef.remote_capture`, `com.wireguard.android`, `com.tailscale.ipn`, `org.connectbot`, `com.termux`, `com.android.gpstest`, `me.zhanghai.android.files`, `de.qwerty287.ftpclient`, `com.celzero.bravedns`, `org.jak_linux.dns66`, `de.markusfisch.android.binaryeye`, `com.juliencardoux.openwol`, `de.csicar.ning`, `com.carriez.flutter_hbb`, `org.proninyaroslav.libretorrent`, `ch.rmy.android.http_shortcuts`, `com.github.umercodez.sensorspot`
+- Known seeds: `com.vrem.wifianalyzer`, `com.emanuelef.remote_capture`, `com.wireguard.android`, `com.tailscale.ipn`, `org.connectbot`, `com.termux`, `com.android.gpstest`, `me.zhanghai.android.files`, `de.qwerty287.ftpclient`, `com.celzero.bravedns`, `org.jak_linux.dns66`, `de.markusfisch.android.binaryeye`, `com.juliencardoux.openwol`, `de.csicar.ning`, `com.carriez.flutter_hbb`, `org.proninyaroslav.libretorrent`, `ch.rmy.android.http_shortcuts`, `com.github.umercodez.sensorspot`, `sh.haven.app`, `com.networkscanner.app`, `io.github.dorumrr.de1984`, `top.donmor.droidfrpd`
 
 ### F-Droid data sources
 - App pages: `https://f-droid.org/packages/<id>/`
@@ -158,7 +159,7 @@ GitLab: `proninyaroslav/libretorrent`, `julien.cardoux/openwol`, `fdroid/fdroidd
 ## Weekly checklist (ops)
 
 1. Diff new F-Droid `metadata/*.yml` touching Connectivity/Internet/Development.  
-2. Check releases: RustDesk, PCAPdroid, GPSTest, WireGuard Android, Tailscale Android, LocalSend, Termux, Rethink, Spectre, Network Survey.  
+2. Check releases: RustDesk, PCAPdroid, GPSTest, WireGuard Android, Tailscale Android, LocalSend, Termux, Rethink, Spectre, Network Survey, Haven.  
 3. Scan Play “similar apps” graphs from 2–3 seeds per category (closed UX).  
 4. Note any **Flutter/KMP/Fyne/Rust** rewrites of classic Java utilities.  
 5. Drop candidates that are malware-adjacent “VPN injectors” / cracked proxies — keep Outline/WireGuard/Tailscale-class only.  
