@@ -73,3 +73,33 @@ TonalEnergy on phones is a paid tuner/metronome, closed-source DSP.
 **Open source:** FontForge 7,917
 
 **Paid:** [Glyphs](https://glyphsapp.com/) buyout · [FontLab](https://www.fontlab.com/) buyout/license
+
+## 6.7 Image / text → 3D
+
+Harvest 2026-10-12. Input is one image or text; output is a usable 3D asset (mesh / Gaussian splat / explorable scene). Stars as of 2026-10-12 GitHub API. Do not invent prices. Detail: [tools-by-platform.md](../../tools-by-platform.md) §8.1.
+
+**Open source**
+
+| Repo | star (2026-10-12) | License | Notes |
+|---|---:|---|---|
+| [neilsonnn/image-blaster](https://github.com/neilsonnn/image-blaster) | 11,174 | MIT | Claude Code skills: World Labs Marble → Gaussian splat (`.spz`); Hunyuan3D on FAL → object meshes (`.glb`/`.obj`); ElevenLabs → `.mp3`. Needs World Labs and FAL API keys (paid cloud). Repo claims “under 5 minutes.” Not an Android/Qt library — study the agent-skill orchestration |
+| [Tencent-Hunyuan/HunyuanWorld-1.0](https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0) | 2,944 | custom (Other) | Text or image → explorable immersive 3D world. Python, local GPU. Closest local stand-in for Marble |
+| [Tencent-Hunyuan/Hunyuan3D-2.1](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1) | 4,164 | NOASSERTION | Image → high-fidelity 3D assets with PBR. Python, local GPU. The object-model family image-blaster calls remotely |
+| [lightningpixel/modly](https://github.com/lightningpixel/modly) | 8,139 | NOASSERTION | Desktop app: local AI from an image or prompt → 3D model. TypeScript desktop GUI; a Qt-shaped reference |
+| [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | 17,962 | Apache-2.0 | Rebuild objects from a reference image as pure-code procedural Three.js. Output is code, not a mesh |
+| [xxlong0/Wonder3D](https://github.com/xxlong0/Wonder3D) | 5,444 | MIT | Single image → 3D (cross-domain diffusion). Python, GPU. Permissive research-grade; can integrate offline |
+| [ashawkey/stable-dreamfusion](https://github.com/ashawkey/stable-dreamfusion) | 8,870 | Apache-2.0 | Text/image → 3D with mesh export (NeRF + diffusion). Older classic; good for the method, slow |
+
+**Free closed-source**
+
+| Name | Site | Form |
+|---|---|---|
+| Tencent Hunyuan 3D (online) | [3d.hunyuan.tencent.com/sceneTo3D](https://3d.hunyuan.tencent.com/sceneTo3D) | HunyuanWorld official web: image/text → 3D scene. Price not verified (the page did not state one) |
+
+**Paid**
+
+| Name | Site | Form | Open-source counterpart |
+|---|---|---|---|
+| World Labs Marble | [marble.worldlabs.ai](https://marble.worldlabs.ai/) · API [platform.worldlabs.ai](https://platform.worldlabs.ai/) | image → explorable 3D world (Gaussian splat). Price not verified | HunyuanWorld-1.0 (local) |
+| Meshy | [meshy.ai/pricing](https://www.meshy.ai/pricing) | text/image → 3D + AI textures; API and Blender/Unity plugins. Free: 100 credits/month (output CC BY 4.0). Pro: 1,000 credits/month (no dollar amount on the page) | Hunyuan3D-2.1 / Wonder3D |
+| fal.ai | [fal.ai](https://fal.ai/) | hosted inference (Hunyuan3D, ElevenLabs, and others). Usage-based; specific prices not verified | self-host the same model families |

@@ -69,5 +69,6 @@ See also for overlay self-hosting: Headscale (Tailscale control plane), P2WLAN C
 | Repo / site | star (approx.) | One-liner |
 |---|---:|---|
 | [mitmproxy](https://www.mitmproxy.org/) · [mitmproxy/mitmproxy](https://github.com/mitmproxy/mitmproxy) | 45,226 | Interactive TLS-intercepting HTTP proxy (HTTP/1·2·3, WebSocket); CLI / mitmweb / script API; MIT |
+| [morluto/rea](https://github.com/morluto/rea) · [rea.tools](https://rea.tools/) · npm `rea-agents` | — | MCP + CLI so coding agents reverse a local program with no source and attach evidence. MIT. Node 22.19+ / 24.11+ / 26+; `npx rea-agents setup`. Analysis stays on-device. Authorized research only. Harvest 2026-10-12 |
 
 **Free closed-source / paid:** Commercial packet-capture and API-debug tools belong on another table; this section is the open-source main entry. Do not invent prices.

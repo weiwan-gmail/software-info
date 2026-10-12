@@ -1,6 +1,6 @@
 # 4. Fabrication
 
-Detail table: [oshw-and-print.md](../../oshw-and-print.md). The homework is slicers, firmware, and toolpaths, not another STL.
+Detail table: [oshw-and-print.md](../../oshw-and-print.md). The homework is slicers, firmware, and toolpaths, not another STL. Generative image/text → 3D assets are in [06-media](../06-media/README.md) §6.7.
 
 ## 4.1 Lists and model sites
 
