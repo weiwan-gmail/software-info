@@ -362,6 +362,14 @@ Developer: ChengHao Wu (Nanjing; Mac App Store seller name 成浩 吴). An App S
 - Date: 2026-10-12
 - Learnable slice: one app chains SSH/Mosh/ET + VNC/RDP/SPICE + on-device labwc Wayland desktop (PRoot) + SFTP/SMB/rclone + USB/BLE serial bridge; WireGuard/Tailscale per connection without taking the device VPN slot — compare with RustDesk / Termius for “phone as a thin client”
 
+- Name: REA (Reverse Engineer Anything)
+- Platform: Linux / macOS / Windows (Node CLI / MCP; analysis runs locally)
+- Site or repo: https://github.com/morluto/rea · https://rea.tools/ · npm `rea-agents`
+- Paid: free open source (MIT)
+- Source: https://github.com/morluto/rea — MCP + CLI for coding agents (harvest 2026-10-12)
+- Date: 2026-10-12
+- Learnable slice: recover how a feature is implemented when you have no source — native binaries (Hopper / Ghidra / IDA), Go, WASM, EVM, JS/Electron, sites, HAR, .NET, Android APK (JADX) and a device (adb), firmware, Linux crash records, process behavior — and attach evidence. Needs Node.js 22.19+ / 24.11+ / 26+; `npx rea-agents setup`. Authorized reverse-engineering research only.
+
 ---
 
 ## 9. Other classes (seeds)
