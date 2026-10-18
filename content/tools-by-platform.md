@@ -405,6 +405,16 @@ Stars below as of 2026-10-12 GitHub API. “Similar” means one image or text i
 | Meshy | https://www.meshy.ai/pricing | Free 100 credits/month (output CC BY 4.0); Pro 1,000 credits/month (no dollar amount on the page) | text/image → 3D + AI textures; REST API; Blender/Unity plugins |
 | fal.ai | https://fal.ai/ | usage-based; specific prices not verified | hosts Hunyuan3D, ElevenLabs, and others. image-blaster’s other cloud dependency |
 
+### 2026-10-17 · Numa (portable Rust DNS resolver)
+
+- Name: Numa
+- Platform: Linux / macOS / Windows (single binary; also Docker `ghcr.io/razvandimescu/numa`)
+- Site or repo: https://github.com/razvandimescu/numa · https://numa.rs · https://crates.io/crates/numa
+- Paid: free open source (MIT)
+- Source: https://github.com/razvandimescu/numa — snapshot commit `767ad44`; crates.io / GitHub Release v0.24.1; ~1,597 star (2026-10-17)
+- Date: 2026-10-17
+- Learnable slice: laptop-first DNS — `.numa` HTTPS reverse proxy, expiring overrides, Hagezi ad-block, split-DNS forwarding, DoH/DoT/ODoH — hand-written Rust parser, one binary. Clash Verge (mihomo) stacking, config snippets, and modding ideas: [catalog/09-network](/catalog/09-network/README) §9.5. Combination configs: **tested on Linux box** / **untested on Windows**. Do not invent prices.
+
 ---
 
 ## 9. Other classes (seeds)
