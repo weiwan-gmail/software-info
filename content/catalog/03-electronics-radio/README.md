@@ -21,6 +21,10 @@ Board-drop directories (not repos): Crowd Supply, OSHWA, Hackaday.io.
 | [FrameworkComputer/framework-system](https://github.com/FrameworkComputer/framework-system) | 115 |
 | [openhwgroup/cva6](https://github.com/openhwgroup/cva6) | 3,087 |
 | [lowRISC/ibex](https://github.com/lowRISC/ibex) | 2,030 |
+| [PSU-Ext-Org/psu-ext-hardware](https://github.com/PSU-Ext-Org/psu-ext-hardware) · [Crowd Supply](https://www.crowdsupply.com/maxeelabs/psu-ext) | 8 (as of 2026-10-19) |
+| [gili-yankovitch/SwordOfSecrets](https://github.com/gili-yankovitch/SwordOfSecrets) · [Crowd Supply](https://www.crowdsupply.com/nyx-software-security-solutions/sword-of-secrets) | 47 (as of 2026-10-19) |
+
+Harvest 2026-10-19 (source 6, dated 2026-10-05): **PSU-EXT** — ESP32-S3 between bench PSU and load; hardware CERN-OHL-S-2.0, firmware/software Apache-2.0; not yet for sale, price unpublished. **Sword of Secrets** — CH32V003 RISC-V hardware-CTF keychain; MIT; board sold, price not recorded. Detail: [oshw-and-print.md](../../oshw-and-print.md) §4.
 
 **Paid (hardware you buy; firmware may be open source)**
 

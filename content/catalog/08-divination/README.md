@@ -8,7 +8,7 @@ Chinese Text Project · Book of Changes: [ctext.org/book-of-changes](https://cte
 
 ## 8.2 Charting / hexagrams
 
-**Open source:** china-testing/bazi 1,490 · ichingshifa 283 · chengjun/iching 128 · Brianfit/I-Ching 57 · zzkt/i-ching 65
+**Open source:** china-testing/bazi 1,490 · ichingshifa 283 · chengjun/iching 128 · Brianfit/I-Ching 57 · zzkt/i-ching 65 · [SylarLong/iztro](https://github.com/SylarLong/iztro) 4,234 (as of 2026-10-19; MIT; npm `iztro`; deterministic Zi Wei Dou Shu charting JS/TS — fourteen major/minor stars, sihua, twelve palaces, decade/year layers as structured objects; [iztro.com](https://iztro.com). A separate paid hosted AI-reading API exists; that layer is not collected) · [6tail/tyme4ts](https://github.com/6tail/tyme4ts) 514 (as of 2026-10-19; MIT) · [tyme4j](https://github.com/6tail/tyme4j) · [6tail.cn/tyme](https://6tail.cn/tyme.html) (Lunar successor; Gregorian / lunar / Tibetan / Islamic, stems-and-branches, zodiac, solar terms, moon phase, public holidays; same API in several languages — charting substrate)
 
 **Free closed-source / paid:** Chinese “online bazi” sites are countless. Most are ad pages. Only keep ones with an algorithm write-up or a domain you can verify. Do not list download sites. Commercial charting apps go in after you check the terms.
 

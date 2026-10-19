@@ -96,6 +96,12 @@ struct Store {
 | **cxx-qt** | Rust ↔ Qt | QObject bridge | [KDAB/cxx-qt](https://github.com/KDAB/cxx-qt) |
 | GPUI | highly custom desktop (young) | component-style | Zed-ecosystem related |
 
+**JS/TS native GPU canvas (no WebView)** — harvest 2026-10-19. Stars as of 2026-10-19. Low-star native GPU UI kits from that harvest were not added.
+
+| Name | star (2026-10-19) | License | Notes |
+|---|---:|---|---|
+| [samizdatco/skia-canvas](https://github.com/samizdatco/skia-canvas) | 2,613 | MIT | Node.js Skia `<canvas>` (GPU; PNG/SVG/PDF export; window support). Well-established (2,613 star). Not Automattic/skia-canvas (no such repo). |
+
 ### C++
 
 | Stack | Form | Binding | Public entry |
