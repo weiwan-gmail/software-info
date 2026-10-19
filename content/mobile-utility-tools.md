@@ -193,6 +193,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | Termius | Android, iOS | Proprietary | https://termius.com | Closed polished SSH/SFTP |
 | JuiceSSH | Android | Proprietary | Play Store `com.sonelli.juicessh` | Closed; plugins/Mosh reference |
 | Haven | Android 8+ | AGPL-3.0 | https://github.com/GlassHaven/Haven · https://glasshaven.github.io/Haven/ · F-Droid `sh.haven.app` | SSH/Mosh/Eternal Terminal + tmux restore + FIDO2; port forward / ProxyJump; compose with in-app VNC/RDP and on-device Linux (added 2026-10-12) |
+| Sshd4a | Android | GPL-3.0 | https://github.com/tfonteyn/Sshd4a · F-Droid / IzzyOnDroid `com.hardbacknutter.sshd` | Phone as SSH **server**: Dropbear + rsync + OpenSSH sftp-server (shell / scp / sftp / rsync); no root. Pair with Haven as the client (added 2026-10-19; 155 star as of 2026-10-19) |
 
 ### 2.16 MQTT / IoT — **Mixed**
 

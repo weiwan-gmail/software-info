@@ -75,6 +75,16 @@ Detail tables: [learnable-desktop.md](../../learnable-desktop.md) · [learnable-
 | AnkiMobile | App Store | buyout (desktop Anki is open source) | Anki desktop / AnkiDroid |
 | Oka To Do | [okaapps.com/product/1521634562mac](https://okaapps.com/product/1521634562mac) | free closed-source + IAP (Pro 1 year $9.99, 1 month $2.99) | |
 
+**Agent skill packs (open source, harvest 2026-10-19)**
+
+| Repo | star (2026-10-19) | License | Notes |
+|---|---:|---|---|
+| [cursor/plugins pstack](https://github.com/cursor/plugins/tree/main/pstack) | 12,760 (whole `cursor/plugins` repo) | MIT (pstack directory LICENSE, Lauren Tan; plugin.json v0.15.27) | Cursor agent-workflow skill stack (`/poteto-mode` playbooks: research, design, implement, review, debug). Slow-then-fast; write little, accurate code. Also installable into Claude Code via the `cursor/plugins` marketplace |
+| [michael-denyer/pstack-claude](https://github.com/michael-denyer/pstack-claude) | 2,976 | MIT | pstack ported to Claude Code, Codex, Copilot, Pi, OpenCode, Gemini, and similar harnesses. Tracks upstream; extra policy forks in `tools/forks.json` |
+| [backnotprop/pstack](https://github.com/backnotprop/pstack) | 2,234 | MIT | Standalone pstack mirror (Agent Skills directory). `npx skills add backnotprop/pstack` into various agents. Upstream README kept as-is |
+
+**Free closed-source / paid:** none in this skill-pack harvest.
+
 ## 1.5 Mobile
 
 **Paid (store paid charts that can be homework):** AnkiMobile, Paprika ([paprikaapp.com](https://www.paprikaapp.com/)), Streaks ([streaks.app](https://streaks.app/)), Things ([culturedcode.com/things](https://culturedcode.com/things/)), PhotoPills, SkyView, Procreate Pocket.

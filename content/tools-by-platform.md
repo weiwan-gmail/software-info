@@ -415,6 +415,34 @@ Stars below as of 2026-10-12 GitHub API. “Similar” means one image or text i
 - Date: 2026-10-17
 - Learnable slice: laptop-first DNS — `.numa` HTTPS reverse proxy, expiring overrides, Hagezi ad-block, split-DNS forwarding, DoH/DoT/ODoH — hand-written Rust parser, one binary. Clash Verge (mihomo) stacking, config snippets, and modding ideas: [catalog/09-network](/catalog/09-network/README) §9.5. Combination configs: **tested on Linux box** / **untested on Windows**. Do not invent prices.
 
+### 2026-10-19 · source 8
+
+Stars as of 2026-10-19 GitHub API. Do not invent prices. Rest of this harvest batch is in catalog §6.8 / §6.9 / §9.2 / §9.6 / §9.7, 01-platform-tools §1.4, 08-divination §8.2, 11-lang-compare GUI binding, and oshw-and-print §4.
+
+- Name: iztro
+- Platform: JS/TS (browser / Node)
+- Site or repo: https://github.com/SylarLong/iztro · https://iztro.com · npm `iztro`
+- Paid: free open source (MIT). A separate paid hosted AI-reading API exists; that layer is not collected
+- Source: https://github.com/SylarLong/iztro — 4,234 star (2026-10-19)
+- Date: 2026-10-19
+- Learnable slice: deterministic Zi Wei Dou Shu charting as structured objects (stars, sihua, palaces, decade/year layers) — the chart engine, not an LLM wrapper
+
+- Name: Tyme (tyme4ts / tyme4j)
+- Platform: TypeScript / Java (same API in several languages)
+- Site or repo: https://github.com/6tail/tyme4ts · https://github.com/6tail/tyme4j · https://6tail.cn/tyme.html
+- Paid: free open source (MIT)
+- Source: https://github.com/6tail/tyme4ts — 514 star (2026-10-19)
+- Date: 2026-10-19
+- Learnable slice: Lunar successor calendric library (Gregorian / lunar / Tibetan / Islamic, stems-and-branches, solar terms) as the substrate under charting
+
+- Name: Sshd4a
+- Platform: Android
+- Site or repo: https://github.com/tfonteyn/Sshd4a · F-Droid / IzzyOnDroid `com.hardbacknutter.sshd`
+- Paid: free open source (GPL-3.0)
+- Source: https://github.com/tfonteyn/Sshd4a — 155 star (2026-10-19)
+- Date: 2026-10-19
+- Learnable slice: Android as SSH **server** (Dropbear + rsync + OpenSSH sftp-server; no root). Pair with Haven as the client
+
 ---
 
 ## 9. Other classes (seeds)

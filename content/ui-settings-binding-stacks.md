@@ -5,6 +5,8 @@ Comparison for building (or later swapping) a **custom settings core** under net
 
 Verified references checked 2026-09-16 via docs sites + GitHub.
 
+Harvest 2026-10-19 (JS/TS → native GPU UI, no WebView — Vellum, solid-gpui, skia-canvas, debloat-ui, gpuix): table in [05-gui-binding.md](catalog/11-lang-compare/05-gui-binding.md) after the GPUI row. Keep the “please verify” license caveats on Vellum and debloat-ui.
+
 ---
 
 ## Compare table (quick)

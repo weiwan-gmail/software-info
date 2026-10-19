@@ -92,3 +92,21 @@ Printables / Thingiverse / MakerWorld are model sites, not repos. When collectin
 - Source: [mobile-utility-tools.md](/mobile-utility-tools) §2.9 (added 2026-10-05)
 - Date: 2026-10-05
 - Learnable slice: phone dashboard over Wi‑Fi/BLE — voltage selector, output toggle, live current chart, CSV log
+
+### 2026-10-05 · source 6 (Crowd Supply boards; stars as of 2026-10-19)
+
+- Name: PSU-EXT (Maxee Labs)
+- Platform: OSHW / ESP32-S3 PSU extension
+- Site or repo: https://www.crowdsupply.com/maxeelabs/psu-ext · [hardware](https://github.com/PSU-Ext-Org/psu-ext-hardware) / [firmware](https://github.com/PSU-Ext-Org/psu-ext-firmware) / [software](https://github.com/PSU-Ext-Org/psu-ext-software)
+- Paid: open source (hardware CERN-OHL-S-2.0; firmware / software Apache-2.0). Hardware not yet for sale; price unpublished
+- Source: https://github.com/PSU-Ext-Org/psu-ext-hardware — 8 star (as of 2026-10-19)
+- Date: 2026-10-05 (synced 2026-10-19)
+- Learnable slice: sit between a bench PSU and the load: isolated measurement + relay-controlled output; SCPI over USB CDC and TCP 5025; browser dashboard and JS automation IDE
+
+- Name: Sword of Secrets (Nyx Software Security Solutions)
+- Platform: OSHW / CH32V003 RISC-V hardware-CTF keychain
+- Site or repo: https://www.crowdsupply.com/nyx-software-security-solutions/sword-of-secrets · https://github.com/gili-yankovitch/SwordOfSecrets
+- Paid: open source (MIT). Board sold separately; price not recorded
+- Source: https://github.com/gili-yankovitch/SwordOfSecrets — 47 star (as of 2026-10-19)
+- Date: 2026-10-05 (synced 2026-10-19)
+- Learnable slice: read schematic and datasheet to find bugs, bypass protection registers, play with SPI timing; repo includes a WASM browser preview

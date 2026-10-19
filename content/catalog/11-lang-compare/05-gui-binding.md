@@ -96,6 +96,16 @@ struct Store {
 | **cxx-qt** | Rust ↔ Qt | QObject bridge | [KDAB/cxx-qt](https://github.com/KDAB/cxx-qt) |
 | GPUI | highly custom desktop (young) | component-style | Zed-ecosystem related |
 
+**JS/TS → native GPU UI (no WebView)** — harvest 2026-10-19. Stars as of 2026-10-19. Cross-link: [ui-settings-binding-stacks.md](../../ui-settings-binding-stacks.md). Do not invent prices.
+
+| Name | star (2026-10-19) | License | Notes |
+|---|---:|---|---|
+| [vellum-ui/vellum](https://github.com/vellum-ui/vellum) | 1 | none declared (no LICENSE file — **please verify**) | Source public; license unset. Rust + Bun desktop runtime: UI thread is winit + Masonry (Xilem) + Vello GPU; app logic in a separate Bun process over MsgPack IPC; SolidJS/TSX bindings. README calls it very early, not production. A same-name GPUI Markdown editor is a different project |
+| [lxsmnsyc/solid-gpui](https://github.com/lxsmnsyc/solid-gpui) | 33 | MIT | SolidJS 2.0 universal renderer aiming at Zed GPUI: JSX + fine-grained reactivity, GPUI draws. Same-name [Cyenoch/solid-gpui](https://github.com/Cyenoch/solid-gpui) (MIT, 15) |
+| [samizdatco/skia-canvas](https://github.com/samizdatco/skia-canvas) | 2,613 | MIT | Node.js Skia `<canvas>` (GPU; PNG/SVG/PDF export; window support) |
+| [misabitencourt/debloat-ui](https://github.com/misabitencourt/debloat-ui) · npm `debloatui` | 1 | GPL-3.0 in `LICENSE.md`; GitHub shows NOASSERTION — **please verify** | Node native UI kit: N-API around raylib + raygui, OpenGL immediate mode; reactive `view(state)` / `dispatch` and layout; no WebView. Aimed at low-end machines and small tools |
+| [remorses/gpuix](https://github.com/remorses/gpuix) | 2,623 | Apache-2.0 | Largest in this class (not named in the harvest list as a primary pick): Node.js / Bun Zed GPUI bindings; React or Solid.js native apps |
+
 ### C++
 
 | Stack | Form | Binding | Public entry |

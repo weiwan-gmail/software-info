@@ -1,6 +1,6 @@
 # 9. Network & self-hosting
 
-Checked: 2026-10-02 PT (overlay comparison + mitmproxy addendum). Numa DNS addendum 2026-10-17 PT. Older entries’ stars may still be the 2026-08-29 snapshot. Company-toy detail is in [awesome-and-orgs.md](../../awesome-and-orgs.md) section 4. Do not invent prices.
+Checked: 2026-10-02 PT (overlay comparison + mitmproxy addendum). Numa DNS addendum 2026-10-17 PT. Harvest 2026-10-19: hardware KVM, VMs/containers, SMS/webhook. Older entries’ stars may still be the 2026-08-29 snapshot. Company-toy detail is in [awesome-and-orgs.md](../../awesome-and-orgs.md) section 4. Do not invent prices.
 
 Also see the phone-side utility taxonomy: [mobile-utility-tools.md](../../mobile-utility-tools.md) (remote desktop, Wi‑Fi, FTP, VPN, HTTP, iperf, GPS, and adjacent). Stack notes for settings/binding: [ui-settings-binding-stacks.md](../../ui-settings-binding-stacks.md).
 
@@ -53,6 +53,12 @@ Also see the phone-side utility taxonomy: [mobile-utility-tools.md](../../mobile
 **Free closed-source / paid:** TeamViewer personal free + commercial license · AnyDesk the same · Chrome Remote Desktop free closed-source.
 
 **Free closed-source (OKA Apps mirroring, macOS):** [Oka Mirror for Samsung TV](https://okaapps.com/product/1499584783) · [Chromecast](https://okaapps.com/product/1512564265) · [Roku](https://okaapps.com/product/1519399703) · [any device (browser)](https://okaapps.com/product/1523794932). Site calls them free; IAP not verified. No Android/Windows. Harvest 2026-10-11 in [tools-by-platform.md](../../tools-by-platform.md) §8.1.
+
+**Hardware remote KVM (harvest 2026-10-19)**
+
+**Open source (daemon):** [gl-inet/glkvm](https://github.com/gl-inet/glkvm) 239 star (as of 2026-10-19), GPL-3.0 (PiKVM-derived KVMD).
+
+**Paid (hardware buyout; vendor says no subscription — no dollar amount recorded):** GL.iNet Comet KVM series — [Comet (GL-RM1)](https://www.gl-inet.com/en-us/products/gl-rm1) · [Comet PoE (GL-RM1PE)](https://www.gl-inet.com/en-us/products/gl-rm1pe) · [Comet Pro (GL-RM10)](https://www.gl-inet.com/en-us/products/gl-rm10). HDMI capture + USB keyboard/mouse; browser / app control, including BIOS. Vendor claims 4K@30, H.264, LAN latency 30–60 ms; Tailscale and a self-hosted relay. RM1 is wired; RM1PE adds PoE and 32 GB eMMC; **Comet Pro is GL-RM10** (Wi‑Fi 6 + touchscreen), not RM1PE. “Comet KVM” means this series. Hardware is closed-source.
 
 ## 9.3 Self-hosting
 
@@ -256,3 +262,35 @@ Linux box Numa-only checks (Release v0.24.1, sha256 checked, user `box`, no root
 Suggested order (personal judgment): 1 (rule-set import, small change, clear win) > fake-ip TTL fix in 8 (small patch) > Windows locale fix in 3 (small patch, also an upstream PR candidate) > 6 diagnose UI > 5 library API, then 4 Android.
 
 **Laptop:** worth installing, especially `.numa` HTTPS and overrides; split ad-block vs proxy clearly between Numa and mihomo. **Company DNS:** not as the main resolver (one maintainer, no cluster, no public enterprise case). **Modding:** modules are small and all pub; rule-set compat and Windows probe are low-hanging. Android is a large job and needs the library split first.
+
+## 9.6 VMs / containers / sandboxes
+
+Harvest 2026-10-19. Stars as of 2026-10-19 GitHub API. Do not invent prices.
+
+**Open source**
+
+| Repo / site | star (2026-10-19) | License | One-liner |
+|---|---:|---|---|
+| [microsoft/WSL](https://github.com/microsoft/WSL) | 34,129 | MIT | Windows Subsystem for Linux: a light Hyper-V VM running a real Linux kernel and distro on Windows |
+| [firecracker-microvm/firecracker](https://github.com/firecracker-microvm/firecracker) | 37,471 | Apache-2.0 | AWS-open-sourced KVM microVM monitor (Rust) for serverless / sandboxes: fast boot, small attack surface |
+| [podman-container-tools/podman](https://github.com/podman-container-tools/podman) (containers/podman redirects here) | 33,071 | Apache-2.0 | Daemonless OCI container / pod manager; rootless; CLI largely Docker-compatible |
+| [kata-containers/kata-containers](https://github.com/kata-containers/kata-containers) | 8,963 | Apache-2.0 | A light VM around each container / pod; still a container-runtime interface; isolation closer to a VM |
+| [canonical/multipass](https://github.com/canonical/multipass) | 9,277 | GPL-3.0 | Canonical one-command Ubuntu VMs (Windows / macOS / Linux) |
+| [cloud-hypervisor/cloud-hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor) | 6,391 | Apache-2.0 / BSD-3-Clause (per-file SPDX; repo `LICENSES/` also has CC-BY-4.0) | Cloud-workload Rust VMM: CPU / memory / device hotplug; Windows and Linux guests; Kata can use it as a backend |
+| [lxc/incus](https://github.com/lxc/incus) | 6,430 | Apache-2.0 | LXD community fork: unified system-container + VM manager |
+| [lxc/lxc](https://github.com/lxc/lxc) | 5,275 | LGPL-2.1 / GPL-2.0 (both license files in the repo; per-file) | Linux system-container userspace (namespaces / cgroups tools and library). Incus sits on it |
+
+**Free closed-source / paid:** none added in this harvest. Do not invent prices.
+
+## 9.7 SMS / webhook infrastructure
+
+Harvest 2026-10-19. Do not invent prices.
+
+**Open source:** none as a CPaaS product in this harvest. Cloudflare Workers runtime is open source as [cloudflare/workerd](https://github.com/cloudflare/workerd) (also [cloudflare/workers-sdk](https://github.com/cloudflare/workers-sdk); org table in [awesome-and-orgs.md](../../awesome-and-orgs.md)).
+
+**Free closed-source / paid**
+
+| Name | Site | Form |
+|---|---|---|
+| Telnyx | [telnyx.com](https://telnyx.com/) | Closed-source CPaaS: numbers, SMS / MMS, voice. Inbound SMS is delivered as a webhook to your endpoint (Wei’s path is Cloudflare Workers). Usage-based; prices not verified — not recorded |
+| Cloudflare Workers (pairing) | [workers.cloudflare.com](https://workers.cloudflare.com/) | Platform closed-source; runtime [workerd](https://github.com/cloudflare/workerd) open source. Free quota + paid plans. Pairing line for Telnyx webhooks; not a new Workers catalog page |

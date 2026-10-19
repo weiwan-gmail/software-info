@@ -23,6 +23,8 @@ LLM fortune wrappers are many, and some have high stars. What you can clone is t
 | [chengjun/iching](https://github.com/chengjun/iching) | 128 | yarrow-stalk hexagrams in Python |
 | [Brianfit/I-Ching](https://github.com/Brianfit/I-Ching) | 57 | yarrow-stalk method programmed |
 | [zzkt/i-ching](https://github.com/zzkt/i-ching) | 65 | Book of Changes program |
+| [SylarLong/iztro](https://github.com/SylarLong/iztro) · [iztro.com](https://iztro.com) · npm `iztro` | 4,234 (as of 2026-10-19) | Deterministic Zi Wei Dou Shu charting JS/TS (browser / Node; multilingual output): fourteen major/minor stars, sihua, twelve palaces, decade/year layers as structured objects. MIT. A separate paid hosted AI-reading API exists; that layer is not collected |
+| [6tail/tyme4ts](https://github.com/6tail/tyme4ts) · [tyme4j](https://github.com/6tail/tyme4j) · [6tail.cn/tyme](https://6tail.cn/tyme.html) | 514 (as of 2026-10-19) | 6tail Lunar successor: Gregorian / lunar / Tibetan / Islamic calendars, stems-and-branches, zodiac, solar terms, moon phase, public holidays. Same API in several languages. Charting substrate. MIT |
 | [ekelen/tarot-api](https://github.com/ekelen/tarot-api) | 403 | Rider-Waite-Smith meanings REST API |
 | [uxiaohan/Tarot-Web](https://github.com/uxiaohan/Tarot-Web) | 111 | web tarot |
 
