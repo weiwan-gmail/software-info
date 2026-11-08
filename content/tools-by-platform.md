@@ -443,6 +443,26 @@ Stars as of 2026-10-19 GitHub API. Do not invent prices. Rest of this harvest ba
 - Date: 2026-10-19
 - Learnable slice: Android as SSH **server** (Dropbear + rsync + OpenSSH sftp-server; no root). Pair with Haven as the client
 
+### 2026-11-08 · MyGo and moejs (desktop framework / embeddable JS)
+
+Stars as of 2026-11-08 GitHub API. Two independent Go projects — **do not** treat them as a stack. Catalog: [01-platform-tools](/catalog/01-platform-tools/README) §1.7. MyGo also in [learnable-desktop.md](/learnable-desktop) §9. Frozen domain 11 not expanded. Do not invent prices.
+
+- Name: MyGo
+- Platform: macOS 12+ / Windows 10–11 / Linux (x64, arm64); desktop only
+- Site or repo: https://github.com/egoist/mygo · https://mygo.egoist.dev
+- Paid: free open source (MIT)
+- Source: https://github.com/egoist/mygo · https://raw.githubusercontent.com/egoist/mygo/main/README.md · https://mygo.egoist.dev — official README + site + docs (2026-11-08)
+- Date: 2026-11-08
+- Learnable slice: hybrid Go desktop — GPU-drawn native UI (`ui`) or OS WebView (WKWebView / WebKitGTK / WebView2), generated TypeScript clients for bound Go services, desktop APIs, cgo-free cross-compilation, installers and signed auto-updates. Native-UI-only apps need no WebView runtime. 5,356 star (2026-11-08)
+
+- Name: moejs
+- Platform: Go library (embed in a Go program; `CGO_ENABLED=0`)
+- Site or repo: https://github.com/MoeForge/moejs (old https://github.com/Calcium-Ion/moejs redirects here)
+- Paid: free open source (Apache-2.0)
+- Source: https://github.com/MoeForge/moejs · https://raw.githubusercontent.com/MoeForge/moejs/main/README.md — official README (2026-11-08)
+- Date: 2026-11-08
+- Learnable slice: embed a pure-Go JS plugin host (ES modules, async/await, Go interop, host-controlled imports, interrupt, per-runtime memory limits; optional event loop / Web API packages). Not a Node.js replacement. TypeScript strip-types only. Host limits are not an unconditional security boundary. Alpha API; smaller community (474 star, 2026-11-08); included by request. Do not repeat upstream benchmark numbers as independent evidence
+
 ---
 
 ## 9. Other classes (seeds)
