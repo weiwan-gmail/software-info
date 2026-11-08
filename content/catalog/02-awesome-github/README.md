@@ -21,7 +21,7 @@ The master index [sindresorhus/awesome](https://github.com/sindresorhus/awesome)
 
 ## 2.2 Sidecar lists
 
-HelloGitHub 173,631 · papers-we-love 109,186 · awesome-courses 70,755 · awesome-scalability 73,605 · awesome-react 74,441 · awesome-vue 73,549 · awesome-nodejs 66,653.
+HelloGitHub 173,631 · papers-we-love 109,186 · awesome-courses 70,755 · awesome-scalability 73,605 · awesome-react 74,441 · awesome-vue 73,549 · awesome-nodejs 66,653 · **awesome-dsh-plugin** (harvest 2026-11-08; §2.5).
 
 ## 2.3 Company orgs
 
@@ -36,3 +36,15 @@ Paid plans from these companies live in [09-network](../09-network/README.md) an
 ## 2.4 Personal accounts
 
 CLI: sharkdp / BurntSushi / junegunn. TUI: jesseduffield / sxyazi. Network: FiloSottile. Teaching: karpathy / ggerganov (llama.cpp has moved to ggml-org).
+
+## 2.5 DeepSeek Harness plugin lists (harvest 2026-11-08)
+
+Not in the numbered discussion queue (do not interrupt items 1–10). **Not** [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) (queue item 6). **DSH** = DeepSeek Harness, DeepSeek’s open-source agent harness ([deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)). This catalog row is the **public collection**, not private harness notes. Detail: [awesome-and-orgs.md](../../awesome-and-orgs.md) §2.1 · [tools-by-platform.md](../../tools-by-platform.md) §8.1.
+
+**Open source (the list is a document; listed plugins are third-party)**
+
+| Repo | star (2026-11-08) | License | Notes |
+|---|---:|---|---|
+| [awesome-dsh-plugin/awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) · [awesome-dsh-plugin.com](https://awesome-dsh-plugin.com) | 23,720 | CC0-1.0 (the list) | Curated **list + plugin-market index** for DeepSeek Harness community plugins. **Not** an executable product: this repo is generated README + YAML entries (`data/plugins/`). A plugin is listed when it declares a `dsh.bundle` manifest and installs with `dsh plugin add` (`dsh.client` alone is not installable). Upstream `count.json` 2026-11-08: **9,463** plugins in 23 categories (UI, tools, models, memory, skills, git, security, remote, markets, …) — badge count, not independently recounted. Optional in-harness browser: [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market). Discover index on dsh **0.2.1+**: `https://cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json` (README: GitHub Pages copies of the same JSON can exceed dsh’s 15s load budget). List is CC0; **each plugin keeps its own license**. README: not affiliated with DeepSeek; listing is not a security review or quality rank; installing runs third-party code with host permissions (tool approvals do not sandbox plugin code). Host/version pins vary per plugin (some Windows-only, some pin 0.1.x vs 0.2.x). Learnable slice: agent plugin-marketplace shape (one YAML file → generated README, `dsh.bundle` + cordis patch), not cloning the 9k plugins |
+
+**Free closed-source / paid:** none added. Do not invent prices. Paid plans of the harness or of individual plugins, if any, are not recorded here.

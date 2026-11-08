@@ -58,6 +58,24 @@ Found in the same sweep, but not lined up in the 10 above. Say so if one should 
 | [papers-we-love/papers-we-love](https://github.com/papers-we-love/papers-we-love) | 109,186 | Papers from the computer science community to read and discuss. |
 | [prakhar1989/awesome-courses](https://github.com/prakhar1989/awesome-courses) | 70,755 | :books: List of awesome university courses for learning Computer Science! |
 | [binhnguyennus/awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) | 73,605 | The Patterns of Scalable, Reliable, and Performant Large-Scale Systems |
+| [awesome-dsh-plugin/awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) · [awesome-dsh-plugin.com](https://awesome-dsh-plugin.com) | 23,720 (2026-11-08) | Curated DeepSeek Harness (`dsh`) **plugin list + market index**. CC0-1.0 for the list. **Not** queue item 6 [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills). Harvest 2026-11-08; §2.1 |
+
+### 2.1 Harvest 2026-11-08 · awesome-dsh-plugin
+
+Public collection only. **DSH** = DeepSeek Harness ([deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) — “Everything is a Plugin”). This row is [awesome-dsh-plugin/awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin), not private harness notes and not an installable binary.
+
+| | Fact (README / GitHub / site, 2026-11-08) |
+|---|---|
+| What it is | Community-maintained **awesome list** and format-1 **plugin market index**. Generated from `data/plugins/*.yml`; do not treat the README as hand-edited. |
+| What it is not | Not DeepSeek Harness itself. Not affiliated with DeepSeek. Not [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills). Listing is not a rank, endorsement, or security review. |
+| License | List: **CC0-1.0**. Listed plugins keep their own licenses. |
+| Size | 23,720 star on the list repo. Site `count.json` reports **9,463** plugins (badge; not recounted here). |
+| Categories (23) | AGI architecture · UI · usage/billing · themes · models/providers · identity/comms · sessions · memory · tools · WSL/Windows · browser · vision · voice · docs · skills · workflow · git · notifications · dev/runtime · security · remote/mobile · plugin markets · just for fun |
+| Install protocol | `dsh plugin add` when `package.json` declares `dsh.bundle` (plus a cordis patch). `dsh.client` alone is rejected. Optional UI: `dsh-market`. Index for Discover (dsh 0.2.1+): jsDelivr `dsh-plugin-catalog/index.json`. |
+| Caveats | Installing a listed plugin runs third-party code with host permissions; tool approvals do not sandbox it. GitHub-sourced installs may need `allowBuilds`. Per-plugin DSH version and OS pins differ. GitHub Pages `index.json` mirrors can miss dsh’s 15s Discover timeout — README prefers the npm CDN. |
+| Learnable slice | Marketplace shape: YAML entry → generated bilingual README, `dsh.bundle` manifest, category taxonomy. Do not mine the 9k plugins as homework. Catalog: [02-awesome-github](/catalog/02-awesome-github/README) §2.5 |
+
+**Paid:** none recorded. Do not invent prices.
 
 ---
 

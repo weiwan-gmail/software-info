@@ -463,6 +463,18 @@ Stars as of 2026-11-08 GitHub API. Two independent Go projects — **do not** tr
 - Date: 2026-11-08
 - Learnable slice: embed a pure-Go JS plugin host (ES modules, async/await, Go interop, host-controlled imports, interrupt, per-runtime memory limits; optional event loop / Web API packages). Not a Node.js replacement. TypeScript strip-types only. Host limits are not an unconditional security boundary. Alpha API; smaller community (474 star, 2026-11-08); included by request. Do not repeat upstream benchmark numbers as independent evidence
 
+### 2026-11-08 · awesome-dsh-plugin (DeepSeek Harness plugin list)
+
+Stars as of 2026-11-08 GitHub API. Public collection only — not private harness notes, not ComposioHQ/awesome-claude-skills. Catalog: [02-awesome-github](/catalog/02-awesome-github/README) §2.5 · [awesome-and-orgs.md](/awesome-and-orgs) §2.1. Frozen domain 11 not expanded. Do not invent prices. Do not install listed plugins from this harvest.
+
+- Name: awesome-dsh-plugin
+- Platform: document / market index for DeepSeek Harness (`dsh`) plugins (Web and headless host; not a standalone app)
+- Site or repo: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin · https://awesome-dsh-plugin.com
+- Paid: free open source (CC0-1.0 for the **list**; plugins keep their own licenses)
+- Source: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin · https://raw.githubusercontent.com/awesome-dsh-plugin/awesome-dsh-plugin/main/README.md · https://awesome-dsh-plugin.com/count.json — official README + site (2026-11-08)
+- Date: 2026-11-08
+- Learnable slice: curated DSH plugin list + Discover index (`dsh.bundle` / `dsh plugin add`). 23,720 star; upstream count.json 9,463 plugins. Listing ≠ security review; installing runs third-party code. Host/version pins vary. Study the marketplace shape, not the 9k plugins
+
 ---
 
 ## 9. Other classes (seeds)
