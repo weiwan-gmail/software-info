@@ -107,3 +107,27 @@ Detail tables: [learnable-desktop.md](../../learnable-desktop.md) · [learnable-
 | iLovePDF | [ilovepdf.com](https://www.ilovepdf.com/) | free + Premium | Stirling-PDF |
 | Figma | [figma.com](https://www.figma.com/) | free quota + subscription | Penpot / tldraw |
 | Canva | [canva.com](https://www.canva.com/) | free quota + Pro | Excalidraw only for the whiteboard slice |
+
+## 1.7 Desktop GUI frameworks & embeddable JS runtimes
+
+Harvest 2026-11-08. Stars as of 2026-11-08 GitHub API. Two **independent** Go projects (no dependency either way). Desktop GUI stacks in frozen [11-lang-compare](../11-lang-compare/README.md) are not expanded. MyGo also in [learnable-desktop.md](../../learnable-desktop.md) §9; moejs stays here (library, not a desktop app). Detail also in [tools-by-platform.md](../../tools-by-platform.md) §8.1.
+
+### Desktop GUI frameworks
+
+**Open source**
+
+| Repo | star (2026-11-08) | License | Notes |
+|---|---:|---|---|
+| [egoist/mygo](https://github.com/egoist/mygo) · [mygo.egoist.dev](https://mygo.egoist.dev) | 5,356 | MIT | Go desktop framework for **macOS 12+ / Windows 10–11 / Linux** (x64 and arm64). Each window is GPU-drawn native UI (`ui` package; Metal on macOS, Direct3D 11 on Windows; Linux native UI needs GTK 3) or the OS WebView (WKWebView / WebKitGTK 4.1 / WebView2); one app can mix both. README: generated TypeScript clients for bound Go services, desktop APIs (windows, menus, tray, dialogs, notifications, global shortcuts, deep links, file associations, and more), cgo-free cross-compilation, installers and signed auto-updates. Native-UI-only apps need no WebView runtime. Learnable slice: hybrid native+WebView desktop shell as a single Go binary, without bundling a browser. Free OSS |
+
+**Free closed-source / paid:** none in this harvest. Do not invent prices.
+
+### Embeddable JS runtimes (Go)
+
+**Open source**
+
+| Repo | star (2026-11-08) | License | Notes |
+|---|---:|---|---|
+| [MoeForge/moejs](https://github.com/MoeForge/moejs) | 474 | Apache-2.0 | Embeddable **pure-Go** JavaScript runtime for in-process plugins: ES modules, async/await, Go interop; host-controlled imports; interrupt from any goroutine; per-runtime memory limits. Optional `eventloop` and `webapi` packages; optional `node` fs stays inside a host directory when you install it. **Not** a Node.js replacement. `CompileTS` strips types the way Node does; enums, value namespaces, and other TypeScript that changes runtime semantics fail. Host-controlled limits are not an unconditional security boundary. **Alpha** — API may change. Smaller community than the usual harvest cutoff; included by request. Old [Calcium-Ion/moejs](https://github.com/Calcium-Ion/moejs) redirects here. Learnable slice: embed a JS plugin host in Go without cgo. Independent of MyGo |
+
+**Free closed-source / paid:** none in this harvest. Do not invent prices.

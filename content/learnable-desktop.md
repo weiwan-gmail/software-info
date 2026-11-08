@@ -134,3 +134,23 @@ Sources and how to keep collecting are in [tools-by-platform.md](/tools-by-platf
 | Rufus | https://github.com/pbatard/rufus | free, GPL-3.0 |
 | Snipaste | https://www.snipaste.com/ | free + Pro |
 | Quicker | https://getquicker.net/ | free + Pro |
+
+---
+
+## 9. Desktop GUI frameworks (Go) — harvest 2026-11-08
+
+Frameworks you study in order to **ship a desktop tool**, not end-user apps. Stars as of 2026-11-08 GitHub API. Domain 11’s Go GUI cheat sheet (Fyne / Wails / Gio) stays frozen; this is the product-catalog landing.
+
+| Repo | star (2026-11-08) | License | Notes |
+|---|---:|---|---|
+| [egoist/mygo](https://github.com/egoist/mygo) · [mygo.egoist.dev](https://mygo.egoist.dev) | 5,356 | MIT | Desktop apps in Go with **native UI or a web frontend**. Native UI is a Go `ui.View` drawn on the GPU (no HTML / JS / WebView). Web windows use the OS WebView and call Go through a **generated TypeScript client**. One app can mix both. Platforms: macOS 12+, Windows 10/11, Linux (x64/arm64). README: cgo-free cross-compilation; menus, tray, dialogs, notifications, global shortcuts, deep links, file associations; installers, code signing, notarization, signed auto-updates. Native-UI-only builds need no WebView runtime. Learnable slice: peel off the hybrid window model and the bind-Go → generated-TS IPC, not a Chromium bundle. Independent of moejs |
+
+**Free closed-source / paid:** none in this harvest.
+
+Electron / Wails-class “web UI in a desktop shell” is the incumbent shape. Study OS WebView + generated bindings, or skip the WebView and keep `ui` only.
+
+Embeddable JS in Go ([MoeForge/moejs](https://github.com/MoeForge/moejs)) is a **library**, not a desktop app — catalogued in [01-platform-tools](/catalog/01-platform-tools/README) §1.7, not here. Independent of MyGo.
+
+| Incumbent / closed-source | Learnable slice | Open-source landing |
+|---|---|---|
+| Electron (bundled Chromium) | OS WebView or GPU-drawn native UI; one Go binary | MyGo |
