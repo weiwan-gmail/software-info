@@ -45,7 +45,7 @@ describe('committed ledger', () => {
     assert.equal(state.streams.eight_family_rotation.processed_through_utc, null)
     assert.equal(state.streams.eight_family_rotation.pointer_basis, 'parent_reported_routine_completion')
     assert.equal(state.streams.eight_family_rotation.last_completed_date, '2026-11-16')
-    assert.equal(state.clocks.publication.content_commit_sha, '372b8c95b04c01574358b21b5bc8d1b060737f3f')
+    assert.equal(state.clocks.publication.content_commit_sha, 'ac01a05c6379eedce8e5c7acf410ef4b59fe1df5')
     assert.match(state.clocks.publication.scope, /not a conversation_catchup/)
     assert.equal(state.queue.filter((q) => q.status === 'published').length, 44)
     assert.equal(state.queue.filter((q) => q.status === 'skipped').length, 10)

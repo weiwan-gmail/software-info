@@ -1,22 +1,26 @@
 {
   "schema_version": 1,
-  "generation": 3,
-  "updated_at_utc": "2026-11-22T01:05:00Z",
+  "generation": 4,
+  "updated_at_utc": "2026-11-22T01:14:05Z",
   "clocks": {
     "site_last_modified": {
       "meaning": "VitePress page Updated / last catalog markdown commit. Not a harvest cursor. Updating any site page does not skip a stream. Known-list backfill is not a conversation watermark.",
-      "content_commit_sha": "372b8c95b04c01574358b21b5bc8d1b060737f3f",
-      "recorded_at_utc": "2026-11-22T00:12:00Z"
+      "content_commit_sha": "ac01a05c6379eedce8e5c7acf410ef4b59fe1df5",
+      "recorded_at_utc": "2026-11-22T01:14:05Z"
     },
     "publication": {
-      "content_commit_sha": "372b8c95b04c01574358b21b5bc8d1b060737f3f",
-      "pages_run_id": "44965328917",
-      "pages_run_url": "https://github.com/weiwan-gmail/software-info/actions/runs/44965328917",
+      "content_commit_sha": "ac01a05c6379eedce8e5c7acf410ef4b59fe1df5",
+      "pages_run_id": "44970359551",
+      "pages_run_url": "https://github.com/weiwan-gmail/software-info/actions/runs/44970359551",
       "live_urls": [
-        "https://weiwan-gmail.github.io/software-info/catalog/01-platform-tools/README.html"
+        "https://weiwan-gmail.github.io/software-info/catalog/01-platform-tools/README.html",
+        "https://weiwan-gmail.github.io/software-info/catalog/09-network/README.html",
+        "https://weiwan-gmail.github.io/software-info/tools-by-platform.html",
+        "https://weiwan-gmail.github.io/software-info/harvest-cadence.html",
+        "https://weiwan-gmail.github.io/software-info/mobile-utility-tools.html"
       ],
-      "verified_at_utc": "2026-11-22T00:12:00Z",
-      "scope": "ego-lite catalog entry only; not a conversation_catchup scan",
+      "verified_at_utc": "2026-11-22T01:14:05Z",
+      "scope": "historical known-list backfill catalog entries; not a conversation_catchup scan",
       "note": "Points at a verified content SHA, not at a later harvest/state-only commit."
     }
   },
