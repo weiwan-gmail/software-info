@@ -85,6 +85,8 @@ Detail tables: [learnable-desktop.md](../../learnable-desktop.md) · [learnable-
 
 **Free closed-source / paid:** none in this skill-pack harvest.
 
+Agent browsers (desktop GUI + skill, harvest 2026-11-22): see §1.8 below. Unrelated to [egoist/mygo](https://github.com/egoist/mygo) in §1.7.
+
 ## 1.5 Mobile
 
 **Paid (store paid charts that can be homework):** AnkiMobile, Paprika ([paprikaapp.com](https://www.paprikaapp.com/)), Streaks ([streaks.app](https://streaks.app/)), Things ([culturedcode.com/things](https://culturedcode.com/things/)), PhotoPills, SkyView, Procreate Pocket.
@@ -131,3 +133,21 @@ Harvest 2026-11-08. Stars as of 2026-11-08 GitHub API. Two **independent** Go pr
 | [MoeForge/moejs](https://github.com/MoeForge/moejs) | 474 | Apache-2.0 | Embeddable **pure-Go** JavaScript runtime for in-process plugins: ES modules, async/await, Go interop; host-controlled imports; interrupt from any goroutine; per-runtime memory limits. Optional `eventloop` and `webapi` packages; optional `node` fs stays inside a host directory when you install it. **Not** a Node.js replacement. `CompileTS` strips types the way Node does; enums, value namespaces, and other TypeScript that changes runtime semantics fail. Host-controlled limits are not an unconditional security boundary. **Alpha** — API may change. Smaller community than the usual harvest cutoff; included by request. Old [Calcium-Ion/moejs](https://github.com/Calcium-Ion/moejs) redirects here. Learnable slice: embed a JS plugin host in Go without cgo. Independent of MyGo |
 
 **Free closed-source / paid:** none in this harvest. Do not invent prices.
+
+## 1.8 Agent browsers (harvest 2026-11-22)
+
+Stars as of 2026-11-22 GitHub API. A **desktop GUI browser** plus an MIT skill/SDK — not a headless-browser library, not Rust, and **not** [egoist/mygo](https://github.com/egoist/mygo) (§1.7). Frozen [11-lang-compare](../11-lang-compare/README.md) not expanded. Detail: [learnable-desktop.md](../../learnable-desktop.md) §10 · [tools-by-platform.md](../../tools-by-platform.md) §8.1.
+
+**Open source (skill / SDK repo)**
+
+| Repo | star (2026-11-22) | License | Notes |
+|---|---:|---|---|
+| [citrolabs/ego-lite](https://github.com/citrolabs/ego-lite) · [lite.ego.app](https://lite.ego.app) · docs [lite.ego.app/document](https://lite.ego.app/document/) | 23,964 | MIT (this repo) | `ego-browser` JavaScript/TypeScript SDK and agent Skill (Node 22+ to build). Agents (Claude Code, Codex, Cursor, or a custom CLI) drive the installed ego lite app through in-page JS tools: snapshot, fill, click, wait, navigate, capture. CONTRIBUTING: the **browser application and native bindings are not in this repo**; GitHub Releases ship the SDK/Skill payload, not the installer. Learnable slice: skill + SDK that talks to a daily browser via native bindings (CDP transport in-repo), not a separate Playwright process |
+
+**Free download (browser app; source not this repo)**
+
+| Name | Site | Form | Notes |
+|---|---|---|---|
+| ego lite | [lite.ego.app](https://lite.ego.app) | **Free download**. README: separate from the MIT GitHub tree. Do not invent a price | Desktop browser for **macOS and Windows**; **Linux is planned** ([roadmap](https://lite.ego.app/roadmap)), not listed as shipping. Isolated **Spaces** so a human and agents browse in parallel in one app; optional Chrome-data import (logins, cookies, extensions, bookmarks) stays on-device. README: reusable skills / experience accumulation **coming soon**. Vendor speed/token benchmarks are not repeated as independent evidence |
+
+**Paid:** none recorded. Do not invent prices.

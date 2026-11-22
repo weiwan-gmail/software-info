@@ -154,3 +154,15 @@ Embeddable JS in Go ([MoeForge/moejs](https://github.com/MoeForge/moejs)) is a *
 | Incumbent / closed-source | Learnable slice | Open-source landing |
 |---|---|---|
 | Electron (bundled Chromium) | OS WebView or GPU-drawn native UI; one Go binary | MyGo |
+
+---
+
+## 10. Agent browsers — harvest 2026-11-22
+
+A daily desktop browser that agents also drive. Stars as of 2026-11-22 GitHub API. **Not** [egoist/mygo](https://github.com/egoist/mygo) (§9). Catalog: [01-platform-tools](/catalog/01-platform-tools/README) §1.8.
+
+| Repo / product | star (2026-11-22) | License / form | Notes |
+|---|---:|---|---|
+| [citrolabs/ego-lite](https://github.com/citrolabs/ego-lite) · [lite.ego.app](https://lite.ego.app) | 23,964 | MIT **repo** (JS/TS `ego-browser` skill + SDK). Browser app is a **separate free download**; native bindings live in the installed app, not this tree | macOS / Windows GUI browser; Linux on the public roadmap, not claimed here as released. Each agent task runs in its own Space so it does not steal the human’s tabs. Optional import of Chrome profile data. Agents call in-page JS tools (`snapshot` / `fill` / `click` / `wait` / `navigate` / `capture`) through `ego-browser`. Reusable skills marked coming soon. Learnable slice: isolation of agent workspaces inside one local browser + the skill/SDK contract. Do not treat vendor Real-World Bench numbers as reproduced |
+
+**Paid:** none recorded. Do not invent prices.

@@ -475,6 +475,18 @@ Stars as of 2026-11-08 GitHub API. Public collection only — not private harnes
 - Date: 2026-11-08
 - Learnable slice: curated DSH plugin list + Discover index (`dsh.bundle` / `dsh plugin add`). 23,720 star; upstream count.json 9,463 plugins. Listing ≠ security review; installing runs third-party code. Host/version pins vary. Study the marketplace shape, not the 9k plugins
 
+### 2026-11-22 · ego lite (agent browser)
+
+Stars as of 2026-11-22 GitHub API. Desktop GUI browser + MIT skill/SDK — not a headless library, not Rust, not [egoist/mygo](https://github.com/egoist/mygo). Catalog: [01-platform-tools](/catalog/01-platform-tools/README) §1.8 · [learnable-desktop.md](/learnable-desktop) §10. Frozen domain 11 not expanded. Do not invent prices. Do not install the app from this harvest.
+
+- Name: ego lite / ego-browser
+- Platform: macOS / Windows desktop (Linux planned); agents via Claude Code, Codex, Cursor, or custom CLI
+- Site or repo: https://github.com/citrolabs/ego-lite · https://lite.ego.app · docs https://lite.ego.app/document/
+- Paid: GitHub tree MIT (skill/SDK). Browser app: free separate download; installer not in this repo
+- Source: https://github.com/citrolabs/ego-lite · https://raw.githubusercontent.com/citrolabs/ego-lite/main/README.md · https://raw.githubusercontent.com/citrolabs/ego-lite/main/CONTRIBUTING.md · https://lite.ego.app/roadmap — official README, CONTRIBUTING, site (2026-11-22)
+- Date: 2026-11-22
+- Learnable slice: isolated agent Spaces in a local daily browser; `ego-browser` JS tools against native bindings. 23,964 star. Linux and reusable skills not claimed as shipping. Vendor speed/token benches not used as independent evidence
+
 ---
 
 ## 9. Other classes (seeds)
