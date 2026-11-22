@@ -80,7 +80,8 @@ Counterpart to AirDrop / Dropbox. You do not need to build a cloud-drive empire.
 | [microsoft/terminal](https://github.com/microsoft/terminal) | 104,735 | MIT | Windows Terminal. Big company, open source. Study PTY, GPU text, hot-reloaded config. |
 | [microsoft/vscode](https://github.com/microsoft/vscode) | 190,040 | MIT | Visual Studio Code. Big company, open source. Study the extension host / language server. Do not try to clone the whole repo. |
 | [helix-editor/helix](https://github.com/helix-editor/helix) | 46,002 | MPL-2.0 | A post-modern modal text editor. |
-| [zed-industries/zed](https://github.com/zed-industries/zed) | 89,438 | NOASSERTION | Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. Commercial company, but the editor core is open source. Study collaboration and rendering, not sales. |
+| [zed-industries/zed](https://github.com/zed-industries/zed) | 89,438 | NOASSERTION | Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. Commercial company, but the editor core is open source. Study collaboration and rendering, not sales. Already cataloged here; 95,487 star as of 2026-11-22. Cross-link only from [01-platform-tools](/catalog/01-platform-tools/README) §1.4 — do not add a second independent product page. |
+| [zellij-org/zellij](https://github.com/zellij-org/zellij) | 36,177 (2026-11-22) | MIT | Terminal workspace / multiplexer. Not an editor (distinct from Zed) and not a container runtime. Harvest 2026-11-22 |
 
 ---
 

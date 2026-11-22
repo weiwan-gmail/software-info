@@ -488,6 +488,126 @@ Stars as of 2026-11-22 GitHub API. Desktop GUI browser + MIT skill/SDK — not a
 - Date: 2026-11-22
 - Learnable slice: isolated agent Spaces in a local daily browser; `ego-browser` JS tools against native bindings. 23,964 star. Linux and reusable skills not claimed as shipping. Vendor speed/token benches not used as independent evidence
 
+### 2026-10-26 · source 1 (FOSDEM-class talks + mobile sweep) — synced 2026-11-22
+
+Original collection date **2026-10-26**; official URLs rechecked 2026-11-22. Catalog: [03-electronics-radio](/catalog/03-electronics-radio/README) §3.7 · [09-network](/catalog/09-network/README) §9.2 · [mobile-utility-tools.md](/mobile-utility-tools). Frozen domain 11 not expanded.
+
+- Name: Snagboot
+- Platform: Linux host → embedded boards
+- Site or repo: https://github.com/bootlin/snagboot · https://snagboot.readthedocs.io/
+- Paid: free open source (GPL-2.0)
+- Source: unsynced local harvest draft 2026-10-26 (FOSDEM 2026 talk listing); README rechecked 2026-11-22
+- Date: 2026-10-26 (verified 2026-11-22)
+- Learnable slice: vendor-agnostic recovery/reflash into RAM / U-Boot without first rewriting non-volatile storage. 324 star. Not Rufus
+
+- Name: USBKVM
+- Platform: local HDMI-over-USB hardware + client
+- Site or repo: https://github.com/carrotIndustries/usbkvm · https://events.ccc.de/congress/2024/hub/en/project/usbkvm/
+- Paid: free open source (firmware/client GPLv3; hardware CERN-OHL-P-2.0)
+- Source: unsynced local harvest draft 2026-10-26; README rechecked 2026-11-22
+- Date: 2026-10-26 (verified 2026-11-22)
+- Learnable slice: matchbox-scale local KVM. Distinct from GL.iNet Comet / glkvm. 241 star
+
+- Name: LensCast
+- Platform: Android
+- Site or repo: https://github.com/raulshma/lenscast · https://f-droid.org/packages/com.raulshma.lenscast/
+- Paid: free open source (GPL-3.0)
+- Source: unsynced local harvest draft 2026-10-26; GitHub/F-Droid rechecked 2026-11-22
+- Date: 2026-10-26 (verified 2026-11-22)
+- Learnable slice: phone as Wi-Fi MJPEG camera. **Early-stage** (41 star)
+
+### 2026-11-02 · source 2 (usesthis / Ask HN class + mobile sweep) — synced 2026-11-22
+
+Original collection date **2026-11-02**; official URLs rechecked 2026-11-22.
+
+- Name: Halloy
+- Platform: desktop IRC client
+- Site or repo: https://halloy.chat · https://github.com/squidowl/halloy
+- Paid: free open source (GPL-3.0)
+- Source: unsynced local harvest draft 2026-11-02; README rechecked 2026-11-22
+- Date: 2026-11-02 (verified 2026-11-22)
+- Learnable slice: desktop IRC client (Rust/iced). Not a self-hosted chat server. 4,638 star
+
+- Name: Numi
+- Platform: Mac / Windows / Linux (site, 2026-11-22)
+- Site or repo: https://numi.app · https://numi.app/buy/
+- Paid: closed-source buyout. Do not invent a price
+- Source: unsynced local harvest draft 2026-11-02; site rechecked 2026-11-22
+- Date: 2026-11-02 (verified 2026-11-22)
+- Learnable slice: natural-language calculator (usable first; license wall for extras per draft). Closed-source
+
+- Name: WGControl
+- Platform: Android
+- Site or repo: https://codeberg.org/FadeFX/WGControl · https://f-droid.org/packages/org.supersane.wgcontrol/
+- Paid: free open source (GPL-3.0-or-later; Codeberg LICENSE + F-Droid SPDX, 2026-11-22)
+- Source: unsynced local harvest draft 2026-11-02; Codeberg/F-Droid HTTP 200 on 2026-11-22
+- Date: 2026-11-02 (verified 2026-11-22)
+- Learnable slice: SSID/Bluetooth triggers for official WireGuard tunnels. Not a new VPN protocol
+
+### 2026-11-09 · source 3 (podcast/self-host class + mobile sweep) — synced 2026-11-22
+
+Original collection date **2026-11-09**; official URLs rechecked 2026-11-22.
+
+- Name: Termix
+- Platform: self-hosted hub + clients
+- Site or repo: https://termix.site · https://github.com/Termix-SSH/Termix
+- Paid: free open source (Apache-2.0)
+- Source: unsynced local harvest draft 2026-11-09; README rechecked 2026-11-22
+- Date: 2026-11-09 (verified 2026-11-22)
+- Learnable slice: pluginized Termius-class hub. Distinct from Haven / RustDesk. 16,092 star
+
+- Name: PatchMon
+- Platform: Linux self-hosted
+- Site or repo: https://patchmon.net · https://github.com/PatchMon/PatchMon
+- Paid: Community Edition AGPL-3.0; Cloud is a separate hosted offering — do not invent a price
+- Source: unsynced local harvest draft 2026-11-09; README rechecked 2026-11-22
+- Date: 2026-11-09 (verified 2026-11-22)
+- Learnable slice: self-hosted Linux patch/CVE workflow. 3,684 star
+
+- Name: Clean Your TV
+- Platform: Android phone → Android TV
+- Site or repo: https://cleanyour.tv/app/android · https://github.com/udhaykumarbala/cleanyourtv-app · https://f-droid.org/packages/tv.cleanyour.app/
+- Paid: free open source (MIT)
+- Source: unsynced local harvest draft 2026-11-09; README rechecked 2026-11-22
+- Date: 2026-11-09 (verified 2026-11-22)
+- Learnable slice: LAN TV cleanup (disable, not uninstall; restore + watchdog). Not an attack guide. 2,376 star
+
+### 2026-11-16 · source 4 (窓の杜 / F-Droid TWIF46 + mobile sweep) — synced 2026-11-22
+
+Parent-reported family **4** completion 2026-11-16 Asia/Shanghai. Official URLs rechecked 2026-11-22. Items were not in the 8125aec ledger-correction commit.
+
+- Name: Staged
+- Platform: Windows 11 64-bit 24H2+
+- Site or repo: https://staged.gg
+- Paid: closed-source buyout. Site (2026-11-22) lists launch €14.99 (struck regular €19.99), free full-feature demo, 14-day refund. Do not treat the euro amount as independently audited
+- Source: unsynced local harvest draft 2026-11-16; staged.gg rechecked 2026-11-22
+- Date: 2026-11-16 (verified 2026-11-22)
+- Learnable slice: virtual display / Game Stage for games; signed driver. Not open source
+
+- Name: WiProber
+- Platform: Android
+- Site or repo: https://github.com/htechno/WiProber · https://f-droid.org/packages/com.example.wiprober/
+- Paid: free open source (MIT)
+- Source: unsynced local harvest draft 2026-11-16; README rechecked 2026-11-22
+- Date: 2026-11-16 (verified 2026-11-22)
+- Learnable slice: floor-plan Wi-Fi site survey (no GPS); ESX; no Ekahau affiliation. **Early-stage** (78 star)
+
+- Name: ArrowLoop
+- Platform: Android / desktop / self-hosted
+- Site or repo: https://junkerderprovinz.github.io/arrowloop/ · https://github.com/junkerderprovinz/arrowloop
+- Paid: free open source (AGPL-3.0)
+- Source: unsynced local harvest draft 2026-11-16; README rechecked 2026-11-22
+- Date: 2026-11-16 (verified 2026-11-22)
+- Learnable slice: two-way sync with a pre-run plan. Distinct from Syncthing. **Early-stage** (47 star)
+
+### 2026-11-22 · historical known-list backfill (not a conversation watermark)
+
+Known sanitized candidate list plus the four unsynced weekly drafts above. Official docs rechecked 2026-11-22. **Does not** set `conversation_catchup.processed_through_utc`. Catalog: [01-platform-tools](/catalog/01-platform-tools/README) §1.8–§1.10 · [09-network](/catalog/09-network/README) §9.8–§9.11. Frozen domain 11 not expanded. Do not invent prices. Do not install these programs from this harvest.
+
+Topic comparisons (not a name dump): independent headless **engine** vs CDP **controller** vs HTML **toolkit** vs desktop **agent browser**; S3 stores Silo (**Go** MinIO fork, AGPL) vs RustFS (**Rust**, Apache-2.0) vs Garage (**Rust**, AGPL, geo-small-host) with **no measured memory comparison**; small-host lab cloud as a combination of already-distinct runtimes (Kiri ≠ youki ≠ Firecracker ≠ Incus ≠ Podman).
+
+Representative names in this pass: Lightpanda, Obscura, Moli, Servo, Blitz, Kitesurf, rust-headless-chrome, agent-browser, uv, Ruff, mise, Biome, jj, Zellij, Halloy, Numi, Staged, Garage, Silo, RustFS, Vector, Meilisearch, Kanidm, Quickwit, Kiri, Docker Compose, Komodo, K3s, k0s, Flux CD, Lima, NATS, Forgejo, Woodpecker, Pingora (domain-9 row), plus the 12 draft items above. Deduped already-published: MyGo, moejs, awesome-dsh-plugin, ego lite, Caddy, Firecracker, Incus, Typst, Zed.
+
 ---
 
 ## 9. Other classes (seeds)

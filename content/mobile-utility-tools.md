@@ -58,6 +58,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | TeamViewer | Android, iOS, desktop | Proprietary | https://www.teamviewer.com | Closed baseline for UX / session model |
 | AnyDesk | Android, iOS, desktop | Proprietary | https://anydesk.com | Closed; compare latency & permission UX |
 | Haven | Android 8+ | AGPL-3.0 | https://github.com/GlassHaven/Haven · https://glasshaven.github.io/Haven/ · F-Droid `sh.haven.app` | VNC/RDP/SPICE + on-device labwc Wayland (PRoot); SSH-tunneled desktops; per-profile WG/Tailscale without taking the device VPN slot (added 2026-10-12) |
+| Clean Your TV | Android phone → Android TV | MIT | https://github.com/udhaykumarbala/cleanyourtv-app · https://cleanyour.tv/app/android · F-Droid `tv.cleanyour.app` | Phone-side **TV cleanup** over the LAN (network-ADB **plan** preview; disable rather than uninstall; restore + TV watchdog rollback). Device-cleanup tool, **not** an attack guide. Original draft 2026-11-09 |
 
 ### 2.2 Wi‑Fi analyzers — **OSS-heavy (Android)**
 
@@ -68,6 +69,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | Spectre | Android 12+ | GPL-3.0 | https://github.com/thomasbuilds/Spectre · https://f-droid.org/packages/dev.thomasbuilds.spectre/ | Multi-radio (Wi‑Fi/BT/cell/GNSS) + local scan |
 | Network Survey | Android | Apache-2.0 | https://github.com/christianrowlands/android-network-survey · https://www.networksurvey.app/ | Logging Wi‑Fi/cell/BT/GNSS → CSV/GeoPackage |
 | AirPort Utility / Apple Wi‑Fi UI | iOS | Closed | Apple App Store (system / vendor) | iOS scan limits — harvest for API constraints, not source |
+| WiProber | Android | MIT | https://github.com/htechno/WiProber · https://f-droid.org/packages/com.example.wiprober/ | Floor-plan **site survey** (user marks position; no GPS); ESX export/import. README: no affiliation with Ekahau. Distinct from channel-graph analyzers above. **Early-stage** (78 star, 2026-11-22). Original draft 2026-11-16 |
 
 ### 2.3 General network / LAN tools — **OSS-heavy Android; iOS often closed**
 
@@ -78,6 +80,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | AndroidNetworkTools (lib) | Android library | Apache-2.0 | https://github.com/stealthcopter/AndroidNetworkTools | Ping/portscan/subnet helpers to embed |
 | Fing | Android, iOS | Proprietary | https://www.fing.com · App Store / Play | Closed discovery UX reference |
 | Spectre (local net) | Android | GPL-3.0 | https://github.com/thomasbuilds/Spectre | Host/service discovery under RF scanner |
+| LensCast | Android | GPL-3.0 | https://github.com/raulshma/lenscast · https://f-droid.org/packages/com.raulshma.lenscast/ | Phone as a **Wi-Fi camera** (MJPEG + audio to a browser; exposure/ISO/focus). Not a filter camera. **Early-stage** (41 star, 2026-11-22). Original draft 2026-10-26 |
 
 ### 2.4 FTP / SFTP / SMB / WebDAV / file transfer — **OSS-heavy**
 
@@ -88,6 +91,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | FTPClient | Android | MIT | https://codeberg.org/qwerty287/ftpclient · https://f-droid.org/packages/de.qwerty287.ftpclient/ | Minimal FTP/FTPS/SFTP client |
 | Amaze File Manager | Android | GPL-3.0 | https://github.com/TeamAmaze/AmazeFileManager | Cloud/NAS connectors pattern |
 | LocalSend | Android, iOS, desktop | Apache-2.0 | https://github.com/localsend/localsend | LAN P2P send without account |
+| ArrowLoop | Android, desktop, self-hosted | AGPL-3.0 | https://github.com/junkerderprovinz/arrowloop · https://junkerderprovinz.github.io/arrowloop/ · F-Droid `arrowloop.halleluja.design` | Two-way sync with a pre-run plan and last-agreed-state brakes; rclone backends. Distinct from Syncthing. **Early-stage** (47 star, 2026-11-22). Original draft 2026-11-16 |
 | OpenMTP | macOS↔Android MTP | MIT | https://github.com/ganeshrvel/openmtp | Desktop-side USB/MTP (not on-phone) |
 
 ### 2.5 VPN / mesh / tunnel / VPN-share — **Mixed**
@@ -103,6 +107,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | NetGuard | Android | GPL-3.0 | https://github.com/M66B/NetGuard | Per-app block via local VpnService |
 | Surge / Shadowrocket-class | iOS | Proprietary | App Store listings (vendor sites vary) | Closed iOS proxy UX — watch APIs only |
 | DroidFRPD | Android | GPL-3.0 | https://github.com/donmor/DroidFRPD · IzzyOnDroid `top.donmor.droidfrpd` | Host frpc/frps as managed daemons; SAF configs; boot/battery-exempt patterns for persistent reverse tunnels |
+| WGControl | Android | GPL-3.0-or-later | https://codeberg.org/FadeFX/WGControl · https://f-droid.org/packages/org.supersane.wgcontrol/ | Turns **official WireGuard** (and, per README, AmneziaWG) tunnels on/off from Wi-Fi SSID / Bluetooth triggers via the apps’ documented control interface. Not a new VPN protocol and not Tailscale. Original draft 2026-11-02 |
 
 ### 2.6 HTTP / API / request tools — **Mixed**
 

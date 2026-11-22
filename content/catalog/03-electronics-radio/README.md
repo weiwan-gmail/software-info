@@ -90,3 +90,9 @@ Harvest 2026-10-19 (source 6, dated 2026-10-05): **PSU-EXT** — ESP32-S3 betwee
 **Paid:** LoRa handhelds / finished Meshtastic units (hardware buyout). ADS-B receive with an RTL-SDR dongle is also hardware you buy.
 
 **Open source (phone companion):** [tooyipjee/Spark-Analyzer](https://github.com/tooyipjee/Spark-Analyzer) (MIT) — Android dashboard for an ESP32-C3 USB-PD/PPS analyzer over Wi‑Fi/BLE (added 2026-10-05).
+
+## 3.7 Board recovery / local KVM (harvest 2026-11-22)
+
+Stars as of 2026-11-22 GitHub API. Original draft date **2026-10-26** (rotation family 1). Verification 2026-11-22.
+
+**Open source:** [bootlin/snagboot](https://github.com/bootlin/snagboot) · [docs](https://snagboot.readthedocs.io/) 324 **GPL-2.0** (Python) — vendor-agnostic recovery/reflash for embedded SoCs (loads into RAM / runs U-Boot without touching non-volatile storage first). **Not** Rufus. Early-stage star count; included by requested backfill. Local USB KVM [usbkvm](https://github.com/carrotIndustries/usbkvm) is in [09-network](../09-network/README.md) §9.2 (not a network KVM).

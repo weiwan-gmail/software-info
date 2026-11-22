@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generation": 2,
-  "updated_at_utc": "2026-11-22T00:50:00Z",
+  "generation": 3,
+  "updated_at_utc": "2026-11-22T01:05:00Z",
   "clocks": {
     "site_last_modified": {
-      "meaning": "VitePress page Updated / last catalog markdown commit. Not a harvest cursor. Updating any site page does not skip a stream.",
+      "meaning": "VitePress page Updated / last catalog markdown commit. Not a harvest cursor. Updating any site page does not skip a stream. Known-list backfill is not a conversation watermark.",
       "content_commit_sha": "372b8c95b04c01574358b21b5bc8d1b060737f3f",
       "recorded_at_utc": "2026-11-22T00:12:00Z"
     },
@@ -49,18 +49,42 @@
       "pointer_basis": "parent_reported_routine_completion",
       "evidence": {
         "kind": "parent_handoff",
-        "summary": "Parent saved routine / completed handoff: source 4 (窓の杜 + F-Droid TWIF46) completed 2026-11-16 Asia/Shanghai; reported last_run 2026-11-15 16:45 PST. Reported additions Staged, WiProber, ArrowLoop were not independently verified here and are not cataloged in this correction.",
+        "summary": "Parent saved routine / completed handoff: source 4 (窓の杜 + F-Droid TWIF46) completed 2026-11-16 Asia/Shanghai; reported last_run 2026-11-15 16:45 PST. Draft additions Staged, WiProber, ArrowLoop were cataloged in the 2026-11-22 backfill after official-URL recheck. Rotation pointer remains last=4 next=5.",
         "not_used_as_pointer": "Synced catalog headings through ### 2026-10-19 · source 8 are older than that 2026-11-16 completion and must not overwrite it. Local /workspace copies were not read."
       },
       "families": [
-        { "id": 1, "label": "tech talks / Black Hat Arsenal / FOSDEM" },
-        { "id": 2, "label": "usesthis / Ask HN / Lobsters" },
-        { "id": 3, "label": "Changelog / Self-Hosted podcast notes" },
-        { "id": 4, "label": "regional / non-English curation + F-Droid (2026-11-16 pass: 窓の杜 + TWIF46)" },
-        { "id": 5, "label": "X toolbox / setup threads + awesome-list diff" },
-        { "id": 6, "label": "Crowd Supply / open hardware boards" },
-        { "id": 7, "label": "itch.io / Flashpoint / game prototypes" },
-        { "id": 8, "label": "source 8 (heading unnamed; 2026-10-19 catalog rows)" }
+        {
+          "id": 1,
+          "label": "tech talks / Black Hat Arsenal / FOSDEM"
+        },
+        {
+          "id": 2,
+          "label": "usesthis / Ask HN / Lobsters"
+        },
+        {
+          "id": 3,
+          "label": "Changelog / Self-Hosted podcast notes"
+        },
+        {
+          "id": 4,
+          "label": "regional / non-English curation + F-Droid (2026-11-16 pass: 窓の杜 + TWIF46)"
+        },
+        {
+          "id": 5,
+          "label": "X toolbox / setup threads + awesome-list diff"
+        },
+        {
+          "id": 6,
+          "label": "Crowd Supply / open hardware boards"
+        },
+        {
+          "id": 7,
+          "label": "itch.io / Flashpoint / game prototypes"
+        },
+        {
+          "id": 8,
+          "label": "source 8 (heading unnamed; 2026-10-19 catalog rows)"
+        }
       ],
       "note": "Family ids are weekly source-rotation slots, not catalog domains. Pointer follows the newest dated completion (family 4 on 2026-11-16), not max heading number in the synced catalog. This is not a ledger-era scan; processed_through_utc stays null. Do not invent a scan or claim local unsynced files were read."
     },
@@ -85,10 +109,754 @@
       "note": "Mobile names already in catalog harvest records are catalog dates, not a protocol watermark."
     }
   },
-  "queue": [],
+  "queue": [
+    {
+      "canonical_url": "https://github.com/egoist/mygo",
+      "aliases": [
+        "https://mygo.egoist.dev"
+      ],
+      "status": "skipped",
+      "skip_reason": "already_cataloged",
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "A: do not re-add"
+    },
+    {
+      "canonical_url": "https://github.com/moeforge/moejs",
+      "aliases": [],
+      "status": "skipped",
+      "skip_reason": "already_cataloged",
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "A: do not re-add"
+    },
+    {
+      "canonical_url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+      "aliases": [
+        "https://awesome-dsh-plugin.com"
+      ],
+      "status": "skipped",
+      "skip_reason": "already_cataloged",
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "A: do not re-add"
+    },
+    {
+      "canonical_url": "https://github.com/citrolabs/ego-lite",
+      "aliases": [
+        "https://lite.ego.app"
+      ],
+      "status": "skipped",
+      "skip_reason": "already_cataloged",
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "A: do not re-add"
+    },
+    {
+      "canonical_url": "https://github.com/caddyserver/caddy",
+      "aliases": [
+        "https://caddyserver.com"
+      ],
+      "status": "skipped",
+      "skip_reason": "already_cataloged",
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "B: enriched existing 09-network row"
+    },
+    {
+      "canonical_url": "https://github.com/firecracker-microvm/firecracker",
+      "aliases": [],
+      "status": "skipped",
+      "skip_reason": "already_cataloged",
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "B: already in 9.6"
+    },
+    {
+      "canonical_url": "https://github.com/lxc/incus",
+      "aliases": [],
+      "status": "skipped",
+      "skip_reason": "already_cataloged",
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "B: already in 9.6"
+    },
+    {
+      "canonical_url": "https://github.com/typst/typst",
+      "aliases": [
+        "https://typst.app"
+      ],
+      "status": "skipped",
+      "skip_reason": "already_cataloged",
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "B: URL enrichment only"
+    },
+    {
+      "canonical_url": "https://github.com/zed-industries/zed",
+      "aliases": [],
+      "status": "skipped",
+      "skip_reason": "already_cataloged",
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "B: already in learnable-desktop"
+    },
+    {
+      "canonical_url": "https://github.com/atroche/rust-headless-chrome",
+      "aliases": [],
+      "status": "skipped",
+      "skip_reason": "duplicate",
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "alias of rust-headless-chrome/rust-headless-chrome"
+    },
+    {
+      "canonical_url": "https://github.com/lightpanda-io/browser",
+      "aliases": [
+        "https://lightpanda.io"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "Zig headless engine"
+    },
+    {
+      "canonical_url": "https://github.com/h4ckf0r0day/obscura",
+      "aliases": [
+        "https://obscura.sh"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "Rust headless engine; identity from discussion URL"
+    },
+    {
+      "canonical_url": "https://github.com/lexmount/moli",
+      "aliases": [
+        "https://browser.lexmount.com"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "Rust headless engine"
+    },
+    {
+      "canonical_url": "https://github.com/servo/servo",
+      "aliases": [
+        "https://servo.org"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "embeddable web engine"
+    },
+    {
+      "canonical_url": "https://github.com/dioxuslabs/blitz",
+      "aliases": [
+        "https://blitz.is"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "HTML/CSS toolkit beta"
+    },
+    {
+      "canonical_url": "https://github.com/cloudflare/kitesurf",
+      "aliases": [
+        "https://kitesurf.dev"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "experimental WASM engine"
+    },
+    {
+      "canonical_url": "https://github.com/rust-headless-chrome/rust-headless-chrome",
+      "aliases": [],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "CDP controller"
+    },
+    {
+      "canonical_url": "https://github.com/vercel-labs/agent-browser",
+      "aliases": [
+        "https://agent-browser.dev"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "agent CLI controller"
+    },
+    {
+      "canonical_url": "https://github.com/astral-sh/uv",
+      "aliases": [
+        "https://docs.astral.sh/uv"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "Python package/project manager"
+    },
+    {
+      "canonical_url": "https://github.com/astral-sh/ruff",
+      "aliases": [
+        "https://docs.astral.sh/ruff"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "Python linter/formatter"
+    },
+    {
+      "canonical_url": "https://github.com/jdx/mise",
+      "aliases": [
+        "https://mise.jdx.dev"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "dev tools/env/tasks"
+    },
+    {
+      "canonical_url": "https://github.com/biomejs/biome",
+      "aliases": [
+        "https://biomejs.dev"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "web formatter/linter"
+    },
+    {
+      "canonical_url": "https://github.com/jj-vcs/jj",
+      "aliases": [
+        "https://jj-vcs.dev",
+        "https://docs.jj-vcs.dev"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "Git-compatible VCS; was incidental on Mergiraf only"
+    },
+    {
+      "canonical_url": "https://github.com/zellij-org/zellij",
+      "aliases": [
+        "https://zellij.dev"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "terminal workspace"
+    },
+    {
+      "canonical_url": "https://github.com/squidowl/halloy",
+      "aliases": [
+        "https://halloy.chat"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "desktop IRC; original draft 2026-11-02"
+    },
+    {
+      "canonical_url": "https://numi.app",
+      "aliases": [
+        "https://numi.app/buy"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "closed-source calculator; original draft 2026-11-02"
+    },
+    {
+      "canonical_url": "https://staged.gg",
+      "aliases": [],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "closed-source virtual display; original draft 2026-11-16"
+    },
+    {
+      "canonical_url": "https://git.deuxfleurs.fr/Deuxfleurs/garage",
+      "aliases": [
+        "https://garagehq.deuxfleurs.fr"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "S3 for small geo clusters; AGPL"
+    },
+    {
+      "canonical_url": "https://github.com/pgsty/silo",
+      "aliases": [
+        "https://silo.pgsty.com"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "MinIO fork; Go; AGPL"
+    },
+    {
+      "canonical_url": "https://github.com/rustfs/rustfs",
+      "aliases": [
+        "https://rustfs.com/download"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "S3; Apache-2.0; not a MinIO fork"
+    },
+    {
+      "canonical_url": "https://github.com/vectordotdev/vector",
+      "aliases": [
+        "https://vector.dev"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "observability pipeline"
+    },
+    {
+      "canonical_url": "https://github.com/meilisearch/meilisearch",
+      "aliases": [
+        "https://meilisearch.com"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "search API; MIT core + BUSL EE"
+    },
+    {
+      "canonical_url": "https://github.com/kanidm/kanidm",
+      "aliases": [
+        "https://kanidm.com"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "identity platform"
+    },
+    {
+      "canonical_url": "https://github.com/quickwit-oss/quickwit",
+      "aliases": [
+        "https://quickwit.io"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "observability search"
+    },
+    {
+      "canonical_url": "https://github.com/libracoder/kiri",
+      "aliases": [
+        "https://runkiri.com"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "container runtime; not youki"
+    },
+    {
+      "canonical_url": "https://github.com/lima-vm/lima",
+      "aliases": [
+        "https://lima-vm.io"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "Linux VMs"
+    },
+    {
+      "canonical_url": "https://github.com/docker/compose",
+      "aliases": [
+        "https://docs.docker.com/compose"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "Docker Compose"
+    },
+    {
+      "canonical_url": "https://github.com/moghtech/komodo",
+      "aliases": [
+        "https://komo.do",
+        "https://komo.do/docs/intro"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "multi-server compose deploy"
+    },
+    {
+      "canonical_url": "https://github.com/k3s-io/k3s",
+      "aliases": [
+        "https://k3s.io"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "lightweight k8s"
+    },
+    {
+      "canonical_url": "https://github.com/k0sproject/k0s",
+      "aliases": [
+        "https://k0sproject.io"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "zero-friction k8s"
+    },
+    {
+      "canonical_url": "https://github.com/fluxcd/flux2",
+      "aliases": [
+        "https://fluxcd.io"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "Flux CD; not FLUX.2 image model"
+    },
+    {
+      "canonical_url": "https://github.com/nats-io/nats-server",
+      "aliases": [
+        "https://nats.io"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "NATS server"
+    },
+    {
+      "canonical_url": "https://forgejo.org",
+      "aliases": [
+        "https://codeberg.org/forgejo/forgejo"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "self-hosted git forge"
+    },
+    {
+      "canonical_url": "https://github.com/woodpecker-ci/woodpecker",
+      "aliases": [
+        "https://woodpecker-ci.org"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "self-hosted CI"
+    },
+    {
+      "canonical_url": "https://github.com/cloudflare/pingora",
+      "aliases": [],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "domain-9 row; already in org table"
+    },
+    {
+      "canonical_url": "https://github.com/bootlin/snagboot",
+      "aliases": [
+        "https://snagboot.readthedocs.io"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "original draft 2026-10-26"
+    },
+    {
+      "canonical_url": "https://github.com/carrotindustries/usbkvm",
+      "aliases": [
+        "https://events.ccc.de/congress/2024/hub/en/project/usbkvm"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "original draft 2026-10-26"
+    },
+    {
+      "canonical_url": "https://github.com/raulshma/lenscast",
+      "aliases": [
+        "https://f-droid.org/packages/com.raulshma.lenscast"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "original draft 2026-10-26; early-stage"
+    },
+    {
+      "canonical_url": "https://codeberg.org/FadeFX/WGControl",
+      "aliases": [
+        "https://f-droid.org/packages/org.supersane.wgcontrol"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "original draft 2026-11-02"
+    },
+    {
+      "canonical_url": "https://github.com/termix-ssh/termix",
+      "aliases": [
+        "https://termix.site"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "original draft 2026-11-09"
+    },
+    {
+      "canonical_url": "https://github.com/patchmon/patchmon",
+      "aliases": [
+        "https://patchmon.net"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "original draft 2026-11-09"
+    },
+    {
+      "canonical_url": "https://github.com/udhaykumarbala/cleanyourtv-app",
+      "aliases": [
+        "https://cleanyour.tv/app/android",
+        "https://f-droid.org/packages/tv.cleanyour.app"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "original draft 2026-11-09"
+    },
+    {
+      "canonical_url": "https://github.com/htechno/wiprober",
+      "aliases": [
+        "https://f-droid.org/packages/com.example.wiprober"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "original draft 2026-11-16; early-stage"
+    },
+    {
+      "canonical_url": "https://github.com/junkerderprovinz/arrowloop",
+      "aliases": [
+        "https://junkerderprovinz.github.io/arrowloop"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-22T01:05:00Z",
+      "accounted_at_utc": "2026-11-22T01:05:00Z",
+      "verification_date_utc": "2026-11-22",
+      "content_commit_sha": null,
+      "notes": "original draft 2026-11-16; early-stage"
+    }
+  ],
   "notes": [
     "Existing catalog markdown is the authoritative item set. Dedup by normalized official URL (plus recorded aliases), not by display name.",
-    "Queue stays empty until a harvest run accounts candidates. Do not backfill the whole catalog into this file.",
+    "2026-11-22 known-list backfill accounted in queue. conversation_catchup.processed_through_utc stays null: this list is not a completed transcript scan.",
     "Private pagination/tie-break tokens live only under harvest/private/ and must never be staged."
   ]
 }

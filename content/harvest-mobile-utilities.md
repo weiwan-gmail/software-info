@@ -87,7 +87,7 @@ Also watch: `Hack-with-Github/Awesome-Hacking` only for **defensive/tooling name
 
 ### Package ID / name patterns (regex ideas)
 - `(?i)wifi|wlan|gnss|gps|wireguard|vpn|ssh|ftp|sftp|smb|webdav|mqtt|mdns|bonjour|wol|wake.?on.?lan|iperf|pcap|tcpdump|serial|usb.?terminal|nfc|ble|bluetooth|dns.?|doh|torrent|termux|vnc|rdp|remote`
-- Known seeds: `com.vrem.wifianalyzer`, `com.emanuelef.remote_capture`, `com.wireguard.android`, `com.tailscale.ipn`, `org.connectbot`, `com.termux`, `com.android.gpstest`, `me.zhanghai.android.files`, `de.qwerty287.ftpclient`, `com.celzero.bravedns`, `org.jak_linux.dns66`, `de.markusfisch.android.binaryeye`, `com.juliencardoux.openwol`, `de.csicar.ning`, `com.carriez.flutter_hbb`, `org.proninyaroslav.libretorrent`, `ch.rmy.android.http_shortcuts`, `com.github.umercodez.sensorspot`, `sh.haven.app`, `com.networkscanner.app`, `io.github.dorumrr.de1984`, `top.donmor.droidfrpd`
+- Known seeds: `com.vrem.wifianalyzer`, `com.emanuelef.remote_capture`, `com.wireguard.android`, `com.tailscale.ipn`, `org.connectbot`, `com.termux`, `com.android.gpstest`, `me.zhanghai.android.files`, `de.qwerty287.ftpclient`, `com.celzero.bravedns`, `org.jak_linux.dns66`, `de.markusfisch.android.binaryeye`, `com.juliencardoux.openwol`, `de.csicar.ning`, `com.carriez.flutter_hbb`, `org.proninyaroslav.libretorrent`, `ch.rmy.android.http_shortcuts`, `com.github.umercodez.sensorspot`, `sh.haven.app`, `com.networkscanner.app`, `io.github.dorumrr.de1984`, `top.donmor.droidfrpd`, `com.raulshma.lenscast`, `org.supersane.wgcontrol`, `tv.cleanyour.app`, `com.example.wiprober`, `arrowloop.halleluja.design`
 
 ### F-Droid data sources
 - App pages: `https://f-droid.org/packages/<id>/`

@@ -110,3 +110,13 @@ Printables / Thingiverse / MakerWorld are model sites, not repos. When collectin
 - Source: https://github.com/gili-yankovitch/SwordOfSecrets — 47 star (as of 2026-10-19)
 - Date: 2026-10-05 (synced 2026-10-19)
 - Learnable slice: read schematic and datasheet to find bugs, bypass protection registers, play with SPI timing; repo includes a WASM browser preview
+
+### 2026-10-26 · USBKVM (synced 2026-11-22)
+
+- Name: USBKVM
+- Platform: local HDMI-over-USB hardware + client (not a network KVM)
+- Site or repo: https://github.com/carrotIndustries/usbkvm · https://events.ccc.de/congress/2024/hub/en/project/usbkvm/
+- Paid: free open source (firmware/client GPLv3; hardware CERN-OHL-P-2.0)
+- Source: unsynced local harvest draft 2026-10-26; README rechecked 2026-11-22
+- Date: 2026-10-26 (verified 2026-11-22)
+- Learnable slice: matchbox-scale local KVM. Product row: [09-network](/catalog/09-network/README) §9.2. Distinct from GL.iNet Comet / glkvm. 241 star (2026-11-22)

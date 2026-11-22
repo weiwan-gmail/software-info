@@ -50,3 +50,7 @@ Raw chat, message/conversation/session/chat/thread/bot IDs, internal host paths,
 ## Queue statuses
 
 `pending` · `published` (needs `verification_date_utc` or `content_commit_sha`) · `skipped` (`already_cataloged` / `not_software` / `operator_skip` / `below_bar` / `duplicate` / `frozen_domain`).
+
+## Known-list backfill (not a scan)
+
+Publishing or skipping a public candidate inventory is queue accounting. It does **not** set `conversation_catchup.processed_through_utc`. That watermark still requires examining every available conversation record through a frozen run-start cutoff. Do not copy “now”, a site **Updated** stamp, or a content SHA into it. Keep `eight_family_rotation` last/next pointers unless that week’s family actually completed under this protocol.

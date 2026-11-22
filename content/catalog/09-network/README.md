@@ -19,7 +19,8 @@ Also see the phone-side utility taxonomy: [mobile-utility-tools.md](../../mobile
 | [tailscale/golink](https://github.com/tailscale/golink) | 1,931 | |
 | [tailscale/ts-plug](https://github.com/tailscale/ts-plug) | 56 | |
 | [cloudflare/cloudflared](https://github.com/cloudflare/cloudflared) | 15,428 | |
-| [caddyserver/caddy](https://github.com/caddyserver/caddy) | 75,328 | |
+| [caddyserver/caddy](https://github.com/caddyserver/caddy) · [caddyserver.com](https://caddyserver.com) | 75,328 (snapshot) · 79,369 (2026-11-22) | **Go**, Apache-2.0. HTTP/1–2–3 web server + reverse proxy with automatic HTTPS. Already cataloged; this line is an enrichment, not a second product. Commercial side is hosting/consulting, not a required paid license |
+| [cloudflare/pingora](https://github.com/cloudflare/pingora) | 27,991 (2026-11-22) | **Rust** Apache-2.0 **library** for building proxies/network services (Cloudflare). Not a drop-in Caddy binary and not a “Rust replacement” for Caddy. Org-table mention: [awesome-and-orgs.md](../../awesome-and-orgs.md) §4 |
 | [fosrl/pangolin](https://github.com/fosrl/pangolin) · [pangolin.net](https://pangolin.net/) | — | Self-hosted identity-aware reverse proxy + userspace WireGuard (Newt). Community Edition AGPL-3.0. Harvest 2026-09-14 |
 | [MoonProxyHQ/moonproxy-desktop](https://github.com/MoonProxyHQ/moonproxy-desktop) · [moonproxy.app](https://moonproxy.app/) | — | Tauri v2 + frpc sidecar. MIT. Harvest 2026-09-28 |
 
@@ -54,6 +55,12 @@ Also see the phone-side utility taxonomy: [mobile-utility-tools.md](../../mobile
 
 **Free closed-source (OKA Apps mirroring, macOS):** [Oka Mirror for Samsung TV](https://okaapps.com/product/1499584783) · [Chromecast](https://okaapps.com/product/1512564265) · [Roku](https://okaapps.com/product/1519399703) · [any device (browser)](https://okaapps.com/product/1523794932). Site calls them free; IAP not verified. No Android/Windows. Harvest 2026-10-11 in [tools-by-platform.md](../../tools-by-platform.md) §8.1.
 
+**Local cable KVM (harvest 2026-11-22; distinct from GL.iNet network KVM above)**
+
+**Open source (hardware + client):** [carrotIndustries/usbkvm](https://github.com/carrotIndustries/usbkvm) 241 star (2026-11-22). Firmware and client **GPLv3**; hardware/case **CERN-OHL-P-2.0**. Matchbox-scale HDMI-over-USB KVM. Not gl-inet/glkvm and not Comet. 38C3 project page: https://events.ccc.de/congress/2024/hub/en/project/usbkvm/. Early-stage community vs those star counts; included because it was in the requested backfill.
+
+**Self-hosted server hub (harvest 2026-11-22):** [Termix-SSH/Termix](https://github.com/Termix-SSH/Termix) · [termix.site](https://termix.site/) 16,092 Apache-2.0 (TypeScript). Pluginized host/credential hub; SSH/SFTP/RDP/VNC as plugins. Distinct from Haven and RustDesk.
+
 **Hardware remote KVM (harvest 2026-10-19)**
 
 **Open source (daemon):** [gl-inet/glkvm](https://github.com/gl-inet/glkvm) 239 star (as of 2026-10-19), GPL-3.0 (PiKVM-derived KVMD).
@@ -63,6 +70,8 @@ Also see the phone-side utility taxonomy: [mobile-utility-tools.md](../../mobile
 ## 9.3 Self-hosting
 
 List: awesome-selfhosted 316,022, queue not mined yet. Open-source self-hosting already seen: Immich 112,940 · Stirling-PDF 90,918 · Syncthing 88,114 · [docling-project/docling](https://github.com/docling-project/docling) (MIT; document understanding → Markdown/JSON) · [C4illin/ConvertX](https://github.com/C4illin/ConvertX) (AGPL-3.0; self-hosted multi-format conversion gateway). Harvest 2026-09-14.
+
+Harvest 2026-11-22 (not a conversation watermark): [PatchMon/PatchMon](https://github.com/PatchMon/PatchMon) · [patchmon.net](https://patchmon.net) 3,684 **AGPL-3.0** (Go) — self-hosted Linux patch platform. README: Community Edition OSS; Cloud is a separate hosted offering — do not invent a price. [junkerderprovinz/arrowloop](https://github.com/junkerderprovinz/arrowloop) · [site](https://junkerderprovinz.github.io/arrowloop/) 47 **AGPL-3.0** — two-way file sync (server/desktop/Android, rclone backends) with a pre-run plan. Distinct from Syncthing. **Early-stage** star count; included by requested backfill. Forgejo / Woodpecker / object stores: §9.8–§9.11.
 
 **Open source + optional subscription:** [home-assistant/core](https://github.com/home-assistant/core) 90,178. Cloud and subscriptions go through [Nabu Casa](https://www.nabucasa.com/). That is paid. The core stays open source.
 
@@ -294,3 +303,64 @@ Harvest 2026-10-19. Do not invent prices.
 |---|---|---|
 | Telnyx | [telnyx.com](https://telnyx.com/) | Closed-source CPaaS: numbers, SMS / MMS, voice. Inbound SMS is delivered as a webhook to your endpoint (Wei’s path is Cloudflare Workers). Usage-based; prices not verified — not recorded |
 | Cloudflare Workers (pairing) | [workers.cloudflare.com](https://workers.cloudflare.com/) | Platform closed-source; runtime [workerd](https://github.com/cloudflare/workerd) open source. Free quota + paid plans. Pairing line for Telnyx webhooks; not a new Workers catalog page |
+
+## 9.8 Object storage — Silo, RustFS, Garage (harvest 2026-11-22)
+
+Stars as of 2026-11-22 GitHub API. **No measured memory comparison** and no vendor RSS. RustFS docs that mention RAM are **test-machine sizes or marketing**, not measured resident set. Older Silo security-version / memory-planning notes are omitted (stale). Do not invent prices.
+
+| | Silo | RustFS | Garage |
+|---|---|---|---|
+| Official | [pgsty/silo](https://github.com/pgsty/silo) · [silo.pgsty.com](https://silo.pgsty.com) | [rustfs/rustfs](https://github.com/rustfs/rustfs) · [rustfs.com](https://rustfs.com/download/) | [garagehq.deuxfleurs.fr](https://garagehq.deuxfleurs.fr) · canonical git [git.deuxfleurs.fr/Deuxfleurs/garage](https://git.deuxfleurs.fr/Deuxfleurs/garage) (`github.com/deuxfleurs/garage` was not found) |
+| star (2026-11-22) | 4,777 | 36,351 | not recorded (not GitHub-canonical) |
+| Language | **Go** | **Rust** | **Rust** (do not call Silo a Rust project) |
+| License | **AGPL-3.0** | **Apache-2.0** | **AGPL-3.0** |
+| Lineage / format | Independent **MinIO fork** (PGSTY). Not affiliated with MinIO, Inc. Keeps a community MinIO server line + console | Independent S3-compatible store. MinIO **on-disk** compat is **preview** (`rio-v2`); README: objects MinIO encrypted are **not** readable by default RustFS | Original geo-distributed S3 for small/self-hosted clusters (CRDT / Dynamo-class design notes on the site) |
+| Use | Stay on a MinIO-shaped S3 + console after upstream ended community distribution | Permissive-license distributed S3; S3 feature matrix is in-repo (core available; some features preview) | Multi-zone redundancy on heterogeneous small machines; vendor lists a **1 GB RAM machine class as a design target**, not an RSS measurement |
+| Learnable slice | Fork/maintenance of a Go S3 server | Apache-licensed S3 in Rust + explicit compat matrix | Small-host multi-site S3 without a datacenter backbone |
+
+**Paid:** none recorded for these three OSS trees. Do not invent prices.
+
+## 9.9 Search, observability pipelines (harvest 2026-11-22)
+
+Stars as of 2026-11-22 GitHub API. Distinct from already-cataloged FLUX.2 **image** models in [06-media](../06-media/README.md).
+
+**Open source**
+
+| Repo / site | star (2026-11-22) | License | Notes |
+|---|---:|---|---|
+| [meilisearch/meilisearch](https://github.com/meilisearch/meilisearch) · [meilisearch.com](https://www.meilisearch.com) | 59,952 | **MIT** core; repo SPDX also notes **BUSL-1.1** Enterprise Edition (`LICENSE-EE`) | Self-hosted search API (Rust). Hosted/cloud SKUs exist; prices not recorded. Not a vector database |
+| [quickwit-oss/quickwit](https://github.com/quickwit-oss/quickwit) · [quickwit.io](https://quickwit.io) | 11,812 | Apache-2.0 | Cloud-native OSS search for **observability** (Rust). Recheck company/cloud split on the site; do not invent prices |
+| [vectordotdev/vector](https://github.com/vectordotdev/vector) · [vector.dev](https://vector.dev) | 22,931 | MPL-2.0 | High-performance **observability data pipeline** (logs/metrics/traces). Name “Vector” is overloaded; this is Datadog’s Vector agent, not a vector DB |
+
+**Paid:** hosted search/observability SKUs exist for some of the above; amounts not recorded.
+
+## 9.10 Identity (harvest 2026-11-22)
+
+**Open source:** [kanidm/kanidm](https://github.com/kanidm/kanidm) · [kanidm.com](https://kanidm.com) 5,583 **MPL-2.0** (Rust). Simple/secure/fast identity platform (LDAP / OIDC / RADIUS / WebAuthn per README topics). For a **small self-hosted cluster**, not a general SSO dump.
+
+**Paid:** none recorded.
+
+## 9.11 Small-host lab cloud (harvest 2026-11-22)
+
+Pieces you can **combine** on an Apple or x86 mini host (VMs, containers, ingress, identity, search, messaging, git/CI). Old lab notes are not production measurements. Already-cataloged [Firecracker](https://github.com/firecracker-microvm/firecracker), [Incus](https://github.com/lxc/incus), [Podman](https://github.com/podman-container-tools/podman), [Multipass](https://github.com/canonical/multipass), [WSL](https://github.com/microsoft/WSL) stay in §9.6 — do not duplicate them here.
+
+Stars as of 2026-11-22 GitHub API.
+
+**Open source**
+
+| Repo / site | star (2026-11-22) | License | Notes |
+|---|---:|---|---|
+| [libracoder/kiri](https://github.com/libracoder/kiri) · [runkiri.com](https://runkiri.com) | 12,055 | Apache-2.0 | Small **container runtime** (**Rust**) for macOS 14+, Windows 10/11 (WSL 2), Linux. Works with `docker` CLI, Compose, buildx. Site: free, **in beta**. **Not** youki, **not** Firecracker/Incus/Podman. This catalog does **not** claim LAN, multi-host, macOS virtualization, or production performance; vendor start-time / idle-RAM figures are not independent evidence |
+| [lima-vm/lima](https://github.com/lima-vm/lima) · [lima-vm.io](https://lima-vm.io/) | 22,428 | Apache-2.0 | Linux VMs with a focus on running containers (**Go**). Not macOS-only in official wording. Distinct from Multipass, WSL, Incus, and Kiri |
+| [docker/compose](https://github.com/docker/compose) | 39,024 | Apache-2.0 | **Docker Compose** (**Go**): define and run multi-container apps. Catalog Compose itself; Podman already notes a Docker-compatible CLI — Compose is not “missing Podman” |
+| [moghtech/komodo](https://github.com/moghtech/komodo) · [komo.do](https://komo.do) · [docs](https://komo.do/docs/intro) | 12,995 | GPL-3.0 | Build/deploy on **many servers** (Core + Periphery). Docker or Podman-via-alias. Compose stacks, optional Swarm. **Not** Kubernetes and **not** Flux CD. Name “Komodo” is common; this is moghtech/komodo |
+| [k3s-io/k3s](https://github.com/k3s-io/k3s) · [k3s.io](https://k3s.io) | 34,481 | Apache-2.0 | Lightweight Kubernetes (**Go**). Distinct from k0s and from Kiri |
+| [k0sproject/k0s](https://github.com/k0sproject/k0s) · [k0sproject.io](https://k0sproject.io) | 6,607 | Apache-2.0 (repo LICENSE: some paths differ; remaining content Apache-2.0) | Zero-friction Kubernetes (**Go**). Distinct from K3s. Official modest requirements (1 vCPU / 1 GB RAM) are vendor docs, not our measurements |
+| [fluxcd/flux2](https://github.com/fluxcd/flux2) · [fluxcd.io](https://fluxcd.io) | 8,536 | Apache-2.0 | **Flux CD** GitOps for Kubernetes (**Go**). Display name **Flux CD** / `fluxcd/flux2`. **Not** [black-forest-labs/flux2](https://github.com/black-forest-labs/flux2) in 06-media |
+| [nats-io/nats-server](https://github.com/nats-io/nats-server) · [nats.io](https://nats.io) | 21,100 | Apache-2.0 | NATS server (cloud/edge messaging). Catalog the **server**; client libs are not extra product rows |
+| [forgejo.org](https://forgejo.org) · [codeberg.org/forgejo/forgejo](https://codeberg.org/forgejo/forgejo) | — | GPL-3.0 | Self-hosted Git forge. Canonical source is **Codeberg**, not a random GitHub mirror. Pair with Woodpecker is a combination idea, not one merged product |
+| [woodpecker-ci/woodpecker](https://github.com/woodpecker-ci/woodpecker) · [woodpecker-ci.org](https://woodpecker-ci.org) | 8,264 | Apache-2.0 | Self-hosted CI/CD engine (**Go**). Not a Git forge and not Flux CD |
+
+**Example combination (not a tested stack):** Lima or Kiri for containers on a mini host · Compose files · Caddy or Pangolin for ingress · Kanidm for identity · Garage **or** Silo **or** RustFS for S3 (pick by license/lineage in §9.8) · Meilisearch or Quickwit · NATS · Forgejo + Woodpecker. Use Flux CD / K3s / k0s only if you actually want Kubernetes.
+
+**Paid:** Kiri site lists the app as free (beta). Komodo has no recorded paid SKU here. Do not invent prices.

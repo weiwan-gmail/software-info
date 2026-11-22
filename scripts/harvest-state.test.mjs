@@ -47,10 +47,36 @@ describe('committed ledger', () => {
     assert.equal(state.streams.eight_family_rotation.last_completed_date, '2026-11-16')
     assert.equal(state.clocks.publication.content_commit_sha, '372b8c95b04c01574358b21b5bc8d1b060737f3f')
     assert.match(state.clocks.publication.scope, /not a conversation_catchup/)
-    assert.equal(state.queue.length, 0)
+    assert.equal(state.queue.filter((q) => q.status === 'published').length, 44)
+    assert.equal(state.queue.filter((q) => q.status === 'skipped').length, 10)
+    assert.equal(state.queue.filter((q) => q.status === 'pending').length, 0)
+    assert.ok(
+      state.queue.some(
+        (q) => q.canonical_url === 'https://github.com/lightpanda-io/browser' && q.status === 'published',
+      ),
+    )
+    assert.ok(
+      state.queue.some(
+        (q) =>
+          q.canonical_url === 'https://github.com/egoist/mygo' &&
+          q.status === 'skipped' &&
+          q.skip_reason === 'already_cataloged',
+      ),
+    )
+    assert.ok(
+      state.queue.some(
+        (q) =>
+          q.canonical_url === 'https://github.com/atroche/rust-headless-chrome' &&
+          q.skip_reason === 'duplicate',
+      ),
+    )
     const urls = extractCatalogUrls(root)
     assert.ok(urls.has('https://github.com/citrolabs/ego-lite'))
     assert.ok(urls.has('https://lite.ego.app'))
+    assert.ok(urls.has('https://github.com/lexmount/moli'))
+    assert.ok(urls.has('https://github.com/h4ckf0r0day/obscura'))
+    assert.ok(urls.has('https://github.com/libracoder/kiri'))
+    assert.ok(urls.has('https://github.com/jj-vcs/jj'))
   })
 
   it('does not guess a processed-through timestamp in the bootstrap stream', () => {
@@ -175,8 +201,8 @@ describe('retries, failure, pending, publication', () => {
       extractedUrls: ['https://github.com/example/new-tool'],
     })
     assert.equal(done.advanced, true)
-    assert.equal(state.queue[0].status, 'pending')
-    assert.equal(state.queue[0].canonical_url, 'https://github.com/example/new-tool')
+    const pending = state.queue.find((q) => q.canonical_url === 'https://github.com/example/new-tool')
+    assert.equal(pending.status, 'pending')
 
     const g = state.generation
     beginScan(state, {
@@ -193,7 +219,10 @@ describe('retries, failure, pending, publication', () => {
         first_seen_stream: 'conversation_catchup',
       },
     })
-    assert.equal(state.queue.length, 1)
+    assert.equal(
+      state.queue.filter((q) => q.canonical_url === 'https://github.com/example/new-tool').length,
+      1,
+    )
     const overlap = scanWindow(state.streams.conversation_catchup, LATER)
     assert.equal(overlap.bootstrap, false)
     assert.ok(Date.parse(overlap.from_utc) < Date.parse(done.processed_through_utc))
@@ -213,11 +242,12 @@ describe('retries, failure, pending, publication', () => {
       catalogUrls,
       atUtc: RUN,
       item: {
-        canonical_url: 'https://github.com/citrolabs/ego-lite',
-        aliases: ['https://lite.ego.app/'],
+        canonical_url: 'https://github.com/localsend/localsend',
+        aliases: ['https://localsend.org/'],
         first_seen_stream: 'conversation_catchup',
       },
     })
+    assert.equal(added.action, 'added')
     assert.equal(added.item.status, 'skipped')
     assert.equal(added.item.skip_reason, 'already_cataloged')
     const merged = accountCandidate(state, {
@@ -225,14 +255,17 @@ describe('retries, failure, pending, publication', () => {
       catalogUrls,
       atUtc: RUN,
       item: {
-        canonical_url: 'https://lite.ego.app',
+        canonical_url: 'https://localsend.org',
         first_seen_stream: 'conversation_catchup',
         status: 'skipped',
         skip_reason: 'duplicate',
       },
     })
     assert.equal(merged.action, 'merged')
-    assert.equal(state.queue.length, 1)
+    assert.equal(
+      state.queue.filter((q) => q.canonical_url === 'https://github.com/localsend/localsend').length,
+      1,
+    )
   })
 
   it('rejects stale generation and concurrent in-progress scans', () => {

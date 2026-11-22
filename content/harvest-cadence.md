@@ -26,3 +26,5 @@ The machine ledger and operator steps live in the repo: [harvest/HARVEST.md](htt
 5. Publish English catalog entries.
 
 Identity for dedup is the canonical official site or repo URL. GitHub `owner/repo` aliases (`.git`, extra path, case) collapse to one key. Display names alone are not enough.
+
+A **known-list backfill** (the 2026-11-22 historical pass) can publish or skip specific official URLs on the harvest queue. That is **not** a completed conversation catch-up: `conversation_catchup.processed_through_utc` stays null until a full transcript scan exists. Do not copy this page’s **Updated** stamp, “now”, or a site commit into that watermark.

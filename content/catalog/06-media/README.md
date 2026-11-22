@@ -58,7 +58,7 @@ TonalEnergy on phones is a paid tuner/metronome, closed-source DSP.
 
 ## 6.5 Typesetting
 
-**Open source:** Typst 55,726. TeX distributions are a separate count.
+**Open source:** [typst/typst](https://github.com/typst/typst) · [typst.app](https://typst.app) 55,726 (2026-08-29 snapshot) · 57,341 (2026-11-22). Apache-2.0. Markup typesetting. TeX distributions are a separate count. Do not move into frozen domain 11.
 
 **Free closed-source / paid**
 

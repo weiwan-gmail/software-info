@@ -175,7 +175,7 @@ Highest-star ones (not all ones we named):
 
 | Repo | star | Notes |
 |---|---:|---|
-| [cloudflare/pingora](https://github.com/cloudflare/pingora) | 27,294 | A library for building fast, reliable and evolvable network services. |
+| [cloudflare/pingora](https://github.com/cloudflare/pingora) | 27,294 (snapshot) · 27,991 (2026-11-22) | A library for building fast, reliable and evolvable network services. **Apache-2.0**, Rust. First-class product row: [09-network](/catalog/09-network/README) §9.1 — do not copy this org mention as if it were a new discovery. |
 | [cloudflare/cloudflared](https://github.com/cloudflare/cloudflared) | 15,428 | Cloudflare Tunnel client |
 | [cloudflare/quiche](https://github.com/cloudflare/quiche) | 11,796 | 🥧 Savoury implementation of the QUIC transport protocol and HTTP/3 |
 | [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | 9,959 | Run OpenClaw, (formerly Moltbot, formerly Clawdbot) on Cloudflare Workers |
