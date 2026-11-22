@@ -7,8 +7,10 @@
   },
   "scripts": {
     "docs:dev": "vitepress dev content",
-    "docs:build": "vitepress build content",
-    "docs:preview": "vitepress preview content"
+    "docs:build": "node scripts/harvest-state.mjs validate && vitepress build content",
+    "docs:preview": "vitepress preview content",
+    "harvest:validate": "node scripts/harvest-state.mjs validate",
+    "test": "node --test scripts/harvest-state.test.mjs"
   },
   "devDependencies": {
     "vitepress": "^1.6.4"

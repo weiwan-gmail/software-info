@@ -1,3 +1,5 @@
 node_modules
 content/.vitepress/cache
 content/.vitepress/dist
+harvest/private/*
+!harvest/private/.gitkeep

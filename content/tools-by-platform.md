@@ -68,6 +68,7 @@ There is no official X connector. Public posts: search, [fxtwitter](https://fxtw
 
 - Do not check Sysinternals / Rufus / tools already in the table for new versions. You want names you do not know.
 - Each week, swap in one obscure source (1.5) plus a pass of X or new awesome entries.
+- Site **Updated** is not a harvest skip. Use the processed-through watermark in [harvest-cadence.md](/harvest-cadence) · [harvest/HARVEST.md](https://github.com/weiwan-gmail/software-info/blob/main/harvest/HARVEST.md). Dedup by official URL, not by name.
 - Steps are in [Collect classic tools](sand-workflow:collect-classic-tools). Run it on Mondays. Report nothing if there is nothing new.
 
 ### 1.5 Dig for “still unknown” (more useful than chart-scraping)

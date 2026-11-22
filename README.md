@@ -9,6 +9,7 @@ Markdown-sourced software catalog. Edit files under `content/`; the site renders
 | Domain tree (catalog index + 11 domains) | `content/catalog/` |
 | Older detail tables | `content/*.md` (siblings of `catalog/`, not a `detail/` folder) |
 | Star snapshots (2026-08-29 PT) | `data/*.json` |
+| Incremental harvest ledger | `harvest/state.json` · protocol `harvest/HARVEST.md` |
 
 Do not move those files. Relative links (`../tools-by-platform.md`, `../../learnable-desktop.md`) depend on this layout. Star counts in the markdown already come from the snapshots — do not invent numbers or call the live GitHub API.
 
@@ -18,8 +19,9 @@ Catalog prose is English. Divination / occult-text pages list software and texts
 
 ```bash
 npm install
+npm test              # harvest ledger tests (node:test, no extra deps)
 npm run docs:dev      # http://localhost:5173
-npm run docs:build    # output: content/.vitepress/dist
+npm run docs:build    # harvest:validate + VitePress; output: content/.vitepress/dist
 npm run docs:preview
 ```
 

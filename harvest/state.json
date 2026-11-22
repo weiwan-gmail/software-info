@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "generation": 1,
+  "updated_at_utc": "2026-11-22T00:40:00Z",
+  "clocks": {
+    "site_last_modified": {
+      "meaning": "VitePress page Updated / last catalog markdown commit. Not a harvest cursor. Updating any site page does not skip a stream.",
+      "content_commit_sha": "372b8c95b04c01574358b21b5bc8d1b060737f3f",
+      "recorded_at_utc": "2026-11-22T00:12:00Z"
+    },
+    "publication": {
+      "content_commit_sha": "372b8c95b04c01574358b21b5bc8d1b060737f3f",
+      "pages_run_id": "44965328917",
+      "pages_run_url": "https://github.com/weiwan-gmail/software-info/actions/runs/44965328917",
+      "live_urls": [
+        "https://weiwan-gmail.github.io/software-info/catalog/01-platform-tools/README.html"
+      ],
+      "verified_at_utc": "2026-11-22T00:12:00Z",
+      "scope": "ego-lite catalog entry only; not a conversation_catchup scan",
+      "note": "Points at a verified content SHA, not at a later harvest/state-only commit."
+    }
+  },
+  "streams": {
+    "conversation_catchup": {
+      "kind": "conversation_catchup",
+      "status": "uninitialized",
+      "bootstrap_needed": true,
+      "processed_through_utc": null,
+      "overlap_window_seconds": 86400,
+      "last_run": null,
+      "last_complete_run": null,
+      "note": "No history watermark. Do not guess now or copy site lastUpdated. A full catch-up must examine every available record through a fixed run-start cutoff and account every candidate before this field may be set."
+    },
+    "eight_family_rotation": {
+      "kind": "source_rotation",
+      "status": "idle",
+      "bootstrap_needed": false,
+      "processed_through_utc": null,
+      "overlap_window_seconds": 86400,
+      "last_run": null,
+      "last_complete_run": null,
+      "family_count": 8,
+      "last_completed_family": 8,
+      "next_family": 1,
+      "last_completed_date": "2026-10-19",
+      "pointer_basis": "catalog_harvest_headings",
+      "evidence": {
+        "path": "content/tools-by-platform.md",
+        "heading": "### 2026-10-19 · source 8",
+        "also": [
+          "content/tools-by-platform.md ### 2026-09-21 · source 4",
+          "content/tools-by-platform.md ### 2026-09-28 · source 5",
+          "content/oshw-and-print.md ### 2026-10-05 · source 6",
+          "content/tools-by-platform.md ### 2026-10-12 · source 7"
+        ]
+      },
+      "families": [
+        { "id": 1, "label": "tech talks / Black Hat Arsenal / FOSDEM" },
+        { "id": 2, "label": "usesthis / Ask HN / Lobsters" },
+        { "id": 3, "label": "Changelog / Self-Hosted podcast notes" },
+        { "id": 4, "label": "regional curation: ruanyf weekly / new F-Droid" },
+        { "id": 5, "label": "X toolbox / setup threads + awesome-list diff" },
+        { "id": 6, "label": "Crowd Supply / open hardware boards" },
+        { "id": 7, "label": "itch.io / Flashpoint / game prototypes" },
+        { "id": 8, "label": "source 8 (heading unnamed; 2026-10-19 catalog rows)" }
+      ],
+      "note": "Family ids are weekly source-rotation slots, not catalog domains. After family 4 (2026-09-21) the catalog already records families 5–8. Next slot is 1, not 5. processed_through_utc stays null until a rotation pass is completed under this ledger."
+    },
+    "weekly_exploratory": {
+      "kind": "exploratory_sources",
+      "status": "uninitialized",
+      "bootstrap_needed": true,
+      "processed_through_utc": null,
+      "overlap_window_seconds": 86400,
+      "last_run": null,
+      "last_complete_run": null,
+      "note": "No source-registry snapshot. Do not invent coverage."
+    },
+    "mobile_utility": {
+      "kind": "mobile_utility_pass",
+      "status": "uninitialized",
+      "bootstrap_needed": true,
+      "processed_through_utc": null,
+      "overlap_window_seconds": 86400,
+      "last_run": null,
+      "last_complete_run": null,
+      "note": "Mobile names already in catalog harvest records are catalog dates, not a protocol watermark."
+    }
+  },
+  "queue": [],
+  "notes": [
+    "Existing catalog markdown is the authoritative item set. Dedup by normalized official URL (plus recorded aliases), not by display name.",
+    "Queue stays empty until a harvest run accounts candidates. Do not backfill the whole catalog into this file.",
+    "Private pagination/tie-break tokens live only under harvest/private/ and must never be staged."
+  ]
+}

@@ -17,6 +17,7 @@ Older tables:
 [Mobile utilities](../mobile-utility-tools.md) ·
 [Mobile utilities — paid/closed](../mobile-utility-paid-closed.md) ·
 [UI settings & binding](../ui-settings-binding-stacks.md) ·
+[Harvest cadence](../harvest-cadence.md) ·
 [Harvest: mobile utilities](../harvest-mobile-utilities.md) ·
 [Learnable web](../learnable-web-tools.md) ·
 [Awesome & accounts](../awesome-and-orgs.md) ·
@@ -49,3 +50,5 @@ Domains 3, 6, 7, and 10 are newer openings. They are thinner than 1, 2, 4, and 5
 ## How this grows
 
 New items land in the matching subdirectory first, marked open source / free closed-source / paid. Add a row here only if it is a new domain. Record format is in [tools-by-platform.md](../tools-by-platform.md) section 8. Do not check Sysinternals / Rufus for new versions.
+
+Weekly catch-up uses a processed-through watermark, not the **Updated** stamp on this page. Protocol: [harvest-cadence.md](../harvest-cadence.md) · [harvest/HARVEST.md](https://github.com/weiwan-gmail/software-info/blob/main/harvest/HARVEST.md).
