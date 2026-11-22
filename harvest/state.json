@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation": 1,
-  "updated_at_utc": "2026-11-22T00:40:00Z",
+  "generation": 2,
+  "updated_at_utc": "2026-11-22T00:50:00Z",
   "clocks": {
     "site_last_modified": {
       "meaning": "VitePress page Updated / last catalog markdown commit. Not a harvest cursor. Updating any site page does not skip a stream.",
@@ -40,31 +40,29 @@
       "last_run": null,
       "last_complete_run": null,
       "family_count": 8,
-      "last_completed_family": 8,
-      "next_family": 1,
-      "last_completed_date": "2026-10-19",
-      "pointer_basis": "catalog_harvest_headings",
+      "last_completed_family": 4,
+      "next_family": 5,
+      "last_completed_date": "2026-11-16",
+      "last_completed_timezone": "Asia/Shanghai",
+      "reported_last_run_local": "2026-11-15 16:45 PST",
+      "reported_last_run_utc": "2026-11-16T00:45:00Z",
+      "pointer_basis": "parent_reported_routine_completion",
       "evidence": {
-        "path": "content/tools-by-platform.md",
-        "heading": "### 2026-10-19 · source 8",
-        "also": [
-          "content/tools-by-platform.md ### 2026-09-21 · source 4",
-          "content/tools-by-platform.md ### 2026-09-28 · source 5",
-          "content/oshw-and-print.md ### 2026-10-05 · source 6",
-          "content/tools-by-platform.md ### 2026-10-12 · source 7"
-        ]
+        "kind": "parent_handoff",
+        "summary": "Parent saved routine / completed handoff: source 4 (窓の杜 + F-Droid TWIF46) completed 2026-11-16 Asia/Shanghai; reported last_run 2026-11-15 16:45 PST. Reported additions Staged, WiProber, ArrowLoop were not independently verified here and are not cataloged in this correction.",
+        "not_used_as_pointer": "Synced catalog headings through ### 2026-10-19 · source 8 are older than that 2026-11-16 completion and must not overwrite it. Local /workspace copies were not read."
       },
       "families": [
         { "id": 1, "label": "tech talks / Black Hat Arsenal / FOSDEM" },
         { "id": 2, "label": "usesthis / Ask HN / Lobsters" },
         { "id": 3, "label": "Changelog / Self-Hosted podcast notes" },
-        { "id": 4, "label": "regional curation: ruanyf weekly / new F-Droid" },
+        { "id": 4, "label": "regional / non-English curation + F-Droid (2026-11-16 pass: 窓の杜 + TWIF46)" },
         { "id": 5, "label": "X toolbox / setup threads + awesome-list diff" },
         { "id": 6, "label": "Crowd Supply / open hardware boards" },
         { "id": 7, "label": "itch.io / Flashpoint / game prototypes" },
         { "id": 8, "label": "source 8 (heading unnamed; 2026-10-19 catalog rows)" }
       ],
-      "note": "Family ids are weekly source-rotation slots, not catalog domains. After family 4 (2026-09-21) the catalog already records families 5–8. Next slot is 1, not 5. processed_through_utc stays null until a rotation pass is completed under this ledger."
+      "note": "Family ids are weekly source-rotation slots, not catalog domains. Pointer follows the newest dated completion (family 4 on 2026-11-16), not max heading number in the synced catalog. This is not a ledger-era scan; processed_through_utc stays null. Do not invent a scan or claim local unsynced files were read."
     },
     "weekly_exploratory": {
       "kind": "exploratory_sources",

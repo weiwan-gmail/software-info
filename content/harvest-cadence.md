@@ -20,7 +20,7 @@ The machine ledger and operator steps live in the repo: [harvest/HARVEST.md](htt
 ## Weekly lines
 
 1. Conversation software catch-up (skip items already in the catalog by official URL, not by name).
-2. Next slot in the original eight-family obscure-source rotation ([§1.5](/tools-by-platform#15-dig-for-still-unknown-more-useful-than-chart-scraping)).
+2. Next slot in the original eight-family obscure-source rotation ([§1.5](/tools-by-platform#15-dig-for-still-unknown-more-useful-than-chart-scraping)). The current slot is `next_family` in [`harvest/state.json`](https://github.com/weiwan-gmail/software-info/blob/main/harvest/state.json) (newest dated completion). Older §8.1 headings are not a later pointer.
 3. Exploratory new sources.
 4. Mobile utility pass ([harvest-mobile-utilities.md](/harvest-mobile-utilities)).
 5. Publish English catalog entries.

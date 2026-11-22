@@ -40,8 +40,11 @@ describe('committed ledger', () => {
     const state = loadState(root)
     assert.equal(state.streams.conversation_catchup.processed_through_utc, null)
     assert.equal(state.streams.conversation_catchup.bootstrap_needed, true)
-    assert.equal(state.streams.eight_family_rotation.last_completed_family, 8)
-    assert.equal(state.streams.eight_family_rotation.next_family, 1)
+    assert.equal(state.streams.eight_family_rotation.last_completed_family, 4)
+    assert.equal(state.streams.eight_family_rotation.next_family, 5)
+    assert.equal(state.streams.eight_family_rotation.processed_through_utc, null)
+    assert.equal(state.streams.eight_family_rotation.pointer_basis, 'parent_reported_routine_completion')
+    assert.equal(state.streams.eight_family_rotation.last_completed_date, '2026-11-16')
     assert.equal(state.clocks.publication.content_commit_sha, '372b8c95b04c01574358b21b5bc8d1b060737f3f')
     assert.match(state.clocks.publication.scope, /not a conversation_catchup/)
     assert.equal(state.queue.length, 0)
@@ -340,9 +343,13 @@ describe('validation guards', () => {
 })
 
 describe('eight-family pointer', () => {
-  it('wraps 8 → 1 and would wrap 4 → 5 only if 4 were last', () => {
-    assert.equal(nextFamily(8), 1)
+  it('uses the 2026-11-16 family-4 completion, not older source-8 headings', () => {
     assert.equal(nextFamily(4), 5)
+    assert.equal(nextFamily(8), 1)
+    const state = loadState(root)
+    assert.equal(state.streams.eight_family_rotation.next_family, nextFamily(4))
+    assert.notEqual(state.streams.eight_family_rotation.next_family, nextFamily(8))
+    assert.match(state.streams.eight_family_rotation.evidence.not_used_as_pointer, /2026-10-19/)
     const heading = readFileSync(join(root, 'content/tools-by-platform.md'), 'utf8')
     assert.match(heading, /### 2026-10-19 · source 8/)
     assert.match(heading, /### 2026-09-21 · source 4/)
