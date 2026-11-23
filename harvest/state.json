@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "generation": 13,
-  "updated_at_utc": "2026-11-23T00:50:08.833Z",
+  "generation": 15,
+  "updated_at_utc": "2026-11-23T01:00:09.373Z",
   "clocks": {
     "site_last_modified": {
-      "meaning": "VitePress page Updated / last catalog markdown commit. Not a harvest cursor. Updating any site page does not skip a stream. Known-list backfill is not a conversation watermark.",
-      "content_commit_sha": "ac01a05c6379eedce8e5c7acf410ef4b59fe1df5",
-      "recorded_at_utc": "2026-11-22T01:14:05Z"
+      "meaning": "Git lastUpdated for site pages. Not a harvest cursor.",
+      "content_commit_sha": "95597ca2f796f584daac4350188eb2567c5f27d3",
+      "recorded_at_utc": "2026-11-23T01:00:09.373Z"
     },
     "publication": {
-      "content_commit_sha": "ac01a05c6379eedce8e5c7acf410ef4b59fe1df5",
-      "pages_run_id": "44970359551",
-      "pages_run_url": "https://github.com/weiwan-gmail/software-info/actions/runs/44970359551",
+      "content_commit_sha": "95597ca2f796f584daac4350188eb2567c5f27d3",
+      "pages_run_id": "45091890374",
+      "pages_run_url": "https://github.com/weiwan-gmail/software-info/actions/runs/45091890374",
       "live_urls": [
         "https://weiwan-gmail.github.io/software-info/catalog/01-platform-tools/README.html",
         "https://weiwan-gmail.github.io/software-info/catalog/09-network/README.html",
-        "https://weiwan-gmail.github.io/software-info/tools-by-platform.html",
-        "https://weiwan-gmail.github.io/software-info/harvest-cadence.html",
-        "https://weiwan-gmail.github.io/software-info/mobile-utility-tools.html"
+        "https://weiwan-gmail.github.io/software-info/mobile-utility-tools.html",
+        "https://weiwan-gmail.github.io/software-info/ui-settings-binding-stacks.html",
+        "https://weiwan-gmail.github.io/software-info/tools-by-platform.html"
       ],
-      "verified_at_utc": "2026-11-22T01:14:05Z",
-      "scope": "historical known-list backfill catalog entries; not a conversation_catchup scan",
+      "verified_at_utc": "2026-11-23T01:00:09.373Z",
+      "scope": "2026-11-23 weekly harvest catalog entries (A2UI, Yobiru, Dock, L×Box); not a conversation_catchup scan",
       "note": "Points at a verified content SHA, not at a later harvest/state-only commit."
     }
   },
@@ -54,7 +54,7 @@
       "evidence": {
         "kind": "ledger_era_family_pass",
         "summary": "Family 5 pass 2026-11-23 Asia/Shanghai: awesome-windows, sampled awesome-mac, android-foss, @appinn. Published LxBox. Skipped WinMerge (classic) and capyknock (below bar). Awesome-Linux-Software archived, no commits in window. processed_through_utc stays null because awesome-mac was not exhaustively paginated.",
-        "not_used_as_pointer": "Synced catalog headings through ### 2026-10-19 \u00b7 source 8 are older than the 2026-11-16 family-4 completion and the 2026-11-23 family-5 pass and must not overwrite the pointer."
+        "not_used_as_pointer": "Synced catalog headings through ### 2026-10-19 · source 8 are older than the 2026-11-16 family-4 completion and the 2026-11-23 family-5 pass and must not overwrite the pointer."
       },
       "families": [
         {
@@ -71,7 +71,7 @@
         },
         {
           "id": 4,
-          "label": "regional / non-English curation + F-Droid (2026-11-16 pass: \u7a93\u306e\u675c + TWIF46)"
+          "label": "regional / non-English curation + F-Droid (2026-11-16 pass: 窓の杜 + TWIF46)"
         },
         {
           "id": 5,
@@ -869,7 +869,7 @@
       "queued_at_utc": "2026-11-23T00:50:08.833Z",
       "accounted_at_utc": "2026-11-23T00:50:08.833Z",
       "verification_date_utc": "2026-11-23",
-      "content_commit_sha": null,
+      "content_commit_sha": "95597ca2f796f584daac4350188eb2567c5f27d3",
       "notes": "A2UI protocol/framework; not a browser"
     },
     {
@@ -883,7 +883,7 @@
       "queued_at_utc": "2026-11-23T00:50:08.833Z",
       "accounted_at_utc": "2026-11-23T00:50:08.833Z",
       "verification_date_utc": "2026-11-23",
-      "content_commit_sha": null,
+      "content_commit_sha": "95597ca2f796f584daac4350188eb2567c5f27d3",
       "notes": "agent comms; Tailscale private plane vs Friends gateway"
     },
     {
@@ -897,7 +897,7 @@
       "queued_at_utc": "2026-11-23T00:50:08.833Z",
       "accounted_at_utc": "2026-11-23T00:50:08.833Z",
       "verification_date_utc": "2026-11-23",
-      "content_commit_sha": null,
+      "content_commit_sha": "95597ca2f796f584daac4350188eb2567c5f27d3",
       "notes": "Avalonia docking library"
     },
     {
@@ -911,7 +911,7 @@
       "queued_at_utc": "2026-11-23T00:50:08.833Z",
       "accounted_at_utc": "2026-11-23T00:50:08.833Z",
       "verification_date_utc": "2026-11-23",
-      "content_commit_sha": null,
+      "content_commit_sha": "95597ca2f796f584daac4350188eb2567c5f27d3",
       "notes": "family 5 android-foss + mobile utility pass"
     },
     {
