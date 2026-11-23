@@ -31,7 +31,7 @@ Older tables:
 
 | # | Domain | Subdirectory | Classes under it |
 |---|---|---|---|
-| 1 | Platform & everyday tools | [01-platform-tools](01-platform-tools/README.md) | Windows classics · window management / launchers · screenshot & sync · editors & terminals · mobile · **mobile utilities (network/field)** · web tools · **desktop GUI frameworks** · **embeddable JS runtimes** · **agent browsers** · **headless engines / HTML toolkits / CDP controllers** · **developer toolchains** |
+| 1 | Platform & everyday tools | [01-platform-tools](01-platform-tools/README.md) | Windows classics · window management / launchers · screenshot & sync · editors & terminals · mobile · **mobile utilities (network/field)** · web tools · **desktop GUI frameworks** · **embeddable JS runtimes** · **agent browsers** · **headless engines / HTML toolkits / CDP controllers** · **developer toolchains** · **agent-to-user UI protocol** |
 | 2 | Awesome lists & GitHub accounts | [02-awesome-github](02-awesome-github/README.md) | Discussion queue · sidecar lists · **DSH plugin lists** · company orgs · personal accounts (almost no “paid products” here) |
 | 3 | Electronics / embedded / radio | [03-electronics-radio](03-electronics-radio/README.md) | Boards · EDA/FPGA · keyboard firmware · SDR software · over-the-air signals · **board recovery** |
 | 4 | Fabrication | [04-fabrication](04-fabrication/README.md) | Slicers · printer firmware · CAD · CNC · plotters |
@@ -39,7 +39,7 @@ Older tables:
 | 6 | Audio / image / text | [06-media](06-media/README.md) | Synthesis · notation · DAW · RAW · typesetting · fonts · **image/text → 3D** · **AI music** · **AI image gen** |
 | 7 | Observation & space | [07-observation](07-observation/README.md) | Sky charts · mounts · GIS · maps · chess |
 | 8 | Divination & texts | [08-divination](08-divination/README.md) | Canonical texts · charting & hexagrams · tarot · AI wrappers (flagged, not homework) |
-| 9 | Network & self-hosting | [09-network](09-network/README.md) | Overlay networks · tunnels · remote access · self-hosting · **DNS** · **VMs/containers** · **SMS/webhook** · **object storage** · **search / observability** · **identity** · **small-host lab cloud** |
+| 9 | Network & self-hosting | [09-network](09-network/README.md) | Overlay networks · tunnels · remote access · self-hosting · **DNS** · **VMs/containers** · **SMS/webhook** · **object storage** · **search / observability** · **identity** · **small-host lab cloud** · **agent communication** |
 | 10 | Signal / instruments / formal methods | [10-signal-formal](10-signal-formal/README.md) | DSP · oscilloscopes · simulators · formal proof |
 | 11 | Go / Rust / C++ comparison | [11-lang-compare](11-lang-compare/README.md) | Syntax · package tooling · libraries · idiomatic patterns · GUI binding · cross-language |
 

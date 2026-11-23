@@ -108,6 +108,7 @@ Catalog draft for continuous harvest of phone utility apps in the network / hard
 | Surge / Shadowrocket-class | iOS | Proprietary | App Store listings (vendor sites vary) | Closed iOS proxy UX — watch APIs only |
 | DroidFRPD | Android | GPL-3.0 | https://github.com/donmor/DroidFRPD · IzzyOnDroid `top.donmor.droidfrpd` | Host frpc/frps as managed daemons; SAF configs; boot/battery-exempt patterns for persistent reverse tunnels |
 | WGControl | Android | GPL-3.0-or-later | https://codeberg.org/FadeFX/WGControl · https://f-droid.org/packages/org.supersane.wgcontrol/ | Turns **official WireGuard** (and, per README, AmneziaWG) tunnels on/off from Wi-Fi SSID / Bluetooth triggers via the apps’ documented control interface. Not a new VPN protocol and not Tailscale. Original draft 2026-11-02 |
+| L×Box | Android | GPL-3.0 | https://github.com/Leadaxe/LxBox · https://f-droid.org/packages/com.leadaxe.lxbox/ | Flutter UI over a **sing-box** fork (`sing-box-lx`). Several protocols in **one** `VpnService` (Android allows only one at a time). Distinct from official WireGuard/Tailscale apps, from WGControl, from v2rayNG, and from desktop Clash Verge. No root; README: no ads, no telemetry, no account. Vendor speed/battery claims are not independent measurements. Harvest 2026-11-23 |
 
 ### 2.6 HTTP / API / request tools — **Mixed**
 

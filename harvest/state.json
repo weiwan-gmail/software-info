@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation": 4,
-  "updated_at_utc": "2026-11-22T01:14:05Z",
+  "generation": 13,
+  "updated_at_utc": "2026-11-23T00:50:08.833Z",
   "clocks": {
     "site_last_modified": {
       "meaning": "VitePress page Updated / last catalog markdown commit. Not a harvest cursor. Updating any site page does not skip a stream. Known-list backfill is not a conversation watermark.",
@@ -33,7 +33,7 @@
       "overlap_window_seconds": 86400,
       "last_run": null,
       "last_complete_run": null,
-      "note": "No history watermark. Do not guess now or copy site lastUpdated. A full catch-up must examine every available record through a fixed run-start cutoff and account every candidate before this field may be set."
+      "note": "2026-11-23: searchable Researcher history was queried (not a record-by-record bootstrap). Published A2UI, Yobiru, Dock. processed_through_utc stays null; bootstrap_needed remains true."
     },
     "eight_family_rotation": {
       "kind": "source_rotation",
@@ -44,17 +44,17 @@
       "last_run": null,
       "last_complete_run": null,
       "family_count": 8,
-      "last_completed_family": 4,
-      "next_family": 5,
-      "last_completed_date": "2026-11-16",
+      "last_completed_family": 5,
+      "next_family": 6,
+      "last_completed_date": "2026-11-23",
       "last_completed_timezone": "Asia/Shanghai",
-      "reported_last_run_local": "2026-11-15 16:45 PST",
-      "reported_last_run_utc": "2026-11-16T00:45:00Z",
-      "pointer_basis": "parent_reported_routine_completion",
+      "reported_last_run_local": "2026-11-23 08:50 Asia/Shanghai",
+      "reported_last_run_utc": "2026-11-23T00:50:08.833Z",
+      "pointer_basis": "ledger_era_family_pass",
       "evidence": {
-        "kind": "parent_handoff",
-        "summary": "Parent saved routine / completed handoff: source 4 (窓の杜 + F-Droid TWIF46) completed 2026-11-16 Asia/Shanghai; reported last_run 2026-11-15 16:45 PST. Draft additions Staged, WiProber, ArrowLoop were cataloged in the 2026-11-22 backfill after official-URL recheck. Rotation pointer remains last=4 next=5.",
-        "not_used_as_pointer": "Synced catalog headings through ### 2026-10-19 · source 8 are older than that 2026-11-16 completion and must not overwrite it. Local /workspace copies were not read."
+        "kind": "ledger_era_family_pass",
+        "summary": "Family 5 pass 2026-11-23 Asia/Shanghai: awesome-windows, sampled awesome-mac, android-foss, @appinn. Published LxBox. Skipped WinMerge (classic) and capyknock (below bar). Awesome-Linux-Software archived, no commits in window. processed_through_utc stays null because awesome-mac was not exhaustively paginated.",
+        "not_used_as_pointer": "Synced catalog headings through ### 2026-10-19 \u00b7 source 8 are older than the 2026-11-16 family-4 completion and the 2026-11-23 family-5 pass and must not overwrite the pointer."
       },
       "families": [
         {
@@ -71,7 +71,7 @@
         },
         {
           "id": 4,
-          "label": "regional / non-English curation + F-Droid (2026-11-16 pass: 窓の杜 + TWIF46)"
+          "label": "regional / non-English curation + F-Droid (2026-11-16 pass: \u7a93\u306e\u675c + TWIF46)"
         },
         {
           "id": 5,
@@ -100,7 +100,7 @@
       "overlap_window_seconds": 86400,
       "last_run": null,
       "last_complete_run": null,
-      "note": "No source-registry snapshot. Do not invent coverage."
+      "note": "2026-11-23 first pass: Self-Host Weekly https://selfh.st/weekly/2026-11-20/ (English self-hosted newsletter). Yield 0 published (preview/early tiles; Roobyx/mish skipped below_bar). Source remains a candidate. No coverage watermark."
     },
     "mobile_utility": {
       "kind": "mobile_utility_pass",
@@ -110,7 +110,7 @@
       "overlap_window_seconds": 86400,
       "last_run": null,
       "last_complete_run": null,
-      "note": "Mobile names already in catalog harvest records are catalog dates, not a protocol watermark."
+      "note": "2026-11-23 short pass: F-Droid TWIF 2026-11-16 (week 47) plus android-foss VPN additions. Published LxBox (also family 5). Skipped DPIMech (below_bar). No coverage watermark."
     }
   },
   "queue": [
@@ -856,11 +856,121 @@
       "verification_date_utc": "2026-11-22",
       "content_commit_sha": null,
       "notes": "original draft 2026-11-16; early-stage"
+    },
+    {
+      "canonical_url": "https://github.com/a2ui-project/a2ui",
+      "aliases": [
+        "https://a2ui.org",
+        "https://github.com/google/a2ui"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-23T00:50:08.833Z",
+      "accounted_at_utc": "2026-11-23T00:50:08.833Z",
+      "verification_date_utc": "2026-11-23",
+      "content_commit_sha": null,
+      "notes": "A2UI protocol/framework; not a browser"
+    },
+    {
+      "canonical_url": "https://github.com/chekusu/yobiru",
+      "aliases": [
+        "https://yobiru.com"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-23T00:50:08.833Z",
+      "accounted_at_utc": "2026-11-23T00:50:08.833Z",
+      "verification_date_utc": "2026-11-23",
+      "content_commit_sha": null,
+      "notes": "agent comms; Tailscale private plane vs Friends gateway"
+    },
+    {
+      "canonical_url": "https://github.com/wieslawsoltes/dock",
+      "aliases": [
+        "https://wieslawsoltes.github.io/Dock"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "conversation_catchup",
+      "queued_at_utc": "2026-11-23T00:50:08.833Z",
+      "accounted_at_utc": "2026-11-23T00:50:08.833Z",
+      "verification_date_utc": "2026-11-23",
+      "content_commit_sha": null,
+      "notes": "Avalonia docking library"
+    },
+    {
+      "canonical_url": "https://github.com/leadaxe/lxbox",
+      "aliases": [
+        "https://f-droid.org/packages/com.leadaxe.lxbox"
+      ],
+      "status": "published",
+      "skip_reason": null,
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-23T00:50:08.833Z",
+      "accounted_at_utc": "2026-11-23T00:50:08.833Z",
+      "verification_date_utc": "2026-11-23",
+      "content_commit_sha": null,
+      "notes": "family 5 android-foss + mobile utility pass"
+    },
+    {
+      "canonical_url": "https://github.com/winmerge/winmerge",
+      "aliases": [
+        "https://winmerge.org"
+      ],
+      "status": "skipped",
+      "skip_reason": "operator_skip",
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-23T00:50:08.833Z",
+      "accounted_at_utc": "2026-11-23T00:50:08.833Z",
+      "verification_date_utc": "2026-11-23",
+      "content_commit_sha": null,
+      "notes": "well-known classic; not an unfamiliar harvest target"
+    },
+    {
+      "canonical_url": "https://github.com/plinioseniore/capyknock",
+      "aliases": [
+        "https://plinioseniore.github.io/capyknock"
+      ],
+      "status": "skipped",
+      "skip_reason": "below_bar",
+      "first_seen_stream": "eight_family_rotation",
+      "queued_at_utc": "2026-11-23T00:50:08.833Z",
+      "accounted_at_utc": "2026-11-23T00:50:08.833Z",
+      "verification_date_utc": "2026-11-23",
+      "content_commit_sha": null,
+      "notes": "0 star at verification; awesome-windows addition"
+    },
+    {
+      "canonical_url": "https://github.com/halilkhrmn/dpimech-android",
+      "aliases": [],
+      "status": "skipped",
+      "skip_reason": "below_bar",
+      "first_seen_stream": "mobile_utility",
+      "queued_at_utc": "2026-11-23T00:50:08.833Z",
+      "accounted_at_utc": "2026-11-23T00:50:08.833Z",
+      "verification_date_utc": "2026-11-23",
+      "content_commit_sha": null,
+      "notes": "17 star at verification; TWIF47"
+    },
+    {
+      "canonical_url": "https://github.com/roobyx/mish",
+      "aliases": [],
+      "status": "skipped",
+      "skip_reason": "below_bar",
+      "first_seen_stream": "weekly_exploratory",
+      "queued_at_utc": "2026-11-23T00:50:08.833Z",
+      "accounted_at_utc": "2026-11-23T00:50:08.833Z",
+      "verification_date_utc": "2026-11-23",
+      "content_commit_sha": null,
+      "notes": "25 star at verification; selfh.st weekly 2026-11-20"
     }
   ],
   "notes": [
     "Existing catalog markdown is the authoritative item set. Dedup by normalized official URL (plus recorded aliases), not by display name.",
     "2026-11-22 known-list backfill accounted in queue. conversation_catchup.processed_through_utc stays null: this list is not a completed transcript scan.",
-    "Private pagination/tie-break tokens live only under harvest/private/ and must never be staged."
+    "Private pagination/tie-break tokens live only under harvest/private/ and must never be staged.",
+    "2026-11-23 weekly harvest: conversation catch-up published A2UI, Yobiru, Dock; family 5 published LxBox and advanced last_completed_family 5 -> next 6; exploratory selfh.st weekly first pass yield 0; conversation/exploratory/mobile watermarks stay unset."
   ]
 }

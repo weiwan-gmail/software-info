@@ -204,3 +204,15 @@ Stars as of 2026-11-22 GitHub API. Language of **implementation** is noted so th
 | [jj-vcs/jj](https://github.com/jj-vcs/jj) · [jj-vcs.dev](https://jj-vcs.dev) · [docs](https://docs.jj-vcs.dev/) | 32,588 | Apache-2.0 | **Git-compatible VCS** (Rust). Official: simple and powerful. Distinct from [Mergiraf](../../tools-by-platform.md) (a merge driver that can sit on Git/jj). The old github.io docs URL redirects; current docs are docs.jj-vcs.dev |
 
 **Free closed-source / paid:** none recorded. Do not invent prices.
+
+## 1.11 Agent-to-User Interface protocol (harvest 2026-11-23)
+
+Stars as of 2026-11-23 GitHub API. This is **not** a desktop agent browser ([§1.8](#18-agent-browsers-harvest-2026-11-22)) and **not** a headless engine or CDP controller ([§1.9](#19-headless-engines-html-toolkits-and-cdp-controllers-harvest-2026-11-22)). Official docs: the agent streams **UI as data** (JSON over a schema); the **host app** renders it with a developer-approved component catalog. It is not a license to generate and execute a page of HTML/JavaScript, and it is not a standalone end-user browser. Frozen [11-lang-compare](../11-lang-compare/README.md) not expanded. Detail: [tools-by-platform.md](../../tools-by-platform.md) §8.1.
+
+**Open source**
+
+| Repo | star (2026-11-23) | License | Notes |
+|---|---:|---|---|
+| [a2ui-project/a2ui](https://github.com/a2ui-project/a2ui) · [a2ui.org](https://a2ui.org/) | 18,131 | Apache-2.0 | **A2UI** (Agent-to-User Interface): open generative-UI **protocol and framework**, started as a Google project. Official renderers include React, Angular, Lit, Flutter, SwiftUI, and Jetpack Compose. The app developer controls which components the agent may compose; layout and data are separate so updates can be incremental. [google/A2UI](https://github.com/google/A2UI) redirects to this repo. Learnable slice: a trust boundary for agent-driven UI (validated data, not executable code from the model). Not ego lite and not agent-browser |
+
+**Free closed-source / paid:** none recorded. Do not invent prices.

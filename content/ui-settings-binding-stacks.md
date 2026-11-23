@@ -74,6 +74,7 @@ Verified references checked 2026-09-16 via docs sites + GitHub.
 3. **Custom core:** **Easy** *(opinion)* on desktop.  
 4. **Fit:** Strong desktop; **mobile is real but ecosystem thinner for phone radio APIs** *(opinion)*.  
 5. **Learnable slice:** https://github.com/dotnet/maui ; https://github.com/AvaloniaUI/Avalonia ; Avalonia binding docs (`INotifyPropertyChanged`)
+6. **Docking layout (harvest 2026-11-23):** [wieslawsoltes/Dock](https://github.com/wieslawsoltes/Dock) · docs [wieslawsoltes.github.io/Dock](https://wieslawsoltes.github.io/Dock/) · NuGet [`Dock.Avalonia`](https://www.nuget.org/packages/Dock.Avalonia). **MIT** (1,498 star, 2026-11-23 GitHub API). A docking layout **library** for Avalonia (floating windows, layout save/restore). It does not replace Avalonia itself.
 
 ### 6. Qt / QML
 

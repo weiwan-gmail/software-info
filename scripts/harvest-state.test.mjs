@@ -40,15 +40,15 @@ describe('committed ledger', () => {
     const state = loadState(root)
     assert.equal(state.streams.conversation_catchup.processed_through_utc, null)
     assert.equal(state.streams.conversation_catchup.bootstrap_needed, true)
-    assert.equal(state.streams.eight_family_rotation.last_completed_family, 4)
-    assert.equal(state.streams.eight_family_rotation.next_family, 5)
+    assert.equal(state.streams.eight_family_rotation.last_completed_family, 5)
+    assert.equal(state.streams.eight_family_rotation.next_family, 6)
     assert.equal(state.streams.eight_family_rotation.processed_through_utc, null)
-    assert.equal(state.streams.eight_family_rotation.pointer_basis, 'parent_reported_routine_completion')
-    assert.equal(state.streams.eight_family_rotation.last_completed_date, '2026-11-16')
+    assert.equal(state.streams.eight_family_rotation.pointer_basis, 'ledger_era_family_pass')
+    assert.equal(state.streams.eight_family_rotation.last_completed_date, '2026-11-23')
     assert.equal(state.clocks.publication.content_commit_sha, 'ac01a05c6379eedce8e5c7acf410ef4b59fe1df5')
     assert.match(state.clocks.publication.scope, /not a conversation_catchup/)
-    assert.equal(state.queue.filter((q) => q.status === 'published').length, 44)
-    assert.equal(state.queue.filter((q) => q.status === 'skipped').length, 10)
+    assert.equal(state.queue.filter((q) => q.status === 'published').length, 48)
+    assert.equal(state.queue.filter((q) => q.status === 'skipped').length, 14)
     assert.equal(state.queue.filter((q) => q.status === 'pending').length, 0)
     assert.ok(
       state.queue.some(
@@ -77,6 +77,10 @@ describe('committed ledger', () => {
     assert.ok(urls.has('https://github.com/h4ckf0r0day/obscura'))
     assert.ok(urls.has('https://github.com/libracoder/kiri'))
     assert.ok(urls.has('https://github.com/jj-vcs/jj'))
+    assert.ok(urls.has('https://github.com/a2ui-project/a2ui'))
+    assert.ok(urls.has('https://github.com/chekusu/yobiru'))
+    assert.ok(urls.has('https://github.com/wieslawsoltes/dock'))
+    assert.ok(urls.has('https://github.com/leadaxe/lxbox'))
   })
 
   it('does not guess a processed-through timestamp in the bootstrap stream', () => {
@@ -376,15 +380,16 @@ describe('validation guards', () => {
 })
 
 describe('eight-family pointer', () => {
-  it('uses the 2026-11-16 family-4 completion, not older source-8 headings', () => {
+  it('uses the 2026-11-23 family-5 completion, not older source-8 headings', () => {
     assert.equal(nextFamily(4), 5)
+    assert.equal(nextFamily(5), 6)
     assert.equal(nextFamily(8), 1)
     const state = loadState(root)
-    assert.equal(state.streams.eight_family_rotation.next_family, nextFamily(4))
+    assert.equal(state.streams.eight_family_rotation.next_family, nextFamily(5))
     assert.notEqual(state.streams.eight_family_rotation.next_family, nextFamily(8))
     assert.match(state.streams.eight_family_rotation.evidence.not_used_as_pointer, /2026-10-19/)
     const heading = readFileSync(join(root, 'content/tools-by-platform.md'), 'utf8')
     assert.match(heading, /### 2026-10-19 · source 8/)
-    assert.match(heading, /### 2026-09-21 · source 4/)
+    assert.match(heading, /### 2026-11-23 · source 5/)
   })
 })

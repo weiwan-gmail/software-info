@@ -364,3 +364,15 @@ Stars as of 2026-11-22 GitHub API.
 **Example combination (not a tested stack):** Lima or Kiri for containers on a mini host · Compose files · Caddy or Pangolin for ingress · Kanidm for identity · Garage **or** Silo **or** RustFS for S3 (pick by license/lineage in §9.8) · Meilisearch or Quickwit · NATS · Forgejo + Woodpecker. Use Flux CD / K3s / k0s only if you actually want Kubernetes.
 
 **Paid:** Kiri site lists the app as free (beta). Komodo has no recorded paid SKU here. Do not invent prices.
+
+## 9.12 Agent communication (harvest 2026-11-23)
+
+Stars as of 2026-11-23 GitHub API. This is a **communication layer** for agents you already run, not a chat app and not a task scheduler. It is also **not** an overlay VPN product in §9.1 (it can use Tailscale, or not, depending on the plane).
+
+**Open source**
+
+| Repo / site | star (2026-11-23) | License | Notes |
+|---|---:|---|---|
+| [chekusu/yobiru](https://github.com/chekusu/yobiru) · [yobiru.com](https://yobiru.com) | 410 | MIT | **Yobiru**: Python plugin so agents (README names Codex, Claude Code, Cursor, and Grok Bot) can message, exchange structured data and files, and request a wake-up, while you stay in each agent's own UI. Two **separate** planes: the private plane uses **Tailscale** (no central server); **Friends** (since 0.6) shares one bot by link through the official HTTPS gateway [bots.yobiru.com](https://bots.yobiru.com) or a gateway you host, and **does not require Tailscale**. Relatively new (repo created 2026-10-10). Learnable slice: keep agent-to-agent transport distinct from the agent UI, and keep the Tailscale-dependent plane distinct from the Friends gateway. Installing Tailscale is optional and is not required to catalog this |
+
+**Paid:** none recorded. Official Friends gateway may ask for an email to register; that is not a paid SKU. Do not invent prices.

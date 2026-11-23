@@ -608,6 +608,50 @@ Topic comparisons (not a name dump): independent headless **engine** vs CDP **co
 
 Representative names in this pass: Lightpanda, Obscura, Moli, Servo, Blitz, Kitesurf, rust-headless-chrome, agent-browser, uv, Ruff, mise, Biome, jj, Zellij, Halloy, Numi, Staged, Garage, Silo, RustFS, Vector, Meilisearch, Kanidm, Quickwit, Kiri, Docker Compose, Komodo, K3s, k0s, Flux CD, Lima, NATS, Forgejo, Woodpecker, Pingora (domain-9 row), plus the 12 draft items above. Deduped already-published: MyGo, moejs, awesome-dsh-plugin, ego lite, Caddy, Firecracker, Incus, Typst, Zed.
 
+### 2026-11-23 · conversation catch-up
+
+Accessible Researcher chat was searched; this is **not** a complete record-by-record bootstrap, so the conversation catch-up watermark stays null. Official docs rechecked 2026-11-23. Frozen domain 11 not expanded. Do not install these programs from this harvest.
+
+- Name: A2UI
+- Platform: Web / iOS / Android (host-app renderers: React, Angular, Lit, Flutter, SwiftUI, Jetpack Compose)
+- Site or repo: https://a2ui.org/ · https://github.com/a2ui-project/a2ui
+- Paid: free open source (Apache-2.0)
+- Source: conversation catch-up (discussed after the 2026-11-22 backfill)
+- Date: 2026-11-23
+- Learnable slice: agent streams UI as validated data; the host app renders an approved component catalog — not HTML generation and not a desktop agent browser
+
+- Name: Yobiru
+- Platform: Python plugin (desktop / cloud workspaces); optional official or self-hosted Friends gateway
+- Site or repo: https://github.com/chekusu/yobiru · https://yobiru.com
+- Paid: free open source (MIT)
+- Source: conversation catch-up (explicit architecture discussion)
+- Date: 2026-11-23
+- Learnable slice: two planes — Tailscale private messaging vs Friends HTTPS gateway that does not require Tailscale. Not a chat app. Relatively new (repo created 2026-10-10)
+
+- Name: Dock
+- Platform: Windows / macOS / Linux (via Avalonia)
+- Site or repo: https://github.com/wieslawsoltes/Dock · https://wieslawsoltes.github.io/Dock/ · NuGet Dock.Avalonia
+- Paid: free open source (MIT)
+- Source: conversation catch-up (explicit Avalonia docking-library question)
+- Date: 2026-11-23
+- Learnable slice: docking layout library for Avalonia (floating windows, layout persistence). Not a replacement for Avalonia itself
+
+### 2026-11-23 · source 5 (X toolbox / awesome-list diff + mobile sweep)
+
+Family **5** ledger-era pass. awesome-windows, awesome-mac, android-foss, and @appinn posts were reviewed; [luong-komorebi/Awesome-Linux-Software](https://github.com/luong-komorebi/Awesome-Linux-Software) is **archived** (May 2026) with no commits in the window, so it was not treated as a living list. Official URLs rechecked 2026-11-23. This weekly family pass does **not** set the eight-family processed-through watermark (awesome-mac was sampled, not exhaustively paginated).
+
+- Name: L×Box
+- Platform: Android
+- Site or repo: https://github.com/Leadaxe/LxBox · https://f-droid.org/packages/com.leadaxe.lxbox/
+- Paid: free open source (GPL-3.0)
+- Source: android-foss list addition (VPN, 2026-10-01) plus this week’s mobile-utility pass / F-Droid presence
+- Date: 2026-11-23
+- Learnable slice: one Android VpnService holding several protocols (sing-box fork), including a Tailscale endpoint inside the same core so it does not fight the official Tailscale app for the single VPN slot. Distinct from v2rayNG, WGControl, and desktop Clash Verge. Vendor performance claims are not independent measurements
+
+Skipped after official-URL checks: WinMerge (well-known classic, not an unfamiliar harvest target); capyknock (below star bar); DPIMech (below star bar). @appinn posts in early November were scanned; no additional established official-URL entry was added from that slice.
+
+Exploratory source (does not replace family 5): first bounded pass on [Self-Host Weekly](https://selfh.st/weekly/2026-11-20/) (2026-11-20 issue). New-software tiles were mostly early/preview projects; none met the catalog bar this week (example: Roobyx/mish, 25 star). The source stays a candidate for later rotation, with no invented coverage watermark.
+
 ---
 
 ## 9. Other classes (seeds)
