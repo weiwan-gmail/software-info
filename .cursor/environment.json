@@ -1,0 +1,11 @@
+{
+  "name": "software-info",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "docs:dev",
+      "command": "npm run docs:dev"
+    }
+  ],
+  "ports": [5173]
+}
